@@ -98,7 +98,11 @@
     "title_text_button_CYeRCB": {
       "type": "title_text_button",
       "settings": {
-        "title": "Test title"
+        "title": "Test title test",
+        "text": "Text text text. Text text text text.",
+        "text_size": "small",
+        "button_link": "",
+        "button_text": "Button text"
       }
     },
     "1662389920b1295ea2": {
