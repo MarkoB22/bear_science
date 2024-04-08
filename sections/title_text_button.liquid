@@ -1,8 +1,21 @@
 {{- 'title_text_button.css' | asset_url | stylesheet_tag -}}
 <div class="title_text_button-wrapper">
+
     <div class="title_text_button-title h1">
         {{ section.settings.title }}
     </div>
+
+    <div class="title_text_button-button_text_wrapper">
+        <div class="title_text_button-text title_text_button-text_{{ section.settings.text_size }}">
+            {{ section.settings.text }}
+        </div>
+        <div class="title_text_button-button">
+            <a href="{{ section.settings.button_link }}" class="">
+                {{ section.settings.button_text }}
+            </a>
+        </div>
+    </div>
+
 </div>
 {% schema %}
 {
@@ -11,7 +24,41 @@
         {
             "type": "text",
             "id": "title",
-            "label": "Title"
+            "label": "Title",
+            "default": "Title"
+        },
+        {
+            "type": "textarea",
+            "id": "text",
+            "label": "Text content",
+            "default": "Text text text. Text text text text."
+        },
+        {
+			"type": "select",
+			"id": "text_size",
+			"options": [
+				{
+					"value": "small",
+					"label": "Small"
+				},
+				{
+					"value": "medium",
+					"label": "Medium"
+				}
+			],
+			"default": "small",
+			"label": "Text font size"
+		},
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+        },
+        {
+            "type": "text",
+            "id": "button_text",
+            "label": "Button text",
+            "default": "Button text"
         }
     ],
     "presets": [
