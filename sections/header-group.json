@@ -1,1 +1,63 @@
-{"type":"header","name":"Header group","sections":{"announcement-bar":{"type":"announcement-bar","blocks":{"5b1ab378-833d-4a94-a02e-8325ec1551d0":{"type":"text","settings":{"icon":"none","text":"Add campaign text here.","link":""}},"2f7893ee-7b84-4f15-911a-801b94ffa38e":{"type":"text","settings":{"icon":"none","text":"Add campaign text here.","link":""}}},"block_order":["5b1ab378-833d-4a94-a02e-8325ec1551d0","2f7893ee-7b84-4f15-911a-801b94ffa38e"],"settings":{"announcement_bar":true,"announcement_bar_homepage_only":false,"announcement_bar_layout":"marquee","direction":"left","speed":"20s"}},"header":{"type":"header","settings":{"sticky_header":true,"logo_height_range":30,"logo_height_range_mobile":30,"style":"style1","header_shadow":"header--shadow-small","menu":"main-menu","transparent_header":true,"show_language_switcher":false,"show_currency_switcher":true,"mobile_secondary_menu":"","mobile_promo_heading":"Promotion heading","mobile_promo_link_label":"Shop","mobile_promo_link":""}}},"order":["announcement-bar","header"]}
+{
+  "type": "header",
+  "name": "Header group",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "5b1ab378-833d-4a94-a02e-8325ec1551d0": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "Add campaign text here.",
+            "link": ""
+          }
+        },
+        "2f7893ee-7b84-4f15-911a-801b94ffa38e": {
+          "type": "text",
+          "settings": {
+            "icon": "none",
+            "text": "Add campaign text here.",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "5b1ab378-833d-4a94-a02e-8325ec1551d0",
+        "2f7893ee-7b84-4f15-911a-801b94ffa38e"
+      ],
+      "settings": {
+        "announcement_bar": true,
+        "announcement_bar_homepage_only": false,
+        "announcement_bar_layout": "marquee",
+        "direction": "left",
+        "speed": "20s",
+        "autoplay": true,
+        "autoplay_length": 5
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+        "sticky_header": true,
+        "logo": "shopify:\/\/shop_images\/Logo_-_Header.png",
+        "logo_height_range": 58,
+        "logo_height_range_mobile": 30,
+        "style": "style3",
+        "header_shadow": "header--shadow-large",
+        "menu": "main-menu",
+        "transparent_header": true,
+        "show_language_switcher": true,
+        "show_currency_switcher": true,
+        "mobile_secondary_menu": "",
+        "mobile_promo_heading": "Promotion heading",
+        "mobile_promo_link_label": "Shop",
+        "mobile_promo_link": ""
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
