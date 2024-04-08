@@ -27,62 +27,10 @@
             "button_2_link": "",
             "button_2_outline": false
           }
-        },
-        "164794776393e76b8e-1": {
-          "type": "slide",
-          "settings": {
-            "slide_link": "",
-            "video_background": false,
-            "video": "",
-            "subheading": "ADD A SUBHEADER",
-            "heading": "SLIDE HEADING",
-            "heading_size": "h1-xlarge",
-            "content": "All the Spring 2022 Ready-to-Wear fashion show coverage in one place.",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 20,
-            "overlay_gradient": "",
-            "button_1_text": "Shop Tops",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_2_text": "Shop Denim",
-            "button_2_link": "",
-            "button_2_outline": false
-          }
-        },
-        "164794776393e76b8e-0": {
-          "type": "slide",
-          "settings": {
-            "slide_link": "",
-            "video_background": false,
-            "video": "",
-            "subheading": "ADD A SUBHEADER",
-            "heading": "SLIDE HEADING",
-            "heading_size": "h1-xlarge",
-            "content": "Save up to 60% through October 15.",
-            "description_size": "medium",
-            "content_position": "middle-center",
-            "text_alignment": "center",
-            "content_size": "medium",
-            "overlay_color": "#000000",
-            "overlay_opacity": 43,
-            "overlay_gradient": "",
-            "button_1_text": "Shop Dresses",
-            "button_1_link": "",
-            "button_1_outline": true,
-            "button_2_text": "Shop Sale",
-            "button_2_link": "",
-            "button_2_outline": false
-          }
         }
       },
       "block_order": [
-        "164794776393e76b8e-2",
-        "164794776393e76b8e-1",
-        "164794776393e76b8e-0"
+        "164794776393e76b8e-2"
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
