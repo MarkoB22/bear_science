@@ -1,0 +1,42 @@
+{%- liquid
+	# Product card size options
+	assign show_size_options = settings.show_size_options
+	assign size_options_variant_name = settings.size_options_variant_name
+	assign size_options_limit = settings.size_options_limit
+-%}
+{%- capture option_values -%}{%- for option in product_card_product.options_with_values -%}
+  {%- if option.selected_value -%}{{ option.selected_value }}{% unless forloop.last %},{%- endunless -%}{%- endif -%}
+{%- endfor -%}{%- endcapture -%}
+
+{%- for option in product_card_product.options_with_values -%}
+
+  {%- if option.name == size_options_variant_name -%}
+    {%- liquid
+      assign index = forloop.index0
+
+      if option.values.size > size_options_limit
+        assign remaining = option.values.size | minus: size_options_limit
+      endif
+
+      assign size = option.values.size | at_most: size_options_limit
+      
+    -%}
+    <div class="product-card-sizes--container no-js-hidden">
+      <div class="product-card-sizes" data-options="{{ option_values | escape }}" data-index="{{ index }}">
+        {%- for value in option.values limit: size_options_limit -%}
+          <div class="product-card-sizes--size">
+            <span>{{ value }}</span><div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
+          </div>
+        {%- endfor -%}
+      </div>
+      {%- if remaining > 0 -%}
+        <div class="product-card-sizes--remaining">
+          {{ remaining | prepend: '+' }}
+        </div>
+      {%- endif- %}
+      <script type="application/json">
+        {{ product_card_product.variants | json }}
+      </script>
+    </div>
+  {%- endif -%}
+{%- endfor -%}
