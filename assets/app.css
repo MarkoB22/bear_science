@@ -144,6 +144,10 @@ progress {
 textarea {
   overflow: auto; }
 
+.test {
+  display: none;
+}
+
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
