@@ -1,6 +1,8 @@
 {
   "current": {
     "heading_font": "archivo_narrow_n6",
+    "heading_font_scale": 100,
+    "heading_font_line_height_scale": 150,
     "navigation_uppercase": true,
     "product_title_uppercase": true,
     "button_uppercase": true,
