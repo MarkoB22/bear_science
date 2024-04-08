@@ -1,0 +1,23 @@
+{{- 'title_text_button.css' | asset_url | stylesheet_tag -}}
+<div class="title_text_button-wrapper">
+    <div class="title_text_button-title h1">
+        {{ section.settings.title }}
+    </div>
+</div>
+{% schema %}
+{
+    "name": "Title, text and button",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        }
+    ],
+    "presets": [
+      {
+        "name": "Title, text and button"
+      }
+    ]
+}
+{% endschema %}    
