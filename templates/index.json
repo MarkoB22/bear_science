@@ -46,11 +46,11 @@
     "title_text_button_CYeRCB": {
       "type": "title_text_button",
       "settings": {
-        "title": "Test title test 2",
-        "text": "Text text text. Text text text text.",
+        "title": "ABOUT US",
+        "text": "At Bear-Science, we are passionate about helping people live fuller, healthier and longer-lasting lives. As a German brand of smart supplements, our focus is on promoting lifelong health and energy.\n\nOur products are based on scientific evidence and carefully selected to give you the best possible results. We believe that a balanced diet and regular supplementation are crucial for your health and well-being.",
         "text_size": "small",
-        "button_link": "",
-        "button_text": "Button text"
+        "button_link": "#",
+        "button_text": "Learn more"
       }
     },
     "1662389920b1295ea2": {
