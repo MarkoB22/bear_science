@@ -7,18 +7,56 @@
 }
 
 .title_text_button-wrapper {
-    padding: 28px;
-}
-
-.title_text_button-title {
-    margin-left: 18px;
-}
-
-.vl {
-    border-left: 2px solid rgb(0, 0, 0);
+    padding: 86px 28px 86px 28px;  
+    background-color: #727272;
+    color: #FFFFFF;
 }
 
 .title_text_button-title-wrapper {
     display: flex;
-    flex-direction: row;
+    flex-direction: row;    
+    margin-bottom: 40px;
 }
+
+.title_text_button-title {
+    margin-left: 18px;
+    color: #FFFFFF;
+}
+
+.title_text_button-button_text_wrapper {
+
+}
+
+.title_text_button-button_text_wrapper > div:nth-child(2) {
+    margin-top: 30px;
+}
+
+.vl {
+    border-left: 2px solid rgb(255, 255, 255);
+}
+
+.title_text_button-button_wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column
+}
+
+.title_text_button-button {
+    display: flex;
+    align-items: center;
+}
+
+.button_type4 {
+    color: white;
+}
+
+.title_text_button-arrow {
+    margin-left: 10px;
+}
+
+.title_text_button-line{
+    width: 64px;
+    height: 1px;
+}
+/* 
+DODAJ BUTTON I BACKGROUND TE SREDI VIDI OSTALE SLICNE SEKCIJE */
