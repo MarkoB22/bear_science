@@ -58,5 +58,40 @@
     width: 64px;
     height: 1px;
 }
+
+@media print, screen and (min-width: 1025px) {
+    .title_text_button-text_small {
+
+    }
+    
+    .title_text_button-text_medium {
+        
+    }
+    
+    .title_text_button-wrapper {
+        background-color: #727272;
+        color: #FFFFFF;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .title_text_button-title-wrapper {
+        display: flex;
+        flex-direction: row-reverse;    
+        margin: 40px;
+    }
+    
+    .title_text_button-title {
+        margin-right: 40px;
+        color: #FFFFFF;
+    }
+}
+
+
+
+
+
+
 /* 
 DODAJ BUTTON I BACKGROUND TE SREDI VIDI OSTALE SLICNE SEKCIJE */
