@@ -1,8 +1,11 @@
 {{- 'title_text_button.css' | asset_url | stylesheet_tag -}}
 <div class="title_text_button-wrapper">
 
-    <div class="title_text_button-title h1">
-        {{ section.settings.title }}
+    <div class="title_text_button-title-wrapper">
+        <div class="vl"></div>
+        <div class="title_text_button-title h1">
+            {{ section.settings.title }}
+        </div>
     </div>
 
     <div class="title_text_button-button_text_wrapper">
@@ -29,8 +32,14 @@
         },
         {
             "type": "textarea",
-            "id": "text",
-            "label": "Text content",
+            "id": "text1",
+            "label": "Text content 1",
+            "default": "Text text text. Text text text text."
+        },
+        {
+            "type": "textarea",
+            "id": "text2",
+            "label": "Text content 2",
             "default": "Text text text. Text text text text."
         },
         {

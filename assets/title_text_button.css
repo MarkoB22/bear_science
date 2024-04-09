@@ -5,3 +5,20 @@
 .title_text_button-text_medium {
     
 }
+
+.title_text_button-wrapper {
+    padding: 28px;
+}
+
+.title_text_button-title {
+    margin-left: 18px;
+}
+
+.vl {
+    border-left: 2px solid rgb(0, 0, 0);
+}
+
+.title_text_button-title-wrapper {
+    display: flex;
+    flex-direction: row;
+}
