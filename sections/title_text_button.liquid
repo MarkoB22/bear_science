@@ -11,7 +11,7 @@
     {% endif %}
 
     {% if section.settings.text or section.settings.button_text %}
-    <div class="title_text_button-button_text_wrapper {{ section.settings.text_size }}">
+    <div class="title_text_button-button_text_wrapper {{ section.settings.text_size_text }}">
 
         {% if section.settings.text %}
         <div class="title_text_button-text">
@@ -60,21 +60,21 @@
 			"label": "Title position"
 		},
         {
-            "type": "select",
-            "id": "text_size",
-            "options": [
-                {
-                    "value": "h1",
-                    "label": "Big"
-                },
-                {
-                    "value": "h2",
-                    "label": "Medium"
-                }
-            ],
-            "default": "h1",
-            "label": "Text font size"
-        },
+			"type": "select",
+			"id": "text_size_text",
+			"options": [
+				{
+					"value": "h11",
+					"label": "Small"
+				},
+				{
+					"value": "h9",
+					"label": "Medium"
+				}
+			],
+			"default": "h11",
+			"label": "Title position"
+		},
         {
             "type": "richtext",
             "id": "text",
