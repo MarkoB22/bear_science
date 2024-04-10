@@ -4077,62 +4077,62 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 
 @media print, screen and (min-width: 1025px) {
-	.h {
+	.h1 {
 		font-size: calc(var(--font-heading-scale) * 4rem);
 		line-height: calc(var(--font-heading-line-height-scale) * 1.5);
 	}
 
-	.h {
+	.h2 {
 		font-size: calc(var(--font-heading-scale) * 3rem);
 		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
 	}
 	
-	.h {
+	.h3 {
 		font-size: calc(var(--font-heading-scale) * 2.625rem);
 		line-height: calc(var(--font-heading-line-height-scale) * 1.5);
 	}
 	
-	.h {
+	.h4 {
 		font-size: calc(var(--font-heading-scale) * 2.5rem);
 		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
 	}
 	
-	.h {
+	.h5 {
 		font-size: calc(var(--font-heading-scale) * 2rem);
 		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
 	}
 
-	.h {
+	.h6 {
 		font-size: calc(var(--font-heading-scale) * 2rem);
 		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
 	}
 	
-	.h {
+	.h7 {
 		font-size: calc(var(--font-heading-scale) * 1.5rem);
 		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
 	}
 
-	.h {
+	.h8 {
 		font-size: calc(var(--font-heading-scale) * 1.375rem);
 		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
 	}
 	
-	.h {
+	.h9 {
 		font-size: calc(var(--font-heading-scale) * 1.25rem);
 		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
 	}
 	
-	.h {
+	.h10 {
 		font-size: calc(var(--font-heading-scale) * 1.125rem);
 		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
 	}
 	
-	.h {
+	.h11 {
 		font-size: var(--font-heading-scale);
 		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
 	}
 	
-	.h {
+	.h12 {
 		font-size: calc(var(--font-heading-scale) * 0.875rem);
 		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
 	}
