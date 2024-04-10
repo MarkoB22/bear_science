@@ -4047,10 +4047,12 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   height: 1px;
   margin-top: 8px;
   background: white;
+  display: block;
 }
 
 .button_type3:hover svg {
   transform: scale(1.3333);
+  fill: white;
 }
 
 .button_type3:hover::after {
@@ -4068,10 +4070,12 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   height: 1px;
   margin-top: 8px;
   background: black;
+  display: block;
 }
 
 .button_type4:hover svg {
   transform: scale(1.3333);
+  fill: black;
 }
 
 .button_type4:hover::after {

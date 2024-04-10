@@ -59,6 +59,10 @@
     height: 1px;
 }
 
+.title_position-right .title_text_button-title-wrapper {
+    flex-direction: row;
+}
+
 @media print, screen and (min-width: 1025px) {
     .title_text_button-text_small {
 

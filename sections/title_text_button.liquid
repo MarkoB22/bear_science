@@ -1,33 +1,33 @@
 {{- 'title_text_button.css' | asset_url | stylesheet_tag -}}
-<div class="title_text_button-wrapper">
+<div class="title_text_button-wrapper title_position-{{  }}">
 
+    {% if section.settings.title %}
     <div class="title_text_button-title-wrapper">
         <div class="vl"></div>
         <div class="title_text_button-title h1">
             {{ section.settings.title }}
         </div>
     </div>
+    {% endif %}
 
+    {% if section.settings.text or section.settings.button_text %}
     <div class="title_text_button-button_text_wrapper">
+        {% if section.settings.text %}
         <div class="title_text_button-text title_text_button-text1_{{ section.settings.text_size }}">
-            {{ section.settings.text1 }}
+            {{ section.settings.text }}
         </div>
-        <div class="title_text_button-text title_text_button-text2_{{ section.settings.text_size }}">
-            {{ section.settings.text2 }}
-        </div>
+        {% endif %}
+
+        {% if section.settings.button_text %}
         <div class="title_text_button-button_wrapper">
-            <div class="title_text_button-button">
-                <a href="{{ section.settings.button_link }}" class="button_type4">
-                    {{ section.settings.button_text }}
+            <div class="title_text_button-button button_type3">
+                <a href="{{ section.settings.button_link }}">
+                    <span>{{ section.settings.button_text }}</span>
+                    {% render 'svg-icons' with 'button_arrow' %}
                 </a>
-                <svg width="18" height="15" viewBox="0 0 18 15" fill="none" xmlns="http://www.w3.org/2000/svg" class="title_text_button-arrow">
-                    <path d="M14.6895 6.74997H0.75C0.551088 6.74997 0.360322 6.82899 0.21967 6.96964C0.0790178 7.11029 0 7.30106 0 7.49997C0 7.69888 0.0790178 7.88965 0.21967 8.0303C0.360322 8.17095 0.551088 8.24997 0.75 8.24997H14.6895L9.219 13.719C9.07817 13.8598 8.99905 14.0508 8.99905 14.25C8.99905 14.4491 9.07817 14.6401 9.219 14.781C9.35983 14.9218 9.55084 15.0009 9.75 15.0009C9.94916 15.0009 10.1402 14.9218 10.281 14.781L17.031 8.03097C17.1008 7.9613 17.1563 7.87854 17.1941 7.78742C17.2319 7.6963 17.2513 7.59862 17.2513 7.49997C17.2513 7.40132 17.2319 7.30364 17.1941 7.21252C17.1563 7.1214 17.1008 7.03864 17.031 6.96897L10.281 0.218971C10.1402 0.0781407 9.94916 -0.000976562 9.75 -0.000976562C9.55084 -0.000976562 9.35983 0.0781407 9.219 0.218971C9.07817 0.359801 8.99905 0.550807 8.99905 0.749971C8.99905 0.949134 9.07817 1.14014 9.219 1.28097L14.6895 6.74997Z" fill="white"/>
-                </svg>
             </div>
-            <svg width="64" height="1" viewBox="0 0 64 1" fill="none" xmlns="http://www.w3.org/2000/svg" class="title_text_button-line">
-                <line y1="0.5" x2="64" y2="0.5" stroke="white"/>
-            </svg>
         </div>
+        {% endif %}
     </div>
 
 </div>
@@ -42,16 +42,10 @@
             "default": "Title"
         },
         {
-            "type": "textarea",
-            "id": "text1",
+            "type": "richtext",
+            "id": "text",
             "label": "Text content 1",
-            "default": "Text text text. Text text text text."
-        },
-        {
-            "type": "textarea",
-            "id": "text2",
-            "label": "Text content 2",
-            "default": "Text text text. Text text text text."
+            "default": "<p>Text text text. Text text text text.</p>"
         },
         {
 			"type": "select",
