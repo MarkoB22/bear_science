@@ -50,11 +50,10 @@
 
 @media print, screen and (min-width: 1025px) {
     .title_text_button-wrapper  {
-        background-color: #727272;
-        color: #FFFFFF;
         display: flex;
         flex-direction: row;
         align-items: center;
+        justify-content: center;
     }
     
     .title_text_button-title-wrapper {
