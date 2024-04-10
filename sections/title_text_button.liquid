@@ -1,5 +1,5 @@
 {{- 'title_text_button.css' | asset_url | stylesheet_tag -}}
-<div class="title_text_button-wrapper title_position-{{  }}">
+<div class="title_text_button-wrapper title_position-{{ section.settings.title_position }}">
 
     {% if section.settings.title %}
     <div class="title_text_button-title-wrapper">
@@ -43,6 +43,22 @@
             "label": "Title",
             "default": "Title"
         },
+        {
+			"type": "select",
+			"id": "title_position",
+			"options": [
+				{
+					"value": "left",
+					"label": "Left"
+				},
+				{
+					"value": "right",
+					"label": "Right"
+				}
+			],
+			"default": "right",
+			"label": "Title position"
+		},
         {
             "type": "richtext",
             "id": "text",

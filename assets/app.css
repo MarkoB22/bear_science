@@ -4101,3 +4101,134 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 /* FONTS */
+.h1 {
+	font-size: calc(var(--font-heading-scale) * 2.375rem);
+	line-height: calc(var(--font-heading-line-height-scale) * 1.5);
+}
+
+.h2 {
+	font-size: calc(var(--font-heading-scale) * 2.125rem);
+	line-height: calc(var(--font-heading-line-height-scale) * 1.5);
+}
+
+.h3 {
+	font-size: calc(var(--font-heading-scale) * 2rem);
+	line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+}
+
+.h4 {
+	font-size: calc(var(--font-heading-scale) * 1.5rem);
+	line-height: calc(var(--font-heading-line-height-scale) * 1.5);
+}
+
+.h5 {
+	font-size: calc(var(--font-heading-scale) * 1.5rem);
+	line-height: calc(var(--font-heading-line-height-scale) * 1.75);
+}
+
+.h6 {
+	font-size: calc(var(--font-heading-scale) * 1.375rem);
+	line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+}
+
+.h7 {
+	font-size: calc(var(--font-heading-scale) * 1.125rem);
+	line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+}
+
+.h8 {
+	font-size: var(--font-heading-scale);
+	line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+}
+
+.h9 {
+	font-size: calc(var(--font-heading-scale) * 0.875rem);
+	line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+}
+
+.h10 {
+	font-size: calc(var(--font-heading-scale) * 0.75rem);
+	line-height: calc(var(--font-heading-line-height-scale) * 1.5);
+}
+
+
+.f_light {
+	font-weight: 300;
+}
+
+.f_regular {
+	font-weight: 400;
+}
+
+.f_medium {
+	font-weight: 500;
+}
+
+.f_bold {
+	font-weight: 600;
+}
+
+
+@media print, screen and (min-width: 1025px) {
+	.h {
+		font-size: calc(var(--font-heading-scale) * 4rem);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.5);
+	}
+
+	.h {
+		font-size: calc(var(--font-heading-scale) * 3rem);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+	}
+	
+	.h {
+		font-size: calc(var(--font-heading-scale) * 2.625rem);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.5);
+	}
+	
+	.h {
+		font-size: calc(var(--font-heading-scale) * 2.5rem);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+	}
+	
+	.h {
+		font-size: calc(var(--font-heading-scale) * 2rem);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+	}
+
+	.h {
+		font-size: calc(var(--font-heading-scale) * 2rem);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+	}
+	
+	.h {
+		font-size: calc(var(--font-heading-scale) * 1.5rem);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+	}
+
+	.h {
+		font-size: calc(var(--font-heading-scale) * 1.375rem);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+	}
+	
+	.h {
+		font-size: calc(var(--font-heading-scale) * 1.25rem);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+	}
+	
+	.h {
+		font-size: calc(var(--font-heading-scale) * 1.125rem);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+	}
+	
+	.h {
+		font-size: var(--font-heading-scale);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+	}
+	
+	.h {
+		font-size: calc(var(--font-heading-scale) * 0.875rem);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+	}
+
+}
+

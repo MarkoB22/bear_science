@@ -52,6 +52,10 @@
     flex-direction: row;
 }
 
+.title_position-right .title_text_button-title-wrapper {
+    flex-direction: row-reverse;
+}
+
 @media print, screen and (min-width: 1025px) {
     .title_text_button-wrapper {
         background-color: #727272;
