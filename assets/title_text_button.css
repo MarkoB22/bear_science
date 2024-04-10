@@ -35,7 +35,7 @@
     flex-direction: column;
 }
 
-.button_type4 {
+.title_text_button-button > a {
     color: white;
 }
 
@@ -80,11 +80,3 @@
         flex-direction: row;
     }
 }
-
-
-
-
-
-
-/* 
-DODAJ BUTTON I BACKGROUND TE SREDI VIDI OSTALE SLICNE SEKCIJE */
