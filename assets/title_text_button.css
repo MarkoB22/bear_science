@@ -48,12 +48,13 @@
     height: 1px;
 }
 
-.title_position-right .title_text_button-title-wrapper {
+.title_text_button-wrapper .title_position-left {
     flex-direction: row;
 }
 
-.title_position-right .title_text_button-title-wrapper {
+.title_text_button-wrapper .title_position-right {
     flex-direction: row-reverse;
+    justify-content: flex-end;
 }
 
 @media print, screen and (min-width: 1025px) {
