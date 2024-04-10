@@ -1,11 +1,3 @@
-.title_text_button-text_small {
-
-}
-
-.title_text_button-text_medium {
-    
-}
-
 .title_text_button-wrapper {
     padding: 86px 28px 86px 28px;  
     background-color: #727272;
@@ -21,10 +13,6 @@
 .title_text_button-title {
     margin-left: 18px;
     color: #FFFFFF;
-}
-
-.title_text_button-button_text_wrapper {
-
 }
 
 .title_text_button-button_text_wrapper > div:nth-child(2) {
@@ -43,7 +31,8 @@
 
 .title_text_button-button {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .button_type4 {
@@ -64,14 +53,6 @@
 }
 
 @media print, screen and (min-width: 1025px) {
-    .title_text_button-text_small {
-
-    }
-    
-    .title_text_button-text_medium {
-        
-    }
-    
     .title_text_button-wrapper {
         background-color: #727272;
         color: #FFFFFF;

@@ -470,7 +470,6 @@ h6, .h6 {
 
 a {
   line-height: inherit;
-  color: var(--color-accent);
   text-decoration: none;
   cursor: pointer; }
   a:hover, a:focus {
@@ -4038,6 +4037,8 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 .button_type3 {
   color: white;
+  flex-direction: column;
+  width: fit-content;
   transition: all ease-in-out .3s;
 }   
 
@@ -4098,3 +4099,5 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .button_type5:hover svg {
   transform: scale(1.3333);
 }
+
+/* FONTS */

@@ -12,8 +12,9 @@
 
     {% if section.settings.text or section.settings.button_text %}
     <div class="title_text_button-button_text_wrapper">
+
         {% if section.settings.text %}
-        <div class="title_text_button-text title_text_button-text1_{{ section.settings.text_size }}">
+        <div class="title_text_button-text {{ section.settings.text_size }}">
             {{ section.settings.text }}
         </div>
         {% endif %}
@@ -28,6 +29,7 @@
             </div>
         </div>
         {% endif %}
+
     </div>
     {% endif %}
 </div>
