@@ -48,17 +48,8 @@
     height: 1px;
 }
 
-.title_text_button-wrapper .title_position-left {
-    flex-direction: row;
-}
-
-.title_text_button-wrapper .title_position-right {
-    flex-direction: row-reverse;
-    justify-content: flex-end;
-}
-
 @media print, screen and (min-width: 1025px) {
-    .title_text_button-wrapper {
+    .title_text_button-wrapper  {
         background-color: #727272;
         color: #FFFFFF;
         display: flex;
@@ -75,6 +66,18 @@
     .title_text_button-title {
         margin-right: 40px;
         color: #FFFFFF;
+    }
+
+    .title_position-left {
+        flex-direction: row;
+    }
+    
+    .title_position-right {
+        flex-direction: row-reverse;
+    }
+
+    .title_position-right_line-left {
+        flex-direction: row;
     }
 }
 
