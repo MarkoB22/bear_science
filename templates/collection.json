@@ -4,11 +4,11 @@
       "type": "title_text_button",
       "settings": {
         "title": "OUR PRODUCTS",
-        "title_position": "left",
-        "text_size_text": "h11",
+        "title_position": "right",
+        "text_size_text": "h9",
         "text": "<p>High-quality food suplements for your health and longevity<\/p>",
         "button_link": "",
-        "button_text": "test text"
+        "button_text": "button text"
       }
     },
     "main-collection-banner": {
