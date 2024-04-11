@@ -4,7 +4,7 @@
 }
 
 .scrolling-text {
-  margin: 0;
+  /* margin: 0; */
   background-color: var(--color-bg, rgba(var(--color-body-rgb), 0.03));
   color: var(--color-text, var(--color-accent));
   position: relative;
