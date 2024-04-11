@@ -4,7 +4,7 @@
 }
 
 .scrolling-text {
-  /* margin: 0; */
+  margin: 0;
   background-color: var(--color-bg, rgba(var(--color-body-rgb), 0.03));
   color: var(--color-text, var(--color-accent));
   position: relative;
@@ -89,7 +89,7 @@
 }
 
 .scrolling-text--inner {
-  /* padding: 24px 0; */
+  padding: 24px 0;
   background-color: white;
   border-style: solid;
   border-width: 1px 0;
@@ -99,12 +99,12 @@
 
 @media print, screen and (min-width: 1025px) {
   .scrolling-text {
-    /* margin: 0; */
+    margin: 0;
     line-height: 39.01px;
   }
 
   .scrolling-text--inner {
-    /* padding: 24px 0 25px 0; */
+    padding: 24px 0 25px 0;
   }
 
 }
