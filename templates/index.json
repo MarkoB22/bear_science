@@ -54,6 +54,55 @@
         "button_text_arrow": "Button text222"
       }
     },
+    "scrolling_text_eM6VzK": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_84KGPz": {
+          "type": "text",
+          "settings": {
+            "text": "Add campaign text here.",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "text_F9nGw6": {
+          "type": "text",
+          "settings": {
+            "text": "Add campaign text here.",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "text_8KMyM7": {
+          "type": "text",
+          "settings": {
+            "text": "Add campaign text here.",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_84KGPz",
+        "text_F9nGw6",
+        "text_8KMyM7"
+      ],
+      "settings": {
+        "height": "height-18",
+        "full_width": true,
+        "direction": "left",
+        "speed": "20s",
+        "text_size": 24,
+        "text_uppercase": false,
+        "image_size": "large",
+        "color_bg": "#f5f3ef",
+        "color_text": "#151515",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "1662389920b1295ea2": {
       "type": "spacer",
       "settings": {
@@ -506,6 +555,7 @@
   "order": [
     "16479477632637c9a7",
     "title_text_button_CYeRCB",
+    "scrolling_text_eM6VzK",
     "1662389920b1295ea2",
     "16614195534fb74bc3",
     "1661426105a80f3333",
