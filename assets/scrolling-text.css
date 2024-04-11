@@ -102,7 +102,6 @@
 @media print, screen and (min-width: 1025px) {
   .scrolling-text {
     margin: 0;
-    /* height: 88px; */
     line-height: 39.01px;
 		font-size: 32px;
   }
