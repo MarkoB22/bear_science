@@ -1,14 +1,5 @@
-
-
 .scrolling-text--item span {
-  transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); 
-  font-family: Montserrat;
-  font-weight: 400;
-  line-height: 21.94px;
-  text-align: left;
-  text-transform: uppercase;
-}
-
+  transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
 
 .scrolling-text {
   margin: 0;
