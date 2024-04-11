@@ -4030,7 +4030,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 .h5 {
 	font-size: calc(var(--font-heading-scale) * 1.5rem);
-	line-height: calc(var(--font-heading-line-height-scale) * 1.75);
+	line-height: calc(var(--font-heading-line-height-scale) * 1.5);
 }
 
 .h6 {
