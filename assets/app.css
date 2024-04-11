@@ -1798,6 +1798,15 @@ scroll-shadow {
 .height-auto {
   min-height: auto; }
 
+.height-18 {
+min-height: 18px; }
+
+.height-24 {
+min-height: 24px; }
+
+.height-32 {
+  min-height: 32px; }
+
 .height-300 {
   min-height: 300px; }
 

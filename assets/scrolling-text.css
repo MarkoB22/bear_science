@@ -1,5 +1,7 @@
 .scrolling-text--item span {
-  transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
+  transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); 
+  text-transform: uppercase;
+}
 
 .scrolling-text {
   margin: 0;
