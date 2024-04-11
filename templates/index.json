@@ -57,7 +57,7 @@
     "scrolling_text_eM6VzK": {
       "type": "scrolling-text",
       "blocks": {
-        "text_84KGPz": {
+        "text_fnxMCw": {
           "type": "text",
           "settings": {
             "text": "Add campaign text here.",
@@ -65,15 +65,7 @@
             "outline_text": false
           }
         },
-        "text_F9nGw6": {
-          "type": "text",
-          "settings": {
-            "text": "Add campaign text here.",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "text_8KMyM7": {
+        "text_GXm3xQ": {
           "type": "text",
           "settings": {
             "text": "Add campaign text here.",
@@ -83,9 +75,8 @@
         }
       },
       "block_order": [
-        "text_84KGPz",
-        "text_F9nGw6",
-        "text_8KMyM7"
+        "text_fnxMCw",
+        "text_GXm3xQ"
       ],
       "settings": {
         "height": "height-18",
@@ -141,46 +132,6 @@
         "columns_desktop": 4,
         "show_view_all": true,
         "show_progress_bar": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
-    "1661426105a80f3333": {
-      "type": "scrolling-text",
-      "blocks": {
-        "0b2612d0-8401-4857-a46a-9487c6340ed5": {
-          "type": "text",
-          "settings": {
-            "text": "Add campaign text here.",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "85234e70-c157-4919-931d-bf097e8aab79": {
-          "type": "text",
-          "settings": {
-            "text": "Add campaign text here.",
-            "link": "",
-            "outline_text": false
-          }
-        }
-      },
-      "block_order": [
-        "0b2612d0-8401-4857-a46a-9487c6340ed5",
-        "85234e70-c157-4919-931d-bf097e8aab79"
-      ],
-      "settings": {
-        "height": "height-auto",
-        "full_width": true,
-        "direction": "left",
-        "speed": "30s",
-        "text_size": 100,
-        "text_uppercase": false,
-        "image_size": "medium",
-        "color_bg": "#ffffff",
-        "color_text": "#151515",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
@@ -558,7 +509,6 @@
     "scrolling_text_eM6VzK",
     "1662389920b1295ea2",
     "16614195534fb74bc3",
-    "1661426105a80f3333",
     "166143150135dd97e2",
     "1661512437fd38dfb2",
     "166366563622039b3e",
