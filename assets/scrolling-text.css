@@ -89,22 +89,24 @@
 }
 
 .scrolling-text--inner {
-  padding: 24px 0;
+  /* padding: 24px 0; */
   background-color: white;
+  color: #04040499;
   border-style: solid;
   border-width: 1px 0;
-  line-height: 21.94px;
+  /* line-height: 21.94px; */
   font-weight: 300;
+  letter-spacing: 5px;
 }
 
 @media print, screen and (min-width: 1025px) {
   .scrolling-text {
     margin: 0;
-    line-height: 39.01px;
+    /* line-height: 39.01px; */
   }
 
-  .scrolling-text--inner {
+  /* .scrolling-text--inner {
     padding: 24px 0 25px 0;
-  }
+  } */
 
 }
