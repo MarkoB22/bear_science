@@ -54,18 +54,17 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        padding: 94px 128px 94px 128px;       
+        padding: 94px 128px;       
     }
     
     .title_text_button-title-wrapper {
         display: flex;
         flex-direction: row-reverse;    
-        margin: 40px;
     }
     
     .title_text_button-title {
-        margin-right: 40px;
         color: #FFFFFF;
+        
     }
 
     .title_position-left {
