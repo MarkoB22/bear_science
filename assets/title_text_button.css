@@ -16,6 +16,10 @@
     
 }
 
+.title_text_button-text {
+    color: #FFFFFF;
+}
+
 .title_text_button-button_text_wrapper > div:nth-child(2) {
     margin-top: 30px;
 }
@@ -62,7 +66,7 @@
     .title_text_button-title-wrapper {
         display: flex;
         flex-direction: row-reverse;
-        margin-left: 153px;
+        margin-left: 113px;
         text-align: right;
         word-wrap: normal;
     }
@@ -70,6 +74,11 @@
     .title_text_button-title {
         color: #FFFFFF;
         margin-left: 0px;
+
+        font-size: 64px;
+        line-height: 96px;
+        font-weight: 300;
+        font-family: sans-serif;
     }
 
     .title_position-left {
@@ -82,5 +91,19 @@
 
     .title_position-right_line-left {
         flex-direction: row;
+        text-align: left;
+        word-wrap: normal;
+    }
+
+    .title_text_button-button_text_wrapper {
+        margin-left: 128px;
+        text-align: left;
+    }
+
+    .title_text_button-text {
+        font-size: 48px;
+        line-height: 72px;
+        font-weight: 300;
+        font-family: sans-serif;
     }
 }
