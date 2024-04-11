@@ -13,6 +13,7 @@
 .title_text_button-title {
     margin-left: 18px;
     color: #FFFFFF;
+    
 }
 
 .title_text_button-button_text_wrapper > div:nth-child(2) {
@@ -53,19 +54,22 @@
     .title_text_button-wrapper  {
         display: flex;
         flex-direction: row;
-        align-items: center;
         justify-content: center;
-        padding: 94px 128px;       
+        align-items: flex-start;
+        padding: 94px 128px;
     }
     
     .title_text_button-title-wrapper {
         display: flex;
-        flex-direction: row-reverse;    
+        flex-direction: row-reverse;
+        margin-left: 153px;
+        text-align: right;
+        word-wrap: normal;
     }
     
     .title_text_button-title {
         color: #FFFFFF;
-
+        margin-left: 0px;
     }
 
     .title_position-left {
