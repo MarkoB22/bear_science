@@ -1,6 +1,6 @@
 {{- 'scrolling-text.css' | asset_url | stylesheet_tag -}}
 {%- liquid
-	assign height = section.settings.height
+	assign height = assign height_value = 'height-' | append: section.settings.height
 	assign full_width = section.settings.full_width
 	assign bg_image = section.settings.bg_image
 	assign speed = section.settings.speed
@@ -100,11 +100,11 @@
 				// "default": "height-0"
 				"type": "range",
 				"id": "height",
-				"label": "Height",
 				"min": 0,
 				"max": 40,
 				"step": 2,
 				"unit": "px",
+				"label": "Height",
 				"default": 0
 			},
 			{
