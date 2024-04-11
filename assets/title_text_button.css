@@ -75,8 +75,7 @@
         color: #FFFFFF;
         margin-left: 0px;
 
-        font-size: 64px;
-        line-height: 96px;
+        /* obrisati */
         font-weight: 300;
         font-family: sans-serif;
     }
@@ -100,9 +99,8 @@
         text-align: left;
     }
 
+    /* obrisati */
     .title_text_button-text {
-        font-size: 48px;
-        line-height: 72px;
         font-weight: 300;
         font-family: sans-serif;
     }

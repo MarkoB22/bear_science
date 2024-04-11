@@ -4084,7 +4084,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 	.h2 {
 		font-size: calc(var(--font-heading-scale) * 3rem);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.5);
 	}
 	
 	.h3 {
@@ -4109,7 +4109,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 	
 	.h7 {
 		font-size: calc(var(--font-heading-scale) * 1.5rem);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+		line-height: calc(var(--font-heading-line-height-scale) * 1.5);
 	}
 
 	.h8 {
