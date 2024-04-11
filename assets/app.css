@@ -3964,7 +3964,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .button_type3:hover::after {
-  width: 100%;
+  width: 128px;
 }
 
 .button_type4 {
@@ -3987,7 +3987,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .button_type4:hover::after {
-  width: 100%;
+  width: 76px;
 }
 
 .button_type5 {
