@@ -60,6 +60,7 @@
         "text_fnxMCw": {
           "type": "text",
           "settings": {
+            "image": "shopify:\/\/shop_images\/Logo_-_Header.png",
             "text": "Add campaign text here.",
             "link": "",
             "outline_text": false
@@ -83,7 +84,6 @@
         "full_width": true,
         "direction": "left",
         "speed": "20s",
-        "text_size": 32,
         "text_uppercase": false,
         "image_size": "large",
         "color_bg": "#f5f3ef",
