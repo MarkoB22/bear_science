@@ -94,6 +94,48 @@
         "disable_bottom_spacing": false
       }
     },
+    "traits_AFGyQX": {
+      "type": "traits",
+      "blocks": {
+        "text_TbxKgY": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "image": "shopify:\/\/shop_images\/World--Streamline-Plump.png",
+            "text": "<p>Text text text. Text text text text.<\/p>"
+          }
+        },
+        "text_JciNrH": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "text": "<p>Text text text. Text text text text.<\/p>"
+          }
+        },
+        "text_q6dpEz": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "text": "<p>Text text text. Text text text text.<\/p>"
+          }
+        },
+        "text_L434h8": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "text": "<p>Text text text. Text text text text.<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_TbxKgY",
+        "text_JciNrH",
+        "text_q6dpEz",
+        "text_L434h8"
+      ],
+      "settings": {
+      }
+    },
     "1662389920b1295ea2": {
       "type": "spacer",
       "settings": {
@@ -507,6 +549,7 @@
     "16479477632637c9a7",
     "title_text_button_CYeRCB",
     "scrolling_text_eM6VzK",
+    "traits_AFGyQX",
     "1662389920b1295ea2",
     "16614195534fb74bc3",
     "166143150135dd97e2",
