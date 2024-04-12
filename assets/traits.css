@@ -1,3 +1,55 @@
 .traits-block_wrapper:not(:first-child) {
     border-top: 1px solid #040404;
 }
+
+.traits-section_wrapper {
+    
+}
+
+.traits-block_wrapper {
+    display: flex;
+}
+
+.traits-title {
+    text-transform: uppercase;
+}
+
+@media print, screen and (min-width: 1025px) {
+    .traits-section_wrapper {
+        padding: 124px 64px;
+        display: flex;
+        flex-direction: column;
+    }
+    .traits-block_wrapper {
+        flex-basis: auto;
+        align-items: center;
+        padding: 38px 0;
+    }
+
+    .traits-title {
+        width: 23.88%;
+        font-size: 24px;
+        line-height: 29.26px;
+        margin-right: 5.83%;
+        text-align: right;
+        padding-left: 30px;
+        color: #04040466;
+    }
+
+    .traits-image {
+        width: 5.83%;
+        /* height: auto; */
+        margin-right: 9.86%;
+    }
+
+    .traits-image > img {
+        height: 84px;
+        width: 84px;
+    }
+
+    .traits-text {
+        width: 47.77%;
+        font-size: 20px;
+        line-height: 26px;
+    }
+}
