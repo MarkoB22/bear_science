@@ -5,7 +5,6 @@
 	assign bg_image = section.settings.bg_image
 	assign speed = section.settings.speed
 	assign image_size = section.settings.image_size
-	assign text_size = section.settings.text_size
 	assign text_uppercase = section.settings.text_uppercase
 	assign direction = section.settings.direction
 	assign color_bg = section.settings.color_bg
@@ -57,9 +56,9 @@
 				background-image: url({{ bg_image | image_url: width: bg_image.src.width }});
 			}
 			{%- endif -%}
-			#scrolling-text-{{ section.id }}  .scrolling-text--inner {
+			/* #scrolling-text-{{ section.id }}  .scrolling-text--inner {
 				font-size: {{ text_size | append: 'px' }};
-			}
+			} */
 
 		{% endstyle %}
 	</div>
@@ -153,16 +152,16 @@
 				"default": "20s",
 				"label": "Speed"
 			},
-			{
-        "type": "range",
-        "id": "text_size",
-        "min": 16,
-        "max": 140,
-        "step": 2,
-        "unit": "px",
-        "label": "Text size",
-        "default": 24
-      },
+	// 		{
+    //     "type": "range",
+    //     "id": "text_size",
+    //     "min": 16,
+    //     "max": 140,
+    //     "step": 2,
+    //     "unit": "px",
+    //     "label": "Text size",
+    //     "default": 24
+    //   },
 			{
 				"type": "checkbox",
 				"id": "text_uppercase",
