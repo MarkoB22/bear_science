@@ -101,8 +101,9 @@
   font-size: 18px;
 }
 
-.scrolling-text--inner > img {
+.scrolling-text--item > img {
   max-height: 21.94px;
+  width: auto;
 }
 
 @media print, screen and (min-width: 1025px) {
@@ -115,7 +116,7 @@
     font-size: 32px;
   }
 
-  .scrolling-text--inner > img {
+  .scrolling-text--item > img {
     max-height: 39.01px;
   }
 }
