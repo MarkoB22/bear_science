@@ -153,13 +153,15 @@
 							<p class="split-text description-size--{{ block.settings.description_size }}">{{ block.settings.content | newline_to_br }}</p>
 							{% endif %}
 							{% if block.settings.button_1_text != blank %}
-							<div class="button-overflow-container">
+							<div class="button-overflow-container button_type1">
 								<a class="button white{% if block.settings.button_1_outline %} outline{%- endif %}" href="{{ block.settings.button_1_link }}" role="button" title="{{ block.settings.button_1_text | escape }}"><span>{{ block.settings.button_1_text }}</span></a>
 							</div>
-			        		{% endif %}
+			        {% endif %}
 							{% if block.settings.button_2_text != blank %}
-							{% render button, type: type1, url: block.settings.button_1_link, text: block.settings.button_1_text %}
-			        		{% endif %}
+							<div class="button-overflow-container button_type2">
+								<a class="button white{% if block.settings.button_2_outline %} outline{%- endif %}" href="{{ block.settings.button_2_link }}" role="button" title="{{ block.settings.button_2_text | escape }}"><span>{{ block.settings.button_2_text }}</span></a>
+							</div>
+			        {% endif %}
 							{% if block.settings.slide_link != blank %}
 							<a href="{{ block.settings.slide_link }}" class="slideshow__slide-content-link" tabindex="-1"></a>
 							{% endif %}
