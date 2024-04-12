@@ -35,8 +35,8 @@
 }
 
 .traits-image > img {
-    height: 84px;
-    width: 84px;
+    min-height: 84px;
+    min-width: 84px;
 }
 
 .traits-text {
@@ -47,9 +47,7 @@
 
 @media print, screen and (min-width: 1025px) {
     .traits-section_wrapper {
-        padding: 124px 64px;
-        /* display: flex;
-        flex-direction: column; */
+        padding: 86px 64px;
     }
     .traits-block_wrapper {
         display: flex;
@@ -74,11 +72,6 @@
         width: 5.83%;
         margin-right: 9.86%;
         margin-bottom: 0;
-    }
-
-    .traits-image > img {
-        height: 84px;
-        width: 84px;
     }
 
     .traits-text {
