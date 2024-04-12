@@ -2,7 +2,6 @@
 {%- liquid
 	assign height = section.settings.height
 	assign full_width = section.settings.full_width
-	assign bg_image = section.settings.bg_image
 	assign speed = section.settings.speed
 	assign image_size = section.settings.image_size
 	assign text_uppercase = section.settings.text_uppercase
@@ -50,17 +49,7 @@
 			{% endcapture %}
 			{{- scrolling_text }}{{ scrolling_text }}{{ scrolling_text -}}
 		</div>
-		{% style %}
-			{%- if bg_image -%}
-			#scrolling-text-{{ section.id }} {
-				background-image: url({{ bg_image | image_url: width: bg_image.src.width }});
-			}
-			{%- endif -%}
-			/* #scrolling-text-{{ section.id }}  .scrolling-text--inner {
-				font-size: {{ text_size | append: 'px' }};
-			} */
 
-		{% endstyle %}
 	</div>
 	</div>
 </div>
