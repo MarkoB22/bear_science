@@ -108,30 +108,33 @@
         "text_JciNrH": {
           "type": "text",
           "settings": {
-            "title": "Title",
-            "text": "<p>Text text text. Text text text text.<\/p>"
+            "title": "24h until dispatch",
+            "image": "shopify:\/\/shop_images\/Shipping-Truck--Streamline-Core.png",
+            "text": "<p>We place great importance on you <strong>receiving your products as quickly as possible<\/strong>. We know that you would prefer to benefit from your orders immediately. That's why we ship every order within 24 hours of receipt. This fast processing guarantees that you will have your products in your hands in the shortest possible time and do not have to wait unnecessarily long for your delivery.<\/p>"
+          }
+        },
+        "text_dxFqhN": {
+          "type": "text",
+          "settings": {
+            "title": "World-class quality",
+            "image": "shopify:\/\/shop_images\/Ai-Network-Spark--Streamline-Core.png",
+            "text": "<p>We place great importance on the quality of our products. That's why we work exclusively with Uthever®, a world leader in innovation and quality. <strong>Our products carry the Uthever® trademark.<\/strong> This partnership allows us to guarantee you world-class quality and the highest standards. Your health and well-being are our top priority and we are proud to offer products you can trust.<\/p>"
           }
         },
         "text_q6dpEz": {
           "type": "text",
           "settings": {
-            "title": "Title",
-            "text": "<p>Text text text. Text text text text.<\/p>"
-          }
-        },
-        "text_L434h8": {
-          "type": "text",
-          "settings": {
-            "title": "Title",
-            "text": "<p>Text text text. Text text text text.<\/p>"
+            "title": "innovation",
+            "image": "shopify:\/\/shop_images\/Ai-Network-Spark--Streamline-Core.png",
+            "text": "<p>We place great importance on the quality of our products. That's why we work exclusively with Uthever®, a world leader in innovation and quality. <strong>Our products carry the Uthever® trademark.<\/strong> This partnership allows us to guarantee you world-class quality and the highest standards. Your health and well-being are our top priority and we are proud to offer products you can trust.<\/p>"
           }
         }
       },
       "block_order": [
         "text_TbxKgY",
         "text_JciNrH",
-        "text_q6dpEz",
-        "text_L434h8"
+        "text_dxFqhN",
+        "text_q6dpEz"
       ],
       "settings": {
       }
