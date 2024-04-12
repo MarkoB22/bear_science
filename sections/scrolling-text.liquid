@@ -2,6 +2,7 @@
 {%- liquid
 	assign height = section.settings.height
 	assign full_width = section.settings.full_width
+	assign bg_image = section.settings.bg_image
 	assign speed = section.settings.speed
 	assign image_size = section.settings.image_size
 	assign text_uppercase = section.settings.text_uppercase
@@ -49,7 +50,14 @@
 			{% endcapture %}
 			{{- scrolling_text }}{{ scrolling_text }}{{ scrolling_text -}}
 		</div>
+		{% style %}
+			{%- if bg_image -%}
+			#scrolling-text-{{ section.id }} {
+				background-image: url({{ bg_image | image_url: width: bg_image.src.width }});
+			}
+			{%- endif -%}
 
+		{% endstyle %}
 	</div>
 	</div>
 </div>
@@ -58,6 +66,11 @@
     "name": "Scrolling text",
 		"class": "section-scrolling-text",
     "settings": [
+			// {
+			// 	"type": "image_picker",
+			// 	"id": "bg_image",
+			// 	"label": "Background image"
+			// },
 			{
 				"type": "select",
 				"id": "height",
@@ -210,6 +223,52 @@
 				"default": false,
 				"label": "Remove bottom spacing"
 			}
+    ],
+		"blocks": [
+      {
+        "type": "text",
+        "name": "Text",
+        "settings": [
+					{
+						"type": "image_picker",
+						"id": "image",
+						"label": "Image"
+					},
+          {
+            "type": "text",
+            "id": "text",
+            "label": "Content",
+						"default": "Add campaign text here."
+          },
+					{
+						"id": "link",
+						"type": "url",
+						"label": "Link"
+					},
+					{
+		        "type": "checkbox",
+		        "id": "outline_text",
+		        "label": "Make text outline",
+		        "default": false
+		      }
+				]
+			}
+		],
+    "presets": [
+      {
+        "name": "Scrolling text",
+				"blocks": [
+					{
+						"type": "text"
+					},
+					{
+						"type": "text"
+					},
+					{
+						"type": "text"
+					}
+				]
+      }
     ]
-}
+  }
 {% endschema %}
