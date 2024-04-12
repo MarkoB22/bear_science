@@ -19,7 +19,7 @@
             "text_alignment": "center",
             "content_size": "medium",
             "overlay_color": "#ffffff",
-            "overlay_opacity": 0,
+            "overlay_opacity": 30,
             "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
             "button_1_text": "SHOP COLLECTION",
             "button_1_link": "",
