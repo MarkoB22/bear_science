@@ -38,7 +38,7 @@
       ],
       "settings": {
         "desktop_height": "desktop-height-full",
-        "mobile_height": "mobile-height-full",
+        "mobile_height": "mobile-height-image",
         "full_width": true,
         "autoplay": true,
         "autoplay_length": 10,
