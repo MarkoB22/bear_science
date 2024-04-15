@@ -23,7 +23,7 @@
       },
       {
         "type": "range",
-        "id": "heading_font_scale", 
+        "id": "heading_font_scale",
         "min": 100,
         "max": 150,
         "step": 5,
@@ -798,7 +798,7 @@
       {
         "type": "header",
         "content": "Free shipping message",
-        "info": "The free shipping bar is configured separately from your actual shipping rates, which need to be [configured separately.](https://help.shopify.com/en/manual/discounts/discount-types/free-shipping)"
+        "info": "The free shipping bar is configured separately from your actual shipping rates, which need to be [configured separately.](https:\/\/help.shopify.com\/en\/manual\/discounts\/discount-types\/free-shipping)"
       },
       {
         "type": "checkbox",
