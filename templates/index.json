@@ -97,6 +97,12 @@
         "disable_bottom_spacing": false
       }
     },
+    "product_presentation_9yUw6y": {
+      "type": "product-presentation",
+      "settings": {
+        "title": "Title"
+      }
+    },
     "traits_AFGyQX": {
       "type": "traits",
       "blocks": {
@@ -555,6 +561,7 @@
     "16479477632637c9a7",
     "title_text_button_CYeRCB",
     "scrolling_text_eM6VzK",
+    "product_presentation_9yUw6y",
     "traits_AFGyQX",
     "1662389920b1295ea2",
     "16614195534fb74bc3",
