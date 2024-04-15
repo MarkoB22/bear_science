@@ -24,3 +24,28 @@
     </div>
 
 </div>
+{% schema %}
+    {
+        "name": "Product Description",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Title"
+            },
+            {
+            "type": "image_picker",
+            "id": "custom_image",
+            "label": "Upload an image"
+            }
+        ],
+        "presets": [
+        {
+            "name": "Custom Image",
+            "category": "Image"
+        }
+    ]
+
+    }
+{% endschema %}  
