@@ -1,6 +1,6 @@
 {{ 'product-presentation.css' | asset_url | stylesheet_tag }}
 <div class="product_description_wrapper">
-
+    {% for block in section.blocks %}
     <div class="product_description_title">
         {% if block.settings.title %}
         <div class="product_description_main_title">
@@ -25,7 +25,7 @@
     <div class="product_description_btn">
 
     </div>
-
+    {% endif %}
 </div>
 {% schema %}
 {
