@@ -4274,3 +4274,15 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 }
 
+
+@media print, screen and (min-width: 1025px) {
+  .not_desktop {
+    display: none;
+  }
+}
+
+@media print, screen and (max-width: 1024px) {
+  .not_mobile {
+    display: none;
+  }
+}
