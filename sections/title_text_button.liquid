@@ -3,12 +3,13 @@
 
     {% if section.settings.title %}
     <div class="title_text_button-title-wrapper title_position-{{ section.settings.title_position }}_line-left">
-        <div class="vl"></div>
         <div class="title_text_button-title h1 f_light">
             {{ section.settings.title }}
         </div>
     </div>
     {% endif %}
+
+    <div class="vl"></div>
 
     {% if section.settings.text or section.settings.button_text %}
     <div class="title_text_button-button_text_wrapper {{ section.settings.text_size_text }}">
