@@ -26,6 +26,7 @@
         "5b1ab378-833d-4a94-a02e-8325ec1551d0",
         "2f7893ee-7b84-4f15-911a-801b94ffa38e"
       ],
+      "disabled": true,
       "settings": {
         "announcement_bar": true,
         "announcement_bar_homepage_only": false,
