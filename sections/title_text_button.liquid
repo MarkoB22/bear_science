@@ -21,8 +21,8 @@
 
         {% if section.settings.button_text_arrow != "" or section.settings.button_text_arrow != blank %}
         <div class="title_text_button-button_wrapper">
-            <div class="title_text_button-button button_type3">
-                <a href="{{ section.settings.button_link }}">
+            <div class="title_text_button-button">
+                <a class="button_type3" href="{{ section.settings.button_link }}">
                     <span>{{ section.settings.button_text_arrow }}</span>
                     {% render 'svg-icons' with 'button_arrow' %} 
                 </a>

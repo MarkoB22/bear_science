@@ -151,9 +151,9 @@
       background: rgba(var(--overlay-color-rgb), var(--overlay-opacity)); }
     .slideshow__slide-content {
       z-index: 20;
-      padding: 15px;
+      padding: 24px;
       max-width: 800px;
-      width: 100%; }
+      width: 80%; }
       @media only screen and (min-width: 768px) {
         .slideshow__slide-content {
           padding: 50px; } }
