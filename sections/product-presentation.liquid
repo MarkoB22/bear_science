@@ -1,23 +1,23 @@
 {{ 'product-presentation.css' | asset_url | stylesheet_tag }}
 <div class="product_description_wrapper">
-    {% for block in section.blocks %}
+
     <div class="product_description_title">
-        {% if block.settings.title %}
+        {% if section.settings.title %}
         <div class="product_description_main_title">
-            {{ block.settings.title }}
+            {{ section.settings.title }}
             </div>
         {% endif %}
 
-        {% if block.settings.subtitle %}
+        {% if section.settings.subtitle %}
         <div class="product_description_subtitle">
-            {{ block.settings.subtitle }}
+            {{ section.settings.subtitle }}
         </div>
         {% endif %}
     </div>
 
-    {% if block.settings.image %}
+    {% if section.settings.image %}
     <div class="product_description_img">
-        {{ block.settings.image }}
+        {{ section.settings.image }}
     </div>
     {% endif %}
 
@@ -25,7 +25,7 @@
     <div class="product_description_btn">
 
     </div>
-    {% endfor %}
+
 </div>
 {% schema %}
 {
