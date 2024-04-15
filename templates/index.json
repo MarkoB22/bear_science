@@ -100,7 +100,9 @@
     "product_presentation_9yUw6y": {
       "type": "product-presentation",
       "settings": {
-        "title": "Title"
+        "title": "Title",
+        "subtitle": "Subtitle",
+        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-15_at_14.20.23.jpg"
       }
     },
     "traits_AFGyQX": {
