@@ -1765,6 +1765,10 @@ scroll-shadow {
   .mobile-height-500 {
     min-height: 500px; } }
 
+@media only screen and (max-width: 767px) {
+  .mobile-height-740 {
+    min-height: 740px; } }
+
 @media only screen and (min-width: 768px) {
   .desktop-height-full {
     height: calc(100vh - var(--announcement-height, 0px)); }
@@ -2090,19 +2094,16 @@ h6,
       .header.transparent--true:not(:hover):not(.is-sticky) .thb-full-menu > li > a:after {
         background: var(--color-header-transparent-text, #fff); }
     .header.transparent--true:not(:hover):not(.is-sticky) .thb-localization-forms.inside-header .select-arrow svg path {
-      stroke: var(--color-header-transparent-text, #fff); }
+      stroke: var(--color-header-transparent-text, #000); }
     .header.transparent--true:not(:hover):not(.is-sticky) .thb-localization-forms.inside-header .select select {
       color: var(--color-header-transparent-text, #000); }
-    .header svg path {
-      stroke: black;
-    }
     .header.transparent--true:not(:hover):not(.is-sticky) .thb-secondary-area .thb-item-count {
       background-color: var(--color-header-transparent-text, #fff);
       color: var(--color-header-icons, --color-accent); }
     .header.transparent--true:not(:hover):not(.is-sticky) .thb-secondary-area-item.thb-secondary-myaccount {
       color: var(--color-header-transparent-text, #fff); }
     .header.transparent--true:not(:hover):not(.is-sticky) svg path {
-      stroke: var(--color-header-transparent-text, #fff); }
+      stroke: var(--color-header-transparent-text, #000); }
     .header.transparent--true:not(:hover):not(.is-sticky) .mobile-toggle span {
       background: var(--color-header-transparent-text, #fff); }
   .header > .row > .columns {
