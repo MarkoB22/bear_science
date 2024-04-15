@@ -140,7 +140,14 @@
 							</div>
 						{%- endif -%}
 					{%- endif -%}
+					{% if block.settings.use_overlay %}
 					<div class="slideshow__slide-overlay" style="background: {{ block.settings.overlay_gradient }}"></div>
+					{% endif %}
+					{% if block.settings.opposing_content %}
+					<div class="slideshow__slide-opposing_content">
+						{{ block.settings.opposing_content }}
+					</div>
+					{% endif %}
 					<div class="slideshow__slide-inner content-{{ content_position }}">
 						<div class="slideshow__slide-content">
 							{% if block.settings.subheading != blank %}
@@ -365,21 +372,21 @@
 						"info": "Overrides the Video URL setting."
 					},
 					{
-			      "type": "header",
-			      "content": "Content"
-			    },
+						"type": "header",
+						"content": "Content"
+					},
 					{
 						"type": "text",
 						"id": "subheading",
 						"label": "Subheading",
 						"default": "Add a tagline"
 					},
-          {
-            "type": "textarea",
-            "id": "heading",
-            "label": "Heading",
-            "default": "Slide Heading"
-          },
+					{
+						"type": "textarea",
+						"id": "heading",
+						"label": "Heading",
+						"default": "Slide Heading"
+					},
 					{
 						"type": "select",
 						"id": "heading_size",
@@ -404,12 +411,12 @@
 						],
 						"default": "h3"
 					},
-          {
-            "type": "textarea",
-            "id": "content",
-            "label": "Description",
-            "default": "Add descriptive text for your slide here."
-          },
+					{
+						"type": "textarea",
+						"id": "content",
+						"label": "Description",
+						"default": "Add descriptive text for your slide here."
+					},
 					{
 						"type": "select",
 						"id": "description_size",
@@ -443,6 +450,12 @@
 							 { "value": "bottom-right", "label": "Bottom right" }
 						 ],
 						 "default": "middle-center"
+					},
+					{
+						"type": "textarea",
+						"id": "opposing_content",
+						"label": "Opposing content",
+						"default": "Lower your biological age"
 					},
 					{
 						"type": "select",
@@ -481,15 +494,20 @@
 						"label": "Content width"
 					},
 					{
-			      "type": "header",
-			      "content": "Colors"
-			    },
+						"type": "header",
+						"content": "Colors"
+					},
 					{
-		        "type": "color",
-		        "id": "overlay_color",
-		        "label": "Overlay",
-		        "default": "#000000"
-		      },
+						"type": "checkbox",
+						"id": "use_overlay",
+						"label": "Overlay on image for better text visibility"
+					},
+					{
+						"type": "color",
+						"id": "overlay_color",
+						"label": "Overlay",
+						"default": "#000000"
+					},
 					{
 						"type": "range",
 						"id": "overlay_opacity",

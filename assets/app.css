@@ -3930,7 +3930,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 /* BUTTONS */
 .button_type1 {
-  padding: 16px 27px;
+  padding: 15px 27px;
   border: 3px solid #6D7E60;
   background: transparent;
   transition: all ease-in-out .3s;
@@ -3946,7 +3946,17 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .button_type1:hover svg {
+  transition: all ease-in-out .3s;
   transform: scale(1.3333);
+}
+
+.button_type1 svg path {
+  transition: all ease-in-out .3s;
+  fill: black;
+}
+
+.button_type1:hover svg path {
+  fill: white;
 }
 
 .button_type2 {
