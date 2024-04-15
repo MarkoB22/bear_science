@@ -2066,7 +2066,7 @@ h6,
   .header.transparent--true {
     position: absolute;
     background: transparent;
-    border-bottom-color: rgba(255, 255, 255, 0.4); }
+    border-bottom-color: rgba(0, 0, 0); }
     .header.transparent--true:before {
       content: "";
       position: absolute;
@@ -2086,13 +2086,16 @@ h6,
       .header.transparent--true:not(:hover):not(.is-sticky) .logolink .logoimg--light {
         opacity: 1; }
     .header.transparent--true:not(:hover):not(.is-sticky) .thb-full-menu > li > a {
-      color: var(--color-header-transparent-text, #fff); }
+      color: var(--color-header-transparent-text, #000); }
       .header.transparent--true:not(:hover):not(.is-sticky) .thb-full-menu > li > a:after {
         background: var(--color-header-transparent-text, #fff); }
     .header.transparent--true:not(:hover):not(.is-sticky) .thb-localization-forms.inside-header .select-arrow svg path {
       stroke: var(--color-header-transparent-text, #fff); }
     .header.transparent--true:not(:hover):not(.is-sticky) .thb-localization-forms.inside-header .select select {
-      color: var(--color-header-transparent-text, #fff); }
+      color: var(--color-header-transparent-text, #000); }
+    .header svg path {
+      stroke: black;
+    }
     .header.transparent--true:not(:hover):not(.is-sticky) .thb-secondary-area .thb-item-count {
       background-color: var(--color-header-transparent-text, #fff);
       color: var(--color-header-icons, --color-accent); }
