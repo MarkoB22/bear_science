@@ -15,9 +15,9 @@
         {% endif %}
     </div>
 
-    {% if section.settings.image %}
+    {%- if section.settings.image -%}
     <div class="product_description_img">
-        {{ section.settings.image }}
+        {% assign image = section.settings.image %}
     </div>
     {% endif %}
 
@@ -44,9 +44,28 @@
             "default": "Subtitle"
         },
         {
-        "type": "image_picker",
-        "id": "image",
-        "label": "Upload an image"
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
+        }
+    ],    
+    "blocks": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Title"
+        },
+        {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "Subtitle"
+        },
+        {
+            "type": "image_picker",
+            "id": "image",
+            "label": "Image"
         }
     ],
     "presets": [
