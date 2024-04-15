@@ -4058,62 +4058,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   transform: scale(1.3333);
 }
 
-/* FONTS */
-.h1 {
-	font-size: calc(var(--font-heading-scale) * 2.375rem);
-	line-height: calc(var(--font-heading-line-height-scale) * 1.5);
-}
-
-.h2 {
-	font-size: calc(var(--font-heading-scale) * 2.125rem);
-	line-height: calc(var(--font-heading-line-height-scale) * 1.5);
-}
-
-.h3 {
-	font-size: calc(var(--font-heading-scale) * 2rem);
-	line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-}
-
-.h4 {
-	font-size: calc(var(--font-heading-scale) * 1.5rem);
-	line-height: calc(var(--font-heading-line-height-scale) * 1.5);
-}
-
-.h5 {
-	font-size: calc(var(--font-heading-scale) * 1.5rem);
-	line-height: calc(var(--font-heading-line-height-scale) * 1.5);
-}
-
-.h6 {
-	font-size: calc(var(--font-heading-scale) * 1.375rem);
-	line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-}
-
-.h7 {
-	font-size: calc(var(--font-heading-scale) * 1.125rem);
-	line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-}
-
-.h8 {
-	font-size: var(--font-heading-scale);
-	line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-}
-
-.h9 {
-	font-size: calc(var(--font-heading-scale) * 0.875rem);
-	line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-}
-
-.h10 {
-	font-size: calc(var(--font-heading-scale) * 0.75rem);
-	line-height: calc(var(--font-heading-line-height-scale) * 1.5);
-}
-
-.b1 {
-  font-size: calc(var(--font-heading-scale) * 0.875rem);
-  line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-}
-
+/* FONT WEIGHT */
 .f_light {
 	font-weight: 300;
 }
@@ -4130,71 +4075,164 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 	font-weight: 600;
 }
 
+/* LINE HEIGHTS */
+
+.lh-l {
+  line-height: 1.5;
+}
+
+.lh-m {
+  line-height: 1.22;
+}
+
+/* FONTS */
+.h1 {
+  font-size: calc(var(--font-heading-scale) * 2.38rem);
+}
+
+.h2 {
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
+}
+
+.h3 {
+  font-size: calc(var(--font-heading-scale) * 1.38rem);
+}
+
+.h4 {
+  font-size: calc(var(--font-heading-scale) * 1.13rem);
+}
+
+.h5 {
+  font-size: calc(var(--font-heading-scale) * 2rem);
+}
+
+.h6 {
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
+}
+
+.h7 {
+  font-size: calc(var(--font-heading-scale) * 1.38rem);
+}
+
+.h8 {
+  font-size: calc(var(--font-heading-scale) * 1.13rem);
+}
+
+.h9 {
+  font-size: calc(var(--font-heading-scale) * 0.88rem);
+}
+
+.h10 {
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
+}
+
+.h11 {
+  font-size: calc(var(--font-heading-scale) * 1.13rem);
+}
+
+.h12 {
+  font-size: calc(var(--font-heading-scale) * 0.88rem);
+}
+
+.h13 {
+  font-size: calc(var(--font-heading-scale) * 0.75rem);
+}
+
+.h14 {
+  font-size: calc(var(--font-heading-scale) * 0.88rem);
+}
+
+.h15 {
+  font-size: calc(var(--font-heading-scale) * 0.75rem);
+}
+
+.h16 {
+  font-size: calc(var(--font-heading-scale) * 0.88rem);
+}
+
+.h17 {
+  font-size: calc(var(--font-heading-scale) * 1rem);
+}
+
+
+/* .b1 {
+  font-size: calc(var(--font-heading-scale) * 0.875rem);
+  line-height: calc(var(--font-heading-line-height-scale) * 1.22);
+} */
+
 
 @media print, screen and (min-width: 1025px) {
-	.h1 {
-		font-size: calc(var(--font-heading-scale) * 4rem);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.5);
-	}
 
-	.h2 {
-		font-size: calc(var(--font-heading-scale) * 3rem);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.5);
-	}
-	
-	.h3 {
-		font-size: calc(var(--font-heading-scale) * 2.625rem);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.5);
-	}
-	
-	.h4 {
-		font-size: calc(var(--font-heading-scale) * 2.5rem);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-	}
-	
-	.h5 {
-		font-size: calc(var(--font-heading-scale) * 2rem);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-	}
+  .h1 {
+    font-size: calc(var(--font-heading-scale) * 4rem);
+  }
 
-	.h6 {
-		font-size: calc(var(--font-heading-scale) * 2rem);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-	}
-	
-	.h7 {
-		font-size: calc(var(--font-heading-scale) * 1.5rem);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.5);
-	}
+  .h2 {
+    font-size: calc(var(--font-heading-scale) * 3rem);
+  }
 
-	.h8 {
-		font-size: calc(var(--font-heading-scale) * 1.375rem);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-	}
-	
-	.h9 {
-		font-size: calc(var(--font-heading-scale) * 1.25rem);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-	}
-	
-	.h10 {
-		font-size: calc(var(--font-heading-scale) * 1.125rem);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-	}
-	
-	.h11 {
-		font-size: var(--font-heading-scale);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-	}
-	
-	.h12 {
-		font-size: calc(var(--font-heading-scale) * 0.875rem);
-		line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-	}
+  .h3 {
+    font-size: calc(var(--font-heading-scale) * 3rem);
+  }
+  .h4 {
+    font-size: calc(var(--font-heading-scale) * 2.5rem);
+  }
 
-  .b1 {
+  .h5 {
+    font-size: calc(var(--font-heading-scale) * 2.25rem);
+  }
+
+  .h6 {
+    font-size: calc(var(--font-heading-scale) * 2rem);
+  }
+
+  .h7 {
+    font-size: calc(var(--font-heading-scale) * 2rem);
+  }
+
+  .h8 {
+    font-size: calc(var(--font-heading-scale) * 2rem);
+  }
+
+  .h9 {
+    font-size: calc(var(--font-heading-scale) * 2rem);
+  }
+
+  .h10 {
     font-size: calc(var(--font-heading-scale) * 1.5rem);
   }
+
+  .h11 {
+    font-size: calc(var(--font-heading-scale) * 1.5rem);
+  }
+
+  .h12 {
+    font-size: calc(var(--font-heading-scale) * 1.5rem);
+  }
+
+  .h13 {
+    font-size: calc(var(--font-heading-scale) * 1.5rem);
+  }
+
+  .h14 {
+    font-size: calc(var(--font-heading-scale) * 1.25rem);
+  }
+
+  .h15 {
+    font-size: calc(var(--font-heading-scale) * 1.25rem);
+  }
+
+  .h16 {
+    font-size: calc(var(--font-heading-scale) * 1.125rem);
+  }
+
+  .h17 {
+    font-size: calc(var(--font-heading-scale) * 1rem);
+  }
+
+  /* .b1 {
+    font-size: calc(var(--font-heading-scale) * 1.5rem);
+  } */
 
 }
 
