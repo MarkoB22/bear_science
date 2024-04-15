@@ -15,11 +15,12 @@
         {% endif %}
     </div>
 
-    {%- if section.settings.image -%}
-    <div class="product_description_img">
-        {% assign image = section.settings.image %}
-    </div>
-    {% endif %}
+    {%- if section.settings.image != blank -%}
+        <div class="traits-image">
+            {% assign image = section.settings.image %}
+            {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
+        </div>
+    {%- endif -%}
 
 
     <div class="product_description_btn">
