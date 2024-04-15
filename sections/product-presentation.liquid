@@ -1,22 +1,24 @@
 {{ 'product-presentation.css' | asset_url | stylesheet_tag }}
 <div class="product_description_wrapper">
 
-    {% if section.settings.title %}
+    {% if block.settings.title %}
     <div class="product_description_title">
         <div class="product_description_main_title">
-
+            {{ block.settings.title }}
         </div>
 
         <div class="product_description_subtitle">
-
+            {{ block.settings.subtitle }}
         </div>
     </div>
     {% endif %}
 
-    
+    {% if block.settings.image %}
     <div class="product_description_img">
-
+        {{ block.settings.image }}
     </div>
+    {% endif %}
+
 
     <div class="product_description_btn">
 
@@ -34,8 +36,14 @@
             "default": "Title"
         },
         {
+            "type": "text",
+            "id": "subtitle",
+            "label": "Subtitle",
+            "default": "Subtitle"
+        },
+        {
         "type": "image_picker",
-        "id": "featured_image",
+        "id": "image",
         "label": "Upload an image"
         }
     ],
