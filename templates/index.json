@@ -16,7 +16,7 @@
             "content": "It’s hard to be nice if you don’t feel comfortable.",
             "description_size": "large",
             "content_position": "bottom-right",
-            "text_alignment": "center",
+            "text_alignment": "left",
             "content_size": "medium",
             "overlay_color": "#ffffff",
             "overlay_opacity": 30,
