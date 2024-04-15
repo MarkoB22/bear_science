@@ -16,7 +16,7 @@
     </div>
 
     {%- if section.settings.image != blank -%}
-        <div class="traits-image">
+        <div class="product_description_image">
             {% assign image = section.settings.image %}
             {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
             {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
@@ -24,8 +24,8 @@
     {%- endif -%}
 
 
-    <div class="product_description_btn">
-        <p>SEE ALL PRODUCTS</p>
+    <div class="product_description_btn button_type1 svg path">
+        See All Products
     </div>
 
 </div>
