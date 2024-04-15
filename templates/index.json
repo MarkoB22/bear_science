@@ -9,7 +9,7 @@
             "image": "shopify:\/\/shop_images\/Hero_section_desktop.jpg",
             "mobile_image": "shopify:\/\/shop_images\/Hero_section_slika_mobile.jpg",
             "slide_link": "",
-            "video_background": true,
+            "video_background": false,
             "video": "",
             "subheading": "",
             "heading": "Welcome to Bear-Science",
