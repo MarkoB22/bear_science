@@ -1,5 +1,4 @@
-{{- 'product-description.css' | asset_url | stylesheet_tag -}}
-
+{{ 'product-description.css' | asset_url | stylesheet_tag }}
 <div class="product_description_wrapper">
 
     {% if section.settings.title %}
@@ -25,27 +24,27 @@
 
 </div>
 {% schema %}
-    {
-        "name": "Product Description",
-        "settings": [
-            {
-                "type": "text",
-                "id": "title",
-                "label": "Title",
-                "default": "Title"
-            },
-            {
-            "type": "image_picker",
-            "id": "custom_image",
-            "label": "Upload an image"
-            }
-        ],
-        "presets": [
+{
+    "name": "Product Description",
+    "settings": [
         {
-            "name": "Custom Image",
-            "category": "Image"
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Title"
+        },
+        {
+        "type": "image_picker",
+        "id": "custom_image",
+        "label": "Upload an image"
         }
+    ],
+    "presets": [
+    {
+        "name": "Custom Image",
+        "category": "Image"
+    }
     ]
 
-    }
+}
 {% endschema %}  
