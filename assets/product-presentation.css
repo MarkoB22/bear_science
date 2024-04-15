@@ -1,3 +1,10 @@
+.product_description_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .product_description_title {
     display: flex;
     flex-direction: column;
