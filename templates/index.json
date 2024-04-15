@@ -6,7 +6,8 @@
         "164794776393e76b8e-2": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/stock_photo_squirrel.jpg",
+            "image": "shopify:\/\/shop_images\/Hero_section_desktop.jpg",
+            "mobile_image": "shopify:\/\/shop_images\/Hero_section_slika_mobile.jpg",
             "slide_link": "",
             "video_background": true,
             "video": "",
@@ -19,7 +20,7 @@
             "text_alignment": "left",
             "content_size": "medium",
             "overlay_color": "#ffffff",
-            "overlay_opacity": 30,
+            "overlay_opacity": 0,
             "overlay_gradient": "linear-gradient(180deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4) 100%)",
             "button_1_text": "SHOP COLLECTION",
             "button_1_link": "",
