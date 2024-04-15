@@ -18,6 +18,7 @@
     {%- if section.settings.image != blank -%}
         <div class="traits-image">
             {% assign image = section.settings.image %}
+            {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
             {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
         </div>
     {%- endif -%}
@@ -50,25 +51,6 @@
             "label": "Image"
         }
     ],    
-    "blocks": [
-        {
-            "type": "text",
-            "id": "title",
-            "label": "Title",
-            "default": "Title"
-        },
-        {
-            "type": "text",
-            "id": "subtitle",
-            "label": "Subtitle",
-            "default": "Subtitle"
-        },
-        {
-            "type": "image_picker",
-            "id": "image",
-            "label": "Image"
-        }
-    ],
     "presets": [
           {
             "name": "Product Presentation"
