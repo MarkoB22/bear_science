@@ -1,17 +1,19 @@
 {{ 'product-presentation.css' | asset_url | stylesheet_tag }}
 <div class="product_description_wrapper">
 
-    {% if block.settings.title %}
     <div class="product_description_title">
+        {% if block.settings.title %}
         <div class="product_description_main_title">
             {{ block.settings.title }}
-        </div>
+            </div>
+        {% endif %}
 
+        {% if block.settings.subtitle %}
         <div class="product_description_subtitle">
             {{ block.settings.subtitle }}
         </div>
+        {% endif %}
     </div>
-    {% endif %}
 
     {% if block.settings.image %}
     <div class="product_description_img">
