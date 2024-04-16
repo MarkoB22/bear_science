@@ -17,8 +17,8 @@
 
 .product_description_main_title {
     /* PROMJENITI FONTOVE */
-    font-size: 22px;
-    line-height: 26.82px;
+    /* font-size: 22px;
+    line-height: 26.82px; */
     color: black;
     text-align: center;
     margin-bottom: 18px;
@@ -26,8 +26,8 @@
 
 .product_description_subtitle {
     /* PROMJENITI FONTOVE */
-    font-size: 12px;
-    line-height: 14.63px;
+    /* font-size: 12px;
+    line-height: 14.63px; */
     padding: 0 4.2%;
 }
 
@@ -49,14 +49,14 @@
     }
 
     .product_description_main_title {
-        font-size: 48px;
-        line-height: 58.51px;
+        /* font-size: 48px;
+        line-height: 58.51px; */
         margin-bottom: 24px;
     }
 
     .product_description_subtitle {
-        font-size: 24px;
-        line-height: 29.26px;
+        /* font-size: 24px;
+        line-height: 29.26px; */
         padding: 0 16.89%;
     }
 
