@@ -3934,7 +3934,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 /* BUTTONS */
 .button_type1 {
-  padding: 15px 27px;
+  padding: 15px 26px;
   border: 3px solid #6D7E60;
   background: transparent;
   transition: all ease-in-out .3s;
@@ -3964,7 +3964,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .button_type2 {
-  padding: 18px;
+  padding: 15px 26px;
   background: #6D7E60;
   border: 2px solid #6D7E60;
   color: white;
@@ -3972,7 +3972,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }   
 
 .button_type2:hover {
-  background: white;
+  background: transparent;
   color: #6D7E60;
   border: 2px solid #6D7E60;
 }
