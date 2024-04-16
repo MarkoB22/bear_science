@@ -61,9 +61,15 @@
     }
 
     .product_description_image {
+        display: flex;
+        align-items: center;
         height: auto;
-        width: 75.55%;
+        width: 75.56%;
         margin-bottom: 84px;
+    }
+
+    .product_description_image > img {
+        flex-grow: 1;
     }
 
     .product_description_btn {
