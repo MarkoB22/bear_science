@@ -3,13 +3,13 @@
 
     <div class="product_description_title">
         {% if section.settings.title %}
-        <div class="product_description_main_title">
+        <div class="product_description_main_title h3 lh-sm">
             {{ section.settings.title }}
             </div>
         {% endif %}
 
         {% if section.settings.subtitle %}
-        <div class="product_description_subtitle">
+        <div class="product_description_subtitle h13 lh-sm">
             {{ section.settings.subtitle }}
         </div>
         {% endif %}
@@ -23,10 +23,10 @@
         </div>
     {%- endif -%}
 
-
-    <div class="product_description_btn button_type1 svg path">
-        See All Products
-    </div>
+    <a class="button_type1 h12 lh-sm" href="{{ section.settings.button_link }}">
+        <span>{{ section.settings.button_text_arrow }}</span>
+        {% render 'svg-icons' with 'button_arrow' %} 
+    </a>
 
 </div>
 {% schema %}
@@ -49,6 +49,17 @@
             "type": "image_picker",
             "id": "image",
             "label": "Image"
+        },
+        {
+            "type": "url",
+            "id": "button_link",
+            "label": "Button link"
+        },
+        {
+            "type": "text",
+            "id": "button_text_arrow",
+            "label": "Button text",
+            "default": "Button text"
         }
     ],    
     "presets": [

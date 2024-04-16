@@ -18,8 +18,8 @@
 .traits-title {
     text-transform: uppercase;
     height: 14.58%;
-    font-size: 24px;
-    line-height: 29.26px;
+    /* font-size: 24px;
+    line-height: 29.26px; */
     text-align: center;
     color: #04040499;
     margin-bottom: 8.04%;
@@ -41,8 +41,8 @@
 
 .traits-text {
     height: 36.18%;
-    font-size: 12px;
-    line-height: 15.6px;
+    /* font-size: 12px;
+    line-height: 15.6px; */
 }
 
 @media print, screen and (min-width: 1025px) {
@@ -59,8 +59,8 @@
 
     .traits-title {
         width: 23.88%;
-        font-size: 24px;
-        line-height: 29.26px;
+        /* font-size: 24px;
+        line-height: 29.26px; */
         margin-right: 5.83%;
         text-align: right;
         padding-left: 30px;
@@ -76,8 +76,8 @@
 
     .traits-text {
         width: 47.77%;
-        font-size: 20px;
-        line-height: 26px;
+        /* font-size: 20px;
+        line-height: 26px; */
     }
 
     .traits-text > p {
