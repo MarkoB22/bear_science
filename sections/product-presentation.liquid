@@ -23,10 +23,11 @@
         </div>
     {%- endif -%}
 
-
-    <div class="product_description_btn button_type1 svg path">  DODATI STRELICU NA BUTTON U DESKTOPU
+    <a class="button_type1 h12 lh-sm" href="{{ section.settings.button_link }}">
         See All Products
-    </div>
+        <span>{{ section.settings.button_text_arrow }}</span>
+        {% render 'svg-icons' with 'button_arrow' %} 
+    </a>
 
 </div>
 {% schema %}
