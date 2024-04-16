@@ -69,7 +69,6 @@
         min-width: 26.8%;
         text-align: right;
         word-wrap: normal;
-        margin-right: 2.84%;
         width: unset;
         height: unset;
         align-items: unset;
@@ -78,6 +77,7 @@
 
     .title_text_button-title-wrapper.title_position-left > .title_text_button-title {
         margin-right: 41px;
+        padding-left: 49px;
     }
 
     .title_text_button-title-wrapper.title_position-left > .vl {
