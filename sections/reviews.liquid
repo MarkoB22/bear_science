@@ -1,7 +1,5 @@
 {{ 'reviews.css' | asset_url | stylesheet_tag }}
 <div class="reviews_wrapper">
-    {% comment %} obrisi {% endcomment %}
-    {% assign image_count = 0 %} 
     {% for block in section.blocks %}
         {% if block.settings.title %}
             <div class="reviews_title h9 lh-sm">
@@ -9,19 +7,18 @@
             </div>
         {% endif %}
 
-        {% comment %} obrisi {% endcomment %}
-        {% if block.settings.review and image_count < section.settings.number_of_images %}
+        {% if block.settings.review %}
             <div class="reviews_single_review h11 lh-l">
-                
                 <div class="reviews-image">
-                    {% assign image = block.settings.image %}
-                    {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
-                    {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
-                </div>
+                        {% for i in (1..section.settings.number_of_images) %}
+                            {% assign image = block.settings.image %}
+                            {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+                            {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
+                        {% endfor %}
+                    </div>
                 {{ block.settings.review }}
                 {{ block.settings.customer_name }}
             </div>
-            {% assign image_count = image_count | plus: 1 %}
         {% endif %}
 
         {% if block.settings.leave_review %}
@@ -45,7 +42,6 @@
     {
         "name": "Reviews",
         "settings": [
-            // obrisi
             {
             "type": "range",
             "id": "number_of_images",
@@ -53,7 +49,7 @@
             "min": 1,
             "max": 5,
             "step": 1,
-            "default": 5
+            "default": 3
         }
         ],
         "blocks": [

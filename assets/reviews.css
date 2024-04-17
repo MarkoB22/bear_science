@@ -19,6 +19,11 @@
     text-align: center;
 }
 
+.reviews_image > .reviews-image:not(:last-child) {
+    margin-right: 7px;
+}
+
+
 .reviews_leave_review {
     padding: 24px 60.5px;
 }
