@@ -9,7 +9,11 @@
 
         {% if block.settings.review %}
             <div class="reviews_single_review h11 lh-l">
-                {{ block.settings.star_image }}
+                <div class="reviews-image">
+                    {% assign image = block.settings.image %}
+                    {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+                    {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
+                </div>
                 {{ block.settings.review }}
                 {{ block.settings.customer_name }}
             </div>
@@ -50,7 +54,7 @@
                     },
                     {
                         "type": "image_picker",
-                        "id": "star_image",
+                        "id": "image",
                         "label": "Image"
                     },
                     {
