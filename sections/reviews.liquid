@@ -9,6 +9,7 @@
 
         {% if block.settings.review %}
             <div class="reviews_single_review h11 lh-l">
+                {{ block.settings.image }}
                 {{ block.settings.review }}
                 {{ block.settings.customer_name }}
             </div>
@@ -46,6 +47,11 @@
                         "id": "title",
                         "label": "Title",
                         "default": "Title"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
                     },
                     {
                         "type": "richtext",

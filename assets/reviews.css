@@ -1,0 +1,24 @@
+.reviews_wrapper {
+    background-color: #6D7E60;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.reviews_title {
+    color: black;
+    padding: 17px 10px 16px 10px;
+    background-color: white;
+    border-top: 1px solid black;
+    letter-spacing: 2px;
+}
+
+.reviews_single_review {
+    padding: 44px 38px 45px 38px;
+    text-align: center;
+}
+
+.reviews_leave_review {
+    padding: 24px 60.5px;
+}
