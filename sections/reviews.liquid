@@ -16,16 +16,16 @@
                             {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
                         {% endfor %}
                     </div>
-                {{ block.settings.review }}
-                {{ block.settings.customer_name }}
+                <div class="reviews_review">{{ block.settings.review }}</div>
+                <div class="reviews_customer_name">{{ block.settings.customer_name }}</div>
             </div>
         {% endif %}
 
         {% if block.settings.leave_review %}
             <div class="reviews_leave_review h9 lh-sm">
-                {{ block.settings.leave_review }}
+                <div class="reviews_leave_review_text">{{ block.settings.leave_review }}</div>
 
-                <div class="review_button button_type3 h11 lh-sm">
+                <div class="review_button button_type5 h11 lh-sm">
                     <a href="{{ block.settings.button_link }}">
                         <span>{{ block.settings.button_text_arrow }}</span>
                     </a>
