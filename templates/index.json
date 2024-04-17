@@ -172,11 +172,21 @@
             "review": "<p>It is OK! Not special<\/p>",
             "customer_name": "Mike O."
           }
+        },
+        "text_F3AkDF": {
+          "type": "text",
+          "settings": {
+            "number_of_images": 4,
+            "image": "shopify:\/\/shop_images\/Vector_1.png",
+            "review": "<p>No chocolate. Everything great!<\/p>",
+            "customer_name": "Jenny W."
+          }
         }
       },
       "block_order": [
         "text_yjGBtt",
-        "text_qzQReK"
+        "text_qzQReK",
+        "text_F3AkDF"
       ],
       "settings": {
         "title": "Title",
