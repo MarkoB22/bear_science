@@ -102,7 +102,9 @@
       "settings": {
         "title": "Optimized Betaine (TMG) Powder",
         "subtitle": "Your Key to a Better Health and Performance",
-        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-15_at_14.20.23.jpg"
+        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-15_at_14.20.23.jpg",
+        "button_link": "",
+        "button_text_arrow": "Button text"
       }
     },
     "traits_AFGyQX": {
@@ -150,13 +152,24 @@
       "settings": {
       }
     },
-    "1662389920b1295ea2": {
-      "type": "spacer",
+    "reviews_KeyhVG": {
+      "type": "reviews",
+      "blocks": {
+        "text_yjGBtt": {
+          "type": "text",
+          "settings": {
+            "title": "Title",
+            "review": "<p>First Review<\/p>",
+            "leave_review": "Leave yourself a review",
+            "button_link": "",
+            "button_text_arrow": "Button text"
+          }
+        }
+      },
+      "block_order": [
+        "text_yjGBtt"
+      ],
       "settings": {
-        "spacer_mobile": 25,
-        "spacer_desktop": 80,
-        "border_separator": false,
-        "border_separator_full": false
       }
     },
     "16614195534fb74bc3": {
@@ -565,7 +578,7 @@
     "scrolling_text_eM6VzK",
     "product_presentation_9yUw6y",
     "traits_AFGyQX",
-    "1662389920b1295ea2",
+    "reviews_KeyhVG",
     "16614195534fb74bc3",
     "166143150135dd97e2",
     "1661512437fd38dfb2",
