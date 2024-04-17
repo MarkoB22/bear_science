@@ -10,7 +10,7 @@
             {% if block.settings.review %}
                 <div class="reviews_single_review h11 lh-l">
                     <div class="reviews-image">
-                            {% for i in (1..section.settings.number_of_images) %}
+                            {% for i in (1..block.settings.number_of_images) %}
                                 {% assign image = block.settings.image %}
                                 {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
                                 {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
@@ -43,15 +43,6 @@
         "name": "Reviews",
         "settings": [
             {
-                "type": "range",
-                "id": "number_of_images",
-                "label": "Number of Images",
-                "min": 1,
-                "max": 5,
-                "step": 1,
-                "default": 3
-            },
-            {
                 "type": "text",
                 "id": "title",
                 "label": "Title",
@@ -80,6 +71,15 @@
             "type": "text",
             "name": "Text",
             "settings": [
+                    {
+                        "type": "range",
+                        "id": "number_of_images",
+                        "label": "Number of Images",
+                        "min": 1,
+                        "max": 5,
+                        "step": 1,
+                        "default": 3
+                    },
                     {
                         "type": "image_picker",
                         "id": "image",
