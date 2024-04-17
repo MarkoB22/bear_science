@@ -8,10 +8,12 @@
 
 .reviews_title {
     color: black;
-    padding: 17px 10px 16px 10px;
+    width: 100%;
+    padding: 17px 0px 16px 0px;
     background-color: white;
     border-top: 1px solid black;
     letter-spacing: 2px;
+    text-align: center;
 }
 
 .reviews_single_review {
