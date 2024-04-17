@@ -163,20 +163,10 @@
             "review": "<p>Sehr schnelle Lieferung, gerne wieder!<\/p>",
             "customer_name": "John C."
           }
-        },
-        "text_pxJJ6e": {
-          "type": "text",
-          "settings": {
-            "number_of_images": 3,
-            "image": "shopify:\/\/shop_images\/Vector_1.png",
-            "review": "<p>OK! But product is not what I thought it would be.<\/p>",
-            "customer_name": "Mike K."
-          }
         }
       },
       "block_order": [
-        "text_yjGBtt",
-        "text_pxJJ6e"
+        "text_yjGBtt"
       ],
       "settings": {
         "title": "Title",
