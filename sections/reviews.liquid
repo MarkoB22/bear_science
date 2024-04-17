@@ -2,22 +2,23 @@
 <div class="reviews_wrapper">
     {% for block in section.blocks %}
         {% if block.settings.title %}
-            <div class="reviews_title">
+            <div class="reviews_title h9 lh-sm">
                 {{ block.settings.title }}
             </div>
         {% endif %}
 
         {% if block.settings.review %}
-            <div class="reviews_single_review">
+            <div class="reviews_single_review h11 lh-l">
                 {{ block.settings.review }}
+                {{ block.settings.customer_name }}
             </div>
         {% endif %}
 
         {% if block.settings.leave_review %}
-            <div class="reviews_leave_review">
+            <div class="reviews_leave_review h9 lh-sm">
                 {{ block.settings.leave_review }}
 
-                <div class="review_button button_type3 h10 lh-sm">
+                <div class="review_button button_type3 h11 lh-sm">
                     <a href="{{ block.settings.button_link }}">
                         <span>{{ block.settings.button_text_arrow }}</span>
                     </a>
@@ -57,6 +58,12 @@
                         "id": "leave_review",
                         "label": "Leave Review",
                         "default": "Leave yourself a review"
+                    },
+                    {
+                        "type": "text",
+                        "id": "customer_name",
+                        "label": "Customer name",
+                        "default": "John C."
                     },
                     {
                         "type": "url",
