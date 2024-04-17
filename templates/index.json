@@ -159,6 +159,7 @@
           "type": "text",
           "settings": {
             "title": "WHAT OUR CUSTOMERS SAY ABOUT US",
+            "image": "shopify:\/\/shop_images\/Vector.svg",
             "review": "<p>Sehr schnelle Lieferung, gerne wieder!<\/p>",
             "leave_review": "Leave a review yourself",
             "customer_name": "John C.",
