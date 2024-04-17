@@ -159,10 +159,11 @@
           "type": "text",
           "settings": {
             "title": "Title",
-            "review": "<p>First Review<\/p>",
-            "leave_review": "Leave yourself a review",
+            "review": "<p>Sehr schnelle Lieferung, gerne wieder!<\/p>",
+            "leave_review": "Leave a review yourself",
+            "customer_name": "John C.",
             "button_link": "#",
-            "button_text_arrow": "Button text"
+            "button_text_arrow": "Leave a review"
           }
         }
       },
