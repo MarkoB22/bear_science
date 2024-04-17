@@ -161,7 +161,7 @@
             "title": "Title",
             "review": "<p>First Review<\/p>",
             "leave_review": "Leave yourself a review",
-            "button_link": "",
+            "button_link": "#",
             "button_text_arrow": "Button text"
           }
         }
