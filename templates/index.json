@@ -158,20 +158,31 @@
         "text_yjGBtt": {
           "type": "text",
           "settings": {
-            "title": "WHAT OUR CUSTOMERS SAY ABOUT US",
+            "number_of_images": 5,
             "image": "shopify:\/\/shop_images\/Vector.svg",
             "review": "<p>Sehr schnelle Lieferung, gerne wieder!<\/p>",
-            "leave_review": "Leave a review yourself",
-            "customer_name": "John C.",
-            "button_link": "#",
-            "button_text_arrow": "Leave a review"
+            "customer_name": "John C."
+          }
+        },
+        "text_pxJJ6e": {
+          "type": "text",
+          "settings": {
+            "number_of_images": 3,
+            "image": "shopify:\/\/shop_images\/Vector_1.png",
+            "review": "<p>OK! But product is not what I thought it would be.<\/p>",
+            "customer_name": "Mike K."
           }
         }
       },
       "block_order": [
-        "text_yjGBtt"
+        "text_yjGBtt",
+        "text_pxJJ6e"
       ],
       "settings": {
+        "title": "Title",
+        "button_link": "",
+        "button_text_arrow": "Button text",
+        "leave_review": "Leave yourself a review"
       }
     },
     "16614195534fb74bc3": {
