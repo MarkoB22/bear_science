@@ -16,6 +16,11 @@
     text-align: center;
 }
 
+.reviews_all_reviews {
+    display: flex;
+    flex-direction: column;
+}
+
 .reviews_single_review {
     padding: 44px 38px 45px 38px;
     text-align: center;
@@ -65,6 +70,45 @@
 
 .review_button > svg {
     margin-left: 27px;
-    fill: white;
-    color: white;
+    stroke: white;
+}
+
+@media print, screen and (min-width: 1025px) {
+
+    .reviews_all_reviews {
+        display: flex;
+        flex-direction: row;
+        padding: 61.5px 4.44%;
+        border-bottom: 1px solid white;
+    }
+
+    .reviews_all_reviews > .reviews_single_review:not(:last-child) {
+        border-right: 1px solid white;
+    }
+
+    .reviews_single_review {
+        padding: 0 74.5px;
+        border-bottom: unset
+    }
+
+    .reviews_review {
+        text-align: left;
+    }
+
+    .reviews_customer_name {
+        text-align: left;
+    }
+
+    .reviews_leave_review {
+        display: flex;
+        flex-direction: row;
+        padding: 64px 4.44%;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .reviews_leave_review_text {
+        margin-bottom: unset;
+    }
+
 }

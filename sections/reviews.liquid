@@ -6,21 +6,23 @@
             </div>
         {% endif %}
 
-        {% for block in section.blocks %}
-            {% if block.settings.review %}
-                <div class="reviews_single_review h11 lh-l">
-                    <div class="reviews-image">
-                            {% for i in (1..block.settings.number_of_images) %}
-                                {% assign image = block.settings.image %}
-                                {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
-                                {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
-                            {% endfor %}
-                        </div>
-                    <div class="reviews_review">{{ block.settings.review }}</div>
-                    <div class="reviews_customer_name">{{ block.settings.customer_name }}</div>
-                </div>
-            {% endif %}
-        {% endfor %}
+        <div class="reviews_all_reviews">
+            {% for block in section.blocks %}
+                {% if block.settings.review %}
+                    <div class="reviews_single_review h11 lh-l">
+                        <div class="reviews-image">
+                                {% for i in (1..block.settings.number_of_images) %}
+                                    {% assign image = block.settings.image %}
+                                    {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+                                    {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
+                                {% endfor %}
+                            </div>
+                        <div class="reviews_review">{{ block.settings.review }}</div>
+                        <div class="reviews_customer_name h17 lh-l">{{ block.settings.customer_name }}</div>
+                    </div>
+                {% endif %}
+            {% endfor %}
+        </div>
 
         {% if section.settings.leave_review %}
             <div class="reviews_leave_review h9 lh-sm">
