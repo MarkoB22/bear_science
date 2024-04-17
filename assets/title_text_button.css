@@ -59,12 +59,14 @@
         padding: 94px 128px;
         display: flex;
         flex-direction: row;
+        justify-content: center;
     }
 
     .title_text_button-wrapper.title_position-right  {
         padding: 94px 128px;
         display: flex;
         flex-direction: row-reverse;
+        justify-content: center;
     }
  
     .title_text_button-title-wrapper.title_position-left  {
@@ -91,12 +93,10 @@
 
     .title_text_button-title-wrapper.title_position-left > .title_text_button-title {
         margin-right: 41px;
-        padding-left: 86px;
     }
 
     .title_text_button-title-wrapper.title_position-right > .title_text_button-title {
         margin-left: 18px;
-        padding-right: 86px;
         text-align: left;
     }
 
