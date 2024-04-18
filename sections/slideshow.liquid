@@ -163,14 +163,14 @@
 							{% endif %}
 							{% if block.settings.button_1_text != blank %}
 							<div class="button-overflow-container">
-								<a class="button_type1 h12 testTest white{% if block.settings.button_1_outline %} outline{%- endif %}" href="{{ block.settings.button_1_link }}" role="button" title="{{ block.settings.button_1_text | escape }}"><span>{{ block.settings.button_1_text }}</span>
+								<a class="button_type1 h12 f_regular white{% if block.settings.button_1_outline %} outline{%- endif %}" href="{{ block.settings.button_1_link }}" role="button" title="{{ block.settings.button_1_text | escape }}"><span>{{ block.settings.button_1_text }}</span>
 									{% render 'svg-icons' with 'button_arrow' %}
 								</a>
 							</div>
 			        {% endif %}
 							{% if block.settings.button_2_text != blank %}
 							<div class="button-overflow-container">
-								<a class="button_type2 h12 white{% if block.settings.button_2_outline %} outline{%- endif %}" href="{{ block.settings.button_2_link }}" role="button" title="{{ block.settings.button_2_text | escape }}"><span>{{ block.settings.button_2_text }}</span></a>
+								<a class="button_type2 h12 f_regular white{% if block.settings.button_2_outline %} outline{%- endif %}" href="{{ block.settings.button_2_link }}" role="button" title="{{ block.settings.button_2_text | escape }}"><span>{{ block.settings.button_2_text }}</span></a>
 							</div>
 			        {% endif %}
 							{% if block.settings.slide_link != blank %}

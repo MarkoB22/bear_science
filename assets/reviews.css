@@ -64,15 +64,6 @@
     color: white;
 }
 
-.review_button > a {
-    color: white;
-}
-
-.review_button > svg {
-    margin-left: 27px;
-    stroke: white;
-}
-
 @media print, screen and (min-width: 1025px) {
 
     .reviews_all_reviews {

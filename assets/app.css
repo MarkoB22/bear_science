@@ -4046,8 +4046,8 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .button_type5 {
-  padding: 18px;
-  border: 3px solid white;
+  padding: 16px 15px;
+  border: 2px solid white;
   background: #6D7E60;
   color: white;
   transition: all ease-in-out .3s;
@@ -4058,8 +4058,23 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   color: #6D7E60;
 }
 
+.button_type5 svg path {
+  fill: white;
+}
+
+.button_type5 svg {
+  margin-left: 24px;
+  transform: scale(1);
+  transition: all ease-in-out .3s;
+}
+
 .button_type5:hover svg {
   transform: scale(1.3333);
+  margin-left: 24px;
+}
+
+.button_type5:hover svg path {
+  fill: #6D7E60;
 }
 
 /* FONT WEIGHT */
