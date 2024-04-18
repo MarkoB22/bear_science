@@ -49,6 +49,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top: 1px solid white;
+    width: 100%;
 }
 
 .reviews_leave_review_text {
@@ -64,10 +66,14 @@
     color: white;
 }
 
-/* OVO JE ZA SLIDER */
-.carousel__slide {
+.flickity-viewport {
+    height: 254px !important;
+    width: 368px;
+}
 
-  }
+.flickity-page-dots {
+    display: none;
+}
 
 @media print, screen and (min-width: 1025px) {
 
