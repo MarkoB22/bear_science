@@ -64,6 +64,11 @@
     color: white;
 }
 
+/* OVO JE ZA SLIDER */
+.carousel__slide {
+
+  }
+
 @media print, screen and (min-width: 1025px) {
 
     .reviews_all_reviews {
