@@ -1,0 +1,36 @@
+{{  'blog-title.css' | asset_url | stylesheet_tag }}
+<div class="blog_title_wrapper">
+
+    <div class="blog_title_title">
+        {{ section.settings.title }}
+    </div>
+
+    <div class="blog_title_text">
+        {{ section.settings.text }}
+    </div>
+
+</div>
+{% schema %}
+    {
+        "name": "Blog Title",
+        "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title",
+                        "default": "Title"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "Text",
+                        "default": "<p>Text text text. Text text text text.</p>"
+                    }
+                ],
+        "presets": [
+          {
+            "name": "Blog Title"
+          }
+        ]
+    }
+{% endschema %}   
