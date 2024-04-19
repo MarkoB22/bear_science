@@ -12,6 +12,8 @@
     font-size: 38px;
     line-height: 57px;
     margin-bottom: 28px;
+    border-left: 1px solid white;
+    padding-left: 2.73%;
 }
 
 .blog_title_text {
