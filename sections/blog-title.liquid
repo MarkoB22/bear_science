@@ -1,13 +1,18 @@
 {{  'blog-title.css' | asset_url | stylesheet_tag }}
 <div class="blog_title_wrapper">
 
-    <div class="blog_title_title">
-        {{ section.settings.title }}
-    </div>
+    {% if section.settings.title %}
+        <div class="blog_title_title">
+            {% comment %} <div class="vl"></div> {% endcomment %}
+            {{ section.settings.title }}
+        </div>
+    {% endif %}
 
-    <div class="blog_title_text">
-        {{ section.settings.text }}
-    </div>
+    {% if section.settings.text %}
+        <div class="blog_title_text">
+            {{ section.settings.text }}
+        </div>
+    {% endif %}
 
 </div>
 {% schema %}
