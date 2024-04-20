@@ -16,7 +16,7 @@
 }
 
 .signup_email {
-    width: 153px;
+    width: 49.35%;
     padding-bottom: 10px;
     border-bottom: 1px solid black;
 }
@@ -27,8 +27,21 @@
     padding: 17px 16px;
 }
 
+.signup_bear_logo {
+    display: none;
+}
+
 @media print, screen and (min-width: 1025px) {
 
+    .signup_email_button {
+        width: 124px;
+        height: 57px;
+        padding: 14px;
+    }
 
+    .signup_bear_logo {
+        display: block;
+    }
 
+    
 }
