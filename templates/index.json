@@ -208,7 +208,8 @@
         "text": "<p>Sign up for the newsletter and receive a <strong>10€<\/strong> voucher as a thank you!<\/p>",
         "email_text": "Email Address",
         "button_link": "#",
-        "button_text_arrow": "Send"
+        "button_text_arrow": "Send",
+        "image": "shopify:\/\/shop_images\/Logo_-_Newsletter_section.png"
       }
     },
     "16614195534fb74bc3": {
