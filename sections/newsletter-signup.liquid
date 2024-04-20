@@ -24,15 +24,13 @@
         {% endif %}
     </div>
 
-    <div class="signup_logo">
-        {%- if section.settings.image != blank -%}
-            <div class="signup_bear_logo">
-                {% assign image = section.settings.image %}
-                {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
-                {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
-            </div>
-        {%- endif -%}
-    </div>
+    {%- if section.settings.image != blank -%}
+        <div class="signup_bear_logo">
+            {% assign image = section.settings.image %}
+            {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+            {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
+        </div>
+    {%- endif -%}
 
 </div>
 {% schema %}

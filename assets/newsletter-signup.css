@@ -33,6 +33,22 @@
 
 @media print, screen and (min-width: 1025px) {
 
+    .signup_wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 124px 4.44% 47px 7.33%;
+    }
+
+    .signup_only_text {
+        margin-bottom: 194px;
+        width: 47.54%;
+    }
+
+    .signup_text {
+        margin-bottom: 80px;
+    }
+
     .signup_email_button {
         width: 124px;
         height: 57px;
@@ -43,5 +59,20 @@
         display: block;
     }
 
-    
+    .signup_email_wrapper {
+        padding: 10px 2.01%;
+        width: 82.12%;
+    }
+
+    .signup_bear_logo {
+        width: 52.44%;
+        height: auto;
+        margin-top: 168px;
+    }
+
+    .signup_bear_logo > img {
+        width: 100%;
+        height: 100%;
+    }
+
 }
