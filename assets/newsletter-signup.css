@@ -1,0 +1,34 @@
+.signup_wrapper {
+    padding: 68px 7.65%;
+    border-bottom: 1px solid black;
+}
+
+.signup_text {
+    margin-bottom: 34px;
+}
+
+.signup_email_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 3.25%;
+}
+
+.signup_email {
+    width: 153px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.signup_email_button {
+    width: 113px;
+    height: 56px;
+    padding: 17px 16px;
+}
+
+@media print, screen and (min-width: 1025px) {
+
+
+
+}
