@@ -65,6 +65,15 @@
     height: 100%;
 }
 
+.footer_feature_title {
+    display: none;
+}
+
+.footer_feature_wrapper > .footer_feature_main:nth-child(4), .footer_feature_wrapper > .footer_feature_main:nth-child(5) {
+    display: flex;
+    flex-direction: row;
+} 
+
 .footer_feature_footer {
     margin-top: 48px;
     padding: 19px 55.5px;

@@ -28,11 +28,9 @@
             {% endif %}
 
             <div class="footer_feature_socials">
-                {% if block.settings.image_socials != blank %}
+                {% if block.settings.button_link %}
                     <div class="footer_feature_image_socials">
-                        {% assign image = block.settings.image_socials %}
-                        {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
-                        {% render 'responsive-image', image: image, sizes: master_width, retina: 1 %}
+                        <a href="{{ block.settings.button_link }}"></a>
                     </div>
                 {% endif %}
             </div>
@@ -85,9 +83,9 @@
                         "default": "<p>Text text text. Text text text text.</p>"
                     },
                     {
-                        "type": "image_picker",
-                        "id": "image_socials",
-                        "label": "Image Socials"
+                        "type": "url",
+                        "id": "button_link",
+                        "label": "Button link"
                     }
                 ]
             }
