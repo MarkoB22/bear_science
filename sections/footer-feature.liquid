@@ -16,8 +16,14 @@
                 <div class="footer_feature_site_menu">
                     <div class="footer_feature_title">{{ block.settings.title }}</div>
                     <div class="footer_feature_text_wrapper">
+
+                    {% if block.settings.text_left %}
                         <div class="footer_feature_text_left">{{ block.settings.text_left }}</div>
+                    {% endif %}
+
+                    {% if block.settings.text_right %}
                         <div class="footer_feature_text_right">{{ block.settings.text_right }}</div>
+                    {% endif %}
                     </div>
                 </div>
             {% endif %}
