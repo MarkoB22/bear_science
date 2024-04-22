@@ -13,17 +13,16 @@
             {% endif %}
 
             {% if block.settings.title %}
-                <div class="footer_feature_site_menu">
-                    <div class="footer_feature_title">{{ block.settings.title }}</div>
-                    <div class="footer_feature_text_wrapper">
+                <div class="footer_feature_block_menu">
+                    <div class="footer_feature_title h11 lh-sm">{{ block.settings.title }}</div>
+                    <div class="footer_feature_text_wrapper h16 lh-sm">
+                        {% if block.settings.text_left %}
+                            <div class="footer_feature_text_left">{{ block.settings.text_left }}</div>
+                        {% endif %}
 
-                    {% if block.settings.text_left %}
-                        <div class="footer_feature_text_left">{{ block.settings.text_left }}</div>
-                    {% endif %}
-
-                    {% if block.settings.text_right %}
-                        <div class="footer_feature_text_right">{{ block.settings.text_right }}</div>
-                    {% endif %}
+                        {% if block.settings.text_right %}
+                            <div class="footer_feature_text_right">{{ block.settings.text_right }}</div>
+                        {% endif %}
                     </div>
                 </div>
             {% endif %}
@@ -41,9 +40,9 @@
         </div>
     {% endfor %}
 
-    <div class="footer_feature_footer">
-        <div class="footer_feature_footer_text">{{ section.settings.text }}</div>
-    </div>
+    {% if section.settings.text %}
+        <div class="footer_feature_footer h18 lh-l">{{ section.settings.text }}</div>
+    {% endif %}
 
 </div>
 {% schema %}
@@ -63,20 +62,15 @@
             "name": "Text",
             "settings": [
                     {
+                        "type": "image_picker",
+                        "id": "image_logo",
+                        "label": "Image Logo"
+                    },
+                    {
                         "type": "text",
                         "id": "title",
                         "label": "Block Title",
                         "default": "Block Title"
-                    },
-                    {
-                        "type": "image_picker",
-                        "id": "image_logo",
-                        "label": "Image"
-                    },
-                    {
-                        "type": "image_picker",
-                        "id": "image_socials",
-                        "label": "Image"
                     },
                     {
                         "type": "richtext",
@@ -89,6 +83,11 @@
                         "id": "text_right",
                         "label": "Text",
                         "default": "<p>Text text text. Text text text text.</p>"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image_socials",
+                        "label": "Image Socials"
                     }
                 ]
             }
