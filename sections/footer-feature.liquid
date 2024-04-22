@@ -29,8 +29,8 @@
             {% endif %}
 
             <div class="footer_feature_socials">
-                {% if block.settings.title %}
-                    <div class="footer_feature_title">{{ block.settings.title }}</div>
+                {% if block.settings.socials_title %}
+                    <div class="footer_feature_title">{{ block.settings.socials_title }}</div>
                 {% endif %}
                 {% if block.settings.image_socials != blank %}
     
@@ -69,6 +69,12 @@
                     {
                         "type": "text",
                         "id": "title",
+                        "label": "Title",
+                        "default": "Title"
+                    },
+                    {
+                        "type": "text",
+                        "id": "socials_title",
                         "label": "Title",
                         "default": "Title"
                     },
