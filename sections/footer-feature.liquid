@@ -28,17 +28,19 @@
                 </div>
             {% endif %}
 
-            {% if block.settings.image_socials != blank %}
+            <div class="footer_feature_socials">
                 {% if block.settings.title %}
                     <div class="footer_feature_title">{{ block.settings.title }}</div>
                 {% endif %}
-
-                <div class="footer_feature_socials">
-                    {% assign image = block.settings.image_socials %}
-                    {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
-                    {% render 'responsive-image', image: image, sizes: master_width, retina: 1 %}
-                </div>
-            {% endif %}
+                {% if block.settings.image_socials != blank %}
+    
+                    <div class="footer_feature_image_socials">
+                        {% assign image = block.settings.image_socials %}
+                        {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+                        {% render 'responsive-image', image: image, sizes: master_width, retina: 1 %}
+                    </div>
+                {% endif %}
+            </div>
 
         </div>
     {% endfor %}
