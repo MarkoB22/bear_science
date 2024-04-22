@@ -219,7 +219,7 @@
           "type": "text",
           "settings": {
             "title": "",
-            "socials_title": "Title",
+            "socials_title": "",
             "image_logo": "shopify:\/\/shop_images\/Logo_-_Footer.png",
             "text_left": "",
             "text_right": ""
