@@ -16,7 +16,7 @@
         "text_YH9rDj": {
           "type": "text",
           "settings": {
-            "column_size": "small",
+            "column_size": "medium",
             "title": "Contact Us",
             "text": "<p>Tel: +49 (0)7152 9065 9928<br\/>info@vestur.de<br\/>Eltinger Str. 56<br\/>71229 Leonberg<\/p>",
             "text_size": "small",
