@@ -12,6 +12,8 @@
     "outline_button_label": "#151515",
     "color_dots": "#151515",
     "section_spacing_desktop": 90,
+    "social_facebook_link": "https:\/\/facebook.com\/",
+    "social_instagram_link": "https:\/\/instagram.com\/",
     "product_aspect_ratio": "adapt",
     "sections": {
       "announcement-bar": {
