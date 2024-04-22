@@ -28,10 +28,14 @@
             {% endif %}
 
             <div class="footer_feature_socials">
-                {% if block.settings.button_link %}
-                    <div class="footer_feature_image_socials">
-                        <a href="{{ block.settings.button_link }}"></a>
-                    </div>
+                {% if block.settings.facebook_url %}
+                    {% render 'svg-icons' with 'facebook' %}
+                {% endif %}
+                {% if block.settings.instagram_url %}
+                    {% render 'svg-icons' with 'instagram' %}
+                {% endif %}
+                {% if block.settings.twitter_url %}
+                    {% render 'svg-icons' with 'twitter' %}
                 {% endif %}
             </div>
 
