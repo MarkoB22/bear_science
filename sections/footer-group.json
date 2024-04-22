@@ -50,8 +50,8 @@
       "settings": {
         "full_width": true,
         "copyright_text": "All rights reserved.",
-        "show_language_switcher": true,
-        "show_currency_switcher": true,
+        "show_language_switcher": false,
+        "show_currency_switcher": false,
         "show_payment_icons": true,
         "enable_follow_on_shop": true
       }
