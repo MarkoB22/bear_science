@@ -219,6 +219,7 @@
           "type": "text",
           "settings": {
             "title": "",
+            "socials_title": "Title",
             "image_logo": "shopify:\/\/shop_images\/Logo_-_Footer.png",
             "text_left": "",
             "text_right": ""
@@ -228,6 +229,7 @@
           "type": "text",
           "settings": {
             "title": "SITE MENU",
+            "socials_title": "",
             "text_left": "<p>Home<\/p><p>About us<\/p><p>Products<\/p>",
             "text_right": "<p>Privacy policy<\/p><p>Cancellation policy<\/p><p>Shipping information<\/p>"
           }
@@ -236,6 +238,7 @@
           "type": "text",
           "settings": {
             "title": "CONTACT US",
+            "socials_title": "",
             "text_left": "<p>Tel: +49 (0)7152 9065 <\/p><p>9928info@vestur.de<\/p><p>Eltinger Str. 56<\/p><p>71229 Leonberg<\/p>",
             "text_right": ""
           }
