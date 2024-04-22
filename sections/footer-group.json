@@ -13,14 +13,6 @@
             "menu": "footer"
           }
         },
-        "a09a8a35-bedc-4119-aa04-3ce886faba9d": {
-          "type": "menu",
-          "settings": {
-            "column_size": "medium",
-            "title": "‎",
-            "menu": "footer-menu-2"
-          }
-        },
         "text_YH9rDj": {
           "type": "text",
           "settings": {
@@ -43,7 +35,6 @@
       },
       "block_order": [
         "401e3886-6cb7-4742-8fda-45a0d97a26a3",
-        "a09a8a35-bedc-4119-aa04-3ce886faba9d",
         "text_YH9rDj",
         "social_ndF4gf"
       ],
