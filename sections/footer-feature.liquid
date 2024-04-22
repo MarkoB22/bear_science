@@ -16,8 +16,8 @@
                 <div class="footer_feature_site_menu">
                     <div class="footer_feature_title">{{ block.settings.title }}</div>
                     <div class="footer_feature_text_wrapper">
-                        <div class="footer_feature_text_left">{{ block.settings.text }}</div>
-                        <div class="footer_feature_text_right">{{ block.settings.text }}</div>
+                        <div class="footer_feature_text_left">{{ block.settings.text_left }}</div>
+                        <div class="footer_feature_text_right">{{ block.settings.text_right }}</div>
                     </div>
                 </div>
             {% endif %}
@@ -76,7 +76,13 @@
                     },
                     {
                         "type": "richtext",
-                        "id": "text",
+                        "id": "text_left",
+                        "label": "Text",
+                        "default": "<p>Text text text. Text text text text.</p>"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text_right",
                         "label": "Text",
                         "default": "<p>Text text text. Text text text text.</p>"
                     }
