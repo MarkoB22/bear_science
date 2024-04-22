@@ -221,7 +221,8 @@
             "image_logo": "shopify:\/\/shop_images\/Logo_-_Footer.png",
             "title": "",
             "text_left": "",
-            "text_right": ""
+            "text_right": "",
+            "button_link": ""
           }
         },
         "text_mk8bJt": {
@@ -229,7 +230,8 @@
           "settings": {
             "title": "SITE MENU",
             "text_left": "<p>Home<\/p><p>About us<\/p><p>Products<\/p>",
-            "text_right": "<p>Privacy policy<\/p><p>Cancellation policy<\/p><p>Shipping information<\/p>"
+            "text_right": "<p>Privacy policy<\/p><p>Cancellation policy<\/p><p>Shipping information<\/p>",
+            "button_link": ""
           }
         },
         "text_LFf9NA": {
@@ -237,25 +239,17 @@
           "settings": {
             "title": "CONTACT US",
             "text_left": "<p>Tel: +49 (0)7152 9065 <\/p><p>9928info@vestur.de<\/p><p>Eltinger Str. 56<\/p><p>71229 Leonberg<\/p>",
-            "text_right": ""
+            "text_right": "",
+            "button_link": ""
           }
         },
-        "text_Mi9fUn": {
+        "text_P8dd3b": {
           "type": "text",
           "settings": {
             "title": "",
             "text_left": "",
             "text_right": "",
-            "image_socials": "shopify:\/\/shop_images\/Vector_2.png"
-          }
-        },
-        "text_dRfXhy": {
-          "type": "text",
-          "settings": {
-            "title": "SOCIAL MEDIA",
-            "text_left": "",
-            "text_right": "",
-            "image_socials": "shopify:\/\/shop_images\/Vector_3.png"
+            "button_link": "https:\/\/www.facebook.com\/"
           }
         }
       },
@@ -263,8 +257,7 @@
         "text_kFJxeG",
         "text_mk8bJt",
         "text_LFf9NA",
-        "text_Mi9fUn",
-        "text_dRfXhy"
+        "text_P8dd3b"
       ],
       "settings": {
         "text": "<p>2024 by Bear-Science. All Rights Reserved<\/p>"
