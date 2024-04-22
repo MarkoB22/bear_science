@@ -214,6 +214,19 @@
     },
     "footer_feature_wTn9C8": {
       "type": "footer-feature",
+      "blocks": {
+        "text_kFJxeG": {
+          "type": "text",
+          "settings": {
+            "title": "",
+            "image_logo": "shopify:\/\/shop_images\/Logo_-_Footer.png",
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_kFJxeG"
+      ],
       "settings": {
         "text": "<p>2024 by Bear-Science. All Rights Reserved<\/p>"
       }
