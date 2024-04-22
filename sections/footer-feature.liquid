@@ -29,11 +29,7 @@
             {% endif %}
 
             <div class="footer_feature_socials">
-                {% if block.settings.socials_title %}
-                    <div class="footer_feature_title">{{ block.settings.socials_title }}</div>
-                {% endif %}
                 {% if block.settings.image_socials != blank %}
-    
                     <div class="footer_feature_image_socials">
                         {% assign image = block.settings.image_socials %}
                         {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
@@ -71,12 +67,6 @@
                         "id": "title",
                         "label": "Block Title",
                         "default": "Block Title"
-                    },
-                    {
-                        "type": "text",
-                        "id": "socials_title",
-                        "label": "Social Networks Title",
-                        "default": "Social Network Title"
                     },
                     {
                         "type": "image_picker",
