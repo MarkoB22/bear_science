@@ -284,11 +284,6 @@
             "label": "Image",
 						"info": "240 x 100 px .png recommended."
           },
-		  			{
-                        "type": "image_picker",
-                        "id": "logo_image",
-                        "label": "Image"
-          },
 					{
             "type": "richtext",
             "id": "text",
@@ -442,7 +437,19 @@
 						"info": "Add app snippets or other Liquid code to create advanced customizations."
 					}
 				]
-      }
+      },
+	  {
+		"type": "logo image",
+		"name": "Logo Image",
+				"settings": [
+					{
+							"type": "image_picker",
+							"id": "logo_image",
+							"label": "Image"
+					}
+	
+			]
+	  }
     ]
   }
 {% endschema %}
