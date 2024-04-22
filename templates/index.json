@@ -231,11 +231,20 @@
             "text_left": "<p>Home<\/p><p>About us<\/p><p>Products<\/p>",
             "text_right": "<p>Privacy policy<\/p><p>Cancellation policy<\/p><p>Shipping information<\/p>"
           }
+        },
+        "text_LFf9NA": {
+          "type": "text",
+          "settings": {
+            "title": "CONTACT US",
+            "text_left": "<p>Tel: +49 (0)7152 9065 <\/p><p>9928info@vestur.de<\/p><p>Eltinger Str. 56<\/p><p>71229 Leonberg<\/p>",
+            "text_right": ""
+          }
         }
       },
       "block_order": [
         "text_kFJxeG",
-        "text_mk8bJt"
+        "text_mk8bJt",
+        "text_LFf9NA"
       ],
       "settings": {
         "text": "<p>2024 by Bear-Science. All Rights Reserved<\/p>"
