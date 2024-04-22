@@ -223,10 +223,19 @@
             "text_left": "",
             "text_right": ""
           }
+        },
+        "text_mk8bJt": {
+          "type": "text",
+          "settings": {
+            "title": "SITE MENU",
+            "text_left": "<p>Home<\/p><p>About us<\/p><p>Products<\/p>",
+            "text_right": "<p>Privacy policy<\/p><p>Cancellation policy<\/p><p>Shipping information<\/p>"
+          }
         }
       },
       "block_order": [
-        "text_kFJxeG"
+        "text_kFJxeG",
+        "text_mk8bJt"
       ],
       "settings": {
         "text": "<p>2024 by Bear-Science. All Rights Reserved<\/p>"
