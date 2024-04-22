@@ -15,7 +15,10 @@
             {% if block.settings.title %}
                 <div class="footer_feature_site_menu">
                     <div class="footer_feature_title">{{ block.settings.title }}</div>
-                    <div class="footer_feature_text">{{ block.settings.text }}</div>
+                    <div class="footer_feature_text_wrapper">
+                        <div class="footer_feature_text_left">{{ block.settings.text }}</div>
+                        <div class="footer_feature_text_right">{{ block.settings.text }}</div>
+                    </div>
                 </div>
             {% endif %}
 
