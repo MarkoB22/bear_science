@@ -220,7 +220,8 @@
           "settings": {
             "title": "",
             "image_logo": "shopify:\/\/shop_images\/Logo_-_Footer.png",
-            "text": ""
+            "text_left": "",
+            "text_right": ""
           }
         }
       },
