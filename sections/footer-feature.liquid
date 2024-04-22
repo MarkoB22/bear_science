@@ -1,40 +1,45 @@
 {{  'footer-feature.css' | asset_url | stylesheet_tag }}
 <div class="footer_feature_wrapper">
     
-    <div class="footer_feature_main">
+    {% for block in section.blocks %}
+        <div class="footer_feature_main">
 
-        {%- if section.settings.image != blank -%}
-            <div class="footer_feature_logo">
-                {% assign image = section.settings.image %}
-                {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
-                {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
-            </div>
-        {%- endif -%}
+            {% if block.settings.image != blank %}
+                <div class="footer_feature_logo">
+                    {% assign image = block.settings.image %}
+                    {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+                    {% render 'responsive-image', image: image, sizes: master_width, retina: 1 %}
+                </div>
+            {% endif %}
 
-        {% if section.settings.title %}
-            <div class="footer_feature_site_menu">
-                <div class="footer_feature_title">{{ section.settings.title }}</div>
-                <div class="footer_feature_text">{{ section.settings.text }}</div>
-            </div>
-        {% endif %}
+            {% if block.settings.title %}
+                <div class="footer_feature_site_menu">
+                    <div class="footer_feature_title">{{ block.settings.title }}</div>
+                    <div class="footer_feature_text">{{ block.settings.text }}</div>
+                </div>
+            {% endif %}
 
-        {% if section.settings.title %}
-            <div class="footer_feature_contact">
-                <div class="footer_feature_title">{{ section.settings.title }}</div>
-                <div class="footer_feature_text">{{ section.settings.text }}</div>
-            </div>
-        {% endif %}
+            {% if block.settings.title %}
+                <div class="footer_feature_contact">
+                    <div class="footer_feature_title">{{ block.settings.title }}</div>
+                    <div class="footer_feature_text">{{ block.settings.text }}</div>
+                </div>
+            {% endif %}
 
-        {%- if section.settings.image != blank -%}
-            <div class="footer_feature_title">{{ section.settings.title }}</div>
-            <div class="footer_feature_socials">
-                {% assign image = section.settings.image %}
-                {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
-                {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
-            </div>
-        {%- endif -%}
+            {% if block.settings.image != blank %}
+                {% if block.settings.title %}
+                    <div class="footer_feature_title">{{ block.settings.title }}</div>
+                {% endif %}
 
-    </div>
+                <div class="footer_feature_socials">
+                    {% assign image = block.settings.image %}
+                    {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+                    {% render 'responsive-image', image: image, sizes: master_width, retina: 1 %}
+                </div>
+            {% endif %}
+
+        </div>
+    {% endfor %}
 
     <div class="footer_feature_footer">
         <div class="footer_feature_footer_text">{{ section.settings.text }}</div>
@@ -45,35 +50,38 @@
     {
         "name": "Footer Feature",
         "settings": [
-                    {
-                        "type": "richtext",
-                        "id": "text",
-                        "label": "Text",
-                        "default": "<p>Text text text. Text text text text.</p>"
-                    },
+            {
+                "type": "richtext",
+                "id": "text",
+                "label": "Text",
+                "default": "<p>Text text text. Text text text text.</p>"
+            }
+        ],
+        "blocks": [
+            {
+            "type": "text",
+            "name": "Text",
+            "settings": [
                     {
                         "type": "text",
                         "id": "title",
                         "label": "Title",
-                        "default": "Menu"
-                    },
-                    {
-                        "type": "url",
-                        "id": "button_link",
-                        "label": "Button link"
-                    },
-                    {
-                        "type": "text",
-                        "id": "button_text_arrow",
-                        "label": "Button text",
-                        "default": "Button text"
+                        "default": "Title"
                     },
                     {
                         "type": "image_picker",
                         "id": "image",
                         "label": "Image"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text",
+                        "label": "Text",
+                        "default": "<p>Text text text. Text text text text.</p>"
                     }
-                ],
+                ]
+            }
+		],
         "presets": [
           {
             "name": "Footer Feature"
