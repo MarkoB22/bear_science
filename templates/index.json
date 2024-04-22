@@ -22,7 +22,7 @@
             "content_size": "medium",
             "use_overlay": true,
             "overlay_color": "#ffffff",
-            "overlay_opacity": 30,
+            "overlay_opacity": 20,
             "overlay_gradient": "",
             "button_1_text": "SHOP COLLECTION",
             "button_1_link": "",
