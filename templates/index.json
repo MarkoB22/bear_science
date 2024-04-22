@@ -20,10 +20,10 @@
             "opposing_content": "Lower your biological age",
             "text_alignment": "left",
             "content_size": "medium",
-            "use_overlay": false,
+            "use_overlay": true,
             "overlay_color": "#ffffff",
-            "overlay_opacity": 0,
-            "overlay_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%)",
+            "overlay_opacity": 30,
+            "overlay_gradient": "",
             "button_1_text": "SHOP COLLECTION",
             "button_1_link": "",
             "button_1_outline": true,
@@ -210,57 +210,6 @@
         "button_link": "#",
         "button_text_arrow": "Send",
         "image": "shopify:\/\/shop_images\/Logo_-_Newsletter_section.png"
-      }
-    },
-    "footer_feature_wTn9C8": {
-      "type": "footer-feature",
-      "blocks": {
-        "text_kFJxeG": {
-          "type": "text",
-          "settings": {
-            "image_logo": "shopify:\/\/shop_images\/Logo_-_Footer.png",
-            "title": "",
-            "text_left": "",
-            "text_right": "",
-            "button_link": ""
-          }
-        },
-        "text_mk8bJt": {
-          "type": "text",
-          "settings": {
-            "title": "SITE MENU",
-            "text_left": "<p>Home<\/p><p>About us<\/p><p>Products<\/p>",
-            "text_right": "<p>Privacy policy<\/p><p>Cancellation policy<\/p><p>Shipping information<\/p>",
-            "button_link": ""
-          }
-        },
-        "text_LFf9NA": {
-          "type": "text",
-          "settings": {
-            "title": "CONTACT US",
-            "text_left": "<p>Tel: +49 (0)7152 9065 <\/p><p>9928info@vestur.de<\/p><p>Eltinger Str. 56<\/p><p>71229 Leonberg<\/p>",
-            "text_right": "",
-            "button_link": ""
-          }
-        },
-        "text_Kea9gD": {
-          "type": "text",
-          "settings": {
-            "title": "",
-            "text_left": "",
-            "text_right": "",
-            "button_link": "https:\/\/www.facebook.com\/"
-          }
-        }
-      },
-      "block_order": [
-        "text_kFJxeG",
-        "text_mk8bJt",
-        "text_LFf9NA",
-        "text_Kea9gD"
-      ],
-      "settings": {
-        "text": "<p>2024 by Bear-Science. All Rights Reserved<\/p>"
       }
     },
     "16614195534fb74bc3": {
@@ -672,7 +621,6 @@
     "reviews_KeyhVG",
     "blog_title_fW9yHF",
     "newsletter_signup_fknP7a",
-    "footer_feature_wTn9C8",
     "16614195534fb74bc3",
     "166143150135dd97e2",
     "1661512437fd38dfb2",
