@@ -4,18 +4,74 @@
   transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); 
 }
 
-.thb-widget-title {
+.footer.thb-widget-title {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 29.26px;
 }
 
+.row {
+  padding: unset;
+  display: flex;
+  flex-direction: row;
+}
+
 @media print, screen and (max-width: 1025px) {
-  .thb-widget-title {
-    text-transform: uppercase;
+  .footer > .row > .widget--menu-column > .widget > button {
     font-size: 18px;
     line-height: 21.94px;
+    padding: unset;
+    margin-bottom: 32px;
   }
+
+  .footer .thb-widget-title {
+    font-size: 18px;
+    line-height: 21.94px;
+    padding: unset;
+    margin-bottom: 32px;
+  }
+
+  .footer > .row > .widget--menu-column > .widget > .thb-widget-menu {
+    height: 75px;
+    font-size: 14px;
+    line-height: 17.07px;
+    flex-wrap: wrap;
+    padding: unset;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 23px;
+  }
+
+  .footer > .row > .widget--menu-column > .widget > .thb-widget-menu > li {
+    padding-right: 24px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row > .columns {
+    padding: unset;
+  }
+
+  .footer_logo {
+    width: 67.74%;
+    height: 12.69%;
+    margin-bottom: 64px;
+  }
+
+  .footer_logo > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .row > .footer_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
 
 .thb-widget-menu > li > a {
@@ -62,13 +118,10 @@
 }
 @media only screen and (max-width: 767px) {
   .footer .widget--menu {
-    margin-bottom: 0;
+    margin-bottom: 32px;
   } 
 }
-@media only screen and (max-width: 767px) {
-  .footer .widget--menu-column + .columns:not(.widget--menu-column) {
-    margin-top: 40px; 
-  } 
+@media only screen and (max-width: 767px) { 
 }
 .footer .widget--text .text-button {
   margin-bottom: 20px; 
@@ -108,10 +161,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  line-height: 1;
-  font-size: 0.875rem;
-  letter-spacing: 0.1em;
-  margin-bottom: 20px;
   font-weight: var(--font-body-bold-weight, 600);
   width: 100%; 
   color: black;
