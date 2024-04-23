@@ -11,16 +11,16 @@
 
 <footer class="footer" id="footer">
 	<div class="row {% if full_width %}full-width-row{% endif %}">
+
+		{%- if section.settings.logo_image != blank -%}
+			<div class="footer_logo">
+				{% assign image = section.settings.logo_image %}
+				{% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+				{%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
+			</div>
+		{%- endif -%}
+
 		{%- for block in section.blocks -%}
-
-			{%- if block.settings.logo_image != blank -%}
-				<div class="footer_logo">
-					{% assign image = block.settings.logo_image %}
-					{% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
-					{%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
-				</div>
-			{%- endif -%}
-
 			{% if block.type == 'text' %}
 				{%- liquid
 					assign column_class = 'small-12 medium-4 large-2'
