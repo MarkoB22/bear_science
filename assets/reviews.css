@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 100%;
+    margin: auto;
 }
 
 .reviews_title {
@@ -19,12 +21,18 @@
 .reviews_all_reviews {
     display: flex;
     flex-direction: column;
+    width: 90%;
 }
 
 .reviews_single_review {
-    padding: 44px 38px 45px 38px;
+    padding: 44px 10.38% 45px 10.38%;
     text-align: center;
-    border-bottom: 1px solid white;
+    max-width: 100%; 
+    margin: auto;
+}
+
+.reviews_single_review.carousel-cell {
+    width: 100%;
 }
 
 .reviews-image {
@@ -49,6 +57,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    border-top: 1px solid white;
+    width: 100%;
 }
 
 .reviews_leave_review_text {
@@ -64,17 +74,15 @@
     color: white;
 }
 
-/* OVO JE ZA SLIDER */
-.carousel__slide {
-
-  }
+.flickity-page-dots {
+    display: none;
+}
 
 @media print, screen and (min-width: 1025px) {
 
     .reviews_all_reviews {
         display: flex;
         flex-direction: row;
-        /* justify-content: space-between; */
         padding: 61.5px 4.44%;
         width: 100%;
     }

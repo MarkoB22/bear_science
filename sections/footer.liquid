@@ -11,6 +11,15 @@
 
 <footer class="footer" id="footer">
 	<div class="row {% if full_width %}full-width-row{% endif %}">
+
+		{%- if section.settings.logo_image != blank -%}
+			<div class="footer_logo">
+				{% assign image = section.settings.logo_image %}
+				{% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+				{%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
+			</div>
+		{%- endif -%}
+
 		{%- for block in section.blocks -%}
 			{% if block.type == 'text' %}
 				{%- liquid
@@ -59,7 +68,7 @@
 				-%}
 			<div class="{{ column_class | escape }} columns widget--menu-column" {{ block.shopify_attributes }}>
 				<div class="widget widget--menu">
-					<button class="thb-widget-title collapsible" tabindex="0">{{ block.settings.title }} <span></span></button>
+					<button class="thb-widget-title collapsible active" tabindex="0">{{ block.settings.title }} <span></span></button>
 					{%- if block.settings.menu != blank -%}
 					<ul class="thb-widget-menu">
 					  {% for link in block.settings.menu.links %}
@@ -167,7 +176,7 @@
 			{%- endif -%}
 		{%- endfor -%}
 	</div>
-	<div class="sub-footer">
+	<div class="sub-footer h18 lh-l">
 		<div class="row {% if full_width %}full-width-row{% endif %}">
 			<div class="small-12 medium-8 columns">
 				{% render 'localization', id: 'FooterLocalization', show_language_switcher: show_language_switcher, show_currency_switcher: show_currency_switcher %}
@@ -205,6 +214,11 @@
 				"id": "full_width",
 				"default": false,
 				"label": "Make section full width"
+			},
+			{
+				"type": "image_picker",
+				"id": "logo_image",
+				"label": "Footer Logo"
 			},
       {
         "type": "text",

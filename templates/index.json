@@ -20,10 +20,10 @@
             "opposing_content": "Lower your biological age",
             "text_alignment": "left",
             "content_size": "medium",
-            "use_overlay": false,
+            "use_overlay": true,
             "overlay_color": "#ffffff",
-            "overlay_opacity": 0,
-            "overlay_gradient": "linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0) 100%)",
+            "overlay_opacity": 20,
+            "overlay_gradient": "",
             "button_1_text": "SHOP COLLECTION",
             "button_1_link": "",
             "button_1_outline": true,
@@ -193,6 +193,23 @@
         "button_link": "",
         "button_text_arrow": "Leave a review",
         "leave_review": "Leave yourself a review"
+      }
+    },
+    "blog_title_fW9yHF": {
+      "type": "blog-title",
+      "settings": {
+        "title": "BLOG",
+        "text": "<p>Explore expert insights, wellness tips, and the latest trends in longevity<\/p>"
+      }
+    },
+    "newsletter_signup_fknP7a": {
+      "type": "newsletter-signup",
+      "settings": {
+        "text": "<p>Sign up for the newsletter and receive a <strong>10€<\/strong> voucher as a thank you!<\/p>",
+        "email_text": "Email Address",
+        "button_link": "#",
+        "button_text_arrow": "Send",
+        "image": "shopify:\/\/shop_images\/Logo_-_Newsletter_section.png"
       }
     },
     "16614195534fb74bc3": {
@@ -602,6 +619,8 @@
     "product_presentation_9yUw6y",
     "traits_AFGyQX",
     "reviews_KeyhVG",
+    "blog_title_fW9yHF",
+    "newsletter_signup_fknP7a",
     "16614195534fb74bc3",
     "166143150135dd97e2",
     "1661512437fd38dfb2",

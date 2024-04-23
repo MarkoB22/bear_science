@@ -39,13 +39,17 @@
 
 </div>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-    var orderInfo = document.querySelector('.main-carousel');
-    var flktyOrderInfo = new Flickity(orderInfo, {
-        prevNextButtons: false,
-        autoPlay: true,
-        wrapAround: true
-    });
+document.addEventListener('DOMContentLoaded', function () {
+    // Check if the screen width is less than 1025px
+    if (window.innerWidth < 1025) {
+        var orderInfo = document.querySelector('.main-carousel');
+        var flktyOrderInfo = new Flickity(orderInfo, {
+            prevNextButtons: false,
+            autoPlay: true,
+            wrapAround: true,
+            cellAlign: 'center'
+        });
+    }
 });
 </script>
 {% schema %}

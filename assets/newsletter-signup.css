@@ -1,0 +1,78 @@
+.signup_wrapper {
+    padding: 68px 7.65%;
+    border-bottom: 1px solid black;
+}
+
+.signup_text {
+    margin-bottom: 34px;
+}
+
+.signup_email_wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 10px 3.25%;
+}
+
+.signup_email {
+    width: 49.35%;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+.signup_email_button {
+    width: 113px;
+    height: 56px;
+    padding: 17px 16px;
+}
+
+.signup_bear_logo {
+    display: none;
+}
+
+@media print, screen and (min-width: 1025px) {
+
+    .signup_wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        padding: 124px 4.44% 47px 7.33%;
+    }
+
+    .signup_only_text {
+        margin-bottom: 194px;
+        width: 47.54%;
+    }
+
+    .signup_text {
+        margin-bottom: 80px;
+    }
+
+    .signup_email_button {
+        width: 124px;
+        height: 57px;
+        padding: 14px;
+    }
+
+    .signup_bear_logo {
+        display: block;
+    }
+
+    .signup_email_wrapper {
+        padding: 10px 2.01%;
+        width: 82.12%;
+    }
+
+    .signup_bear_logo {
+        width: 52.44%;
+        height: auto;
+        margin-top: 168px;
+    }
+
+    .signup_bear_logo > img {
+        width: 100%;
+        height: 261px;
+    }
+
+}

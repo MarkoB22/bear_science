@@ -4210,6 +4210,11 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   font-size: calc(var(--font-heading-scale) * 1rem);
 }
 
+.h18 {
+  /* 12 */
+  font-size: calc(var(--font-heading-scale) * 0.75rem);
+}
+
 
 /* .b1 {
   font-size: calc(var(--font-heading-scale) * 0.875rem);
@@ -4303,9 +4308,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     font-size: calc(var(--font-heading-scale) * 1rem);
   }
 
-  /* .b1 {
-    font-size: calc(var(--font-heading-scale) * 1.5rem);
-  } */
+  .h18 {
+    /* 16 */
+    font-size: calc(var(--font-heading-scale) * 1rem);
+  }
 
 }
 
