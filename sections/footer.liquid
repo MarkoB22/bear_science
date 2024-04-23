@@ -9,200 +9,188 @@
 <link rel="stylesheet" href="{{ 'footer.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'footer.css' | asset_url | stylesheet_tag }}</noscript>
 
-<footer class="footer" id="footer">
-	<div class="row {% if full_width %}full-width-row{% endif %}">
+<div class="footer_wrapper">
+	<footer class="footer" id="footer">
+		<div class="row {% if full_width %}full-width-row{% endif %}">
 
-		{%- if section.settings.logo_image != blank -%}
-			<div class="footer_logo">
-				{% assign image = section.settings.logo_image %}
-				{% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
-				{%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
-			</div>
-		{%- endif -%}
-
-		{%- for block in section.blocks -%}
-			{% if block.type == 'text' %}
-				{%- liquid
-					assign column_class = 'small-12 medium-4 large-2'
-					case block.settings.column_size
-						when 'medium'
-							assign column_class = 'small-12 medium-3'
-						when 'large'
-							assign column_class = 'small-12 medium-6'
-
-					endcase
-				-%}
-			<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
-				<div class="widget widget--text">
-					{%- if block.settings.title != blank -%}
-						<div class="thb-widget-title">{{ block.settings.title }}</div>
-					{%- endif -%}
-					{%- if block.settings.image != blank -%}
-						{% assign image = block.settings.image %}
-						{% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
-						{%- render 'responsive-image', image: image, sizes: master_width, retina: 1, priority: 'low' -%}
-					{%- endif -%}
-					{%- if block.settings.text != blank -%}
-						<div class="rte text-size--{{ block.settings.text_size }}">
-							{{ block.settings.text }}
-						</div>
-					{%- endif -%}
-					{%- if block.settings.button_text != blank -%}
-						<a class="text-button" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}">{{ block.settings.button_text }}</a>
-					{%- endif -%}
-					{%- if block.settings.show_social_links -%}
-						{%- render 'social-links' -%}
-					{%- endif -%}
+			{%- if section.settings.logo_image != blank -%}
+				<div class="footer_logo">
+					{% assign image = section.settings.logo_image %}
+					{% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+					{%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
 				</div>
-			</div>
-			{% endif %}
-			{%- if block.type == 'menu' -%}
-				{%- liquid
-					assign column_class = 'small-12 medium-4 large-2'
-					case block.settings.column_size
-						when 'medium'
-							assign column_class = 'small-12 medium-3'
-						when 'large'
-							assign column_class = 'small-12 medium-6'
-					endcase
-				-%}
-			<div class="{{ column_class | escape }} columns widget--menu-column" {{ block.shopify_attributes }}>
-				<div class="widget widget--menu">
-					<button class="thb-widget-title collapsible active" tabindex="0">{{ block.settings.title }} <span></span></button>
-					{%- if block.settings.menu != blank -%}
-					<ul class="thb-widget-menu">
-					  {% for link in block.settings.menu.links %}
-						  {% assign has_sub_menu = false %}
-						  {% if link.links.size > 0 %}
-						    {% assign has_sub_menu = true %}
-							{% endif %}
-						  <li class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if link.active %} active{% endif %}">
-						    <a href="{{ link.url }}" title="{{ link.title | escape }}"{%- if link.active %} aria-current="page"{% endif -%}>{{ link.title }}</a>{% if has_sub_menu %}<span class="thb-arrow" tabindex="0">{%- render 'svg-icons' with 'thb-dropdown-bottom' -%}</span>{% endif %}
-						    {% if has_sub_menu %}
-							    <ul class="sub-menu" tabindex="-1">
-						        {% for l in link.links %}
-											{% assign has_sub_menu = false %}
-										  {% if l.links.size > 0 %}
-										    {% assign has_sub_menu = true %}
-											{% endif %}
-							        <li class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if l.active %} active{% endif %}" role="none">
-							          <a href="{{ l.url }}" title="{{ l.title | escape }}" role="menuitem">{{ l.title }}</a>{% if has_sub_menu %}<span class="thb-arrow" tabindex="0">{%- render 'svg-icons' with 'thb-dropdown-bottom' -%}</span>{% endif %}
-												{% if has_sub_menu %}
-													<ul class="sub-menu" role="menu">
-														{% for sub_link in l.links %}
-															{% assign has_sub_menu = false %}
-															{% if sub_link.links.size > 0 %}
-																{% assign has_sub_menu = true %}
-															{% endif %}
-															<li class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if sub_link.active %} active{% endif %}" role="none">
-																<a href="{{ sub_link.url }}" title="{{ sub_link.title | escape }}" role="menuitem">{{ sub_link.title }}</a>
-															</li>
-														{% endfor %}
-													</ul>
+			{%- endif -%}
+
+			{%- for block in section.blocks -%}
+				{% if block.type == 'text' %}
+					{%- liquid
+						assign column_class = 'small-12 medium-4 large-2'
+						case block.settings.column_size
+							when 'medium'
+								assign column_class = 'small-12 medium-3'
+							when 'large'
+								assign column_class = 'small-12 medium-6'
+
+						endcase
+					-%}
+				<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
+					<div class="widget widget--text">
+						{%- if block.settings.title != blank -%}
+							<div class="thb-widget-title">{{ block.settings.title }}</div>
+						{%- endif -%}
+						{%- if block.settings.image != blank -%}
+							{% assign image = block.settings.image %}
+							{% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+							{%- render 'responsive-image', image: image, sizes: master_width, retina: 1, priority: 'low' -%}
+						{%- endif -%}
+						{%- if block.settings.text != blank -%}
+							<div class="rte text-size--{{ block.settings.text_size }}">
+								{{ block.settings.text }}
+							</div>
+						{%- endif -%}
+						{%- if block.settings.button_text != blank -%}
+							<a class="text-button" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}">{{ block.settings.button_text }}</a>
+						{%- endif -%}
+						{%- if block.settings.show_social_links -%}
+							{%- render 'social-links' -%}
+						{%- endif -%}
+					</div>
+				</div>
+				{% endif %}
+				{%- if block.type == 'menu' -%}
+					{%- liquid
+						assign column_class = 'small-12 medium-4 large-2'
+						case block.settings.column_size
+							when 'medium'
+								assign column_class = 'small-12 medium-3'
+							when 'large'
+								assign column_class = 'small-12 medium-6'
+						endcase
+					-%}
+				<div class="{{ column_class | escape }} columns widget--menu-column" {{ block.shopify_attributes }}>
+					<div class="widget widget--menu">
+						<button class="thb-widget-title collapsible active" tabindex="0">{{ block.settings.title }} <span></span></button>
+						{%- if block.settings.menu != blank -%}
+						<ul class="thb-widget-menu">
+						{% for link in block.settings.menu.links %}
+							{% assign has_sub_menu = false %}
+							{% if link.links.size > 0 %}
+								{% assign has_sub_menu = true %}
+								{% endif %}
+							<li class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if link.active %} active{% endif %}">
+								<a href="{{ link.url }}" title="{{ link.title | escape }}"{%- if link.active %} aria-current="page"{% endif -%}>{{ link.title }}</a>{% if has_sub_menu %}<span class="thb-arrow" tabindex="0">{%- render 'svg-icons' with 'thb-dropdown-bottom' -%}</span>{% endif %}
+								{% if has_sub_menu %}
+									<ul class="sub-menu" tabindex="-1">
+									{% for l in link.links %}
+												{% assign has_sub_menu = false %}
+											{% if l.links.size > 0 %}
+												{% assign has_sub_menu = true %}
 												{% endif %}
-							        </li>
-										{% endfor %}
-							    </ul>
-						    {% endif %}
-						  </li>
-					  {% endfor %}
-					</ul>
-					{%- endif -%}
-				</div>
-			</div>
-			{%- endif -%}
-			{%- if block.type == 'signup' -%}
-				{%- liquid
-					assign column_class = 'small-12 medium-4 large-2'
-					case block.settings.column_size
-						when 'medium'
-							assign column_class = 'small-12 medium-3'
-						when 'large'
-							assign column_class = 'small-12 medium-6'
-
-					endcase
-				-%}
-				<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
-					<div class="widget widget--signup">
-						{% if block.settings.title != blank %}
-							<div class="thb-widget-title">{{ block.settings.title }}</div>
-						{% endif %}
-						{% if block.settings.text != blank %}
-							{{ block.settings.text }}
-						{% endif %}
-						{% render 'email-signup-form' %}
+										<li class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if l.active %} active{% endif %}" role="none">
+										<a href="{{ l.url }}" title="{{ l.title | escape }}" role="menuitem">{{ l.title }}</a>{% if has_sub_menu %}<span class="thb-arrow" tabindex="0">{%- render 'svg-icons' with 'thb-dropdown-bottom' -%}</span>{% endif %}
+													{% if has_sub_menu %}
+														<ul class="sub-menu" role="menu">
+															{% for sub_link in l.links %}
+																{% assign has_sub_menu = false %}
+																{% if sub_link.links.size > 0 %}
+																	{% assign has_sub_menu = true %}
+																{% endif %}
+																<li class="{% if has_sub_menu %}menu-item-has-children{% endif %}{% if sub_link.active %} active{% endif %}" role="none">
+																	<a href="{{ sub_link.url }}" title="{{ sub_link.title | escape }}" role="menuitem">{{ sub_link.title }}</a>
+																</li>
+															{% endfor %}
+														</ul>
+													{% endif %}
+										</li>
+											{% endfor %}
+									</ul>
+								{% endif %}
+							</li>
+						{% endfor %}
+						</ul>
+						{%- endif -%}
 					</div>
 				</div>
-			{%- endif -%}
-			{%- if block.type == 'social' -%}
-				{%- liquid
-					assign column_class = 'small-6 medium-4 large-2'
-					case block.settings.column_size
-						when 'medium'
-							assign column_class = 'small-12 medium-3'
-						when 'large'
-							assign column_class = 'small-12 medium-6'
+				{%- endif -%}
+				{%- if block.type == 'signup' -%}
+					{%- liquid
+						assign column_class = 'small-12 medium-4 large-2'
+						case block.settings.column_size
+							when 'medium'
+								assign column_class = 'small-12 medium-3'
+							when 'large'
+								assign column_class = 'small-12 medium-6'
 
-					endcase
-				-%}
-				<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
-					<div class="widget widget--social">
-						{% if block.settings.title != blank %}
-							<div class="thb-widget-title">{{ block.settings.title }}</div>
-						{% endif %}
-						{% render 'social-links' %}
+						endcase
+					-%}
+					<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
+						<div class="widget widget--signup">
+							{% if block.settings.title != blank %}
+								<div class="thb-widget-title">{{ block.settings.title }}</div>
+							{% endif %}
+							{% if block.settings.text != blank %}
+								{{ block.settings.text }}
+							{% endif %}
+							{% render 'email-signup-form' %}
+						</div>
 					</div>
-				</div>
-			{%- endif -%}
-			{%- if block.type == 'custom_liquid' -%}
-				{%- liquid
-					assign column_class = 'small-6 medium-4 large-2'
-					case block.settings.column_size
-						when 'medium'
-							assign column_class = 'small-12 medium-3'
-						when 'large'
-							assign column_class = 'small-12 medium-6'
+				{%- endif -%}
+				{%- if block.type == 'social' -%}
+					{%- liquid
+						assign column_class = 'medium-4 large-2'
+						case block.settings.column_size
+							when 'medium'
+								assign column_class = 'small-12 medium-3'
+							when 'large'
+								assign column_class = 'small-12 medium-6'
 
-					endcase
-				-%}
-				<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
-					<div class="widget widget--custom">
-						{% if block.settings.title != blank %}
-							<div class="thb-widget-title">{{ block.settings.title }}</div>
-						{% endif %}
-						{{ block.settings.custom_liquid }}
+						endcase
+					-%}
+					<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
+						<div class="widget widget--social">
+							{% if block.settings.title != blank %}
+								<div class="thb-widget-title">{{ block.settings.title }}</div>
+							{% endif %}
+							{% render 'social-links' %}
+						</div>
 					</div>
-				</div>
-			{%- endif -%}
-		{%- endfor -%}
-	</div>
+				{%- endif -%}
+				{%- if block.type == 'custom_liquid' -%}
+					{%- liquid
+						assign column_class = 'medium-4 large-2'
+						case block.settings.column_size
+							when 'medium'
+								assign column_class = 'small-12 medium-3'
+							when 'large'
+								assign column_class = 'small-12 medium-6'
+
+						endcase
+					-%}
+					<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
+						<div class="widget widget--custom">
+							{% if block.settings.title != blank %}
+								<div class="thb-widget-title">{{ block.settings.title }}</div>
+							{% endif %}
+							{{ block.settings.custom_liquid }}
+						</div>
+					</div>
+				{%- endif -%}
+			{%- endfor -%}
+		</div>
+	</footer>
 	<div class="sub-footer h18 lh-l">
 		<div class="row {% if full_width %}full-width-row{% endif %}">
-			<div class="small-12 medium-8 columns">
-				{% render 'localization', id: 'FooterLocalization', show_language_switcher: show_language_switcher, show_currency_switcher: show_currency_switcher %}
-			</div>
-			<div class="small-12 medium-4 columns">
-				{%- if show_payment_icons -%}
-				<div class="footer-payment-icons">
-        {%- unless shop.enabled_payment_types == empty -%}
-          {%- for type in shop.enabled_payment_types -%}
-            <figure>{{ type | payment_type_svg_tag: class: 'payment-icons__icon' }}</figure>
-          {%- endfor -%}
-        {%- endunless -%}
-        </div>
-				{%- endif -%}
-			</div>
 			<div class="small-12 columns">
 				<p>&copy; {{ 'now' | date: "%Y" }} {{ shop.name }}, {{ copyright_text }} {{ powered_by_link }}</p>
 				{%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
-          <div class="footer--follow-on-shop">
-            {{ shop | login_button: action: 'follow' }}
-          </div>
-        {%- endif -%}
+		<div class="footer--follow-on-shop">
+			{{ shop | login_button: action: 'follow' }}
+		</div>
+		{%- endif -%}
 			</div>
 		</div>
 	</div>
-</footer>
+</div>
 
 {% schema %}
   {

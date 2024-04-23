@@ -22,6 +22,15 @@
     line-height: 21.94px;
     padding: unset;
     margin-bottom: 32px;
+    font-weight: 300;
+  }
+
+  .widget--text {
+    margin-bottom: 64px;
+  }
+
+  .footer .thb-widget-title {
+    font-weight: 300;
   }
 
   .footer .thb-widget-title {
@@ -29,6 +38,7 @@
     line-height: 21.94px;
     padding: unset;
     margin-bottom: 32px;
+    font-weight: 300;
   }
 
   .footer > .row > .widget--menu-column > .widget > .thb-widget-menu {
@@ -80,7 +90,7 @@
 
 .footer {
   background: white;
-  padding: 45px 7.65%;
+  padding: 48px 7.65%;
   font-size: 0.9375rem;
   color: black;
   border-top: 1px solid black;
@@ -110,9 +120,6 @@
 .footer .select .select-arrow svg path {
   stroke: var(--color-footer-text, #fff); 
 }
-.footer .widget {
-  margin-bottom: 40px; 
-}
 .footer .widget img {
   margin-bottom: 20px; 
 }
@@ -121,7 +128,7 @@
     margin-bottom: 32px;
   } 
 }
-@media only screen and (max-width: 767px) { 
+@media only screen and (max-width: 1025px) { 
 }
 .footer .widget--text .text-button {
   margin-bottom: 20px; 
@@ -153,6 +160,37 @@
 .footer .widget--text .social-links li span {
   display: none; 
 }
+
+@media print, screen and (max-width: 1025px) {
+  .footer .row .widget--social > .thb-widget-title {
+    display: none;
+  }
+
+  .social-links > li > a > span {
+    display: none;
+  }
+
+  .social-links > li > a > svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .social-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .widget--social {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+ 
+
 .footer .widget--social .social-links li a {
   height: auto;
   width: auto; 
@@ -275,7 +313,7 @@
 }
 .footer .signup-container input:focus + label,
 .footer .signup-container input:not(:placeholder-shown) + label {
-  background: var(--color-footer-bg, #151515);
+  background: var(--color-footer-bg, #151515); 
   color: var(--color-footer-text, #fff); 
 }
 .footer .signup-container .field label {
@@ -283,8 +321,14 @@ color: var(--color-footer-text, #fff);
 }
 
 .sub-footer {
-  margin-top: 40px;
-  color: black; 
+  width: 100%;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: white; 
+  background-color: #727272;
+  border-top: 1px solid black ;
+  padding: 19px 15.16%;
 }
 .sub-footer a {
   color: black; 
