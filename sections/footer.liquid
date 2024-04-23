@@ -14,7 +14,7 @@
 		{%- for block in section.blocks -%}
 
 			{%- if block.settings.logo_image != blank -%}
-				<div class="traits-image">
+				<div class="footer_logo">
 					{% assign image = block.settings.logo_image %}
 					{% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
 					{%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
@@ -214,6 +214,11 @@
 				"id": "full_width",
 				"default": false,
 				"label": "Make section full width"
+			},
+			{
+				"type": "image_picker",
+				"id": "logo_image",
+				"label": "Footer Logo"
 			},
       {
         "type": "text",
@@ -437,19 +442,7 @@
 						"info": "Add app snippets or other Liquid code to create advanced customizations."
 					}
 				]
-      },
-	  {
-		"type": "logo image",
-		"name": "Logo Image",
-				"settings": [
-					{
-							"type": "image_picker",
-							"id": "logo_image",
-							"label": "Image"
-					}
-	
-			]
-	  }
+      }
     ]
   }
 {% endschema %}
