@@ -154,7 +154,7 @@
     .slideshow__slide-content {
       z-index: 20;
       padding: 24px;
-      max-width: 600px;
+      max-width: 700px;
       width: 80%; }
       @media only screen and (min-width: 768px) {
         .slideshow__slide-content {

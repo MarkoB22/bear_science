@@ -3940,7 +3940,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   transition: all ease-in-out .3s;
   color: black;
   display: flex;
-  gap: 8px;
+  gap: 24px;
   align-items: center;
 }   
 
@@ -3969,12 +3969,28 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   border: 2px solid #6D7E60;
   color: white;
   transition: all ease-in-out .3s;
+  display: flex;
+  gap: 24px;
+  align-items: center;
 }   
 
 .button_type2:hover {
   background: transparent;
   color: #6D7E60;
   border: 2px solid #6D7E60;
+}
+
+.button_type2 svg path {
+  fill: white;
+}
+
+.button_type2:hover svg path {
+  fill: #6D7E60;
+}
+
+.button_type2 svg {
+  transform: scale(1);
+  transition: all ease-in-out .3s;
 }
 
 .button_type2:hover svg {

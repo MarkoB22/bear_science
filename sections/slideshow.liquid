@@ -146,7 +146,7 @@
 					<div class="slideshow__slide-overlay" style="background: {{ block.settings.overlay_gradient }}"></div>
 					{% endif %}
 					{% if block.settings.opposing_content %}
-					<div class="slideshow__slide-opposing_content h2 opposing_content-{{ block.settings.content_position }}">
+					<div class="slideshow__slide-opposing_content h2 lh-sm opposing_content-{{ block.settings.content_position }}">
 						{{ block.settings.opposing_content }}
 					</div>
 					{% endif %}
@@ -156,21 +156,31 @@
 								<p class="subheading">{{ block.settings.subheading }}</p>
 							{% endif %}
 							{% if block.settings.heading != blank %}
-								<h1 class="{{ block.settings.heading_size }}">{{ block.settings.heading | newline_to_br }}</h1>
+								<h1 class="lh-sm {{ block.settings.heading_size }}">{{ block.settings.heading | newline_to_br }}</h1>
 							{% endif %}
 							{% if block.settings.content != blank %}
-							<p class="description-size--{{ block.settings.description_size }} {{ block.settings.description_size }}">{{ block.settings.content | newline_to_br }}</p>
+							<p class="lh-sm description-size--{{ block.settings.description_size }} {{ block.settings.description_size }}">{{ block.settings.content | newline_to_br }}</p>
 							{% endif %}
 							{% if block.settings.button_1_text != blank %}
 							<div class="button-overflow-container">
-								<a class="button_type1 h12 f_regular white{% if block.settings.button_1_outline %} outline{%- endif %}" href="{{ block.settings.button_1_link }}" role="button" title="{{ block.settings.button_1_text | escape }}"><span>{{ block.settings.button_1_text }}</span>
+								<a class="button_type1 h12 f_regular white{% if block.settings.button_1_outline %} outline{%- endif %}" 
+								   href="{{ block.settings.button_1_link }}" 
+								   role="button" 
+								   title="{{ block.settings.button_1_text | escape }}">
+								   	<span>{{ block.settings.button_1_text }}</span>
 									{% render 'svg-icons' with 'button_arrow' %}
 								</a>
 							</div>
 			        {% endif %}
 							{% if block.settings.button_2_text != blank %}
 							<div class="button-overflow-container">
-								<a class="button_type2 h12 f_regular white{% if block.settings.button_2_outline %} outline{%- endif %}" href="{{ block.settings.button_2_link }}" role="button" title="{{ block.settings.button_2_text | escape }}"><span>{{ block.settings.button_2_text }}</span></a>
+								<a class="button_type2 h12 f_regular white{% if block.settings.button_2_outline %} outline{%- endif %}" 
+								   href="{{ block.settings.button_2_link }}" 
+								   role="button" 
+								   title="{{ block.settings.button_2_text | escape }}">
+								   		<span>{{ block.settings.button_2_text }}</span>
+										{% render 'svg-icons' with 'button_arrow' %}
+								</a>
 							</div>
 			        {% endif %}
 							{% if block.settings.slide_link != blank %}
