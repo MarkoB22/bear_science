@@ -40,6 +40,7 @@
       ],
       "settings": {
         "full_width": true,
+        "logo_image": "shopify:\/\/shop_images\/Logo_-_Footer.png",
         "copyright_text": "All rights reserved.",
         "show_language_switcher": false,
         "show_currency_switcher": false,
