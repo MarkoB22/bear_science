@@ -23,17 +23,6 @@
 
 			{%- for block in section.blocks -%}
 				{% if block.type == 'text' %}
-					{%- liquid
-						assign column_class = 'small-12 medium-4 large-2'
-						case block.settings.column_size
-							when 'medium'
-								assign column_class = 'small-12 medium-3'
-							when 'large'
-								assign column_class = 'small-12 medium-6'
-
-						endcase
-					-%}
-				<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
 					<div class="widget widget--text">
 						{%- if block.settings.title != blank -%}
 							<div class="thb-widget-title">{{ block.settings.title }}</div>
@@ -55,19 +44,8 @@
 							{%- render 'social-links' -%}
 						{%- endif -%}
 					</div>
-				</div>
 				{% endif %}
 				{%- if block.type == 'menu' -%}
-					{%- liquid
-						assign column_class = 'small-12 medium-4 large-2'
-						case block.settings.column_size
-							when 'medium'
-								assign column_class = 'small-12 medium-3'
-							when 'large'
-								assign column_class = 'small-12 medium-6'
-						endcase
-					-%}
-				<div class="{{ column_class | escape }} columns widget--menu-column" {{ block.shopify_attributes }}>
 					<div class="widget widget--menu">
 						<button class="thb-widget-title collapsible active" tabindex="0">{{ block.settings.title }} <span></span></button>
 						{%- if block.settings.menu != blank -%}
@@ -110,69 +88,33 @@
 						</ul>
 						{%- endif -%}
 					</div>
-				</div>
 				{%- endif -%}
 				{%- if block.type == 'signup' -%}
-					{%- liquid
-						assign column_class = 'small-12 medium-4 large-2'
-						case block.settings.column_size
-							when 'medium'
-								assign column_class = 'small-12 medium-3'
-							when 'large'
-								assign column_class = 'small-12 medium-6'
-
-						endcase
-					-%}
-					<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
-						<div class="widget widget--signup">
-							{% if block.settings.title != blank %}
-								<div class="thb-widget-title">{{ block.settings.title }}</div>
-							{% endif %}
-							{% if block.settings.text != blank %}
-								{{ block.settings.text }}
-							{% endif %}
-							{% render 'email-signup-form' %}
-						</div>
+					<div class="widget widget--signup">
+						{% if block.settings.title != blank %}
+							<div class="thb-widget-title">{{ block.settings.title }}</div>
+						{% endif %}
+						{% if block.settings.text != blank %}
+							{{ block.settings.text }}
+						{% endif %}
+						{% render 'email-signup-form' %}
 					</div>
+
 				{%- endif -%}
 				{%- if block.type == 'social' -%}
-					{%- liquid
-						assign column_class = 'medium-4 large-2'
-						case block.settings.column_size
-							when 'medium'
-								assign column_class = 'small-12 medium-3'
-							when 'large'
-								assign column_class = 'small-12 medium-6'
-
-						endcase
-					-%}
-					<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
-						<div class="widget widget--social">
-							{% if block.settings.title != blank %}
-								<div class="thb-widget-title">{{ block.settings.title }}</div>
-							{% endif %}
-							{% render 'social-links' %}
-						</div>
+					<div class="widget widget--social">
+						{% if block.settings.title != blank %}
+							<div class="thb-widget-title">{{ block.settings.title }}</div>
+						{% endif %}
+						{% render 'social-links' %}
 					</div>
 				{%- endif -%}
 				{%- if block.type == 'custom_liquid' -%}
-					{%- liquid
-						assign column_class = 'medium-4 large-2'
-						case block.settings.column_size
-							when 'medium'
-								assign column_class = 'small-12 medium-3'
-							when 'large'
-								assign column_class = 'small-12 medium-6'
-
-						endcase
-					-%}
-					<div class="{{ column_class | escape }} columns" {{ block.shopify_attributes }}>
-						<div class="widget widget--custom">
-							{% if block.settings.title != blank %}
-								<div class="thb-widget-title">{{ block.settings.title }}</div>
-							{% endif %}
-							{{ block.settings.custom_liquid }}
-						</div>
+					<div class="widget widget--custom">
+						{% if block.settings.title != blank %}
+							<div class="thb-widget-title">{{ block.settings.title }}</div>
+						{% endif %}
+						{{ block.settings.custom_liquid }}
 					</div>
 				{%- endif -%}
 			{%- endfor -%}
