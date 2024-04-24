@@ -223,6 +223,24 @@
         "image": "shopify:\/\/shop_images\/Logo_-_Newsletter_section.png"
       }
     },
+    "166366563622039b3e": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "FEATURED COLLECTION",
+        "heading_left": true,
+        "description": "",
+        "full_width": true,
+        "collection": "",
+        "display_type": "carousel",
+        "product_limit": 8,
+        "columns_desktop": 4,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "16614195534fb74bc3": {
       "type": "collection-tabs",
       "blocks": {
@@ -354,24 +372,6 @@
         "overlay_opacity": 15,
         "disable_top_spacing": true,
         "disable_bottom_spacing": false
-      }
-    },
-    "166366563622039b3e": {
-      "type": "featured-collection",
-      "settings": {
-        "heading": "FEATURED COLLECTION",
-        "heading_left": true,
-        "description": "<p>Best dresses for the upcoming fall season<\/p>",
-        "full_width": true,
-        "collection": "",
-        "display_type": "carousel",
-        "product_limit": 8,
-        "columns_desktop": 4,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
       }
     },
     "166366584621bc44f2": {
@@ -633,10 +633,10 @@
     "reviews_KeyhVG",
     "blog_title_fW9yHF",
     "newsletter_signup_fknP7a",
+    "166366563622039b3e",
     "16614195534fb74bc3",
     "166143150135dd97e2",
     "1661512437fd38dfb2",
-    "166366563622039b3e",
     "166366584621bc44f2",
     "1661539188062a849e",
     "16624658277b7c3abc",
