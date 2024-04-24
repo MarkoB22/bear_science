@@ -58,6 +58,15 @@
         "button_text_arrow": "Learn more"
       }
     },
+    "product_explanation_YxwfzW": {
+      "type": "product-explanation",
+      "settings": {
+        "title": "Title",
+        "image": "shopify:\/\/shop_images\/Group_22_mob.png",
+        "overlay_color": "#000000",
+        "overlay_opacity": 70
+      }
+    },
     "scrolling_text_eM6VzK": {
       "type": "scrolling-text",
       "blocks": {
@@ -105,15 +114,6 @@
         "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-15_at_14.20.23.jpg",
         "button_link": "",
         "button_text_arrow": "Button text"
-      }
-    },
-    "product_explanation_B4VT7i": {
-      "type": "product-explanation",
-      "settings": {
-        "title": "",
-        "image": "shopify:\/\/shop_images\/Group_22_mob.png",
-        "overlay_color": "#000000",
-        "overlay_opacity": 39
       }
     },
     "traits_AFGyQX": {
@@ -624,9 +624,9 @@
   "order": [
     "16479477632637c9a7",
     "title_text_button_CYeRCB",
+    "product_explanation_YxwfzW",
     "scrolling_text_eM6VzK",
     "product_presentation_9yUw6y",
-    "product_explanation_B4VT7i",
     "traits_AFGyQX",
     "reviews_KeyhVG",
     "blog_title_fW9yHF",
