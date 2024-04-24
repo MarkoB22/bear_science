@@ -6,7 +6,7 @@
 	assign show_payment_icons = section.settings.show_payment_icons
 %}
 
-<link rel="stylesheet" href="{{ 'footer.css' | asset_url }}" media="print" onload="this.media='all'">
+{% comment %} <link rel="stylesheet" href="{{ 'footer.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'footer.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="footer_wrapper">
@@ -132,7 +132,7 @@
 			</div>
 		</div>
 	</div>
-</div>
+</div> {% endcomment %}
 
 {% schema %}
   {

@@ -1,0 +1,40 @@
+.product_explanation_wrapper {
+    height: 477px;
+    position: relative;
+}
+
+.product_explanation_colors {
+    display: flex;
+    flex-direction: column;
+}
+
+.product_explanation_upper {
+    height: 281px;
+    background-color: lightblue;
+}
+
+.product_explanation_lower {
+    height: 196px;
+    flex-grow: 1;
+    background-color: lightcoral;
+}
+
+.product_explanation_img {
+    width: 93.98%;
+    height: 345px;
+
+    position: absolute;
+    top: 130px;
+    left: 15px;
+    z-index: 10;
+
+}
+
+.product_explanation_img img {
+    width: 100%;
+    height: 100%;
+}
+
+@media print, screen and (min-width: 1025px) {
+
+}
