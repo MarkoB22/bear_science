@@ -1,8 +1,18 @@
 
 
+.featured-collection .row,
+.featured-collection .row .columns {
+  padding: 0;
+}
+
+.featured-collection h2 {
+  padding-left: 8px;
+  border-left: 1px solid #040404;
+}
 
 .featured-collection {
-  overflow: hidden; }
+  overflow: hidden; 
+  padding: 86px 28px;}
   @media only screen and (max-width: 767px) {
     .featured-collection .carousel__slide {
       width: calc(90vw - 15px); } }
