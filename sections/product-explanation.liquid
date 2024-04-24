@@ -12,7 +12,7 @@
 
     {%- if section.settings.image_mob != blank -%}
         <div class="product_explanation_img_mobile">
-            {% assign image = section.settings.image_mob %}  <!-- Use correct setting and variable -->
+            {% assign image = section.settings.image_mob %}
             {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
             {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
         </div>
@@ -20,7 +20,7 @@
     
     {%- if section.settings.image_desktop != blank -%}
         <div class="product_explanation_img_desktop">
-            {% assign image = section.settings.image_desktop %} <!-- Use correct setting and variable -->
+            {% assign image = section.settings.image_desktop %}
             {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
             {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
         </div>

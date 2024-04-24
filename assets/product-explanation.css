@@ -39,19 +39,33 @@
 
 @media print, screen and (min-width: 1025px) {
 
+    .product_explanation_wrapper {
+        height: 643px;
+        position: relative;
+    }
+
+    .product_explanation_upper {
+        height: 281px;
+    }
+    
+    .product_explanation_lower {
+        height: 362 px;
+        flex-grow: 1;
+    }
+
     .product_explanation_img_mobile {
         display: none;
     }
 
     .product_explanation_img_desktop {
+        display: block;
         width: 68.40%;
         height: 563px;
     
         position: absolute;
-        top: 130px;
-        left: 15px;
+        top: 80px;
+        left: 169px;
         z-index: 10;
-    
     }
 
     .product_explanation_img_desktop img {
