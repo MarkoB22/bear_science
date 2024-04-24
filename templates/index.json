@@ -61,10 +61,10 @@
     "product_explanation_YxwfzW": {
       "type": "product-explanation",
       "settings": {
-        "image_mob": "shopify:\/\/shop_images\/Group_22_desk.png",
-        "image_desktop": "shopify:\/\/shop_images\/Group_22_mob.png",
-        "background_color_up": "#6D7E60",
-        "background__color_down": "#FFFFFF",
+        "image_mob": "shopify:\/\/shop_images\/Group_22_mob.png",
+        "image_desktop": "shopify:\/\/shop_images\/Group_22_desk.png",
+        "background_color_up": "#6d7e60",
+        "background__color_down": "#ffffff",
         "opacity_up": 100,
         "opacity_down": 100
       }
