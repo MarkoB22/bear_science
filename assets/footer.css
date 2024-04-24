@@ -4,7 +4,7 @@
   transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); 
 }
 
-.footer.thb-widget-title {
+.footer .thb-widget-title {
   text-transform: uppercase;
   font-size: 24px;
   line-height: 29.26px;
@@ -24,6 +24,7 @@
   padding: 86px 0;
   color: black;
   border-top: 1px solid black;
+  /* box-sizing: unset; */
 }
 
 .row {
@@ -32,7 +33,7 @@
 }
 
 .footer_logo {
-  width: 30.48%;
+  width: 27.78%;
   height: 183px;
   padding: 49.5px 13.19% 49.5px 0;
 }
@@ -43,22 +44,36 @@
 }
 
 .thb-widget-menu {
-  column-count: 2;
-  column-gap: 20px;
+  /* column-count: 2;
   list-style-type: none;
-  padding: 0;
+  padding: 0; */
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-height: 200px;
+  width: 200px; 
+}
+
+.thb-widget-menu li {
+  width: 50%;
 }
 
 .widget--menu {
-  width: 25.07%;
+  /* min-width: 22.43%; */
+  border-right: 1px solid black;
+  padding-right: 2.63%;
 }
 
 .widget--text {
-  width: 20.41%;
+  /* min-width: 17.77%; */
+  padding-left: 2.63%;
+  padding-right: 2.63%;
+  border-right: 1px solid black;
 }
 
 .widget--social {
-  width: 12.57%;
+  /* min-width: 12.57%; */
+  padding-left: 2.63%;
 }
 
 @media print, screen and (max-width: 1025px) {
@@ -238,10 +253,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  font-weight: var(--font-body-bold-weight, 600);
+  font-weight: 300;
   width: 100%; 
   color: black;
+  margin-bottom: 34px;
 }
+
+.footer .widget--social .thb-widget-title {
+  margin-bottom: 94px;
+}
+
 .footer .thb-widget-title.collapsible {
   padding: 25px 0;
   letter-spacing: 0.05em;
@@ -249,9 +270,8 @@
 }
 @media only screen and (min-width: 768px) {
   .footer .thb-widget-title.collapsible {
-    font-size: 0.875rem;
-    letter-spacing: 0.1em;
-    margin-bottom: 20px;
+    font-weight: 300;
+    margin-bottom: 64px;
     padding: 0; 
   }
   .footer .thb-widget-title.collapsible span {
@@ -302,7 +322,7 @@
 @media only screen and (min-width: 768px) {
   .footer .thb-widget-menu {
     padding: 0;
-    display: block !important; 
+    display: block; 
   } 
 }
 .footer .thb-widget-menu li {

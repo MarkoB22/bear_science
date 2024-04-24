@@ -4127,7 +4127,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 /* FONTS */
 .h1 {
   /* 38 */
-  font-size: calc(var(--font-heading-scale) * 2.38rem);
+  font-size: calc(var(--font-heading-scale) * 2.375rem);
 }
 
 .h2 {
@@ -4137,12 +4137,12 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 .h3 {
   /* 22 */
-  font-size: calc(var(--font-heading-scale) * 1.38rem);
+  font-size: calc(var(--font-heading-scale) * 1.375rem);
 }
 
 .h4 {
   /* 18 */
-  font-size: calc(var(--font-heading-scale) * 1.13rem);
+  font-size: calc(var(--font-heading-scale) * 1.125rem);
 }
 
 .h5 {
@@ -4157,17 +4157,17 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 .h7 {
   /* 22 */
-  font-size: calc(var(--font-heading-scale) * 1.38rem);
+  font-size: calc(var(--font-heading-scale) * 1.375rem);
 }
 
 .h8 {
   /* 18 */
-  font-size: calc(var(--font-heading-scale) * 1.13rem);
+  font-size: calc(var(--font-heading-scale) * 1.125rem);
 }
 
 .h9 {
   /* 14 */
-  font-size: calc(var(--font-heading-scale) * 0.88rem);
+  font-size: calc(var(--font-heading-scale) * 0.875rem);
 }
 
 .h10 {
@@ -4177,12 +4177,12 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 .h11 {
   /* 18 */
-  font-size: calc(var(--font-heading-scale) * 1.13rem);
+  font-size: calc(var(--font-heading-scale) * 1.125rem);
 }
 
 .h12 {
   /* 14 */
-  font-size: calc(var(--font-heading-scale) * 0.88rem);
+  font-size: calc(var(--font-heading-scale) * 0.875rem);
 }
 
 .h13 {
@@ -4192,7 +4192,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 .h14 {
   /* 14 */
-  font-size: calc(var(--font-heading-scale) * 0.88rem);
+  font-size: calc(var(--font-heading-scale) * 0.875rem);
 }
 
 .h15 {
@@ -4202,7 +4202,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 .h16 {
   /* 14 */
-  font-size: calc(var(--font-heading-scale) * 0.88rem);
+  font-size: calc(var(--font-heading-scale) * 0.875rem);
 }
 
 .h17 {
