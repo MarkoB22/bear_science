@@ -1,0 +1,59 @@
+{{- 'product-explanation.css' | asset_url | stylesheet_tag -}}
+{%- liquid
+    assign overlay_color = section.settings.overlay_color
+    assign overlay_opacity = section.settings.overlay_opacity
+-%}
+<div class="product_explanation_wrapper">
+
+
+    <div class="product_explanation_upper {{ overlay_color.rgb }}; {{ overlay_opacity | divided_by: 100.0 }}"></div>
+    <div class="product_explanation_lower {{ overlay_color.rgb }}; {{ overlay_opacity | divided_by: 100.0 }}"></div>
+
+    {%- if block.settings.image != blank -%}
+        <div class="product_explanation_img">
+            {% assign image = block.settings.image %}
+            {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+            {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
+        </div>
+    {%- endif -%}
+
+</div>
+{% schema %}
+    {
+        "name": "Product Showoff",
+        "settings": [
+            {
+                "type": "text",
+                "id": "title",
+                "label": "Title",
+                "default": "Title"
+            },
+            {
+                "type": "image_picker",
+                "id": "image",
+                "label": "Image"
+            },
+            {
+				"type": "color",
+				"id": "overlay_color",
+				"label": "Overlay",
+				"default": "#000000"
+			},
+			{
+				"type": "range",
+				"id": "overlay_opacity",
+				"min": 0,
+				"max": 100,
+				"step": 1,
+				"unit": "%",
+				"label": "Overlay opacity",
+				"default": 70
+			}
+        ],
+        "presets": [
+          {
+            "name": "Product Showoff"
+          }
+        ]
+    }
+{% endschema %}  
