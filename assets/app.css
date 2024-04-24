@@ -3956,7 +3956,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 .button_type1 svg path {
   transition: all ease-in-out .3s;
-  fill: black;
+  fill: #6D7E60;
 }
 
 .button_type1:hover svg path {
