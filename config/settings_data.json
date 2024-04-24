@@ -15,7 +15,7 @@
     "social_facebook_link": "https:\/\/facebook.com\/",
     "social_twitter_link": "",
     "social_instagram_link": "https:\/\/instagram.com\/",
-    "product_aspect_ratio": "adapt",
+    "product_aspect_ratio": "portrait",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",

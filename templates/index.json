@@ -235,7 +235,7 @@
         "collection": "frontpage",
         "display_type": "carousel",
         "product_limit": 8,
-        "columns_desktop": 4,
+        "columns_desktop": 3,
         "show_view_all": true,
         "mobile_swipe": true,
         "show_progress_bar": true,
