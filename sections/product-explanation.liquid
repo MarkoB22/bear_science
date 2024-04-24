@@ -6,8 +6,8 @@
 <div class="product_explanation_wrapper">
 
     <div class="product_explanation_colors">
-        <div class="product_explanation_upper {{ overlay_color_up.rgb }}; {{ overlay_opacity_up | divided_by: 100.0 }}"></div>
-        <div class="product_explanation_lower {{ overlay_color_down.rgb }}; {{ overlay_opacity_down | divided_by: 100.0 }}"></div>
+        <div class="product_explanation_upper" style="background-color: {{ section.settings.overlay_color_up }}; {{ overlay_opacity_up | divided_by: 100.0 }};"></div>
+        <div class="product_explanation_lower" style="background-color: {{ section.settings.overlay_color_down }}; {{ overlay_opacity_down | divided_by: 100.0 }};"></div>
     </div>
 
     {%- if section.settings.image != blank -%}
@@ -31,13 +31,13 @@
             {
 				"type": "color",
 				"id": "overlay_color_up",
-				"label": "Overlay",
+				"label": "Upper background color",
 				"default": "#6D7E60"
 			},
             {
 				"type": "color",
 				"id": "overlay_color_down",
-				"label": "Overlay",
+				"label": "Lower background color",
 				"default": "#FFFFFF"  
 			},
 			{
@@ -47,7 +47,7 @@
 				"max": 100,
 				"step": 1,
 				"unit": "%",
-				"label": "Overlay opacity",
+				"label": "Upper overlay opacity",
 				"default": 70
 			},
             {
@@ -57,7 +57,7 @@
 				"max": 100,
 				"step": 1,
 				"unit": "%",
-				"label": "Overlay opacity",
+				"label": "Lower overlay opacity",
 				"default": 70
 			}
         ],
