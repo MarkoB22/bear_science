@@ -61,10 +61,12 @@
     "product_explanation_YxwfzW": {
       "type": "product-explanation",
       "settings": {
-        "title": "Title",
-        "image": "shopify:\/\/shop_images\/Group_22_mob.png",
-        "overlay_color": "#000000",
-        "overlay_opacity": 70
+        "image_mob": "shopify:\/\/shop_images\/Group_22_desk.png",
+        "image_desktop": "shopify:\/\/shop_images\/Group_22_mob.png",
+        "background_color_up": "#6D7E60",
+        "background__color_down": "#FFFFFF",
+        "opacity_up": 100,
+        "opacity_down": 100
       }
     },
     "scrolling_text_eM6VzK": {
