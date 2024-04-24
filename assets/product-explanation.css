@@ -10,13 +10,11 @@
 
 .product_explanation_upper {
     height: 281px;
-    background-color: lightblue;
 }
 
 .product_explanation_lower {
     height: 196px;
     flex-grow: 1;
-    background-color: lightcoral;
 }
 
 .product_explanation_img {
