@@ -10,9 +10,17 @@
         <div class="product_explanation_lower" style="background-color: {{ section.settings.background_color_down }}; opacity: {{ section.settings.opacity_down | divided_by: 100.0 }};"></div>
     </div>
 
-    {%- if section.settings.image != blank -%}
-        <div class="product_explanation_img">
-            {% assign image = section.settings.image %}
+    {%- if section.settings.image_mob != blank -%}
+        <div class="product_explanation_img_mobile">
+            {% assign image_mob = section.settings.image %}
+            {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+            {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
+        </div>
+    {%- endif -%}
+
+    {%- if section.settings.image_desktop != blank -%}
+        <div class="product_explanation_img_mobile">
+            {% assign image_desktop = section.settings.image %}
             {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
             {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
         </div>
@@ -25,7 +33,12 @@
         "settings": [
             {
                 "type": "image_picker",
-                "id": "image",
+                "id": "image_mob",
+                "label": "Image"
+            },
+            {
+                "type": "image_picker",
+                "id": "image_desktop",
                 "label": "Image"
             },
             {
