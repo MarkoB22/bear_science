@@ -6,8 +6,8 @@
 <div class="product_explanation_wrapper">
 
     <div class="product_explanation_colors">
-        <div class="product_explanation_upper" style="background-color: {{ section.settings.overlay_color_up }}; {{ overlay_opacity_up | divided_by: 100.0 }};"></div>
-        <div class="product_explanation_lower" style="background-color: {{ section.settings.overlay_color_down }}; {{ overlay_opacity_down | divided_by: 100.0 }};"></div>
+        <div class="product_explanation_upper" style="background-color: {{ section.settings.background_color_up }}; opacity: {{ section.settings.opacity_up | divided_by: 100.0 }};"></div>
+        <div class="product_explanation_lower" style="background-color: {{ section.settings.background_color_down }}; opacity: {{ section.settings.opacity_down | divided_by: 100.0 }};"></div>
     </div>
 
     {%- if section.settings.image != blank -%}
@@ -30,35 +30,35 @@
             },
             {
 				"type": "color",
-				"id": "overlay_color_up",
+				"id": "background_color_up",
 				"label": "Upper background color",
 				"default": "#6D7E60"
 			},
             {
 				"type": "color",
-				"id": "overlay_color_down",
+				"id": "background__color_down",
 				"label": "Lower background color",
 				"default": "#FFFFFF"  
 			},
 			{
-				"type": "range",
-				"id": "overlay_opacity_up",
-				"min": 0,
-				"max": 100,
-				"step": 1,
-				"unit": "%",
-				"label": "Upper overlay opacity",
-				"default": 70
+                "type": "range",
+                "id": "opacity_up",
+                "label": "Lower Div Opacity",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "%",
+                "default": 100
 			},
             {
-				"type": "range",
-				"id": "overlay_opacity_down",
-				"min": 0,
-				"max": 100,
-				"step": 1,
-				"unit": "%",
-				"label": "Lower overlay opacity",
-				"default": 70
+                "type": "range",
+                "id": "opacity_down",
+                "label": "Lower Div Opacity",
+                "min": 0,
+                "max": 100,
+                "step": 1,
+                "unit": "%",
+                "default": 100
 			}
         ],
         "presets": [
