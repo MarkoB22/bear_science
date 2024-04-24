@@ -228,9 +228,11 @@
       "settings": {
         "heading": "FEATURED COLLECTION",
         "heading_left": true,
+        "button_text": "View all",
+        "button_url": "",
         "description": "",
         "full_width": true,
-        "collection": "",
+        "collection": "frontpage",
         "display_type": "carousel",
         "product_limit": 8,
         "columns_desktop": 4,
