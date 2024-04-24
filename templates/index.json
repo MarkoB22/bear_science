@@ -107,6 +107,15 @@
         "button_text_arrow": "Button text"
       }
     },
+    "product_explanation_B4VT7i": {
+      "type": "product-explanation",
+      "settings": {
+        "title": "",
+        "image": "shopify:\/\/shop_images\/Group_22_mob.png",
+        "overlay_color": "#000000",
+        "overlay_opacity": 39
+      }
+    },
     "traits_AFGyQX": {
       "type": "traits",
       "blocks": {
@@ -617,6 +626,7 @@
     "title_text_button_CYeRCB",
     "scrolling_text_eM6VzK",
     "product_presentation_9yUw6y",
+    "product_explanation_B4VT7i",
     "traits_AFGyQX",
     "reviews_KeyhVG",
     "blog_title_fW9yHF",
