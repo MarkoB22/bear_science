@@ -25,7 +25,11 @@
     padding: 0 4.2%;
 }
 
-.product_description_image {
+.product_description_image_desktop {
+    display: none;
+}
+
+.product_description_image_mobile {
     height: 42.6%;
     margin-bottom: 40px;
 }
@@ -34,7 +38,6 @@
 @media print, screen and (min-width: 1025px) {
     .product_description_wrapper {
         padding: 94px 176px;
-
     }
     
     .product_description_title {
@@ -50,7 +53,7 @@
         padding: 0 16.89%;
     }
 
-    .product_description_image {
+    .product_description_image_desktop {
         display: flex;
         align-items: center;
         height: auto;
@@ -58,7 +61,7 @@
         margin-bottom: 84px;
     }
 
-    .product_description_image > img {
+    .product_description_image_desktop > img {
         flex-grow: 1;
     }
 

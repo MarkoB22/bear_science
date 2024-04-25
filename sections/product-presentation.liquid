@@ -15,9 +15,17 @@
         {% endif %}
     </div>
 
-    {%- if section.settings.image != blank -%}
-        <div class="product_description_image">
-            {% assign image = section.settings.image %}
+    {%- if section.settings.image_mob != blank -%}
+        <div class="product_description_image_mobile">
+            {% assign image = section.settings.image_mob %}
+            {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+            {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
+        </div>
+    {%- endif -%}
+    
+    {%- if section.settings.image_desktop != blank -%}
+        <div class="product_description_image_desktop">
+            {% assign image = section.settings.image_desktop %}
             {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
             {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
         </div>
@@ -47,8 +55,13 @@
         },
         {
             "type": "image_picker",
-            "id": "image",
-            "label": "Image"
+            "id": "image_mob",
+            "label": "Image for Mobile"
+        },
+        {
+            "type": "image_picker",
+            "id": "image_desktop",
+            "label": "Image for Desktop"
         },
         {
             "type": "url",
