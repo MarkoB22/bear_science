@@ -113,9 +113,10 @@
       "settings": {
         "title": "Optimized Betaine (TMG) Powder",
         "subtitle": "Your Key to a Better Health and Performance",
-        "image": "shopify:\/\/shop_images\/WhatsApp_Image_2024-04-15_at_14.20.23.jpg",
+        "image_mob": "shopify:\/\/shop_images\/WhatsApp_present_mob.jpg",
+        "image_desktop": "shopify:\/\/shop_images\/hplxj_WhatsApp_deskt.jpg",
         "button_link": "",
-        "button_text_arrow": "Button text"
+        "button_text_arrow": "See all products"
       }
     },
     "traits_AFGyQX": {
