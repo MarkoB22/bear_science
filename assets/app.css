@@ -3354,6 +3354,30 @@ select {
     width: 18px;
     height: 18px;
     top: calc(50% + 2px); }
+
+  .product-card .product-featured-image-link {
+    width: 71.55%;
+    margin: 0 auto;
+  }
+
+  .product-card quick-view.product-card-quickview {
+    background: #6D7E60;
+  }
+
+  .product_card-rectangle {
+    height: 19.52%;
+    border: 2px solid #6D7E60;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all ease-in-out .6s;
+  }
+
+  .product-featured-image:hover .product_card-rectangle {
+    height: 99%;
+  }
+
   .product-cart-item .cart-product-link {
     display: block;
     font-size: calc(var(--font-product-title-scale, 1) * 0.9375rem);
@@ -3809,7 +3833,7 @@ https://flickity.metafizzy.co
   height: 48px;
   margin-top: -24px;
   z-index: 30;
-  opacity: 0;
+  opacity: 1;
   cursor: pointer;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); }
   .flickity-nav svg {
@@ -4228,12 +4252,6 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   /* 12 */
   font-size: calc(var(--font-heading-scale) * 0.75rem);
 }
-
-
-/* .b1 {
-  font-size: calc(var(--font-heading-scale) * 0.875rem);
-  line-height: calc(var(--font-heading-line-height-scale) * 1.22);
-} */
 
 
 @media print, screen and (min-width: 1025px) {

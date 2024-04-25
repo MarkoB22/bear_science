@@ -1,5 +1,3 @@
-
-
 .featured-collection .row,
 .featured-collection .row .columns {
   padding: 0;
@@ -17,6 +15,10 @@
 
 .featured-collection .products {
   margin-top: 28px;
+}
+
+.featured-collection .carousel__slide {
+  padding: 0 31px;
 }
 
 .featured-collection {
@@ -48,6 +50,11 @@
   .featured-collection .text-center .button {
     margin-top: 10px; }
 
+@media only screen and (max-width: 1024px) {
+  .featured-collection .carousel__slide {
+    max-width: 100%;
+  }
+}
 @media only screen and (min-width: 1025px) {
   .featured-collection {
     padding: 34px 64px 188px;

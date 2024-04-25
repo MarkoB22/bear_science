@@ -36,7 +36,8 @@
 -%}
 <product-card class="product-card text-{{ product_content_alignment }}">
   <figure class="product-featured-image {% if products_hover_images and product_card_product.images.size > 1 and products_hover_images_count > 0 %}thb-hover{% endif %}">
-    {% render 'product-card-badge', product_card_product: product_card_product %}
+    <div class="product_card-rectangle"></div>
+	{% render 'product-card-badge', product_card_product: product_card_product %}
     <a href="{{ product_card_product.url | within: collection }}" title="{{ product_card_product.title | escape }}" class="product-featured-image-link aspect-ratio aspect-ratio--{{ settings.product_aspect_ratio }}" style="--padding-bottom: {{ 1 | divided_by: ratio | times: 100 }}%;">
       {%- if products_hover_images and product_card_product.images.size > 1 -%}
         {%- for i in (1..products_hover_images_count) -%}
@@ -54,9 +55,9 @@
 			{%- endif -%}
     </a>
 			{%- if settings.enable_quick_view -%}
-			<quick-view class="product-card-quickview product-card-quickview--{%- unless show_size_options -%}button{%- else -%}icon{%- endunless -%}" href="#Product-Drawer" data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
+			<quick-view class="not_mobile product-card-quickview product-card-quickview--{%- unless show_size_options -%}button{%- else -%}icon{%- endunless -%}" href="#Product-Drawer" data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
 				<div class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</div>
-				<span>{%- unless show_size_options -%}{{ 'products.product.quick_view' | t }}{%- else -%}{% render 'svg-icons' with 'thb-quick-view' %}{%- endunless -%}</span>
+				<span class="h10 lh-sm f_bold">{%- unless show_size_options -%}{{ 'products.product.quick_view' | t }}<span class="magnifying_glass">⌕</span>{%- else -%}{% render 'svg-icons' with 'thb-quick-view' %}{%- endunless -%}</span>
 			</quick-view>
 			{%- endif -%}
 			{%- if show_size_options -%}

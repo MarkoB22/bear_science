@@ -14,7 +14,6 @@
 	assign show_progress_bar = section.settings.show_progress_bar
 	assign disable_top_spacing = section.settings.disable_top_spacing
 	assign disable_bottom_spacing = section.settings.disable_bottom_spacing
-	assign columns_class = 'product_card-featerd_collection_width'
 	case columns_desktop
 		when 2
 			assign columns_class = 'small-6 medium-6'
@@ -39,7 +38,7 @@
 	endif
 -%}
 <div class="featured-collection{% if mobile_swipe %} swipe-on-mobile{% endif %} section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
-	<div class="row{% if full_width %} full-width-row{% endif %}">
+	<div class="{% if full_width %} full-width-row{% endif %}">
 		<div class="small-12 columns">
 			<div class="featured_collection-title_button_wrapper">
 				<h2 class="h1 f_light lh-l">{{ section_heading }}</h2>
@@ -50,7 +49,7 @@
 					</a>
 				</div>
 			</div>
-			<{{ element }} id="product-grid-{{ section.id }}" class="products row {{ display_type }}">
+			<{{ element }} id="product-grid-{{ section.id }}" class="products {{ display_type }}">
 				{%- if featured_collection != blank -%}
 					{%- for product in featured_collection.products limit: product_limit -%}
 						<div class="{{ columns_class }} columns {% if display_type == 'carousel' %}carousel__slide{% endif %}">
