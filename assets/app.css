@@ -4010,7 +4010,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 .button_type3::after {
   content: "";
-  width: 128px;
+  width: 64px;
   height: 1px;
   background: white;
   display: block;
@@ -4037,24 +4037,38 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .button_type4 {
-  color: black;
+  color: #040404;
+  width: fit-content;
   transition: all ease-in-out .3s;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  padding-bottom: 8px;
 }   
 
 .button_type4::after {
   content: "";
   width: 38px;
   height: 1px;
-  background: black;
+  background: #040404;
   display: block;
   position: absolute;
   bottom: 0;
   transition: all ease-in-out .3s;
 }
 
+.button_type4 svg {
+  transform: scale(1);
+  transition: all ease-in-out .3s;
+}
+
+.button_type4 svg path {
+  fill: #040404;
+}
+
 .button_type4:hover svg {
   transform: scale(1.3333);
-  fill: black;
 }
 
 .button_type4:hover::after {
@@ -4313,6 +4327,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     font-size: calc(var(--font-heading-scale) * 1rem);
   }
 
+}
+
+.product_card-featerd_collection_width {
+  min-width: 100%;
 }
 
 
