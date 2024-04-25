@@ -1,5 +1,4 @@
 .product_explanation_wrapper {
-    height: 477px;
     position: relative;
 }
 
@@ -9,12 +8,13 @@
 }
 
 .product_explanation_upper {
-    height: 281px;
+    height: 77vw;
+    width: auto;
 }
 
 .product_explanation_lower {
-    height: 196px;
-    flex-grow: 1;
+    height: 53vw;
+    width: auto;
 }
 
 .product_explanation_img_desktop {
@@ -23,7 +23,6 @@
 
 .product_explanation_img_mobile {
     width: 93.98%;
-    height: 345px;
 
     position: absolute;
     top: 130px;
@@ -40,17 +39,15 @@
 @media print, screen and (min-width: 1025px) {
 
     .product_explanation_wrapper {
-        height: 643px;
         position: relative;
     }
 
     .product_explanation_upper {
-        height: 281px;
+        height: 19.1vw;
     }
     
     .product_explanation_lower {
-        height: 362 px;
-        flex-grow: 1;
+        height: 27.58vw;
     }
 
     .product_explanation_img_mobile {
@@ -60,10 +57,9 @@
     .product_explanation_img_desktop {
         display: block;
         width: 68.40%;
-        height: 563px;
     
         position: absolute;
-        top: 80px;
+        top: 4.3vw;
         left: 169px;
         z-index: 10;
     }
