@@ -15,7 +15,10 @@
     "social_facebook_link": "https:\/\/facebook.com\/",
     "social_twitter_link": "",
     "social_instagram_link": "https:\/\/instagram.com\/",
+    "product_content_alignment": "center",
     "product_aspect_ratio": "portrait",
+    "products_hover_images": false,
+    "enable_quick_add": true,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
