@@ -1,7 +1,7 @@
 {{ 'reviews.css' | asset_url | stylesheet_tag }}
 <div class="reviews_wrapper">
         {% if section.settings.title %}
-            <div class="reviews_title h9 lh-sm">
+            <div class="reviews_title h9 lh-sm f_medium">
                 {{ section.settings.title }}
             </div>
         {% endif %}
@@ -17,15 +17,15 @@
                                 {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
                             {% endfor %}
                         </div>
-                        <div class="reviews_review h11 lh-l">{{ block.settings.review }}</div>
-                        <div class="reviews_customer_name h17 lh-l">{{ block.settings.customer_name }}</div>
+                        <div class="reviews_review h11 lh-l f_regular">{{ block.settings.review }}</div>
+                        <div class="reviews_customer_name h17 lh-l f_medium">{{ block.settings.customer_name }}</div>
                     </div>
                 {% endif %}
             {% endfor %}
         </div>
 
         {% if section.settings.leave_review %}
-            <div class="reviews_leave_review h9 lh-sm">
+            <div class="reviews_leave_review h9 lh-sm f_regular">
                 <div class="reviews_leave_review_text">{{ section.settings.leave_review }}</div>
 
                     <a class="review_button button_type5 h11 lh-sm f_regular" href="{{ section.settings.button_link }}">

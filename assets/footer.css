@@ -162,8 +162,8 @@ ul {
   }
 
   .thb-widget-menu > li  {
-    display: inline-block;
-    box-sizing: border-box;
+    /* display: inline-block;
+    box-sizing: border-box; */
   }
 
   .thb-widget-menu li:nth-child(1),

@@ -78,6 +78,10 @@
     display: none;
 }
 
+.button_type5 {
+    padding: 14px 12.87px;
+}
+
 @media print, screen and (min-width: 1025px) {
 
     .reviews_all_reviews {
@@ -127,4 +131,7 @@
         margin-bottom: unset;
     }
 
+    button_type5 {
+        padding: 16.63px 60.5px;
+    }
 }
