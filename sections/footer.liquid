@@ -6,7 +6,7 @@
 	assign show_payment_icons = section.settings.show_payment_icons
 %}
 
-{% comment %} <link rel="stylesheet" href="{{ 'footer.css' | asset_url }}" media="print" onload="this.media='all'">
+<link rel="stylesheet" href="{{ 'footer.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'footer.css' | asset_url | stylesheet_tag }}</noscript>
 
 <div class="footer_wrapper">
@@ -120,19 +120,15 @@
 			{%- endfor -%}
 		</div>
 	</footer>
-	<div class="sub-footer h18 lh-l">
-		<div class="row {% if full_width %}full-width-row{% endif %}">
-			<div class="small-12 columns">
-				<p>&copy; {{ 'now' | date: "%Y" }} {{ shop.name }}, {{ copyright_text }} {{ powered_by_link }}</p>
-				{%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
+	<div class="sub-footer h18 lh-l">	
+		<p>&copy; {{ 'now' | date: "%Y" }} {{ shop.name }}, {{ copyright_text }} {{ powered_by_link }}</p>
+		{%- if shop.features.follow_on_shop? and section.settings.enable_follow_on_shop -%}
 		<div class="footer--follow-on-shop">
 			{{ shop | login_button: action: 'follow' }}
 		</div>
 		{%- endif -%}
-			</div>
-		</div>
 	</div>
-</div> {% endcomment %}
+</div>
 
 {% schema %}
   {
