@@ -10,6 +10,7 @@
 
 ul {
   list-style-type: none;
+  margin: 0;
 }
 
 .footer {
@@ -43,3 +44,51 @@ ul {
   width: 92%;
   height: 100%;
 }
+
+.widget--menu {
+  margin-bottom: 32px;
+}
+
+.thb-widget-title {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.thb-widget-menu {
+  columns: 2;
+  margin-bottom: 23px;
+}
+
+.widget--text .rte > p {
+  margin: 0;
+}
+
+.widget--social {
+  margin-top: 64px;
+}
+
+.widget--social .thb-widget-title {
+  display: none;
+}
+
+.social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.social-links > li {
+  padding: 0 2.3%;
+}
+
+.social-links > li > a > span {
+  display: none;
+}
+
+.social-links > li > a > svg {
+  width: 24px;
+  height: auto;
+}
+
+
