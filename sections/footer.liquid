@@ -24,7 +24,7 @@
 			{% if block.type == 'text' %}
 				<div class="widget widget--text">
 					{%- if block.settings.title != blank -%}
-						<div class="thb-widget-title h11 lh-sm f_light">{{ block.settings.title }}</div>
+						<div class="thb-widget-title h11 lh-sm f_regular">{{ block.settings.title }}</div>
 					{%- endif -%}
 					{%- if block.settings.image != blank -%}
 						{% assign image = block.settings.image %}
@@ -32,7 +32,7 @@
 						{%- render 'responsive-image', image: image, sizes: master_width, retina: 1, priority: 'low' -%}
 					{%- endif -%}
 					{%- if block.settings.text != blank -%}
-						<div class="rte text-size--{{ block.settings.text_size }} h16 lh-sm">
+						<div class="rte text-size--{{ block.settings.text_size }} h16 lh-sm f_regular">
 							{{ block.settings.text }}
 						</div>
 					{%- endif -%}
@@ -40,15 +40,15 @@
 						<a class="text-button" href="{{ block.settings.button_link }}" role="button" title="{{ block.settings.button_text | escape }}">{{ block.settings.button_text }}</a>
 					{%- endif -%}
 					{%- if block.settings.show_social_links -%}
-						{%- render 'social-links h16 lh-sm' -%}
+						{%- render 'social-links h16 lh-sm f_regular' -%}
 					{%- endif -%}
 				</div>
 			{% endif %}
 			{%- if block.type == 'menu' -%}
 				<div class="widget widget--menu">
-					<button class="thb-widget-title h11 lh-sm collapsible active" tabindex="0">{{ block.settings.title }} <span></span></button>
+					<button class="thb-widget-title h11 lh-sm f_regular collapsible active" tabindex="0">{{ block.settings.title }} <span></span></button>
 					{%- if block.settings.menu != blank -%}
-					<ul class="thb-widget-menu h16 lh-sm">
+					<ul class="thb-widget-menu h16 lh-sm f_regular">
 					{% for link in block.settings.menu.links %}
 						{% assign has_sub_menu = false %}
 						{% if link.links.size > 0 %}
@@ -91,7 +91,7 @@
 			{%- if block.type == 'signup' -%}
 				<div class="widget widget--signup">
 					{% if block.settings.title != blank %}
-						<div class="thb-widget-title h11 lh-sm">{{ block.settings.title }}</div>
+						<div class="thb-widget-title h11 lh-sm f_regular">{{ block.settings.title }}</div>
 					{% endif %}
 					{% if block.settings.text != blank %}
 						{{ block.settings.text }}
@@ -103,7 +103,7 @@
 			{%- if block.type == 'social' -%}
 				<div class="widget widget--social">
 					{% if block.settings.title != blank %}
-						<div class="thb-widget-title h11 lh-sm">{{ block.settings.title }}</div>
+						<div class="thb-widget-title h11 lh-sm f_regular">{{ block.settings.title }}</div>
 					{% endif %}
 					{% render 'social-links' %}
 				</div>
@@ -111,7 +111,7 @@
 			{%- if block.type == 'custom_liquid' -%}
 				<div class="widget widget--custom">
 					{% if block.settings.title != blank %}
-						<div class="thb-widget-title h11 lh-sm">{{ block.settings.title }}</div>
+						<div class="thb-widget-title h11 lh-sm f_regular">{{ block.settings.title }}</div>
 					{% endif %}
 					{{ block.settings.custom_liquid }}
 				</div>

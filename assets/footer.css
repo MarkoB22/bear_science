@@ -47,6 +47,7 @@ ul {
 
 .widget--menu {
   margin-bottom: 32px;
+  width: 25.07%;
 }
 
 .thb-widget-title {
@@ -60,12 +61,17 @@ ul {
   margin-bottom: 23px;
 }
 
+.widget--text {
+  width: 23.06%;
+}
+
 .widget--text .rte > p {
   margin: 0;
 }
 
 .widget--social {
   margin-top: 64px;
+  width: 19.65%;
 }
 
 .widget--social .thb-widget-title {
@@ -159,6 +165,9 @@ ul {
 
   .thb-widget-menu {
     margin: 0;
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2;    /* Firefox */
+    column-count: 2;         /* standard syntax */
   }
 
   .thb-widget-menu > li  {
