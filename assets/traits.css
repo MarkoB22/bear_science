@@ -6,7 +6,6 @@
     padding: 24px;
     display: flex;
     flex-direction: column;
-    color: #040404;
 }
 
 .traits-block_wrapper {
@@ -24,7 +23,7 @@
     margin-bottom: 8.04%;
 
     /* makes title in two lines */
-    padding: 0 50px; 
+    /* padding: 0 50px;  */
 }
 
 .traits-image {
@@ -40,6 +39,7 @@
 
 .traits-text {
     height: 36.18%;
+    color: #040404;
 }
 
 @media print, screen and (min-width: 1025px) {
