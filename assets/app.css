@@ -3962,7 +3962,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   border: 3px solid #6D7E60;
   background: transparent;
   transition: all ease-in-out .3s;
-  color: black;
+  color: #040404;
   display: flex;
   gap: 24px;
   align-items: center;
