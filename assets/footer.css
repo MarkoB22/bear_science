@@ -112,8 +112,9 @@ ul {
   }
 
   .footer_logo {
-    width: 32%;
-    padding: 49.5px 11.54% 49.5px 4.44%;
+    max-width: calc(210px + 4.44%);
+    padding: 49.5px 0 49.5px 4.44%;
+    margin-right: auto;
   }
   
   .footer_logo > img {
@@ -129,7 +130,7 @@ ul {
     margin: 0;
     border-right: 1px solid black;
     padding-right: 2.63%;
-    /* min-width: 25.07%; */
+    min-width: 25.07%;
   }
 
   .widget--text {
@@ -172,7 +173,6 @@ ul {
   }
 
   .thb-widget-menu {
-    gap: 15px;
     margin: 0;
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2;    /* Firefox */
@@ -185,15 +185,14 @@ ul {
   }
 
   .thb-widget-menu li {
-    /* margin-top: 8px; */
-    margin: 0;
+    margin-top: 8px;
   }
 
-  /* .thb-widget-menu li:nth-child(1),
+  .thb-widget-menu li:nth-child(1),
   .thb-widget-menu li:nth-child(2),
   .thb-widget-menu li:nth-child(3) {
     padding-right: 35px;
-  } */
+  }
 
 }
 
