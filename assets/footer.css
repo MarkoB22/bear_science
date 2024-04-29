@@ -139,14 +139,14 @@ ul {
   .widget--text {
     border-right: 1px solid black;
     padding: 0 2.63%;
-    /* min-width: 23.06%; */
+    min-width: 23.06%;
   }
 
   .widget--social {
     margin-top: unset;
     padding-left: 2.63%;
     padding-right: 4.44%;
-    /* min-width: 19.65%; */
+    min-width: 19.65%;
   }
 
   .widget--social .thb-widget-title {
