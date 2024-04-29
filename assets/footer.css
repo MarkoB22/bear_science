@@ -160,7 +160,7 @@ ul {
   }
 
   .widget--social .thb-widget-title {
-    margin-bottom: 94px;
+    margin-bottom: 88px;
   }
 
   .social-links {
@@ -170,6 +170,20 @@ ul {
 
   .social-links > li {
     padding: 0;
+  }
+
+  .social-links > li > a > svg {
+    position: relative;
+    top: 5px;
+    left: 9.5vw;
+  }
+
+  .social-links > li > a > span {
+    position: relative;
+    left: -2vw;
+    font-size: 18px;
+    line-height: 21.94px;
+    font-weight: 400;
   }
 
   .thb-widget-menu {
