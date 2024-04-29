@@ -19,6 +19,8 @@
     "product_aspect_ratio": "portrait",
     "products_hover_images": false,
     "enable_quick_add": true,
+    "show_products_vendor": false,
+    "show_size_options": false,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
