@@ -187,11 +187,11 @@ ul {
     margin-top: 8px;
   }
 
-  .thb-widget-menu li:nth-child(1),
+  /* .thb-widget-menu li:nth-child(1),
   .thb-widget-menu li:nth-child(2),
   .thb-widget-menu li:nth-child(3) {
     padding-right: 35px;
-  }
+  } */
 
 }
 
