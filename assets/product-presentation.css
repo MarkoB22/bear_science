@@ -47,7 +47,7 @@
     }
     
     .product_description_title {
-        width: 75.55%;
+        width: 100%;
         padding-bottom: 84px;
     }
 
@@ -67,7 +67,7 @@
         display: flex;
         align-items: center;
         height: auto;
-        width: 75.56%;
+        width: 100%;
         margin-bottom: 84px;
     }
 
