@@ -52,7 +52,6 @@ ul {
 
 .thb-widget-title {
   text-transform: uppercase;
-  font-weight: 300;
   margin-bottom: 20px;
 }
 
@@ -101,6 +100,10 @@ ul {
 .social-links > li > a > svg {
   width: 24px;
   height: auto;
+}
+
+.social-links > li > a > span {
+  color: #040404;
 }
 
 @media print, screen and (min-width: 1025px) {
