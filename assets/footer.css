@@ -17,6 +17,7 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 48px 7.10%;
+  color: #040404;
 }
 
 .sub-footer {
@@ -47,7 +48,6 @@ ul {
 
 .widget--menu {
   margin-bottom: 32px;
-  width: 25.07%;
 }
 
 .thb-widget-title {
@@ -57,12 +57,14 @@ ul {
 }
 
 .thb-widget-menu {
-  columns: 2;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-rows: repeat(3, 1fr);
   margin-bottom: 23px;
 }
 
-.widget--text {
-  width: 23.06%;
+.thb-widget-menu > li > a {
+  color: #040404;
 }
 
 .widget--text .rte > p {
@@ -71,7 +73,6 @@ ul {
 
 .widget--social {
   margin-top: 64px;
-  width: 19.65%;
 }
 
 .widget--social .thb-widget-title {
@@ -102,13 +103,12 @@ ul {
   .footer {
     display: flex;
     flex-direction: row;
-    justify-content: space-around; /* makni ovo */
     padding: 86px 0;
   }
 
   .footer_logo {
     width: 32%;
-    padding: 49.5px 13.19% 49.5px 4.44%;
+    padding: 49.5px 11.54% 49.5px 4.44%;
   }
   
   .footer_logo > img {
@@ -143,7 +143,7 @@ ul {
   }
 
   .widget--menu .thb-widget-title {
-    margin-bottom: 64px;
+    margin-bottom: 56px;
   }
 
   .widget--text .thb-widget-title {
@@ -170,17 +170,20 @@ ul {
     column-count: 2;         /* standard syntax */
   }
 
-  .thb-widget-menu > li  {
-    /* display: inline-block;
-    box-sizing: border-box; */
+  .thb-widget-menu {
+    margin: 0;
+    align-items: end;
+  }
+
+  .thb-widget-menu li {
+    margin-top: 8px;
   }
 
   .thb-widget-menu li:nth-child(1),
   .thb-widget-menu li:nth-child(2),
-  .thb-widget-menu li:nth-child(4),
-  .thb-widget-menu li:nth-child(5) {
-    margin-bottom: 12px;
-}
+  .thb-widget-menu li:nth-child(3) {
+    padding-right: 47px;
+  }
 
 }
 
