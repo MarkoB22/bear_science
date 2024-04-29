@@ -6,6 +6,7 @@
 
 .row {
   padding: 0;
+  overflow-x: hidden;
 }
 
 ul {
