@@ -3,7 +3,8 @@
     "title_text_button_tn7hTt": {
       "type": "title_text_button",
       "settings": {
-        "title": "OUR PRODUCTS",
+        "title_upper": "OUR",
+        "title_lower": "PRODUCTS",
         "title_position": "right",
         "text_size_text": "h2",
         "text": "<p>High-quality food suplements for your health and longevity<\/p>",
