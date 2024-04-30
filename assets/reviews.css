@@ -99,6 +99,10 @@
         padding: 18.2px 0px 17.4px 0px;
     }
 
+    .reviews_title {
+        letter-spacing: 2.3px;
+    }
+
     .reviews_single_review {
         border-right: 1px solid white;
         padding: 1.66% 6.84% 1.66% 6.84%;
