@@ -16,12 +16,12 @@
     {% endif %}
 
 
-    {% if section.settings.text or section.settings.button_text %}
-        <div class="title_text_button-button_text_wrapper h11 lh-l f_medium {{ section.settings.text_size_text }}">
+    {% if section.settings.r_text or section.settings.button_text %}
+        <div class="title_text_button-button_text_wrapper">
 
-            {% if section.settings.text %}
-            <div class="title_text_button-text">
-                {{ section.settings.text }}
+            {% if section.settings.r_text %}
+            <div class="title_text_button-text h11 lh-l f_medium {{ section.settings.text_size_text }}">
+                {{ section.settings.r_text }}
             </div>
             {% endif %}
             
@@ -89,12 +89,12 @@
 					"label": "Large"
 				}
 			],
-			"default": "h7",
+			"default": "h2",
 			"label": "Text size"
 		},
         {
             "type": "richtext",
-            "id": "text",
+            "id": "r_text",
             "label": "Text content 1",
             "default": "<p>Text text text. Text text text text.</p>"
         },
