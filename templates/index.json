@@ -18,7 +18,7 @@
             "description_size": "h8",
             "content_position": "bottom-right",
             "opposing_content": "Lower your biological age",
-            "text_alignment": "left",
+            "text_alignment": "center",
             "content_size": "medium",
             "use_overlay": true,
             "overlay_color": "#ffffff",
