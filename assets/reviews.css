@@ -8,14 +8,18 @@
     margin: auto;
 }
 
-.reviews_title {
+.reviews_title_wrapper {
     color: #04040499;
     width: 100%;
-    padding: 17px 0px 16px 0px;
+    padding: 14px 0px 13px 0px;
     background-color: white;
     border-top: 1px solid black;
     letter-spacing: 2px;
     text-align: center;
+}
+
+.reviews_title {
+    margin: 0;
 }
 
 .reviews_all_reviews {
@@ -91,6 +95,10 @@
         width: 100%;
     }
 
+    .reviews_title_wrapper {
+        padding: 18.2px 0px 17.4px 0px;
+    }
+
     .reviews_single_review {
         border-right: 1px solid white;
         padding: 1.66% 6.84% 1.66% 6.84%;
@@ -131,7 +139,7 @@
         margin-bottom: unset;
     }
 
-    button_type5 {
-        padding: 16.63px 60.5px;
+    .button_type5 {
+        padding: 16.62px 60.5px;
     }
 }

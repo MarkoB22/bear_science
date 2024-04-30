@@ -1,8 +1,8 @@
 {{ 'reviews.css' | asset_url | stylesheet_tag }}
 <div class="reviews_wrapper">
         {% if section.settings.title %}
-            <div class="reviews_title h9 lh-sm f_medium">
-                {{ section.settings.title }}
+            <div class="reviews_title_wrapper h9 lh-sm f_medium">
+                <p class="reviews_title">{{ section.settings.title }}</p>
             </div>
         {% endif %}
 
