@@ -54,6 +54,7 @@ ul {
 .thb-widget-title {
   text-transform: uppercase;
   margin-bottom: 20px;
+  color: #040404;
 }
 
 .thb-widget-menu {
@@ -105,6 +106,10 @@ ul {
 
 .social-links > li > a > span {
   color: #040404;
+}
+
+.icon > path {
+  fill: #04040499;
 }
 
 @media print, screen and (min-width: 1025px) {
