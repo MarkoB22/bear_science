@@ -16,7 +16,7 @@
             "heading_size": "h4",
             "content": "High quality nutritional supplements for your health and longevity",
             "description_size": "h8",
-            "content_position": "bottom-right",
+            "content_position": "bottom-left",
             "opposing_content": "Lower your biological age",
             "text_alignment": "left",
             "content_size": "medium",
@@ -50,12 +50,12 @@
     "title_text_button_CYeRCB": {
       "type": "title_text_button",
       "settings": {
-        "title": "ABOUT US",
+        "title": "ABOUT U",
         "title_position": "left",
         "text_size_text": "h7",
         "text": "<p>At Bear-Science, we are passionate about helping people live fuller, healthier and longer-lasting lives. As a German brand of smart supplements, our focus is on promoting lifelong health and energy.<\/p><p>Our products are based on scientific evidence and carefully selected to give you the best possible results. We believe that a balanced diet and regular supplementation are crucial for your health and well-being.<\/p>",
         "button_link": "#",
-        "button_text_arrow": "Learn more"
+        "button_text_arrow": ""
       }
     },
     "product_explanation_YxwfzW": {
