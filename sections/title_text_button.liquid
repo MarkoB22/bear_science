@@ -1,10 +1,15 @@
 {{- 'title_text_button.css' | asset_url | stylesheet_tag -}}
 <div class="title_text_button-wrapper title_position-{{ section.settings.title_position }}">
 
-    {% if section.settings.title %}
-    <div class="title_text_button-title-wrapper title_position-{{ section.settings.title_position }} h1 lh-l">
+    {% if section.settings.title_upper %}
+    <div class="title_text_button-title-wrapper title_position-{{ section.settings.title_position }} h1 lh-l f_light">
         <div class="title_text_button-title">
-            {{ section.settings.title }}
+            <div class="title_text_button-upper">
+                {{ section.settings.title_upper }}
+            </div>
+            <div class="title_text_button-lower">
+                {{ section.settings.title_lower }}
+            </div>
         </div>
         <div class="vl"></div>
     </div>
@@ -12,7 +17,7 @@
 
 
     {% if section.settings.text or section.settings.button_text %}
-        <div class="title_text_button-button_text_wrapper h11 lh-l {{ section.settings.text_size_text }}">
+        <div class="title_text_button-button_text_wrapper h11 lh-l f_medium {{ section.settings.text_size_text }}">
 
             {% if section.settings.text %}
             <div class="title_text_button-text">
@@ -45,9 +50,15 @@
     "settings": [
         {
             "type": "text",
-            "id": "title",
-            "label": "Title",
-            "default": "Title"
+            "id": "title_upper",
+            "label": "Upper Title",
+            "default": "Upper Title"
+        },
+        {
+            "type": "text",
+            "id": "title_lower",
+            "label": "Lower Title",
+            "default": "Lower Title"
         },
         {
 			"type": "select",
