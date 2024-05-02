@@ -6,8 +6,11 @@
         "title_upper": "OUR",
         "title_lower": "PRODUCTS",
         "title_position": "right",
-        "text_size_text": "h2",
-        "text": "<p>High-quality food suplements for your health and longevity<\/p>",
+        "title_size": "h1",
+        "text_size": "h19",
+        "text_line_height": "lh-l",
+        "text_weight": "f_regular",
+        "r_text": "<p>High-quality food suplements for your health and longevity<\/p>",
         "button_link": "",
         "button_text_arrow": ""
       }
