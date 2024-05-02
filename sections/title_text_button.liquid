@@ -2,7 +2,7 @@
 <div class="title_text_button-wrapper title_position-{{ section.settings.title_position }}">
 
     {% if section.settings.title_upper %}
-    <div class="title_text_button-title-wrapper title_position-{{ section.settings.title_position }} h1 lh-l f_light">
+    <div class="title_text_button-title-wrapper title_position-{{ section.settings.title_position }} {{ section.settings.title_size }} lh-l f_light">
         <div class="title_text_button-title">
             <div class="title_text_button-upper">
                 {{ section.settings.title_upper }}
@@ -20,7 +20,7 @@
         <div class="title_text_button-button_text_wrapper">
 
             {% if section.settings.r_text %}
-            <div class="title_text_button-text h11 lh-l f_medium {{ section.settings.text_size_text }}">
+            <div class="title_text_button-text {{ section.settings.text_size }} lh-l {{ section.settings.text_weight }}">
                 {{ section.settings.r_text }}
             </div>
             {% endif %}
@@ -78,10 +78,34 @@
 		},
         {
 			"type": "select",
-			"id": "text_size_text",
+			"id": "title_size",
 			"options": [
 				{
-					"value": "h7",
+					"value": "h11",
+					"label": "Small"
+				},
+                {
+					"value": "h19",
+					"label": "Medium"
+				},
+                {
+					"value": "h1",
+					"label": "Large"
+				}
+			],
+			"default": "h11",
+			"label": "Text size"
+		},
+        {
+			"type": "select",
+			"id": "text_size",
+			"options": [
+				{
+					"value": "h11",
+					"label": "Small"
+				},
+                {
+					"value": "h19",
 					"label": "Medium"
 				},
                 {
@@ -89,8 +113,32 @@
 					"label": "Large"
 				}
 			],
-			"default": "h2",
+			"default": "h11",
 			"label": "Text size"
+		},
+        {
+			"type": "select",
+			"id": "text_weight",
+			"options": [
+				{
+					"value": "f_light",
+					"label": "Light"
+				},
+                {
+					"value": "f_regular",
+					"label": "Regular"
+				},
+                {
+					"value": "f_medium",
+					"label": "Medium"
+				},
+                {
+					"value": "f_bold",
+					"label": "Bold"
+				}
+			],
+			"default": "f_regular",
+			"label": "Regular"
 		},
         {
             "type": "richtext",

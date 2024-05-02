@@ -4253,6 +4253,16 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   font-size: calc(var(--font-heading-scale) * 0.75rem);
 }
 
+.h19 {
+  /* 24 */
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
+}
+
+.h20 {
+  /* 38 */
+  font-size: calc(var(--font-heading-scale) * 2.375rem);
+}
+
 
 @media print, screen and (min-width: 1025px) {
 
@@ -4343,6 +4353,16 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   .h18 {
     /* 16 */
     font-size: calc(var(--font-heading-scale) * 1rem);
+  }
+
+  .h19 {
+    /* 36 */
+    font-size: calc(var(--font-heading-scale) * 2.25rem);
+  }
+
+  .h20 {
+    /* 128 */
+    font-size: calc(var(--font-heading-scale) * 8rem);
   }
 
 }
