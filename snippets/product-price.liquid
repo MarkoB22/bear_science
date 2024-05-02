@@ -30,7 +30,7 @@
 	{%- unless product.price_varies == false and product.compare_at_price_varies %}
 		{% if compare_at_price != null and compare_at_price != 0 and price != compare_at_price %}
 			<del>
-				<span class="amount">
+				<span class="amount compare">
 					{% if settings.currency_code_enabled %}
 						{{ compare_at_price | money_with_currency }}
 					{% else %}
@@ -40,7 +40,7 @@
 			</del>
 		{% endif %}
 	{%- endunless -%}
-	<ins><span class="amount">{{ money_price }}</span></ins>
+<ins><span class="amount" {% if compare_at_price != null and compare_at_price != 0 and price != compare_at_price %}style="color: #6D7E60;"{% endif %}>{{ money_price }}</span></ins>
 	<small class="unit-price {% if product.selected_or_first_available_variant.unit_price_measurement == nil %} hidden{% endif %}">
 		<span>{{- product.selected_or_first_available_variant.unit_price | money -}}</span>
     <span class="unit-price-separator">/</span>

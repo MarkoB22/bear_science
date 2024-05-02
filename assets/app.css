@@ -3255,18 +3255,18 @@ select {
     background: var(--color-badge-preorder, #666666); }
 
 .price {
-  display: block;
-  font-weight: 400;
-  font-size: 0.9375rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.375rem;
   letter-spacing: 0.02em;
   color: var(--color-price, --color-accent); }
   .price > span {
     display: inline-flex;
     vertical-align: middle; }
-  .price del .amount {
-    opacity: 0.4; }
   .price del + ins {
-    margin-left: 10px; }
+    margin-left: 4px; }
   .price .from {
     font-weight: 400;
     text-transform: uppercase;
@@ -4253,6 +4253,22 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   font-size: calc(var(--font-heading-scale) * 0.75rem);
 }
 
+.price del .amount {
+  font-size: 0.875rem;
+  text-decoration: line-through;
+}
+
+.price del {
+  text-decoration: none !important;
+  height: 17px;
+  display: flex;
+  font-weight: 400;
+}
+
+.amount.compare {
+  color: #040404;
+}
+
 
 @media print, screen and (min-width: 1025px) {
 
@@ -4343,6 +4359,22 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   .h18 {
     /* 16 */
     font-size: calc(var(--font-heading-scale) * 1rem);
+  }
+
+  .price del .amount {
+    font-size: 1.5rem;
+  }
+
+  .price {
+    font-size: 2rem;
+  }
+
+  .price del + ins {
+    margin-left: 8px; 
+  }
+
+  .price del {
+    height: 29px;
   }
 
 }

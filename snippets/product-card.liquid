@@ -97,16 +97,18 @@
 			-%}
 			<div class="product-card--add-to-cart-button-container">
 			{% if is_purchasable %}
-				<button class="product-card--add-to-cart-button product-card--add-to-cart-button-simple button outline" data-product-id="{{ product_card_product.selected_or_first_available_variant.id }}" tabindex="-1" {% if product_card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
+				<button class="product-card--add-to-cart-button product-card--add-to-cart-button-simple outline button_type1 h12 lh-sm" data-product-id="{{ product_card_product.selected_or_first_available_variant.id }}" tabindex="-1" {% if product_card_product.selected_or_first_available_variant.available == false %}disabled{% endif %}>
 					<span class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</span>
 					<span class="product-card--add-to-cart-text">
 						{{ button_content }}
+						{% render 'svg-icons' with 'button_arrow' %}
 					</span>
 				</button>
 			{% else %}
-				<quick-view class="product-card--add-to-cart-button button outline" data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
+				<quick-view class="product-card--add-to-cart-button outline button_type1 h12 lh-sm" disabled data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
 					<span class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</span>
 					<span class="product-card--add-to-cart-text">{{ 'products.product.choose_options' | t }}</span>
+					{% render 'svg-icons' with 'button_arrow' %}
 				</quick-view>
 			{% endif %}
 			</div>
