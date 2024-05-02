@@ -24,8 +24,15 @@
 }
 
 .title_text_button-title {
+    display: flex;
+    flex-direction: row;
     color: #FFFFFF;
-    
+    border-left: 1px solid white;
+    padding-left: 2.2%;
+}
+
+.title_text_button-upper {
+    margin-right: 10px;
 }
 
 .title_text_button-text {
@@ -56,14 +63,14 @@
 
 @media print, screen and (min-width: 1025px) {
     .title_text_button-wrapper.title_position-left  {
-        padding: 94px 128px;
+        padding: 94px 8.889%;
         display: flex;
         flex-direction: row;
         justify-content: center;
     }
 
     .title_text_button-wrapper.title_position-right  {
-        padding: 94px 128px;
+        padding: 94px 8.889%;
         display: flex;
         flex-direction: row-reverse;
         justify-content: center;
@@ -71,9 +78,9 @@
  
     .title_text_button-title-wrapper.title_position-left  {
         display: flex;
-        min-width: 26.8%;
         text-align: right;
         word-wrap: normal;
+        min-width: 35.27%;
         width: unset;
         height: unset;
         align-items: unset;
@@ -83,39 +90,39 @@
     .title_text_button-title-wrapper.title_position-right  {
         display: flex;
         flex-direction: row-reverse;
-        min-width: 26.8%;
         text-align: right;
         word-wrap: normal;
         width: unset;
         height: unset;
-        align-items: unset;
+        align-items: center;
+    }
+
+    .title_text_button-title {
+        display: unset;
+        border-left: unset;
     }
 
     .title_text_button-title-wrapper.title_position-left > .title_text_button-title {
-        margin-right: 41px;
+        padding: 0 9.6% 0 35.83%;
+        border-right: 1px solid;
     }
 
     .title_text_button-title-wrapper.title_position-right > .title_text_button-title {
-        margin-left: 18px;
+        padding-left: 18px;
         text-align: left;
+        border-left: 1px solid;
     }
 
     .title_text_button-title-wrapper.title_position-left > .vl {
         margin-right: 37px;
-        height: 260px;
     }
 
     .title_text_button-title-wrapper.title_position-right > .vl {
         margin-left: 152px;
-        height: 260px;
     }
 
     .title_text_button-button_text_wrapper {
-        width: 62%;
-    }
-
-    .vl {
-        margin-right: unset;
+        padding-left: 3%;
     }
     
 }
