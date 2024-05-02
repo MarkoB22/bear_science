@@ -4133,19 +4133,19 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 /* FONT WEIGHT */
 .f_light {
-	font-weight: 300;
+	font-weight: 300 !important;
 }
 
 .f_regular {
-	font-weight: 400;
+	font-weight: 400 !important;
 }
 
 .f_medium {
-	font-weight: 500;
+	font-weight: 500 !important;
 }
 
 .f_bold {
-	font-weight: 600;
+	font-weight: 600 !important;
 }
 
 /* LINE HEIGHTS */
