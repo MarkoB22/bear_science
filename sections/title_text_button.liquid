@@ -20,7 +20,7 @@
         <div class="title_text_button-button_text_wrapper">
 
             {% if section.settings.r_text %}
-            <div class="title_text_button-text {{ section.settings.text_size }} lh-l {{ section.settings.text_weight }}">
+            <div class="title_text_button-text {{ section.settings.text_size }} {{ section.settings.text_line_height }} {{ section.settings.text_weight }}">
                 {{ section.settings.r_text }}
             </div>
             {% endif %}
@@ -80,21 +80,17 @@
 			"type": "select",
 			"id": "title_size",
 			"options": [
-				{
-					"value": "h11",
-					"label": "Small"
-				},
                 {
-					"value": "h19",
+					"value": "h1",
 					"label": "Medium"
 				},
                 {
-					"value": "h1",
+					"value": "h20",
 					"label": "Large"
 				}
 			],
-			"default": "h11",
-			"label": "Text size"
+			"default": "h1",
+			"label": "Title size"
 		},
         {
 			"type": "select",
@@ -115,6 +111,26 @@
 			],
 			"default": "h11",
 			"label": "Text size"
+		},
+        {
+			"type": "select",
+			"id": "text_line_height",
+			"options": [
+				{
+					"value": "lh-sm",
+					"label": "Small"
+				},
+                {
+					"value": "lh-m",
+					"label": "Medium"
+				},
+                {
+					"value": "lh-l",
+					"label": "Large"
+				}
+			],
+			"default": "lh-sm",
+			"label": "Text line height"
 		},
         {
 			"type": "select",
