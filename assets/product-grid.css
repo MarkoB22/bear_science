@@ -82,7 +82,9 @@
     padding: 0 5%; 
     width: 62.5%;
     margin: 0 auto;
-    color: #040404; }
+    color: #040404; 
+    display: flex;
+    align-items: center;}
   .product-card .product-featured-image {
     margin-bottom: 15px;
     position: relative;
@@ -353,7 +355,8 @@
       opacity: 0.8;
       transform: translateY(0%); }
   .product-card--add-to-cart-button {
-    margin-top: 15px; }
+    margin-top: 15px; 
+    width: 100%;}
     .product-card--add-to-cart-button-container {
       margin-top: auto; }
   .product-card .star-rating {

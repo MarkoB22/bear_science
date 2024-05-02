@@ -29,7 +29,7 @@ if (!customElements.get('slide-show')) {
           fade: fade,
           autoPlay: autoplay,
           rightToLeft: rightToLeft,
-          prevNextButtons: false,
+          prevNextButtons: true,
           cellSelector: '.carousel__slide',
           on: {}
         };

@@ -3261,7 +3261,8 @@ select {
   font-weight: 600;
   font-size: 1.375rem;
   letter-spacing: 0.02em;
-  color: var(--color-price, --color-accent); }
+  color: var(--color-price, --color-accent); 
+  margin-top: 18px;}
   .price > span {
     display: inline-flex;
     vertical-align: middle; }
@@ -4279,6 +4280,17 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   color: #040404;
 }
 
+.product-card--add-to-cart-button[disabled] {
+  background: #72727266;
+  color: white;
+  border: 1px solid #72727266;
+}
+
+.product-card--add-to-cart-button[disabled] svg {
+  display: none;
+  width: fit-content;
+}
+
 
 @media print, screen and (min-width: 1025px) {
 
@@ -4369,6 +4381,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   .h18 {
     /* 16 */
     font-size: calc(var(--font-heading-scale) * 1rem);
+  }
+
+  .price {
+    margin-top: 38px;
   }
 
 }

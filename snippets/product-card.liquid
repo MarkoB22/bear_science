@@ -107,7 +107,7 @@
 			{% else %}
 				<quick-view class="product-card--add-to-cart-button outline button_type1 h12 lh-sm" disabled data-product-handle="{{ product_card_product.handle }}" tabindex="-1">
 					<span class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</span>
-					<span class="product-card--add-to-cart-text">{{ 'products.product.choose_options' | t }}</span>
+					<span class="product-card--add-to-cart-text">{{ 'products.product.out_of_stock' | t }}</span>
 					{% render 'svg-icons' with 'button_arrow' %}
 				</quick-view>
 			{% endif %}
@@ -137,9 +137,9 @@
 		{%- endif -%}
 		{%- if settings.enable_quick_add -%}
 		<div class="product-card--add-to-cart-button-container">
-			<quick-view class="product-card--add-to-cart-button button outline" data-product-handle="" tabindex="-1" disabled>
+			<quick-view class="product-card--add-to-cart-button button outline button_type1 h12 lh-sm" data-product-handle="" tabindex="-1" disabled>
 				<span class="loading-overlay">{% render 'svg-icons' with 'thb-loading' %}</span>
-				<span class="product-card--add-to-cart-text">{{ 'products.product.choose_options' | t }}</span>
+				<span class="product-card--add-to-cart-text">{{ 'products.product.out_of_stock' | t }}</span>
 			</quick-view>
 		</div>
 		{%- endif -%}
