@@ -50,12 +50,16 @@
     "title_text_button_CYeRCB": {
       "type": "title_text_button",
       "settings": {
-        "title": "ABOUT US",
+        "title_upper": "ABOUT",
+        "title_lower": "US",
         "title_position": "left",
-        "text_size_text": "h7",
-        "text": "<p>At Bear-Science, we are passionate about helping people live fuller, healthier and longer-lasting lives. As a German brand of smart supplements, our focus is on promoting lifelong health and energy.<\/p><p>Our products are based on scientific evidence and carefully selected to give you the best possible results. We believe that a balanced diet and regular supplementation are crucial for your health and well-being.<\/p>",
+        "title_size": "h1",
+        "text_size": "h11",
+        "text_line_height": "lh-l",
+        "text_weight": "f_medium",
+        "r_text": "<p>At Bear-Science, we are passionate about helping people live fuller, healthier and longer-lasting lives. As a German brand of smart supplements, our focus is on promoting lifelong health and energy.<\/p><p>Our products are based on scientific evidence and carefully selected to give you the best possible results. We believe that a balanced diet and regular supplementation are crucial for your health and well-being.<\/p>",
         "button_link": "#",
-        "button_text_arrow": ""
+        "button_text_arrow": "Learn more"
       }
     },
     "product_explanation_YxwfzW": {
@@ -204,14 +208,7 @@
         "title": "WHAT OUR CUSTOMERS SAY ABOUT US",
         "button_link": "",
         "button_text_arrow": "Leave a review",
-        "leave_review": "Leave yourself a review"
-      }
-    },
-    "blog_title_fW9yHF": {
-      "type": "blog-title",
-      "settings": {
-        "title": "BLOG",
-        "text": "<p>Explore expert insights, wellness tips, and the latest trends in longevity<\/p>"
+        "leave_review": "LEAVE A REVIEW YOURSELF"
       }
     },
     "newsletter_signup_fknP7a": {
@@ -634,7 +631,6 @@
     "product_presentation_9yUw6y",
     "traits_AFGyQX",
     "reviews_KeyhVG",
-    "blog_title_fW9yHF",
     "newsletter_signup_fknP7a",
     "166366563622039b3e",
     "16614195534fb74bc3",

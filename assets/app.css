@@ -4133,19 +4133,19 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 /* FONT WEIGHT */
 .f_light {
-	font-weight: 300;
+	font-weight: 300 !important;
 }
 
 .f_regular {
-	font-weight: 400;
+	font-weight: 400 !important;
 }
 
 .f_medium {
-	font-weight: 500;
+	font-weight: 500 !important;
 }
 
 .f_bold {
-	font-weight: 600;
+	font-weight: 600 !important;
 }
 
 /* LINE HEIGHTS */
@@ -4251,6 +4251,16 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .h18 {
   /* 12 */
   font-size: calc(var(--font-heading-scale) * 0.75rem);
+}
+
+.h19 {
+  /* 24 */
+  font-size: calc(var(--font-heading-scale) * 1.5rem);
+}
+
+.h20 {
+  /* 38 */
+  font-size: calc(var(--font-heading-scale) * 2.375rem);
 }
 
 .price del .amount {
@@ -4359,22 +4369,6 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   .h18 {
     /* 16 */
     font-size: calc(var(--font-heading-scale) * 1rem);
-  }
-
-  .price del .amount {
-    font-size: 1.5rem;
-  }
-
-  .price {
-    font-size: 2rem;
-  }
-
-  .price del + ins {
-    margin-left: 8px; 
-  }
-
-  .price del {
-    height: 29px;
   }
 
 }
