@@ -4401,11 +4401,16 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .shopify-pc__banner__body {
-  font-size: 16px; 
+  font-size: 16px;
+  line-height: 1.22;
 }
 
 .shopify-pc__banner__body a {
   display: block;
+}
+
+.shopify-pc__banner__dialog button.shopify-pc__banner__btn-decline {
+  display: none;
 }
 
 
