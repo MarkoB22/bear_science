@@ -2,6 +2,35 @@
     padding: 7.65%;
 }
 
+.product_specification_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18.5px 0;
+}
+
+.product_specification_title > p {
+    margin: 0;
+}
+
+.svg-arrow {
+    transform: rotate(180deg);
+}
+
+.product_specification_title > svg {
+    width: 24px;
+    height: 24px;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.rotated {
+    transform: rotate(360deg);
+}
+
 .product_specification_first,
 .product_specification_second,
 .product_specification_third,

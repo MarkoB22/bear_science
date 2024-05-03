@@ -7,6 +7,7 @@
             <div class="product_specification_title_wrapper">
                 <div class="product_specification_title h7 lh-l">
                     {{ block.settings.title }}
+                    <div class="svg-arrow">{% render 'svg-icons' with 'thb-back-to-top' %}</div>
                 </div>
 
                 {% if block.settings.text-1 %}
@@ -50,19 +51,21 @@ document.addEventListener('DOMContentLoaded', function() {
 
     titleWrappers.forEach(wrapper => {
         wrapper.addEventListener('click', function() {
-            // This finds all child divs of the clicked title wrapper and toggles their display
-            this.querySelectorAll('.product_specification_first, .product_specification_second, .product_specification_third, .product_specification_fourth, .product_specification_fifth')
-                .forEach(child => {
-                    if (child.style.display === 'none') {
-                        child.style.display = 'block'; // Show the element
-                    } else {
-                        child.style.display = 'none'; // Hide the element
-                    }
+            // Toggle the display of each content section based on arrow direction
+            const contentElements = this.querySelectorAll('.product_specification_first, .product_specification_second, .product_specification_third, .product_specification_fourth, .product_specification_fifth');
+            const arrow = this.querySelector('.svg-arrow');
+
+            if (arrow) {
+                arrow.classList.toggle('rotated');  // Toggle arrow orientation
+                const isArrowUp = arrow.classList.contains('rotated');
+
+                contentElements.forEach(child => {
+                    child.style.display = isArrowUp ? 'block' : 'none';
                 });
+            }
         });
     });
 });
-
 </script>
 {% schema %}
     {
@@ -79,11 +82,6 @@ document.addEventListener('DOMContentLoaded', function() {
                         "id": "title",
                         "label": "Title",
                         "default": "<p>Title</p>"
-                    },
-                    {
-                        "type": "image_picker",
-                        "id": "image",
-                        "label": "Image"
                     },
                     {
                         "type": "richtext",
