@@ -4268,6 +4268,11 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   font-size: calc(var(--font-heading-scale) * 2.375rem);
 }
 
+.h21 {
+  /* 22 */
+  font-size: calc(var(--font-heading-scale) * 1.375rem);
+}
+
 .price del .amount {
   font-size: 0.875rem;
   text-decoration: line-through;
@@ -4385,6 +4390,21 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   .h18 {
     /* 16 */
     font-size: calc(var(--font-heading-scale) * 1rem);
+  }
+
+  .h19 {
+    /* 36 */
+    font-size: calc(var(--font-heading-scale) * 2.250rem);
+  }
+  
+  .h20 {
+    /* 128 */
+    font-size: calc(var(--font-heading-scale) * 8rem);
+  }
+  
+  .h21 {
+    /* 24 */
+    font-size: calc(var(--font-heading-scale) * 1.5rem);
   }
 
   .price {
