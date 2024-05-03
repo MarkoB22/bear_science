@@ -4397,8 +4397,99 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   min-width: 100%;
 }
 
+.shopify-pc__banner__dialog {
+  bottom: 16px !important;
+  left: 14px !important;
+  padding: 24px !important;
+  right: 14px;
+}
+
+.shopify-pc__banner__body {
+  font-size: 16px;
+  line-height: 1.22;
+}
+
+.shopify-pc__banner__body a {
+  margin-top: 4px;
+  display: block;
+}
+
+.shopify-pc__banner__dialog button.shopify-pc__banner__btn-decline {
+  display: none;
+}
+
+.shopify-pc__banner__btn-accept {
+  width: fit-content;
+  padding: 8px 15px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  line-height: 1.22 !important;
+  background: white !important;
+  color: #6D7E60 !important;
+  border: 1px solid white !important;
+  margin: 24px auto 0 !important;
+  transition: all ease-in-out .3s;
+}
+
+.shopify-pc__banner__btn-manage-prefs {
+  border: 1px solid white !important;
+  width: fit-content;
+  margin: 10px auto 0 !important;
+  text-decoration: none !important;
+  padding: 8px 15px !important;
+  border-radius: 0 !important;
+  min-width: 112px;
+  transition: all ease-in-out .3s;
+}
+
+#shopify-pc__banner__body-policy-link {
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
+
 
 @media print, screen and (min-width: 1025px) {
+  .shopify-pc__banner__dialog {
+    max-width: 33.681% !important;
+  }
+  
+  .shopify-pc__banner__wrapper {
+    flex-direction: row !important;
+    align-items: flex-start !important;
+  }
+
+  .shopify-pc__banner__body a {
+    margin-top: 0;
+  }
+
+  .shopify-pc__banner__body {
+    margin-bottom: 0 !important;
+  }
+
+  .shopify-pc__banner__btns {
+    flex-direction: column-reverse !important;
+    width: auto !important;
+    min-width: 114px !important;
+  }
+
+  .shopify-pc__banner__btn-accept {
+    margin: 0 !important;
+  }
+
+  .shopify-pc__banner__btn-accept:hover {
+    background: #6D7E60 !important;
+    color: white !important;
+  }
+
+  .shopify-pc__banner__btn-manage-prefs:hover {
+    background: white !important;
+    color: #6D7E60 !important;
+  }
+
+  .shopify-pc__banner__btn-manage-prefs {
+    margin: 8px 0 0 0 !important;  
+  }
+  
   .not_desktop {
     display: none;
   }

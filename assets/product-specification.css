@@ -1,0 +1,11 @@
+.product_specification_wrapper {
+    padding: 7.65%;
+}
+
+.product_specification_first,
+.product_specification_second,
+.product_specification_third,
+.product_specification_fourth,
+.product_specification_fifth {
+    display: none; /* Initially hide the content */
+}
