@@ -4435,6 +4435,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   padding: 8px 15px !important;
   border-radius: 0 !important;
   min-width: 112px;
+  transition: all ease-in-out .3s;
 }
 
 #shopify-pc__banner__body-policy-link {
