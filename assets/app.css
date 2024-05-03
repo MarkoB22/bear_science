@@ -4439,7 +4439,13 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 
+
+
 @media print, screen and (min-width: 1025px) {
+  .shopify-pc__banner__wrapper {
+    flex-direction: row !important;
+  }
+  
   .not_desktop {
     display: none;
   }
