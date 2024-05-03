@@ -22,9 +22,11 @@
           "type": "text",
           "settings": {
             "title": "<p>Product Specifications<\/p>",
-            "text-1": "<p>Bear Science Optimized Betaine (TMG) Powder - Your Key to Better Health and Performance!5x Highly pure 30g crystalline betaine (TMG) from premium sugar beet source.Betaine belongs to the group of methyl group donors and osmolytes.<\/p>",
-            "text-2": "<p>Quantity:5x30g (150g total)Form\/Appearance:White crystalline powderPurity: Over 99%Source:Premium Sugar BeetServing: 2400 mgPurity \/ analysis method: &gt;99.0%(T)Molecular formula \/ molecular mass: C5H11NO2 = 117.15Molecular formula \/ molecular mass:C5H11NO2 = 117.15Physical state (20°C):SolidStore under inert gas: Store under inert gasConditions to avoid:HygroscopicCAS RN:107-43-7Reaxys registration number:3537113PubChem substance ID: 87563491Merck Index (14):1179MDL number:MFCD00012123GTIN:4270003623131Packaging & Storage: Store in a cool and dry place, protect from direct sunlight. \u2028Keep out of reach of children.<\/p>",
-            "text-3": "<p>Note on measuring cups: Our products do not contain measuring cups. We would like to ask you to equip yourself with sustainable measuring cups. Since most of our customers already have measuring cups or dishwasher-safe measuring cups, we do not offer these. However, as an environmentally friendly and durable alternative, we recommend measuring spoon sets made of stainless steel. These can be found in many stores and are a great addition to the kitchen. Thank you for your understanding and your commitment to sustainability!<\/p>"
+            "text-1": "<p>Bear Science Optimized Betaine (TMG) Powder - Your Key to Better Health and Performance!<\/p>",
+            "text-2": "<p>5x Highly pure 30g crystalline betaine (TMG) from premium sugar beet source.<\/p>",
+            "text-3": "<p>Betaine belongs to the group of methyl group donors and osmolytes.<\/p>",
+            "text-4": "<p>Text text text. Text text text text.<\/p>",
+            "text-5": "<p>Text text text. Text text text text.<\/p>"
           }
         }
       },
