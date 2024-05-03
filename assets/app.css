@@ -4418,8 +4418,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   padding: 8px 15px;
   font-size: 16px;
   background: white;
-  color: #6D7E60;
+  color: #6D7E60 !important;
+  border: 1px solid white;
   margin: 34px auto 0 auto; !important;
+  transition: all ease-in-out .3s;
 }
 
 
