@@ -4453,6 +4453,14 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   .shopify-pc__banner__btns {
     flex-direction: column-reverse !important;
   }
+
+  .shopify-pc__banner__btn-accept {
+    margin: 0 !important;
+  }
+
+  .shopify-pc__banner__btn-manage-prefs {
+    margin: 8px 0 0 0 !important;  
+  }
   
   .not_desktop {
     display: none;
