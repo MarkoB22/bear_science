@@ -4400,6 +4400,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   right: 16px;
 }
 
+.shopify-pc__banner__body {
+  font-size: 16px; 
+}
+
 .shopify-pc__banner__body a {
   display: block;
 }
