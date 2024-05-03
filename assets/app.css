@@ -4406,6 +4406,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .shopify-pc__banner__body a {
+  margin-top: 4px;
   display: block;
 }
 
