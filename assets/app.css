@@ -4455,6 +4455,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
   .shopify-pc__banner__btns {
     flex-direction: column-reverse !important;
+    width: auto !important;
     min-width: 114px !important;
   }
 
