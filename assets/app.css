@@ -4396,6 +4396,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .shopify-pc__banner__dialog {
   bottom: 16px !important;
   left: 16px !important;
+  padding: 24px !important;
   right: 16px;
 }
 
