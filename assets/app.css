@@ -4437,7 +4437,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   min-width: 112px;
 }
 
-
+.shopify-pc__banner__body-policy-link {
+  text-decoration: none !important;
+  font-weight: 600 !important;
+}
 
 
 @media print, screen and (min-width: 1025px) {
