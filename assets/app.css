@@ -4445,8 +4445,13 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   .shopify-pc__banner__dialog {
     max-width: 25.4861% !important;
   }
+  
   .shopify-pc__banner__wrapper {
     flex-direction: row !important;
+  }
+
+  .shopify-pc__banner__btns {
+    flex-direction: column !important;
   }
   
   .not_desktop {
