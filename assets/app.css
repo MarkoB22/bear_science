@@ -4450,6 +4450,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   
   .shopify-pc__banner__wrapper {
     flex-direction: row !important;
+    align-items: flex-start !important;
   }
 
   .shopify-pc__banner__btns {
