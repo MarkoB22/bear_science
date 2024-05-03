@@ -28,10 +28,22 @@
             "text-4": "<p>Quantity:5x30g (150g total)Form\/Appearance:White crystalline powderPurity: Over 99%Source:Premium Sugar BeetServing: 2400 mgPurity \/ analysis method: &gt;99.0%(T)Molecular formula \/ molecular mass: C5H11NO2 = 117.15Molecular formula \/ molecular mass:C5H11NO2 = 117.15Physical state (20°C):SolidStore under inert gas: Store under inert gasConditions to avoid:HygroscopicCAS RN:107-43-7Reaxys registration number:3537113PubChem substance ID: 87563491Merck Index (14):1179MDL number:MFCD00012123GTIN:4270003623131Packaging & Storage: Store in a cool and dry place, protect from direct sunlight. \u2028Keep out of reach of children.<\/p>",
             "text-5": "<p>Note on measuring cups: Our products do not contain measuring cups. We would like to ask you to equip yourself with sustainable measuring cups. Since most of our customers already have measuring cups or dishwasher-safe measuring cups, we do not offer these. However, as an environmentally friendly and durable alternative, we recommend measuring spoon sets made of stainless steel. These can be found in many stores and are a great addition to the kitchen. Thank you for your understanding and your commitment to sustainability!<\/p>"
           }
+        },
+        "text_TAx6pF": {
+          "type": "text",
+          "settings": {
+            "title": "<p>Transparency & Quality<\/p>",
+            "text-1": "<p>Bear Science places great value on transparency. Our products are rigorously tested for purity and heavy metals. Download: Analysis certificates from Uthever® TMG and security certificate.<\/p>",
+            "text-2": "<p>Download Certificate of Analysis of Uthever® TMG PDFDownload security certificate PDF<\/p>",
+            "text-3": "",
+            "text-4": "",
+            "text-5": ""
+          }
         }
       },
       "block_order": [
-        "text_GWeTji"
+        "text_GWeTji",
+        "text_TAx6pF"
       ],
       "settings": {
       }
