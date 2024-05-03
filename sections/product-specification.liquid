@@ -1,0 +1,75 @@
+{{ 'product-specification.css' | asset_url | stylesheet_tag }}
+<div class="product_specification_wrapper">
+
+    {% for block in section.blocks %}
+        {% if block.settings.title %}
+            <div class="product_specification_title">
+                {{ block.settings.title }}
+            </div>
+
+            {% if block.settings.text-1 %}
+                <div class="product_specification_first">
+                    {{ block.settings.text-1 }}
+                </div>
+            {% endif %}
+
+            {% if block.settings.text-2 %}
+                <div class="product_specification_second">
+                    {{ block.settings.text-2 }}
+                </div>
+            {% endif %}
+
+            {% if block.settings.text-3 %}
+                <div class="product_specification_third">
+                    {{ block.settings.text-3 }}
+                </div>
+            {% endif %}
+
+        {% endif %}
+    {% endfor %}    
+
+</div>
+{% schema %}
+    {
+        "name": "Product specification",
+        "settings": [
+        ],
+        "blocks": [
+            {
+                "type": "text",
+                "name": "Text",
+                "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title",
+                        "default": "Title"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text-1",
+                        "label": "Text 1",
+                        "default": "<p>Text text text. Text text text text.</p>"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text-2",
+                        "label": "Text 2",
+                        "default": "<p>Text text text. Text text text text.</p>"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text-3",
+                        "label": "Text 3",
+                        "default": "<p>Text text text. Text text text text.</p>"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+          {
+            "name": "Product specification"
+          }
+        ]
+    }
+{% endschema %}  
