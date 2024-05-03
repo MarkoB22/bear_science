@@ -4413,6 +4413,14 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   display: none;
 }
 
+.shopify-pc__banner__btn-accept {
+  width: fit-content;
+  padding: 8px 15px;
+  font-size: 16px;
+  background: white;
+  color: #6D7E60;
+}
+
 
 @media print, screen and (min-width: 1025px) {
   .not_desktop {
