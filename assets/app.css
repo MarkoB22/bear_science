@@ -4476,6 +4476,11 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     color: white !important;
   }
 
+  .shopify-pc__banner__btn-manage-prefs:hover {
+    background: white !important;
+    color: #6D7E60 !important;
+  }
+
   .shopify-pc__banner__btn-manage-prefs {
     margin: 8px 0 0 0 !important;  
   }
