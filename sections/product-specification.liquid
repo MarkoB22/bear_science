@@ -25,6 +25,18 @@
                 </div>
             {% endif %}
 
+            {% if block.settings.text-4 %}
+                <div class="product_specification_fourth">
+                    {{ block.settings.text-4 }}
+                </div>
+            {% endif %}
+
+            {% if block.settings.text-5 %}
+                <div class="product_specification_fifth">
+                    {{ block.settings.text-5 }}
+                </div>
+            {% endif %}
+
         {% endif %}
     {% endfor %}    
 
@@ -61,6 +73,18 @@
                         "type": "richtext",
                         "id": "text-3",
                         "label": "Text 3",
+                        "default": "<p>Text text text. Text text text text.</p>"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text-4",
+                        "label": "Text 4",
+                        "default": "<p>Text text text. Text text text text.</p>"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text-5",
+                        "label": "Text 5",
                         "default": "<p>Text text text. Text text text text.</p>"
                     }
                 ]
