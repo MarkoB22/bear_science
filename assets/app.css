@@ -4429,12 +4429,12 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .shopify-pc__banner__btn-manage-prefs {
-  border: 1px solid white;
+  border: 1px solid white !important;
   width: fit-content;
-  margin: 10px auto 0;
-  text-decoration: none;
-  padding: 8px 15px;
-  border-radius: 0;
+  margin: 10px auto 0 !important;
+  text-decoration: none !important;
+  padding: 8px 15px !important;
+  border-radius: 0 !important;
   min-width: 112px;
 }
 
