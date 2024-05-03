@@ -2,45 +2,68 @@
 <div class="product_specification_wrapper">
 
     {% for block in section.blocks %}
+        
         {% if block.settings.title %}
-            <div class="product_specification_title h7 lh-l f_bold">
-                {{ block.settings.title }}
+            <div class="product_specification_title_wrapper">
+                <div class="product_specification_title h7 lh-l">
+                    {{ block.settings.title }}
+                </div>
+
+                {% if block.settings.text-1 %}
+                    <div class="product_specification_first">
+                        {{ block.settings.text-1 }}
+                    </div>
+                {% endif %}
+
+                {% if block.settings.text-2 %}
+                    <div class="product_specification_second">
+                        {{ block.settings.text-2 }}
+                    </div>
+                {% endif %}
+
+                {% if block.settings.text-3 %}
+                    <div class="product_specification_third">
+                        {{ block.settings.text-3 }}
+                    </div>
+                {% endif %}
+
+                {% if block.settings.text-4 %}
+                    <div class="product_specification_fourth">
+                        {{ block.settings.text-4 }}
+                    </div>
+                {% endif %}
+
+                {% if block.settings.text-5 %}
+                    <div class="product_specification_fifth">
+                        {{ block.settings.text-5 }}
+                    </div>
+                {% endif %}
             </div>
-
-            {% if block.settings.text-1 %}
-                <div class="product_specification_first">
-                    {{ block.settings.text-1 }}
-                </div>
-            {% endif %}
-
-            {% if block.settings.text-2 %}
-                <div class="product_specification_second">
-                    {{ block.settings.text-2 }}
-                </div>
-            {% endif %}
-
-            {% if block.settings.text-3 %}
-                <div class="product_specification_third">
-                    {{ block.settings.text-3 }}
-                </div>
-            {% endif %}
-
-            {% if block.settings.text-4 %}
-                <div class="product_specification_fourth">
-                    {{ block.settings.text-4 }}
-                </div>
-            {% endif %}
-
-            {% if block.settings.text-5 %}
-                <div class="product_specification_fifth">
-                    {{ block.settings.text-5 }}
-                </div>
-            {% endif %}
 
         {% endif %}
     {% endfor %}    
 
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const titleWrappers = document.querySelectorAll('.product_specification_title_wrapper');
+
+    titleWrappers.forEach(wrapper => {
+        wrapper.addEventListener('click', function() {
+            // This finds all child divs of the clicked title wrapper and toggles their display
+            this.querySelectorAll('.product_specification_first, .product_specification_second, .product_specification_third, .product_specification_fourth, .product_specification_fifth')
+                .forEach(child => {
+                    if (child.style.display === 'none') {
+                        child.style.display = 'block'; // Show the element
+                    } else {
+                        child.style.display = 'none'; // Hide the element
+                    }
+                });
+        });
+    });
+});
+
+</script>
 {% schema %}
     {
         "name": "Product specification",
@@ -56,6 +79,11 @@
                         "id": "title",
                         "label": "Title",
                         "default": "<p>Title</p>"
+                    },
+                    {
+                        "type": "image_picker",
+                        "id": "image",
+                        "label": "Image"
                     },
                     {
                         "type": "richtext",
