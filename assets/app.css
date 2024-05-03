@@ -4422,8 +4422,19 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   background: white !important;
   color: #6D7E60 !important;
   border: 1px solid white !important;
-  margin: 34px auto 0 !important;
+  margin: 24px auto 0 !important;
   transition: all ease-in-out .3s;
+  min-weight: 112px;
+}
+
+.shopify-pc__banner__btn-manage-prefs {
+  border: 1px solid white;
+  width: fit-content;
+  margin: 10px auto 0;
+  text-decoration: none;
+  padding: 8px 15px;
+  border-radius: 0;
+  min-width: 112px;
 }
 
 
