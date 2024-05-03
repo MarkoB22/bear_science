@@ -4446,7 +4446,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 @media print, screen and (min-width: 1025px) {
   .shopify-pc__banner__dialog {
-    max-width: 25.4861% !important;
+    max-width: 33.681% !important;
   }
   
   .shopify-pc__banner__wrapper {
