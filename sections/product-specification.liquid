@@ -5,38 +5,50 @@
         
         {% if block.settings.title %}
             <div class="product_specification_title_wrapper">
-                <div class="product_specification_title h7 lh-l">
+                <div class="product_specification_title {{ block.settings.title_text_size }} {{ block.settings.title_weight }} lh-l">
                     {{ block.settings.title }}
                     <div class="svg-arrow">{% render 'svg-icons' with 'thb-back-to-top' %}</div>
                 </div>
 
                 {% if block.settings.text-1 %}
-                    <div class="product_specification_first h21 lh-sm">{% comment %} f_medium {% endcomment %}
+                    <div class="product_specification_first {{ block.settings.richtext_1_size }} {{ block.settings.text_1_weight }} lh-sm">{% comment %} f_medium {% endcomment %}
                         {{ block.settings.text-1 }}
                     </div>
                 {% endif %}
 
                 {% if block.settings.text-2 %}
-                    <div class="product_specification_second h16 lh-sm">{% comment %} f_regular {% endcomment %}
+                    <div class="product_specification_second {{ block.settings.richtext_2_size }} {{ block.settings.text_2_weight }} lh-sm">{% comment %} f_regular {% endcomment %}
                         {{ block.settings.text-2 }}
                     </div>
                 {% endif %}
 
                 {% if block.settings.text-3 %}
-                    <div class="product_specification_third h16 lh-sm">{% comment %} f_regular {% endcomment %}
+                    <div class="product_specification_third {{ block.settings.richtext_3_size }} {{ block.settings.text_3_weight }} lh-sm">{% comment %} f_regular {% endcomment %}
                         {{ block.settings.text-3 }}
                     </div>
                 {% endif %}
 
                 {% if block.settings.text-4 %}
-                    <div class="product_specification_fourth h12 lh-l">{% comment %} f_regular {% endcomment %}
+                    <div class="product_specification_fourth {{ block.settings.richtext_4_size }} {{ block.settings.text_4_weight }} lh-l">{% comment %} f_regular {% endcomment %}
                         {{ block.settings.text-4 }}
                     </div>
                 {% endif %}
 
                 {% if block.settings.text-5 %}
-                    <div class="product_specification_fifth h12 lh-l f_regular">
+                    <div class="product_specification_fifth {{ block.settings.richtext_5_size }} {{ block.settings.text_5_weight }} lh-l">{% comment %} f_regular {% endcomment %}
                         {{ block.settings.text-5 }}
+                    </div>
+                {% endif %}
+
+                {% if block.settings.text-6 %}
+                    <div class="product_specification_sixth {{ block.settings.richtext_6_size }} {{ block.settings.text_6_weight }} lh-l">{% comment %} f_regular {% endcomment %}
+                        {{ block.settings.text-6 }}
+                    </div>
+                {% endif %}
+
+                {% if block.settings.text-7 %}
+                    <div class="product_specification_seventh {{ block.settings.richtext_7_size }} {{ block.settings.text_7_weight }} lh-l">{% comment %} f_regular {% endcomment %}
+                        {{ block.settings.text-7 }}
                     </div>
                 {% endif %}
             </div>
@@ -52,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
     titleWrappers.forEach(wrapper => {
         wrapper.addEventListener('click', function() {
             // Toggle the display of each content section based on arrow direction
-            const contentElements = this.querySelectorAll('.product_specification_first, .product_specification_second, .product_specification_third, .product_specification_fourth, .product_specification_fifth');
+            const contentElements = this.querySelectorAll('.product_specification_first, .product_specification_second, .product_specification_third, .product_specification_fourth, .product_specification_fifth, .product_specification_sixth, .product_specification_seventh');
             const arrow = this.querySelector('.svg-arrow');
 
             if (arrow) {
@@ -78,10 +90,107 @@ document.addEventListener('DOMContentLoaded', function() {
                 "name": "Text",
                 "settings": [
                     {
+                        "type": "select",
+                        "id": "title_text_size",
+                        "options": [
+                            {
+                                "value": "h9",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h7",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h8",
+                                "label": "Large"
+                            }
+                        ],
+                        "default": "h7",
+                        "label": "Title size"
+                    },
+                    {
+                        "type": "select",
+                        "id": "title_weight",
+                        "options": [
+                            {
+                                "value": "f_light",
+                                "label": "Light"
+                            },
+                            {
+                                "value": "f_regular",
+                                "label": "Regular"
+                            },
+                            {
+                                "value": "f_medium",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "f_bold",
+                                "label": "Bold"
+                            }
+                        ],
+                        "default": "f_regular",
+                        "label": "Title weight"
+                    },
+                    {
                         "type": "richtext",
                         "id": "title",
                         "label": "Title",
                         "default": "<p>Title</p>"
+                    },
+                    // ####################################################################
+                    {
+                        "type": "select",
+                        "id": "richtext_1_size",
+                        "options": [
+                            {
+                                "value": "h16",
+                                "label": "Smallest"
+                            },
+                            {
+                                "value": "h12",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h11",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h22",
+                                "label": "Large"
+                            },
+                            {
+                                "value": "h21",
+                                "label": "Largest"
+                            }
+                        ],
+                        "default": "h21",
+                        "label": "First text size"
+                    },
+                    {
+                        "type": "select",
+                        "id": "text_1_weight",
+                        "options": [
+                            {
+                                "value": "f_light",
+                                "label": "Light"
+                            },
+                            {
+                                "value": "f_regular",
+                                "label": "Regular"
+                            },
+                            {
+                                "value": "f_medium",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "f_bold",
+                                "label": "Bold"
+                            }
+                        ],
+                        "default": "f_regular",
+                        "label": "First text weight"
                     },
                     {
                         "type": "richtext",
@@ -89,11 +198,118 @@ document.addEventListener('DOMContentLoaded', function() {
                         "label": "Text 1",
                         "default": "<p>Text text text. Text text text text.</p>"
                     },
+                    // ####################################################################
+
+                    {
+                        "type": "select",
+                        "id": "richtext_2_size",
+                        "options": [
+                            {
+                                "value": "h16",
+                                "label": "Smallest"
+                            },
+                            {
+                                "value": "h12",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h11",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h22",
+                                "label": "Large"
+                            },
+                            {
+                                "value": "h21",
+                                "label": "Largest"
+                            }
+                        ],
+                        "default": "h21",
+                        "label": "Second text size"
+                    },
+                    {
+                        "type": "select",
+                        "id": "text_2_weight",
+                        "options": [
+                            {
+                                "value": "f_light",
+                                "label": "Light"
+                            },
+                            {
+                                "value": "f_regular",
+                                "label": "Regular"
+                            },
+                            {
+                                "value": "f_medium",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "f_bold",
+                                "label": "Bold"
+                            }
+                        ],
+                        "default": "f_regular",
+                        "label": "Second text weight"
+                    },
                     {
                         "type": "richtext",
                         "id": "text-2",
                         "label": "Text 2",
                         "default": "<p>Text text text. Text text text text.</p>"
+                    },
+                    // ####################################################################
+                    {
+                        "type": "select",
+                        "id": "richtext_3_size",
+                        "options": [
+                            {
+                                "value": "h16",
+                                "label": "Smallest"
+                            },
+                            {
+                                "value": "h12",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h11",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h22",
+                                "label": "Large"
+                            },
+                            {
+                                "value": "h21",
+                                "label": "Largest"
+                            }
+                        ],
+                        "default": "h21",
+                        "label": "Third text size"
+                    },
+                    {
+                        "type": "select",
+                        "id": "text_3_weight",
+                        "options": [
+                            {
+                                "value": "f_light",
+                                "label": "Light"
+                            },
+                            {
+                                "value": "f_regular",
+                                "label": "Regular"
+                            },
+                            {
+                                "value": "f_medium",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "f_bold",
+                                "label": "Bold"
+                            }
+                        ],
+                        "default": "f_regular",
+                        "label": "Third text weight"
                     },
                     {
                         "type": "richtext",
@@ -101,16 +317,240 @@ document.addEventListener('DOMContentLoaded', function() {
                         "label": "Text 3",
                         "default": "<p>Text text text. Text text text text.</p>"
                     },
+                     // ####################################################################
+                    {
+                        "type": "select",
+                        "id": "richtext_4_size",
+                        "options": [
+                            {
+                                "value": "h16",
+                                "label": "Smallest"
+                            },
+                            {
+                                "value": "h12",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h11",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h22",
+                                "label": "Large"
+                            },
+                            {
+                                "value": "h21",
+                                "label": "Largest"
+                            }
+                        ],
+                        "default": "h21",
+                        "label": "Fourth text size"
+                    },
+                    {
+                        "type": "select",
+                        "id": "text_4_weight",
+                        "options": [
+                            {
+                                "value": "f_light",
+                                "label": "Light"
+                            },
+                            {
+                                "value": "f_regular",
+                                "label": "Regular"
+                            },
+                            {
+                                "value": "f_medium",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "f_bold",
+                                "label": "Bold"
+                            }
+                        ],
+                        "default": "f_regular",
+                        "label": "Fourth text weight"
+                    },
                     {
                         "type": "richtext",
                         "id": "text-4",
                         "label": "Text 4",
                         "default": "<p>Text text text. Text text text text.</p>"
                     },
+                    // ####################################################################
+                    {
+                        "type": "select",
+                        "id": "richtext_5_size",
+                        "options": [
+                            {
+                                "value": "h16",
+                                "label": "Smallest"
+                            },
+                            {
+                                "value": "h12",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h11",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h22",
+                                "label": "Large"
+                            },
+                            {
+                                "value": "h21",
+                                "label": "Largest"
+                            }
+                        ],
+                        "default": "h21",
+                        "label": "Fifth text size"
+                    },
+                    {
+                        "type": "select",
+                        "id": "text_5_weight",
+                        "options": [
+                            {
+                                "value": "f_light",
+                                "label": "Light"
+                            },
+                            {
+                                "value": "f_regular",
+                                "label": "Regular"
+                            },
+                            {
+                                "value": "f_medium",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "f_bold",
+                                "label": "Bold"
+                            }
+                        ],
+                        "default": "f_regular",
+                        "label": "Fifth text weight"
+                    },
                     {
                         "type": "richtext",
                         "id": "text-5",
                         "label": "Text 5",
+                        "default": "<p>Text text text. Text text text text.</p>"
+                    },
+                    // ####################################################################
+                    {
+                        "type": "select",
+                        "id": "richtext_6_size",
+                        "options": [
+                            {
+                                "value": "h16",
+                                "label": "Smallest"
+                            },
+                            {
+                                "value": "h12",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h11",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h22",
+                                "label": "Large"
+                            },
+                            {
+                                "value": "h21",
+                                "label": "Largest"
+                            }
+                        ],
+                        "default": "h21",
+                        "label": "Sixth text size"
+                    },
+                    {
+                        "type": "select",
+                        "id": "text_6_weight",
+                        "options": [
+                            {
+                                "value": "f_light",
+                                "label": "Light"
+                            },
+                            {
+                                "value": "f_regular",
+                                "label": "Regular"
+                            },
+                            {
+                                "value": "f_medium",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "f_bold",
+                                "label": "Bold"
+                            }
+                        ],
+                        "default": "f_regular",
+                        "label": "Sixth text weight"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text-6",
+                        "label": "Text 6",
+                        "default": "<p>Text text text. Text text text text.</p>"
+                    },
+                    // ####################################################################
+                    {
+                        "type": "select",
+                        "id": "richtext_7_size",
+                        "options": [
+                            {
+                                "value": "h16",
+                                "label": "Smallest"
+                            },
+                            {
+                                "value": "h12",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h11",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h22",
+                                "label": "Large"
+                            },
+                            {
+                                "value": "h21",
+                                "label": "Largest"
+                            }
+                        ],
+                        "default": "h21",
+                        "label": "Seventh text size"
+                    },
+                    {
+                        "type": "select",
+                        "id": "text_7_weight",
+                        "options": [
+                            {
+                                "value": "f_light",
+                                "label": "Light"
+                            },
+                            {
+                                "value": "f_regular",
+                                "label": "Regular"
+                            },
+                            {
+                                "value": "f_medium",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "f_bold",
+                                "label": "Bold"
+                            }
+                        ],
+                        "default": "f_regular",
+                        "label": "Seventh text weight"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text-7",
+                        "label": "Text 7",
                         "default": "<p>Text text text. Text text text text.</p>"
                     }
                 ]

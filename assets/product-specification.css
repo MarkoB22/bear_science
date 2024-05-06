@@ -3,13 +3,22 @@
     color: #040404;
 }
 
+.product_specification_title_wrapper {
+    margin-bottom: 48px;
+}
+
 .product_specification_title {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 18.5px 0;
+    padding: 8px 0;
     font-weight: 500;
+    border-bottom: 1px solid #040404;
+}
+
+.product_specification_title {
+    margin-bottom: 48px;
 }
 
 .product_specification_title > p {
@@ -37,6 +46,58 @@
 .product_specification_second,
 .product_specification_third,
 .product_specification_fourth,
-.product_specification_fifth {
+.product_specification_fifth,
+.product_specification_sixth,
+.product_specification_seventh {
     display: none; /* Initially hide the content */
+}
+
+.product_specification_title_wrapper:first-child > .product_specification_title {
+    margin-bottom: 34px;
+}
+
+.product_specification_title_wrapper:first-child > .product_specification_first > p {
+    line-height: inherit;
+    margin: 0;
+}
+
+.product_specification_title_wrapper:first-child > .product_specification_first {
+    margin-bottom: 12px;
+    font-weight: 500;
+}
+
+.product_specification_title_wrapper:first-child > .product_specification_second > p {
+    line-height: inherit;
+    margin-bottom: 12px;
+    font-weight: 400;
+}
+
+.product_specification_title_wrapper:first-child > .product_specification_third > p {
+    line-height: inherit;
+    margin-bottom: 38px;
+    font-weight: 400;
+}
+
+.product_specification_title_wrapper:first-child > .product_specification_fourth {
+    margin-bottom: 48px;
+    font-weight: 400;
+}
+
+.product_specification_title_wrapper:first-child > .product_specification_fourth > p {
+    margin-bottom: 9.6px;
+}
+
+.product_specification_title_wrapper:first-child > .product_specification_fifth {
+    margin-bottom: 48px;
+    font-weight: 400;
+}
+
+.product_specification_title_wrapper:first-child > .product_specification_fourth > p:nth-child(2),
+.product_specification_title_wrapper:first-child > .product_specification_fourth > p:nth-child(11),
+.product_specification_title_wrapper:first-child > .product_specification_fourth > p:nth-child(20) {
+    margin: 0;
+}
+
+.product_specification_title_wrapper:nth-child(2) > .product_specification_title {
+    
 }
