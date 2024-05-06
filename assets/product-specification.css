@@ -38,7 +38,9 @@
 .product_specification_second,
 .product_specification_third,
 .product_specification_fourth,
-.product_specification_fifth {
+.product_specification_fifth,
+.product_specification_sixth,
+.product_specification_seventh {
     display: none; /* Initially hide the content */
 }
 
