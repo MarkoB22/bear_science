@@ -169,12 +169,34 @@
             "richtext_7_size": "h12",
             "text-7": "<p>https:\/\/www.ncbi.nlm.nih.gov\/pmc\/articles\/PMC5976740\/<\/p>"
           }
+        },
+        "text_reWwUe": {
+          "type": "text",
+          "settings": {
+            "title_text_size": "h7",
+            "title": "<p>Discover Longevity with Bear-Science<\/p>",
+            "richtext_1_size": "h11",
+            "text-1": "<p>Welcome to Bear-Science, where we not only offer products but promote a lifestyle focused on longevity. “Longevity” includes not only the years that lie behind us, but also the precious hours, days and years that still lie ahead of us. It's not just about the total length of our lives, but also about how we spend that time in health and well-being.<\/p>",
+            "richtext_2_size": "h22",
+            "text-2": "<p>Lifespan vs. Healthspan<\/p>",
+            "richtext_3_size": "h11",
+            "text-3": "<p>Lifespan is the total number of years we live, but healthspan is crucial. How many years do we spend in a state of health, freedom from disease and full of energy? This is where Bear Science comes in – we strive to not only extend lifespan, but also improve the quality of those years.<\/p>",
+            "richtext_4_size": "h22",
+            "text-4": "<p>Beyond Lifespan - Our Mission<\/p>",
+            "richtext_5_size": "h11",
+            "text-5": "<p>Bear Science is more than just a product range. We are part of a movement promoting a healthy lifestyle based on proven science. Our products are carefully designed to help you live an active, healthy and fulfilling life. From supplements to fitness equipment, every product is chosen with your longevity in mind.<\/p>",
+            "richtext_6_size": "h22",
+            "text-6": "<p>Why choose Bear Science?<\/p>",
+            "richtext_7_size": "h11",
+            "text-7": "<p>Our products are not only designed for effectiveness, but also for sustainability. We rely on high-quality ingredients and innovative technologies to ensure you get the best for your health. Bear Science is not just about the moment, but about a long-term investment in your quality of life.Discover the world of longevity with Bear Science - because a fulfilled life is more than just the sum of its years. Beyond Lifespan, for a life of health and well-being.<\/p>"
+          }
         }
       },
       "block_order": [
         "text_m4rnbA",
         "text_dD3BU7",
-        "text_KPDznk"
+        "text_KPDznk",
+        "text_reWwUe"
       ],
       "settings": {
       }
