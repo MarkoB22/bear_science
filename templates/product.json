@@ -190,13 +190,35 @@
             "richtext_7_size": "h11",
             "text-7": "<p>Our products are not only designed for effectiveness, but also for sustainability. We rely on high-quality ingredients and innovative technologies to ensure you get the best for your health. Bear Science is not just about the moment, but about a long-term investment in your quality of life.Discover the world of longevity with Bear Science - because a fulfilled life is more than just the sum of its years. Beyond Lifespan, for a life of health and well-being.<\/p>"
           }
+        },
+        "text_7xYg3z": {
+          "type": "text",
+          "settings": {
+            "title_text_size": "h7",
+            "title": "<p>Legal Notice<\/p>",
+            "richtext_1_size": "h11",
+            "text-1": "<p>The information provided is neither intended as a promise of healing nor as an incentive to self-medicate. There is a possibility of printing and typesetting errors. As of November 20, 2023.<\/p>",
+            "richtext_2_size": "h21",
+            "text-2": "",
+            "richtext_3_size": "h21",
+            "text-3": "",
+            "richtext_4_size": "h21",
+            "text-4": "",
+            "richtext_5_size": "h21",
+            "text-5": "",
+            "richtext_6_size": "h21",
+            "text-6": "",
+            "richtext_7_size": "h21",
+            "text-7": ""
+          }
         }
       },
       "block_order": [
         "text_m4rnbA",
         "text_dD3BU7",
         "text_KPDznk",
-        "text_reWwUe"
+        "text_reWwUe",
+        "text_7xYg3z"
       ],
       "settings": {
       }
