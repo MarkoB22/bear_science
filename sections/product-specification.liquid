@@ -39,6 +39,18 @@
                         {{ block.settings.text-5 }}
                     </div>
                 {% endif %}
+
+                {% if block.settings.text-6 %}
+                    <div class="product_specification_sixth {{ block.settings.richtext_6_size }} lh-l">{% comment %} f_regular {% endcomment %}
+                        {{ block.settings.text-6 }}
+                    </div>
+                {% endif %}
+
+                {% if block.settings.text-7 %}
+                    <div class="product_specification_seventh {{ block.settings.richtext_7_size }} lh-l">{% comment %} f_regular {% endcomment %}
+                        {{ block.settings.text-7 }}
+                    </div>
+                {% endif %}
             </div>
 
         {% endif %}
