@@ -5,37 +5,37 @@
         
         {% if block.settings.title %}
             <div class="product_specification_title_wrapper">
-                <div class="product_specification_title h7 lh-l">
+                <div class="product_specification_title {{ block.settings.title_text_size }} lh-l">
                     {{ block.settings.title }}
                     <div class="svg-arrow">{% render 'svg-icons' with 'thb-back-to-top' %}</div>
                 </div>
 
                 {% if block.settings.text-1 %}
-                    <div class="product_specification_first h21 lh-sm">{% comment %} f_medium {% endcomment %}
+                    <div class="product_specification_first {{ block.settings.richtext_1_size }} lh-sm">{% comment %} f_medium {% endcomment %}
                         {{ block.settings.text-1 }}
                     </div>
                 {% endif %}
 
                 {% if block.settings.text-2 %}
-                    <div class="product_specification_second h16 lh-sm">{% comment %} f_regular {% endcomment %}
+                    <div class="product_specification_second {{ block.settings.richtext_2_size }} lh-sm">{% comment %} f_regular {% endcomment %}
                         {{ block.settings.text-2 }}
                     </div>
                 {% endif %}
 
                 {% if block.settings.text-3 %}
-                    <div class="product_specification_third h16 lh-sm">{% comment %} f_regular {% endcomment %}
+                    <div class="product_specification_third {{ block.settings.richtext_3_size }} lh-sm">{% comment %} f_regular {% endcomment %}
                         {{ block.settings.text-3 }}
                     </div>
                 {% endif %}
 
                 {% if block.settings.text-4 %}
-                    <div class="product_specification_fourth h12 lh-l">{% comment %} f_regular {% endcomment %}
+                    <div class="product_specification_fourth {{ block.settings.richtext_4_size }} lh-l">{% comment %} f_regular {% endcomment %}
                         {{ block.settings.text-4 }}
                     </div>
                 {% endif %}
 
                 {% if block.settings.text-5 %}
-                    <div class="product_specification_fifth h12 lh-l">{% comment %} f_regular {% endcomment %}
+                    <div class="product_specification_fifth {{ block.settings.richtext_5_size }} lh-l">{% comment %} f_regular {% endcomment %}
                         {{ block.settings.text-5 }}
                     </div>
                 {% endif %}
@@ -84,10 +84,58 @@ document.addEventListener('DOMContentLoaded', function() {
                         "default": "<p>Title</p>"
                     },
                     {
+                        "type": "select",
+                        "id": "title_text_size",
+                        "options": [
+                            {
+                                "value": "h9",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h7",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h8",
+                                "label": "Large"
+                            }
+                        ],
+                        "default": "h7",
+                        "label": "Title size"
+                    },
+                    {
                         "type": "richtext",
                         "id": "text-1",
                         "label": "Text 1",
                         "default": "<p>Text text text. Text text text text.</p>"
+                    },
+                    {
+                        "type": "select",
+                        "id": "richtext_1_size",
+                        "options": [
+                            {
+                                "value": "h16",
+                                "label": "Smallest"
+                            },
+                            {
+                                "value": "h12",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h11",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h22",
+                                "label": "Large"
+                            },
+                            {
+                                "value": "h21",
+                                "label": "Largest"
+                            }
+                        ],
+                        "default": "h21",
+                        "label": "First text size"
                     },
                     {
                         "type": "richtext",
@@ -96,10 +144,66 @@ document.addEventListener('DOMContentLoaded', function() {
                         "default": "<p>Text text text. Text text text text.</p>"
                     },
                     {
+                        "type": "select",
+                        "id": "richtext_2_size",
+                        "options": [
+                            {
+                                "value": "h16",
+                                "label": "Smallest"
+                            },
+                            {
+                                "value": "h12",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h11",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h22",
+                                "label": "Large"
+                            },
+                            {
+                                "value": "h21",
+                                "label": "Largest"
+                            }
+                        ],
+                        "default": "h21",
+                        "label": "Second text size"
+                    },
+                    {
                         "type": "richtext",
                         "id": "text-3",
                         "label": "Text 3",
                         "default": "<p>Text text text. Text text text text.</p>"
+                    },
+                    {
+                        "type": "select",
+                        "id": "richtext_3_size",
+                        "options": [
+                            {
+                                "value": "h16",
+                                "label": "Smallest"
+                            },
+                            {
+                                "value": "h12",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h11",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h22",
+                                "label": "Large"
+                            },
+                            {
+                                "value": "h21",
+                                "label": "Largest"
+                            }
+                        ],
+                        "default": "h21",
+                        "label": "Third text size"
                     },
                     {
                         "type": "richtext",
@@ -108,10 +212,66 @@ document.addEventListener('DOMContentLoaded', function() {
                         "default": "<p>Text text text. Text text text text.</p>"
                     },
                     {
+                        "type": "select",
+                        "id": "richtext_4_size",
+                        "options": [
+                            {
+                                "value": "h16",
+                                "label": "Smallest"
+                            },
+                            {
+                                "value": "h12",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h11",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h22",
+                                "label": "Large"
+                            },
+                            {
+                                "value": "h21",
+                                "label": "Largest"
+                            }
+                        ],
+                        "default": "h21",
+                        "label": "Fourth text size"
+                    },
+                    {
                         "type": "richtext",
                         "id": "text-5",
                         "label": "Text 5",
                         "default": "<p>Text text text. Text text text text.</p>"
+                    },
+                    {
+                        "type": "select",
+                        "id": "richtext_5_size",
+                        "options": [
+                            {
+                                "value": "h16",
+                                "label": "Smallest"
+                            },
+                            {
+                                "value": "h12",
+                                "label": "Small"
+                            },
+                            {
+                                "value": "h11",
+                                "label": "Medium"
+                            },
+                            {
+                                "value": "h22",
+                                "label": "Large"
+                            },
+                            {
+                                "value": "h21",
+                                "label": "Largest"
+                            }
+                        ],
+                        "default": "h21",
+                        "label": "Fifth text size"
                     }
                 ]
             }
