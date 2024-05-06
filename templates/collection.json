@@ -7,7 +7,7 @@
         "title_lower": "PRODUCTS",
         "title_position": "right",
         "title_size": "h1",
-        "text_size": "h2",
+        "text_size": "h19",
         "text_line_height": "lh-l",
         "text_weight": "f_regular",
         "r_text": "<p>High-quality food suplements for your health and longevity<\/p>",
@@ -96,34 +96,57 @@
         "facets_desktop": "sidebar"
       }
     },
-    "scrolling_text_JikLze": {
-      "type": "scrolling-text",
+    "reviews_FCjrJU": {
+      "type": "reviews",
       "blocks": {
-        "text_VhpTUy": {
+        "text_qbVBNK": {
           "type": "text",
           "settings": {
-            "text": "Add campaign text here.",
-            "link": "",
-            "outline_text": false
+            "number_of_images": 5,
+            "image": "shopify:\/\/shop_images\/Vector_1.png",
+            "review": "<p>Sehr schnelle Lieferung, gerne wieder!<\/p>",
+            "customer_name": "John C."
+          }
+        },
+        "text_ABRxNF": {
+          "type": "text",
+          "settings": {
+            "number_of_images": 5,
+            "image": "shopify:\/\/shop_images\/Vector_1.png",
+            "review": "<p>Bin gerne zu weiteren Geschäften bereit. Danke.<\/p>",
+            "customer_name": "John C."
+          }
+        },
+        "text_yiJyRh": {
+          "type": "text",
+          "settings": {
+            "number_of_images": 5,
+            "image": "shopify:\/\/shop_images\/Vector_1.png",
+            "review": "<p>Sehr schneller Versand, alles bestens, gerne wieder!<\/p>",
+            "customer_name": "John C."
           }
         }
       },
       "block_order": [
-        "text_VhpTUy"
+        "text_qbVBNK",
+        "text_ABRxNF",
+        "text_yiJyRh"
       ],
       "settings": {
-        "height": "height-300",
-        "full_width": true,
-        "direction": "left",
-        "speed": "10s",
-        "text_uppercase": false,
-        "image_size": "large",
-        "color_bg": "#f5f3ef",
-        "color_text": "#151515",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
+        "title": "WHAT OUR CUSTOMERS SAY ABOUT US",
+        "button_link": "",
+        "button_text_arrow": "Leave a review",
+        "leave_review": "Leave yourself a review"
+      }
+    },
+    "newsletter_signup_DDycCE": {
+      "type": "newsletter-signup",
+      "settings": {
+        "text": "<p>Sign up for the newsletter and receive a 10€ voucher as a thank you!<\/p>",
+        "email_text": "Email Address",
+        "button_link": "",
+        "button_text_arrow": "Send",
+        "image": "shopify:\/\/shop_images\/13015BBE-8AF7-4037-8B06-45B7EA6743A8_1_1.png"
       }
     }
   },
@@ -132,6 +155,7 @@
     "product_specification_fCRPaP",
     "main-collection-banner",
     "product-grid",
-    "scrolling_text_JikLze"
+    "reviews_FCjrJU",
+    "newsletter_signup_DDycCE"
   ]
 }
