@@ -43,7 +43,7 @@
         "text_gP6Arw"
       ],
       "settings": {
-        "height": "height-300",
+        "height": "height-auto",
         "full_width": true,
         "direction": "left",
         "speed": "20s",
