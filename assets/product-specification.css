@@ -3,6 +3,10 @@
     color: #040404;
 }
 
+.product_specification_title_wrapper {
+    margin-bottom: 48px;
+}
+
 .product_specification_title {
     display: flex;
     flex-direction: row;
@@ -11,6 +15,10 @@
     padding: 8px 0;
     font-weight: 500;
     border-bottom: 1px solid #040404;
+}
+
+.product_specification_title {
+    margin-bottom: 48px;
 }
 
 .product_specification_title > p {
@@ -91,5 +99,5 @@
 }
 
 .product_specification_title_wrapper:nth-child(2) > .product_specification_title {
-    margin-bottom: 48px;
+    
 }
