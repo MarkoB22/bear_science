@@ -15,6 +15,14 @@
 		assign facets_desktop = 'drawer'
 	endunless
 -%}
+
+{% if template == 'collection' %}
+<style>
+.full-width-row .columns {
+	padding: 68px 28px;
+}
+</style>
+{% endif %}
 {%- for filter in collection.filters limit: 1 -%}{%- endfor -%}{%- comment -%} This is just to get rid of the "this theme does not support filters" message in the shopify admin {%- endcomment -%}
 {%- render 'facets-mobile', results: collection, enable_filtering: enable_filtering, enable_sorting: enable_sorting, show_counts: show_counts, filter_color_swatches: filter_color_swatches -%}
 <div class="row {% if full_width %}full-width-row{% endif %}">

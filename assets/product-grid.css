@@ -473,6 +473,18 @@
   gap: 24px;
 }  
 
+#product-grid .product-card.text-center .product-card-info {
+  width: 93.44%;
+}
+
+#product-grid .product-card--add-to-cart-button-container {
+  width: 100%;
+}
+
+#product-grid .product-card--add-to-cart-button {
+  padding: 14px;
+}
+
 @media only screen and (min-width: 1025px) {
   .product-card .product-card-quickview--button {
     height: 18%;

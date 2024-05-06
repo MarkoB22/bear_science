@@ -4290,9 +4290,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .product-card--add-to-cart-button[disabled] {
-  background: #72727266;
+  background: #c7c7c7;
   color: white;
-  border: 1px solid #72727266;
+  border: 1px solid #c7c7c7;
 }
 
 .product-card--add-to-cart-button[disabled] svg {
@@ -4511,12 +4511,12 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   }
   
   .not_desktop {
-    display: none;
+    display: none !important;
   }
 }
 
 @media print, screen and (max-width: 1024px) {
   .not_mobile {
-    display: none;
+    display: none !important;
   }
 }

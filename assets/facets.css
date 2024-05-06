@@ -25,14 +25,14 @@
   .facets--bar .facets-toggle {
     display: inline-flex;
     align-items: center;
-    font-weight: var(--font-body-bold-weight, 600);
-    font-size: 0.75rem;
+    font-weight: 300;
+    font-size: 1.5rem;
     text-transform: uppercase;
     margin-right: 30px;
     letter-spacing: 0.1em;
     color: var(--color-body); }
     .facets--bar .facets-toggle svg {
-      width: 14px;
+      width: 24px;
       height: auto;
       margin-right: 10px; }
       .facets--bar .facets-toggle svg path {
@@ -48,7 +48,8 @@
     margin-left: auto;
     display: flex;
     align-items: center;
-    white-space: nowrap; }
+    white-space: nowrap; 
+    display: none;}
     .facets--bar .thb-filter-sort-count .thb-filter-sort {
       margin-right: 30px; }
       [dir="rtl"] .facets--bar .thb-filter-sort-count .thb-filter-sort {
@@ -359,6 +360,10 @@
   height: 18px;
   left: auto;
   right: 0; }
+
+.mobile-filter-count {
+  display: none;
+}
 
 .thb-filter-count.mobile-filter-count .loading-overlay {
   left: 0;
