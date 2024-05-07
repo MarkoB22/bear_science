@@ -26,7 +26,7 @@
     gap: 10px;
 }
 
-.signup_bear_logo {
+.signup_logo {
     display: none;
 }
 
@@ -52,7 +52,7 @@
         padding: 11.5px;
     }
 
-    .signup_bear_logo {
+    .signup_logo {
         display: block;
     }
 
@@ -65,13 +65,13 @@
         width: 82.12%;
     }
 
-    .signup_bear_logo {
+    .signup_logo {
         width: 52.44%;
         height: auto;
         margin-top: 168px;
     }
 
-    .signup_bear_logo > img {
+    .signup_logo > img {
         width: 100%;
         height: auto;
     }
