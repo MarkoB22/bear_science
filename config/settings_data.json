@@ -21,6 +21,7 @@
     "enable_quick_add": true,
     "show_products_vendor": false,
     "show_size_options": false,
+    "sale_badge_type": "save_percentage",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
