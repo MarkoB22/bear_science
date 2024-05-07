@@ -56,6 +56,10 @@
         display: block;
     }
 
+    .signup_email {
+        padding-bottom: 8.5px;
+    }
+
     .signup_email_wrapper {
         padding: 10px 2.01%;
         width: 82.12%;
