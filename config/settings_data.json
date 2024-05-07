@@ -22,6 +22,7 @@
     "show_products_vendor": false,
     "show_size_options": false,
     "sale_badge_type": "save_percentage",
+    "color_badge_sale": "#6d7e60",
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
