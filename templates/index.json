@@ -214,22 +214,10 @@
     "email_signup_LYibJU": {
       "type": "email-signup",
       "settings": {
-        "heading": "Newsletter",
-        "description": "<p>Add a short description for this section<\/p>",
-        "color_bg": "#ffffff",
-        "color_text": "#151515",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
-      }
-    },
-    "newsletter_signup_fknP7a": {
-      "type": "newsletter-signup",
-      "settings": {
-        "text": "<p>Sign up for the newsletter and receive a <strong>10€<\/strong> voucher as a thank you!<\/p>",
-        "email_text": "E-mail Address",
-        "button_link": "#",
-        "button_text_arrow": "Send",
-        "image": "shopify:\/\/shop_images\/Logo_-_Newsletter_section.png"
+        "text": "<p>Text text text. Text text text text.<\/p>",
+        "email_text": "Email Address",
+        "button_link": "",
+        "button_text_arrow": "Button text"
       }
     },
     "166366563622039b3e": {
@@ -643,7 +631,6 @@
     "traits_AFGyQX",
     "reviews_KeyhVG",
     "email_signup_LYibJU",
-    "newsletter_signup_fknP7a",
     "166366563622039b3e",
     "16614195534fb74bc3",
     "166143150135dd97e2",
