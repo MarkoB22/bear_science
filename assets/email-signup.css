@@ -61,6 +61,14 @@
 
 /* -------------------- PLANT IMAGE ------------------------ */
 
+  .signup_email {
+    width: 66.13%;
+  }
+
+  .field > .field__label {
+    padding: 7px 0;
+  }
+
   .signup_wrapper_plant {
       display: flex;
       flex-direction: row;
@@ -73,7 +81,7 @@
       justify-content: center;
       padding-bottom: 100px;
       padding-top: 46px;
-      flex-basis: 100%;
+      flex-basis: 97%;
   }
 
   .signup_email_wrapper {
@@ -87,10 +95,6 @@
 
   .signup_email_button {
       padding: 11.5px;
-  }
-
-  .signup_email {
-      padding-bottom: 8.5px;
   }
 
   .signup_logo_plant {
@@ -124,7 +128,7 @@
       flex-direction: column;
       justify-content: center;
       padding-bottom: 185px;
-      flex-basis: 95%;
+      flex-basis: 91%;
   }
 
   .signup_logo_bear {
