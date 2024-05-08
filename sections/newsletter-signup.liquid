@@ -24,25 +24,17 @@
         {% endif %}
     </div>
 
-    {%- if section.settings.image_mob != blank -%}
-        <div class="signup_logo_mob">
-            {% assign image_mob = section.settings.image_mob %}
-            {% assign master_width = image_mob.src.width | append: 'x' | append: image_mob.src.height %}
-            {%- render 'responsive-image', image: image_mob, sizes: master_width, retina: 1 -%}
-        </div>
-    {%- endif -%}
-
-    {%- if section.settings.image_desk != blank -%}
-        <div class="signup_logo_desk">
-            {% assign image_desk = section.settings.image_desk %}
-            {% assign master_width = image_desk.src.width | append: 'x' | append: image_desk.src.height %}
-            {%- render 'responsive-image', image: image_desk, sizes: master_width, retina: 1 -%}
+    {%- if section.settings.image != blank -%}
+        <div class="signup_logo">
+            {% assign image = section.settings.image %}
+            {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+            {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
         </div>
     {%- endif -%}
 
 </div>
 <script>
-document.querySelectorAll('.signup_logo_desk img').forEach(img => {
+document.querySelectorAll('.signup_logo img').forEach(img => {
     img.onload = () => {
         // Find the parent 'signup_wrapper' element
         let parentWrapper = img.closest('.signup_wrapper');
@@ -54,12 +46,12 @@ document.querySelectorAll('.signup_logo_desk img').forEach(img => {
             // Append '_bear' to class names
             if (parentWrapper) parentWrapper.className += '_bear';
             if (textDiv) textDiv.className += '_bear';
-            img.closest('.signup_logo_desk').className += '_bear';
+            img.closest('.signup_logo').className += '_bear';
         } else {
             // Append '_plant' to class names
             if (parentWrapper) parentWrapper.className += '_plant';
             if (textDiv) textDiv.className += '_plant';
-            img.closest('.signup_logo_desk').className += '_plant';
+            img.closest('.signup_logo').className += '_plant';
         }
     };
 });
@@ -95,13 +87,8 @@ document.querySelectorAll('.signup_logo_desk img').forEach(img => {
                     },
                     {
                         "type": "image_picker",
-                        "id": "image_desk",
-                        "label": "Desktop image"
-                    },
-                    {
-                        "type": "image_picker",
-                        "id": "image_mob",
-                        "label": "Mobile image"
+                        "id": "image",
+                        "label": "Image"
                     }
                 ],
         "presets": [
