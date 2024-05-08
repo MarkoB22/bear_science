@@ -1,4 +1,9 @@
-.signup_wrapper {
+.signup_wrapper_bear {
+    padding: 68px 7.65%;
+    border-bottom: 1px solid black;
+}
+
+.signup_wrapper_plant {
     padding: 68px 7.65%;
     border-bottom: 1px solid black;
 }
@@ -26,7 +31,11 @@
     gap: 10px;
 }
 
-.signup_logo {
+.signup_logo_plant {
+    display: none;
+}
+
+.signup_logo_bear {
     display: none;
 }
 
@@ -96,7 +105,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        padding-bottom: 171px;
+        padding-bottom: 185px;
         flex-basis: 95%;
     }
 
