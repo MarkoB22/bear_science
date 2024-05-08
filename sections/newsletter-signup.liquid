@@ -33,6 +33,31 @@
     {%- endif -%}
 
 </div>
+<script>
+document.querySelectorAll('.signup_logo img').forEach(img => {
+    img.onload = () => {
+        // Find the parent 'signup_wrapper' element
+        let parentWrapper = img.closest('.signup_wrapper');
+
+        // The 'signup_only_text' is a child of 'signup_wrapper'
+        let textDiv = parentWrapper.querySelector('.signup_only_text');
+
+        if (img.naturalWidth > img.naturalHeight) {
+            // Append '_bear' to class names
+            if (parentWrapper) parentWrapper.className += '_bear';
+            if (textDiv) textDiv.className += '_bear';
+            img.closest('.signup_logo').className += '_bear';
+        } else {
+            // Append '_plant' to class names
+            if (parentWrapper) parentWrapper.className += '_plant';
+            if (textDiv) textDiv.className += '_plant';
+            img.closest('.signup_logo').className += '_plant';
+        }
+    };
+});
+
+
+</script>
 {% schema %}
     {
         "name": "Sign-up Newsletter",
