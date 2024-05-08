@@ -214,10 +214,11 @@
     "email_signup_LYibJU": {
       "type": "email-signup",
       "settings": {
-        "text": "<p>Text text text. Text text text text.<\/p>",
-        "email_text": "Email Address",
+        "text": "<p>Sign up for the newsletter and receive a 10€ voucher as a thank you!<\/p>",
+        "email_text": "E-mail address",
         "button_link": "",
-        "button_text_arrow": "Button text"
+        "button_text_arrow": "Send",
+        "image": "shopify:\/\/shop_images\/Logo_-_Newsletter_section_1.png"
       }
     },
     "166366563622039b3e": {
