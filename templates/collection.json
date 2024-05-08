@@ -138,12 +138,11 @@
     "email_signup_H89Fih": {
       "type": "email-signup",
       "settings": {
-        "heading": "Newsletter",
-        "description": "<p>Add a short description for this section<\/p>",
-        "color_bg": "#ffffff",
-        "color_text": "#151515",
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "text": "<p>Sign up for the newsletter and receive a 10€ voucher as a thank you!<\/p>",
+        "email_text": "Email Addresss",
+        "button_link": "",
+        "button_text_arrow": "Send",
+        "image": "shopify:\/\/shop_images\/13015BBE-8AF7-4037-8B06-45B7EA6743A8_1_1_904621ea-0b29-4880-9c93-f235c0cd6f83.png"
       }
     },
     "newsletter_signup_DDycCE": {
