@@ -495,15 +495,6 @@
         "disable_bottom_spacing": true
       }
     },
-    "16624594877292080f": {
-      "type": "spacer",
-      "settings": {
-        "spacer_mobile": 0,
-        "spacer_desktop": 20,
-        "border_separator": false,
-        "border_separator_full": false
-      }
-    },
     "16615358507b6ff1a8": {
       "type": "testimonials",
       "blocks": {
@@ -547,24 +538,6 @@
         "color_text": "#151515",
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
-      }
-    },
-    "1662636493225665a2": {
-      "type": "spacer",
-      "settings": {
-        "spacer_mobile": 20,
-        "spacer_desktop": 40,
-        "border_separator": false,
-        "border_separator_full": false
-      }
-    },
-    "1662368401fce27368": {
-      "type": "spacer",
-      "settings": {
-        "spacer_mobile": 0,
-        "spacer_desktop": 0,
-        "border_separator": true,
-        "border_separator_full": true
       }
     },
     "16620983071df6eb29": {
@@ -643,10 +616,7 @@
     "16626364694d37e9d5",
     "1662459246bd099bb7",
     "1662459178b0886a69",
-    "16624594877292080f",
     "16615358507b6ff1a8",
-    "1662636493225665a2",
-    "1662368401fce27368",
     "16620983071df6eb29"
   ]
 }
