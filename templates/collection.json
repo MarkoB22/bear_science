@@ -135,6 +135,17 @@
         "leave_review": "Leave a review yourself"
       }
     },
+    "email_signup_H89Fih": {
+      "type": "email-signup",
+      "settings": {
+        "heading": "Newsletter",
+        "description": "<p>Add a short description for this section<\/p>",
+        "color_bg": "#ffffff",
+        "color_text": "#151515",
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "newsletter_signup_DDycCE": {
       "type": "newsletter-signup",
       "settings": {
@@ -152,6 +163,7 @@
     "scrolling_text_eHV3wY",
     "product-grid",
     "reviews_FCjrJU",
+    "email_signup_H89Fih",
     "newsletter_signup_DDycCE"
   ]
 }
