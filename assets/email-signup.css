@@ -45,7 +45,7 @@
 .field > input {
   width: 100%;
   border: none;
-  padding: 0;
+  padding: 0 0 0 5%;
   margin: 0;
 }
 
