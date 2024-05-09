@@ -1,50 +1,151 @@
-.email-signup--inner {
-  padding: 0 15px;
-  max-width: 1440px;
-  margin-left: auto;
-  margin-right: auto; }
-  @media only screen and (min-width: 768px) {
-    .email-signup--inner {
-      padding: 0 50px; } }
+.signup_wrapper_bear {
+  padding: 68px 7.65%;
+  border-bottom: 1px solid black;
+}
 
+.signup_wrapper_plant {
+  padding: 68px 7.65%;
+  border-bottom: 1px solid black;
+}
 
-.signup-container {
-  margin-bottom: 0; }
-  .signup-container .form-notification {
-    margin-bottom: 10px; }
-  .signup-container fieldset {
-    position: relative; }
-  .signup-container input {
-    padding-right: 40px;
-    width: 100%;
-    margin-bottom: 0; }
-  .signup-container button {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-    max-height: 52px;
-    width: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .signup-container--terms {
-    display: inline-flex;
-    align-items: center;
-    margin-top: 10px; }
-    .signup-container--terms input {
-      width: auto;
-      margin-right: 8px; }
+.signup_text {
+  margin-bottom: 34px;
+}
 
-.email-signup {
-  background: var(--color-bg, var(--bg-body));
-  color: var(--color-text, var(--color-body)); }
-  .email-signup .signup-container {
-    max-width: 510px;
-    margin: 0 auto; }
-    .email-signup .signup-container button svg path {
-      stroke: var(--color-text, var(--color-accent)); }
-    .email-signup .signup-container input {
-      color: var(--color-text, var(--color-body)); }
-  .email-signup .section-header--content .h3 {
-    color: var(--color-text, var(--color-accent)); }
+.signup_email_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  padding: 10px 3.25%;
+}
+
+.signup_email {
+  width: 49.35%;
+  border-bottom: 1px solid black;
+}
+
+.signup_email_button {
+  padding: 13px;
+  gap: 10px;
+}
+
+.signup_logo_plant {
+  display: none;
+}
+
+.signup_logo_bear {
+  display: none;
+}
+
+.signup_email button {
+  display: none;
+}
+
+.field > input {
+  width: 100%;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.field > .field__label {
+  color: #040404;
+  padding: 10px 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+@media print, screen and (min-width: 1025px) {
+
+/* -------------------- PLANT IMAGE ------------------------ */
+
+  .signup_email {
+    width: 60%;
+  }
+
+  .field > .field__label {
+    padding: 7px 0;
+  }
+
+  .signup_wrapper_plant {
+      display: flex;
+      flex-direction: row;
+      padding: 79px 4.1% 0px 12.22%;
+  }
+
+  .signup_only_text_plant {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 100px;
+      padding-top: 46px;
+      flex-basis: 97%;
+  }
+
+  .signup_email_wrapper {
+      width: 82.12%;
+      padding: 10px 1.25%;
+  }
+
+  .signup_text {
+      margin-bottom: 80px;
+  }
+
+  .signup_email_button {
+      padding: 11.5px;
+  }
+
+  .signup_logo_plant {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      flex-basis: 100%;
+      justify-content: flex-end;
+      position: relative;
+      overflow: auto;
+  }
+
+  .signup_logo_plant > img {
+      position: absolute;
+      width: 51%;
+      height: auto;
+      display: block;
+  }
+
+  /* -------------------- BEAR IMAGE ------------------------ */
+
+  .signup_wrapper_bear {
+      display: flex;
+      flex-direction: row;
+      padding: 100px 4.44% 49px 7.33%;
+      border-bottom: 1px solid black;
+  }
+
+  .signup_only_text_bear {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-bottom: 185px;
+      flex-basis: 91%;
+  }
+
+  .signup_logo_bear {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      flex-basis: 100%;
+      justify-content: flex-end;
+      position: relative;
+      overflow: auto;
+  }
+
+  .signup_logo_bear > img {
+      position: absolute;
+      width: 100%;
+      height: auto;
+      display: block;
+  }
+
+}
