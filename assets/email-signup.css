@@ -20,10 +20,10 @@
   padding: 10px 3.25%;
 }
 
-.signup_email {
+/* .signup_email {
   width: 49.35%;
   border-bottom: 1px solid black;
-}
+} */
 
 .signup_email_button {
   padding: 13px;
@@ -38,23 +38,33 @@
   display: none;
 }
 
-/* .signup_email button {
-  display: none;
-} */
-
 .field > input {
   width: 100%;
   border: none;
-  padding: 0 0 0 5%;
   margin: 0;
 }
 
 .field > .field__label {
   color: #040404;
-  padding: 10px 0;
+  padding: 0 0 5px 0;
   margin: 0;
   display: flex;
   align-items: flex-end;
+}
+
+.signup_email {
+  width: 100%;
+}
+
+.signup-form > fieldset {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.signup-form > fieldset > .field {
+  width: 53%;
+  border-bottom: 1px solid black;
 }
 
 @media print, screen and (min-width: 1025px) {
@@ -62,11 +72,18 @@
 /* -------------------- PLANT IMAGE ------------------------ */
 
   .signup_email {
-    width: 60%;
+    width: 100%;
   }
 
-  .field > .field__label {
-    padding: 7px 0;
+  .signup-form > fieldset {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .signup-form > fieldset > .field {
+    width: 64%;
+    border-bottom: 1px solid black;
   }
 
   .signup_wrapper_plant {
