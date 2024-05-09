@@ -14,7 +14,7 @@
                   {% render 'email-signup-form' %}
                 </div>
 
-                {% if section.settings.button_text_arrow != "" %}
+                {% comment %} {% if section.settings.button_text_arrow != "" %}
                   <button type="submit" form="NewsletterForm--{{ section.id }}">
                     <a class="signup_email_button button_type1 h11 lh-sm f_regular" href="{{ section.settings.button_link }}">
                         <span>{{ section.settings.button_text_arrow }}</span>
@@ -23,7 +23,7 @@
                         </svg> 
                     </a>
                   </button>
-                {% endif %}
+                {% endif %} {% endcomment %}
 
             </div>
         {% endif %}
