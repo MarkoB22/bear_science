@@ -14,7 +14,7 @@
 			{%- endif -%}
 			<div class="field">
 				<input
-					placeholder="{{ section.settings.email_text }}"
+					placeholder="{{ 'newsletter.label' | t }}"
 					type="email"
 					id="NewsletterForm--{{ section.id }}"
 					name="contact[email]"
@@ -33,8 +33,8 @@
 					{% endif %}
 					required
 				/>
-				<label class="field__label h11 f_regular lh-sm" for="NewsletterForm--{{ section.id }}">
-					{{ section.settings.email_text }}
+				<label class="field__label" for="NewsletterForm--{{ section.id }}">
+	        {{ 'newsletter.label' | t }}
 	      </label>
 			</div>
 			
