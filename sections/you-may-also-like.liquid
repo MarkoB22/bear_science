@@ -6,33 +6,34 @@
 
 
 {% schema %}
-    {
-        "name": "You may also like",
+{
+    "name": "You may also like",
+    "max_blocks": 3,
+    "settings": [
+                {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Title"
+                }
+            ],
+        "blocks": [
+        {
+        "type": "product",
+        "name": "Product",
         "settings": [
-                    {
-                        "type": "text",
-                        "id": "title",
-                        "label": "Title",
-                        "default": "Title"
-                    }
-                ],
-            "blocks": [
-            {
-            "type": "product",
-            "name": "Product",
-            "settings": [
-                    {
-                        "type": "product",
-                        "id": "product",
-                        "label": "Pick a product"
-                    }
-                ]
-            }
-		],
-        "presets": [
-          {
-            "name": "You may also like"
-          }
-        ]
-    }
+                {
+                    "type": "product",
+                    "id": "product",
+                    "label": "Pick a product"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+        "name": "You may also like"
+        }
+    ]
+}
 {% endschema %}   

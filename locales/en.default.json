@@ -98,7 +98,7 @@
       "product_information": "Product information",
       "add_to_cart": "Add to cart",
       "choose_options": "Choose options",
-      "sold_out": "Sold out",
+      "sold_out": "Out of stock",
       "save_html": "Save {{ saved_amount }}",
       "unavailable": "Unavailable",
       "pre_order": "Pre-order",

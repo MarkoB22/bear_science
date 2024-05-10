@@ -63,7 +63,7 @@
 				{%- if settings.sale_badge_type == 'sale' -%}
 				{{ 'products.product.on_sale' | t }}
 				{%- else -%}
-				-
+				-{{ saved_amount }}
 				{%- endif -%}
 		  </span>
 			{% endif %}

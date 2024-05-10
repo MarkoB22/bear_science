@@ -23,6 +23,13 @@
       margin-left: 10px; }
   .add_to_cart_holder .button {
     flex: 1; }
+  .single-add-to-cart-button.sold-out {
+    background: #c7c7c7;
+    color: white;
+    border: 2px solid #c7c7c7;}
+    .single-add-to-cart-button.sold-out .single-add-to-cart-button--text {
+      opacity: 1 !important;
+    }
   .add_to_cart_holder .swym-button-bar {
     margin-top: 0;
     margin-bottom: 0; }
