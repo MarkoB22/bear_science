@@ -4510,7 +4510,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .shopify-pc__prefs__preferences-input svg:not(:first-child) path {
-  fill: #6D7E60;
+  fill: #6D7E60 !important;
 }
 
 .shopify-pc__prefs__option .shopify-pc__prefs__preferences-input,
