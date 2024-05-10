@@ -4492,6 +4492,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   font-weight: 600 !important;
 }
 
+//*
 .shopify-pc__prefs__dialog {
   background: white !important;
 }
@@ -4521,7 +4522,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 .shopify-pc__prefs__options p {
   color: #040404 !important;
 }
-
+*//
 @media print, screen and (min-width: 1025px) {
   .shopify-pc__banner__dialog {
     max-width: 485px !important;
