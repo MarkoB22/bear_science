@@ -3253,13 +3253,13 @@ select {
   align-items: center;
   background: var(--color-badge-sale, #ee3a45);
   color: var(--color-badge-text, #fff);
-  border-radius: 54px;
+  border-radius: 42px;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: 700;
-  height: 54px;
-  min-width: 54px;
-  padding: 0 10px;
+  height: 42px;
+  min-width: 42px;
+  padding: 7px;
   line-height: 0; 
   align-items: center;
   justify-content: center;}
@@ -4533,6 +4533,14 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
   .shopify-pc__banner__btn-manage-prefs {
     margin: 8px 0 0 0 !important;  
+  }
+
+  .badge {
+    border-radius: 54px;
+    text-transform: uppercase;
+    font-size: 14px;
+    height: 54px;
+    min-width: 54px;
   }
   
   .not_desktop {

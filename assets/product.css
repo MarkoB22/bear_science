@@ -317,6 +317,9 @@
 .shopify-payment-button__button:not(.shopify-payment-button__button--branded):before, .shopify-payment-button__button.shopify-payment-button__button--branded .shopify-cleanslate div[role="button"]:before, .variations input[type="radio"] + label:before, .variations .product-form__input--color input[type="radio"] + label, .variations .product-form__input--color input[type="radio"] + label:after, .variations .product-form__input--siblings label, .variations .product-form__input--siblings label:after, .product-images-buttons .slider-button, .thb-product-detail .product-single__media-zoom svg, .thb-product-detail .product-single__media.product-single__media-model .product-single__media-model-button svg, .accordion summary span:before, .product-popup-modal, .product-add-to-cart-sticky, .product-add-to-cart-sticky--inner .plus:before {
   transition: all 0.25s cubic-bezier(0.104, 0.204, 0.492, 1); }
 
+.product-card .button_type1 {
+  padding: 15px 24px;
+}
 
 @media only screen and (min-width: 1068px) {
   .product-grid-container {

@@ -1,8 +1,12 @@
 {%- assign badge_position = settings.badge_position -%}
+
+{%  comment  %}
 {%- unless product_card_product.available -%}
 	<span class="badge out-of-stock {{ badge_position }}">{{ 'products.product.sold_out' | t }}</span>
 {%- endunless -%}
-{%- if product_card_product.compare_at_price > product_card_product.price and product_card_product.available -%}
+{% endcomment %}
+
+{%- if product_card_product.compare_at_price > product_card_product.price -%}
 	{%- if settings.sale_badge_type == 'save_amount' -%}
 		{%- capture saved_amount -%}{{ product_card_product.compare_at_price | minus: product_card_product.price | money }}{%- endcapture -%}
 	{%- elsif settings.sale_badge_type == 'save_percentage' -%}
