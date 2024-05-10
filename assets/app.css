@@ -4505,6 +4505,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   background-color: white !important;
 }
 
+.shopify-pc__prefs__option label span svg {
+  fill: #6D7E60;
+}
+
 .shopify-pc__prefs__header-title,
 .shopify-pc__prefs__intro h3,
 .shopify-pc__prefs__intro p,
