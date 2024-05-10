@@ -4476,7 +4476,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   transition: all ease-in-out .3s;
 }
 
-#shopify-pc__prefs__header-decline,
+#shopify-pc__prefs__dialog #shopify-pc__prefs__header-decline,
 #shopify-pc__prefs__header-accept {
   background: white !important;
   color: #6D7E60 !important;
