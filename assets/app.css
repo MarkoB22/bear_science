@@ -4496,7 +4496,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   background: white !important;
 }
 
-.shopify-pc__prefs__header-close svg {
+.shopify-pc__prefs__header-close svg path {
   fill: #040404 !important;
 }
 
