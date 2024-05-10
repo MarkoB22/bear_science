@@ -31,11 +31,12 @@
         </div>
     {%- endif -%}
 
-    <a class="button_type1 h12 lh-sm f_regular" href="{{ section.settings.button_link }}">
-        <span>{{ section.settings.button_text_arrow }}</span>
-        {% render 'svg-icons' with 'button_arrow' %} 
-    </a>
-
+    {%- if section.settings.button_text_arrow != "" -%}
+        <a class="button_type1 h12 lh-sm f_regular" href="{{ section.settings.button_link }}">
+            <span>{{ section.settings.button_text_arrow }}</span>
+            {% render 'svg-icons' with 'button_arrow' %} 
+        </a>
+    {%- endif -%}
 </div>
 {% schema %}
 {
