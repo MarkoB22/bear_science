@@ -1,0 +1,38 @@
+{{  'you-may-also-like.css' | asset_url | stylesheet_tag }}
+
+{% for block in section.blocks %}
+    {%- render 'product-card', product_card_product: block.settings.product -%}
+{% endfor %}
+
+
+{% schema %}
+    {
+        "name": "You may also like",
+        "settings": [
+                    {
+                        "type": "text",
+                        "id": "title",
+                        "label": "Title",
+                        "default": "Title"
+                    }
+                ],
+            "blocks": [
+            {
+            "type": "product",
+            "name": "Product",
+            "settings": [
+                    {
+                        "type": "product",
+                        "id": "product",
+                        "label": "Pick a product"
+                    }
+                ]
+            }
+		],
+        "presets": [
+          {
+            "name": "You may also like"
+          }
+        ]
+    }
+{% endschema %}   
