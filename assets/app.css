@@ -4480,6 +4480,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 #shopify-pc__prefs__header-accept {
   background: white !important;
   color: #6D7E60 !important;
+  border: 1px solid white !important;
   transition: all ease-in-out .3s;
 }
 
