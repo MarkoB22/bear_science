@@ -4509,9 +4509,8 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   fill: #6D7E60;
 }
 
-..shopify-pc__prefs__option label,
+.shopify-pc__prefs__option label,
 .shopify-pc__prefs__dialog header h2,
-.shopify-pc__prefs__header-title,
 .shopify-pc__prefs__intro h3,
 .shopify-pc__prefs__intro p,
 .shopify-pc__prefs__options .shopify-pc__prefs__essential-input, 
