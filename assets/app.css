@@ -4494,19 +4494,18 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 .shopify-pc__prefs__dialog {
   background: white !important;
-  color: 
-}
-
-.shopify-pc__prefs__header-title {
-  color: #040404 !important;
 }
 
 .shopify-pc__prefs__header-close svg {
   fill: #040404 !important;
 }
 
-.shopify-pc__prefs__intro h3 {
-  color: #040404;
+.shopify-pc__prefs__header-title,
+.shopify-pc__prefs__intro h3,
+.shopify-pc__prefs__intro p,
+.shopify-pc__prefs__options .shopify-pc__prefs__essential-input, 
+.shopify-pc__prefs__options p {
+  color: #040404 !important;
 }
 
 @media print, screen and (min-width: 1025px) {
