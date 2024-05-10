@@ -1,9 +1,9 @@
 {
   "current": {
-    "heading_font": "montserrat_n3",
+    "heading_font": "montserrat_n2",
     "heading_font_scale": 100,
     "heading_font_line_height_scale": 100,
-    "body_font": "montserrat_n3",
+    "body_font": "montserrat_n2",
     "navigation_uppercase": true,
     "product_title_uppercase": true,
     "button_uppercase": true,
