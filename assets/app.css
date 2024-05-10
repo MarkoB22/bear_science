@@ -4476,6 +4476,14 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   transition: all ease-in-out .3s;
 }
 
+#shopify-pc__prefs__dialog #shopify-pc__prefs__header-decline,
+#shopify-pc__prefs__header-accept {
+  background: white !important;
+  color: #6D7E60 !important;
+  border: 1px solid white !important;
+  transition: all ease-in-out .3s;
+}
+
 .shopify-pc__banner__btn-manage-prefs {
   border: 1px solid white !important;
   width: fit-content;
@@ -4492,7 +4500,37 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   font-weight: 600 !important;
 }
 
+/*
+.shopify-pc__prefs__dialog {
+  background: white !important;
+}
 
+.shopify-pc__prefs__header-close svg path {
+  fill: #040404 !important;
+}
+
+.shopify-pc__prefs__option label span svg,
+.shopify-pc__prefs__option label span {
+  background-color: white !important;
+}
+
+.shopify-pc__prefs__option label span svg {
+  fill: #6D7E60;
+}
+
+.shopify-pc__prefs__preferences-input svg:not(:first-child) path {
+  fill: #6D7E60 !important;
+}
+
+.shopify-pc__prefs__option label,
+.shopify-pc__prefs__option .shopify-pc__prefs__preferences-input,
+.shopify-pc__prefs__dialog header h2,
+.shopify-pc__prefs__intro h3,
+.shopify-pc__prefs__intro p,
+.shopify-pc__prefs__options p {
+  color: #040404 !important;
+}
+*/
 @media print, screen and (min-width: 1025px) {
   .shopify-pc__banner__dialog {
     max-width: 485px !important;
@@ -4521,6 +4559,8 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     margin: 0 !important;
   }
 
+  #shopify-pc__prefs__dialog #shopify-pc__prefs__header-decline:hover,
+  #shopify-pc__prefs__header-accept:hover,
   .shopify-pc__banner__btn-accept:hover {
     background: #6D7E60 !important;
     color: white !important;
