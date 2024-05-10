@@ -4559,7 +4559,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     margin: 0 !important;
   }
 
-  #shopify-pc__prefs__dialog #shopify-pc__prefs__header-decline,
+  #shopify-pc__prefs__dialog #shopify-pc__prefs__header-decline:hover,
   #shopify-pc__prefs__header-accept:hover,
   .shopify-pc__banner__btn-accept:hover {
     background: #6D7E60 !important;
