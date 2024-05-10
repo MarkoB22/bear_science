@@ -21,6 +21,12 @@
 .full-width-row .columns {
 	padding: 68px 28px;
 }
+
+@media print, screen and (min-width: 1025px) {
+	.full-width-row .columns {
+		padding: 124px 68px;
+	}
+}
 </style>
 {% endif %}
 {%- for filter in collection.filters limit: 1 -%}{%- endfor -%}{%- comment -%} This is just to get rid of the "this theme does not support filters" message in the shopify admin {%- endcomment -%}

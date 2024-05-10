@@ -34,7 +34,7 @@
     .facets--bar .facets-toggle svg {
       width: 24px;
       height: auto;
-      margin-right: 10px; }
+      margin-right: 24px; }
       .facets--bar .facets-toggle svg path {
         stroke: var(--color-body); }
     [dir="rtl"] .facets--bar .facets-toggle {
@@ -116,16 +116,16 @@
 
 .facets .thb-filter {
   width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 38px;
   position: relative; }
   .facets .thb-filter .thb-filter-title {
-    letter-spacing: 0.02em;
     position: relative;
-    font-size: 0.875rem;
-    font-weight: var(--font-body-bold-weight, 600);
-    text-transform: uppercase;
-    line-height: 1;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.22;
     display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     padding: 5px 0;
     align-items: center;
     cursor: pointer;
@@ -134,8 +134,7 @@
       position: relative;
       display: inline-flex;
       width: 12px;
-      height: 12px;
-      margin-right: 17px; }
+      height: 12px;  }
       [dir="rtl"] .facets .thb-filter .thb-filter-title span {
         margin-right: 0;
         margin-left: 17px; }
@@ -161,18 +160,19 @@
   .facets .thb-filter[open] .thb-filter-title span:before {
     transform: rotate(90deg); }
   .facets .thb-filter-content {
-    padding-top: 10px; }
+    padding-top: 36px; }
     .facets .thb-filter-content scroll-shadow {
       display: block;
       width: 100%; }
     .facets .thb-filter-content .count {
       margin-left: 2px;
-      font-size: 0.75rem; }
+      font-size: 0.75rem; 
+      display: none;}
     .facets .thb-filter-content input[type="checkbox"],
     .facets .thb-filter-content input[type="radio"] {
       margin-right: 10px;
-      width: 14px;
-      height: 14px; }
+      width: 22px;
+      height: 22px; }
       [dir="rtl"] .facets .thb-filter-content input[type="checkbox"], [dir="rtl"]
       .facets .thb-filter-content input[type="radio"] {
         margin-right: 0;
@@ -183,7 +183,9 @@
       padding: 0;
       overflow-y: scroll;
       max-height: 250px;
-      scrollbar-width: none; }
+      scrollbar-width: none; 
+      flex-direction: column;
+      border: none; }
       .facets .thb-filter-content ul::-webkit-scrollbar {
         display: none; }
     .facets .thb-filter-content .custom-checkbox[type="checkbox"] {
@@ -227,7 +229,7 @@
       height: auto; }
 
 .price_range .price-highest {
-  display: block;
+  display: none;
   font-size: 0.8125rem;
   margin-bottom: 15px; }
 
@@ -239,17 +241,21 @@
     display: flex;
     align-items: center; }
     .price_range .price_slider_amount > div .field-currency {
-      font-size: 0.8125rem;
-      margin-right: 10px; }
+      font-size: 1.125rem;
+      margin-right: 4px; 
+      font-weight: 400;}
       [dir="rtl"] .price_range .price_slider_amount > div .field-currency {
         margin-right: 0;
         margin-left: 10px; }
   .price_range .price_slider_amount input {
     box-sizing: border-box;
     margin-bottom: 0;
-    height: 44px;
-    padding: 12px 16px;
-    font-size: 0.8125rem;
+    height: auto;
+    line-height: 1.22;
+    font-weight: 400;
+    padding: 0;
+    border: none;
+    font-size: 1.125rem;
     flex: 1;
     width: 0; }
     .price_range .price_slider_amount input:-moz-placeholder {
@@ -280,7 +286,7 @@
   .price_slider .noUi-connect {
     height: 100%;
     width: 100%;
-    background: var(--color-accent); }
+    background: #6D7E60; }
   .price_slider .noUi-origin {
     height: 0;
     width: 100%; }
@@ -433,7 +439,8 @@
       display: none; }
 
 .thb-filter ul label {
-  font-size: 0.875rem; }
+  font-size: 18px;
+  line-height: 1.22; }
 
 .thb-filter ul.list-color {
   display: flex;
@@ -495,3 +502,7 @@
     .thb-filter ul.list-color label:not(.facet-checkbox--disabled):hover {
       z-index: 1;
       box-shadow: 0 0 0 1px var(--color-body) inset; }
+
+.filter_title {
+  text-transform: uppercase;
+}

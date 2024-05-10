@@ -12,6 +12,7 @@
 {%- if enable_filtering -%}
 	{%- unless results.products.size == 0 -%}
 		<facet-filters-form class="facets-desktop-container facets">
+			<div class="filter_title h2 f_light lh-l">{{ "products.facets.filter_by" | t }}</div>
 			<form id="FacetFiltersForm" class="facets__form">
 				{%- if results.terms -%}
 		      <input type="hidden" name="q" value="{{ results.terms | escape }}">
@@ -27,7 +28,7 @@
 							{%- assign label = filter.label | downcase | replace: ' ', '-' | escape -%}
 							<collapsible-row data-index="{{ forloop.index }}">
 								<details class="thb-filter js-filter" open>
-									<summary class="thb-filter-title"><span></span>{{ filter.label | escape }}</summary>
+									<summary class="thb-filter-title">{% render 'svg-icons' with 'thb-back-to-top' %}{{ filter.label | escape }}</summary>
 									<div class="thb-filter-content collapsible__content">
 										{%- if filter.param_name == 'filter.v.availability' -%}
 											<div class="thb-filter-availability">
@@ -146,7 +147,7 @@
 							{% when 'price_range' %}
 							<collapsible-row data-index="{{ forloop.index }}">
 								<details class="thb-filter js-filter" data-index="{{ forloop.index }}" open>
-									<summary class="thb-filter-title"><span></span>{{ filter.label | escape }}</summary>
+									<summary class="thb-filter-title">{% render 'svg-icons' with 'thb-back-to-top' %}{{ filter.label | escape }}</summary>
 									<div class="thb-filter-content collapsible__content">
 										<div class="{{ filter.type | escape }} {{ filter.type | escape }}-{{ filter.label | downcase | escape }}">
 												{% liquid
@@ -177,7 +178,7 @@
 													endif
 					              %}
 												{%- assign max_price_amount = filter.range_max | money | strip_html | escape -%}
-			                  <span class="price-highest">{{ "products.facets.max_price" | t: price: max_price_amount }}</span>
+			                  <span class="price-highest not_desktop">{{ "products.facets.max_price" | t: price: max_price_amount }}</span>
 												<price-slider class="price_slider_wrapper">
 													<div
 														class="price_slider"
