@@ -138,7 +138,7 @@
     "email_signup_H89Fih": {
       "type": "email-signup",
       "settings": {
-        "text": "<p>Sign up for the newsletter and receive a 10€ voucher as a thank you!<\/p>",
+        "text": "<p>Sign up for the newsletter and receive a <strong>10€<\/strong> voucher as a thank you!<\/p>",
         "email_text": "E-mail address",
         "button_link": "",
         "button_text_arrow": "Send",
