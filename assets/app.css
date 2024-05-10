@@ -4498,11 +4498,15 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .shopify-pc__prefs__header-title {
-  color: black !important;
+  color: #040404 !important;
 }
 
 .shopify-pc__prefs__header-close svg {
-  fill: black !important;
+  fill: #040404 !important;
+}
+
+.shopify-pc__prefs__intro h3 {
+  color: #040404;
 }
 
 @media print, screen and (min-width: 1025px) {
