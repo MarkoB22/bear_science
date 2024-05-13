@@ -37,7 +37,7 @@
         "164794776393e76b8e-2"
       ],
       "settings": {
-        "desktop_height": "desktop-height-full",
+        "desktop_height": "desktop-height-image",
         "mobile_height": "mobile-height-740",
         "full_width": true,
         "autoplay": true,
@@ -154,7 +154,7 @@
           "type": "text",
           "settings": {
             "title": "innovation",
-            "image": "shopify:\/\/shop_images\/Ai-Technology-Spark--Streamline-Core.png",
+            "image": "shopify:\/\/shop_images\/Ai-Network-Spark--Streamline-Core.png",
             "text": "<p>We place great importance on the quality of our products. That's why we work exclusively with Uthever®, a world leader in innovation and quality. <strong>Our products carry the Uthever® trademark.<\/strong> This partnership allows us to guarantee you world-class quality and the highest standards. Your health and well-being are our top priority and we are proud to offer products you can trust.<\/p>"
           }
         }
