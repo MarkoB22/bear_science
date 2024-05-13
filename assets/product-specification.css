@@ -53,9 +53,9 @@ p {
     transition: max-height 0.3s ease-in-out;
 }
 
-.hidden {
+/* .hidden {
     display: none;
-}
+} */
 
 
 .product_specification_text_wrapper:nth-child(2) > .product_specification_first,
