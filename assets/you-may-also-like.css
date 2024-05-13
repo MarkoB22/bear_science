@@ -1,0 +1,12 @@
+.you_may_also_like_wrapper {
+    padding: 68px 14.21%;
+}
+
+.you_may_also_like_title {
+    display: flex;
+    justify-content: center;
+    padding: 17px 0 16px 0;
+    background-color: #6D7E60;
+    color: #FFFFFF;
+    text-transform: uppercase;
+}
