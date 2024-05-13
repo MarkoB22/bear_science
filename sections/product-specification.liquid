@@ -79,6 +79,25 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    var pElements = document.querySelectorAll('p'); // Gets all <p> elements
+
+    pElements.forEach(function(p) {
+        let html = p.innerHTML;
+        // Replace 'Form/Appearance:' with wrapped text
+        if (html.includes('Form/Appearance:')) {
+            html = html.replace('Form/Appearance:', '<span class="form-appearance">Form/Appearance:</span>');
+        }
+        // Replace 'Store under inert gas:' with wrapped text
+        if (html.includes('Store under inert gas:')) {
+            html = html.replace('Store under inert gas:', '<span class="form-appearance">Store under inert gas:</span>');
+        }
+        // Update the innerHTML with modified content
+        p.innerHTML = html;
+    });
+});
+
 </script>
 {% schema %}
     {

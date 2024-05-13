@@ -73,10 +73,13 @@ p {
     margin-bottom: 14px;
 }
 
-.product_specification_text_wrapper:nth-child(2) > .product_specification_fourth > p:nth-child(2),
-.product_specification_text_wrapper:nth-child(2) > .product_specification_fourth > p:nth-child(11),
-.product_specification_text_wrapper:nth-child(2) > .product_specification_fourth > p:nth-child(20) {
-    margin: 0;
+.product_specification_text_wrapper:nth-child(2) > .product_specification_fourth > p:nth-child(18) {
+    margin-bottom: 0;
+}
+
+.form-appearance {
+    display: block; /* Makes the span take the full width of its parent */
+    width: 100%; /* Explicitly sets the width to 100% of the parent element */
 }
 
 .product_specification_text_wrapper:nth-child(4) > .product_specification_first {
@@ -155,12 +158,6 @@ p {
         margin-bottom: 18px;
     }
 
-    .product_specification_text_wrapper:nth-child(2) > .product_specification_fourth > p:nth-child(2),
-    .product_specification_text_wrapper:nth-child(2) > .product_specification_fourth > p:nth-child(11),
-    .product_specification_text_wrapper:nth-child(2) > .product_specification_fourth > p:nth-child(20) {
-        margin: unset;
-    }
-
     .product_specification_text_wrapper:nth-child(6) > .product_specification_first > p,
     .product_specification_text_wrapper:nth-child(6) > .product_specification_second > p,
     .product_specification_text_wrapper:nth-child(6) > .product_specification_third > p,
@@ -169,5 +166,10 @@ p {
     .product_specification_text_wrapper:nth-child(6) > .product_specification_sixth > p,
     .product_specification_text_wrapper:nth-child(6) > .product_specification_seventh > p {
         margin-bottom: 24px;
+    }
+
+    .form-appearance {
+        display: unset; /* Makes the span take the full width of its parent */
+        width: 100%; /* Explicitly sets the width to 100% of the parent element */
     }
 }
