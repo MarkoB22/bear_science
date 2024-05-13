@@ -302,6 +302,17 @@
         "title": "YOU MAY ALSO LIKE"
       }
     },
+    "product_explanation_fb6QYm": {
+      "type": "product-explanation",
+      "settings": {
+        "image_mob": "shopify:\/\/shop_images\/Group_22_e89ce458-5af3-4157-95f8-be884973ec0e.png",
+        "image_desktop": "shopify:\/\/shop_images\/Group_22_dbc6bd4a-7035-4de6-89ee-56b11995ef0b.png",
+        "background_color_up": "#6D7E60",
+        "background__color_down": "#FFFFFF",
+        "opacity_up": 100,
+        "opacity_down": 100
+      }
+    },
     "16623743398765981b": {
       "type": "rich-text",
       "blocks": {
@@ -652,6 +663,7 @@
     "16623877721f33fb14",
     "product_specification_FECYwa",
     "you_may_also_like_WQjfX3",
+    "product_explanation_fb6QYm",
     "16623743398765981b",
     "16623873609e87da8b",
     "166237435211863a49",
