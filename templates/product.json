@@ -15,6 +15,20 @@
             "show_products_rating": true
           }
         },
+        "traits_A4wRaE": {
+          "type": "traits",
+          "settings": {
+            "traits_image": "shopify:\/\/shop_images\/Leaf-Protect--Streamline-Plump.png",
+            "traits_text": "<p>Eco-conscious production: Sustainability is our top priority!<\/p>"
+          }
+        },
+        "traits_RWkPkR": {
+          "type": "traits",
+          "settings": {
+            "traits_image": "shopify:\/\/shop_images\/Ai-Network-Spark--Streamline-Core_8c342159-23cb-4115-8b18-d61e7b8ff75e.png",
+            "traits_text": "<p>World-class quality: Exclusively produced with Uthever® Resveratrol – a trademark of Effepharm Ltd.<\/p>"
+          }
+        },
         "variant_picker": {
           "type": "variant_picker",
           "disabled": true,
@@ -41,6 +55,8 @@
       },
       "block_order": [
         "title",
+        "traits_A4wRaE",
+        "traits_RWkPkR",
         "variant_picker",
         "buy_buttons"
       ],
