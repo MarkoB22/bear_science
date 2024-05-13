@@ -4,76 +4,77 @@
     {% for block in section.blocks %}
         
         {% if block.settings.title %}
-            <div class="product_specification_title_wrapper">
-                <div class="product_specification_title {{ block.settings.title_text_size }} {{ block.settings.title_weight }} {{ block.settings.title_line_height }}">
-                    {{ block.settings.title }}
-                    <div class="svg-arrow">{% render 'svg-icons' with 'thb-back-to-top' %}</div>
-                </div>
-
-                {% if block.settings.text-1 %}
-                    <div class="product_specification_first {{ block.settings.richtext_1_size }} {{ block.settings.text_1_weight }} {{ block.settings.text_1_line_height }}">
-                        {{ block.settings.text-1 }}
-                    </div>
-                {% endif %}
-
-                {% if block.settings.text-2 %}
-                    <div class="product_specification_second {{ block.settings.richtext_2_size }} {{ block.settings.text_2_weight }} {{ block.settings.text_2_line_height }}">
-                        {{ block.settings.text-2 }}
-                    </div>
-                {% endif %}
-
-                {% if block.settings.text-3 %}
-                    <div class="product_specification_third {{ block.settings.richtext_3_size }} {{ block.settings.text_3_weight }} {{ block.settings.text_3_line_height }}">
-                        {{ block.settings.text-3 }}
-                    </div>
-                {% endif %}
-
-                {% if block.settings.text-4 %}
-                    <div class="product_specification_fourth {{ block.settings.richtext_4_size }} {{ block.settings.text_4_weight }} {{ block.settings.text_4_line_height }}">
-                        {{ block.settings.text-4 }}
-                    </div>
-                {% endif %}
-
-                {% if block.settings.text-5 %}
-                    <div class="product_specification_fifth {{ block.settings.richtext_5_size }} {{ block.settings.text_5_weight }} {{ block.settings.text_5_line_height }}">
-                        {{ block.settings.text-5 }}
-                    </div>
-                {% endif %}
-
-                {% if block.settings.text-6 %}
-                    <div class="product_specification_sixth {{ block.settings.richtext_6_size }} {{ block.settings.text_6_weight }} {{ block.settings.text_6_line_height }}">
-                        {{ block.settings.text-6 }}
-                    </div>
-                {% endif %}
-
-                {% if block.settings.text-7 %}
-                    <div class="product_specification_seventh {{ block.settings.richtext_7_size }} {{ block.settings.text_7_weight }} {{ block.settings.text_7_line_height }}">
-                        {{ block.settings.text-7 }}
-                    </div>
-                {% endif %}
+            <div class="product_specification_title {{ block.settings.title_text_size }} {{ block.settings.title_weight }} {{ block.settings.title_line_height }}">
+                {{ block.settings.title }}
+                <div class="svg-arrow">{% render 'svg-icons' with 'thb-back-to-top' %}</div>
             </div>
-
         {% endif %}
+
+        <div class="product_specification_text_wrapper hidden">
+
+            {% if block.settings.text-1 %}
+                <div class="product_specification_first {{ block.settings.richtext_1_size }} {{ block.settings.text_1_weight }} {{ block.settings.text_1_line_height }}">
+                    {{ block.settings.text-1 }}
+                </div>
+            {% endif %}
+
+            {% if block.settings.text-2 %}
+                <div class="product_specification_second {{ block.settings.richtext_2_size }} {{ block.settings.text_2_weight }} {{ block.settings.text_2_line_height }}">
+                    {{ block.settings.text-2 }}
+                </div>
+            {% endif %}
+
+            {% if block.settings.text-3 %}
+                <div class="product_specification_third {{ block.settings.richtext_3_size }} {{ block.settings.text_3_weight }} {{ block.settings.text_3_line_height }}">
+                    {{ block.settings.text-3 }}
+                </div>
+            {% endif %}
+
+            {% if block.settings.text-4 %}
+                <div class="product_specification_fourth {{ block.settings.richtext_4_size }} {{ block.settings.text_4_weight }} {{ block.settings.text_4_line_height }}">
+                    {{ block.settings.text-4 }}
+                </div>
+            {% endif %}
+
+            {% if block.settings.text-5 %}
+                <div class="product_specification_fifth {{ block.settings.richtext_5_size }} {{ block.settings.text_5_weight }} {{ block.settings.text_5_line_height }}">
+                    {{ block.settings.text-5 }}
+                </div>
+            {% endif %}
+
+            {% if block.settings.text-6 %}
+                <div class="product_specification_sixth {{ block.settings.richtext_6_size }} {{ block.settings.text_6_weight }} {{ block.settings.text_6_line_height }}">
+                    {{ block.settings.text-6 }}
+                </div>
+            {% endif %}
+
+            {% if block.settings.text-7 %}
+                <div class="product_specification_seventh {{ block.settings.richtext_7_size }} {{ block.settings.text_7_weight }} {{ block.settings.text_7_line_height }}">
+                    {{ block.settings.text-7 }}
+                </div>
+            {% endif %}
+
+        </div>
+        
     {% endfor %}    
 
 </div>
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-    const titleWrappers = document.querySelectorAll('.product_specification_title_wrapper');
+    const titles = document.querySelectorAll('.product_specification_title');
 
-    titleWrappers.forEach(wrapper => {
-        wrapper.addEventListener('click', function() {
-            // Toggle the display of each content section based on arrow direction
-            const contentElements = this.querySelectorAll('.product_specification_first, .product_specification_second, .product_specification_third, .product_specification_fourth, .product_specification_fifth, .product_specification_sixth, .product_specification_seventh');
+    titles.forEach(title => {
+        title.addEventListener('click', function() {
+            // Toggle the next sibling element, which should be the text wrapper
+            const textWrapper = this.nextElementSibling; // Direct sibling selector
             const arrow = this.querySelector('.svg-arrow');
 
             if (arrow) {
-                arrow.classList.toggle('rotated');  // Toggle arrow orientation
-                const isArrowUp = arrow.classList.contains('rotated');
+                arrow.classList.toggle('rotated');
+            }
 
-                contentElements.forEach(child => {
-                    child.style.display = isArrowUp ? 'block' : 'none';
-                });
+            if (textWrapper) {
+                textWrapper.classList.toggle('hidden');
             }
         });
     });
