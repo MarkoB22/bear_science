@@ -38,7 +38,7 @@
           "type": "buy_buttons",
           "settings": {
             "show_quantity_selector": true,
-            "show_dynamic_checkout": true,
+            "show_dynamic_checkout": false,
             "show_gift_card_recipient": false
           }
         }
@@ -307,8 +307,8 @@
       "settings": {
         "image_mob": "shopify:\/\/shop_images\/Group_22_e89ce458-5af3-4157-95f8-be884973ec0e.png",
         "image_desktop": "shopify:\/\/shop_images\/Additional_Product_NMN.jpg",
-        "background_color_up": "#6D7E60",
-        "background__color_down": "#FFFFFF",
+        "background_color_up": "#6d7e60",
+        "background__color_down": "#ffffff",
         "opacity_up": 100,
         "opacity_down": 100
       }
