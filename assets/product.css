@@ -1362,3 +1362,13 @@
       .product-recommendations.swipe-on-mobile .products.row .columns {
         flex: 0 0 100%;
         max-width: 100%; } }
+
+.product_card-filling_quantity {
+  margin-bottom: 18px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .product_card-filling_quantity {
+    margin-bottom: 38px;
+  }
+}

@@ -77,7 +77,16 @@
 		{%- if settings.show_products_vendor -%}
 		<div class="product-card-vendor"><a href="{{ product_card_product.vendor | url_for_vendor }}" title="{{ product_card_product.vendor | escape }}">{{ product_card_product.vendor }}</a></div>
 		{%- endif -%}
-  	<a href="{{ product_card_product.url | within: collection }}" title="{{ product_card_product.title | escape }}" class="product-card-title">{{ product_card_product.title }}</a>
+  	<a href="{{ product_card_product.url | within: collection }}" title="{{ product_card_product.title | escape }}" class="product-card-title" test
+		{% if product.metafields.custom.filling_quantity != "blank" %}
+			style="margin-bottom: 8px;"
+		{% endif %}
+	>{{ product_card_product.title }}</a>
+	{% if product_card_product.metafields.custom.filling_quantity.value != "blank" %}
+		<div class="product_card-filling_quantity h15 f_regular lh-sm">
+			{{ product_card_product.metafields.custom.filling_quantity }}
+		</div>
+	{% endif %}
     {% render 'product-price', product: product_card_product %}
 		{% render 'product-card-swatch', product: product_card_product, sizes: sizes %}
 		{%- if settings.show_products_rating and product_card_product.metafields.reviews.rating.value != blank -%}
