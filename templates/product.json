@@ -8,13 +8,6 @@
     "main-product": {
       "type": "main-product",
       "blocks": {
-        "e431a79e-9c7b-4a53-a79a-0cb918617ecf": {
-          "type": "text",
-          "settings": {
-            "text": "{{ product.vendor }}",
-            "text_style": "style_vendor"
-          }
-        },
         "title": {
           "type": "title",
           "settings": {
@@ -48,38 +41,13 @@
             "show_dynamic_checkout": true,
             "show_gift_card_recipient": false
           }
-        },
-        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822": {
-          "type": "side_panel",
-          "settings": {
-            "side_panel_1_label": "Materials",
-            "side_panel_1_icon": "leather",
-            "side_panel_1_content": "",
-            "side_panel_1_page": "",
-            "side_panel_2_label": "Shipping & Returns",
-            "side_panel_2_icon": "box",
-            "side_panel_2_content": "",
-            "side_panel_2_page": "",
-            "side_panel_3_label": "Care Guide",
-            "side_panel_3_icon": "washing",
-            "side_panel_3_content": "",
-            "side_panel_3_page": ""
-          }
-        },
-        "4fd23485-293f-46a0-8a4c-34d0e25ea41b": {
-          "type": "share",
-          "settings": {
-          }
         }
       },
       "block_order": [
-        "e431a79e-9c7b-4a53-a79a-0cb918617ecf",
         "title",
         "0b3e272b-c86a-4dba-946c-c6912251371c",
         "variant_picker",
-        "buy_buttons",
-        "95b7e00a-0453-4eb0-9cf0-1dae84d8b822",
-        "4fd23485-293f-46a0-8a4c-34d0e25ea41b"
+        "buy_buttons"
       ],
       "settings": {
         "full_width": true,
