@@ -11,8 +11,18 @@
     {%- when 'custom_liquid' -%}
       {{ block.settings.custom_liquid }}
     {%- when 'title' -%}
+      {% if product.metafields.custom.product_type != blank %}
+        <div class="main_product-product_type h23 f_regular not_mobile">
+          {{ product.metafields.custom.product_type }}
+        </div>
+      {% endif %}
+      {% if product.metafields.custom.filling_quantity != blank %}
+        <div class="main_product-filling_quantity h8 f_medium not_mobile">
+          {{ product.metafields.custom.filling_quantity }}
+        </div>
+      {% endif %}
       <div class="product-title-container" {{ block.shopify_attributes }}>
-        <h1 class="product-title uppercase--{{ block.settings.uppercase }}">{{ product.title }}</h1>
+        <h1 class="product-title uppercase--{{ block.settings.uppercase }} not_mobile">{{ product.title }}</h1>
         <div class="product-price-container">
           <div class="no-js-hidden" id="price-{{ section.id }}">
             {% render 'product-price', product: product, use_variant: true, show_badges: true %}
@@ -35,6 +45,22 @@
             <div class="star-rating" style="--star-rating: {{ product.metafields.reviews.rating.value.rating }};"></div>
             <span>{{ 'products.product.reviews' | t: count: product.metafields.reviews.rating_count }}</span>
           </a>
+        {%- endif -%}
+      </div>
+    {%- when 'traits' -%}
+      <div class="main_product_traits-wrapper">
+        {%- if block.settings.traits_image -%}
+          {%- liquid
+            assign master_width = block.settings.traits_image.src.width | append: 'x' | append: block.settings.traits_image.src.height
+            assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+            assign class = nil
+           -%}
+          {%- render 'responsive-image', image: block.settings.traits_image, sizes: width, class: class -%}
+        {%- endif -%}
+        {%- if block.settings.traits_text -%}
+          <div class="main_product_traits-text h11 f_regular">
+            {{ block.settings.traits_text }}
+          </div>
         {%- endif -%}
       </div>
     {%- when 'description' -%}

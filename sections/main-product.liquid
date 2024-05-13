@@ -46,6 +46,21 @@
 {%- endif -%}
 
 <div class="thb-product-detail product" data-handle="{{ product.handle }}">
+  <div class="main_product-above_media_wrapper not_desktop">
+    {% if product.metafields.custom.product_type != blank %}
+      <div class="main_product-product_type h23 f_regular">
+        {{ product.metafields.custom.product_type }}
+      </div>
+    {% endif %}
+    <div class="main_product-product_title lh-l">
+      {{ product.title }}
+    </div>
+    {% if product.metafields.custom.filling_quantity != blank %}
+      <div class="main_product-filling_quantity h8 f_medium">
+        {{ product.metafields.custom.filling_quantity }}
+      </div>
+    {% endif %}
+  </div>
   <div class="row {% if full_width %}full-width-row{% endif %}">
 		<div class="small-12 columns">
 			<div class="product-grid-container">
