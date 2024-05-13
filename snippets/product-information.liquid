@@ -49,19 +49,66 @@
       </div>
     {%- when 'traits' -%}
       <div class="main_product_traits-wrapper">
-        {%- if block.settings.traits_image -%}
-          {%- liquid
-            assign master_width = block.settings.traits_image.src.width | append: 'x' | append: block.settings.traits_image.src.height
-            assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
-            assign class = nil
-           -%}
-          {%- render 'responsive-image', image: block.settings.traits_image, sizes: width, class: class -%}
-        {%- endif -%}
-        {%- if block.settings.traits_text -%}
-          <div class="main_product_traits-text h11 f_regular">
-            {{ block.settings.traits_text }}
-          </div>
-        {%- endif -%}
+        <div class="main_product_trait-wrapper">
+          {%- if block.settings.traits_image_1 -%}
+            {%- liquid
+              assign master_width = block.settings.traits_image_1.src.width | append: 'x' | append: block.settings.traits_image_1.src.height
+              assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+              assign class = nil
+            -%}
+            {%- render 'responsive-image', image: block.settings.traits_image_1, sizes: width, class: class -%}
+          {%- endif -%}
+          {%- if block.settings.traits_text_1 -%}
+            <div class="main_product_traits-text h11 f_regular" style="color: {{ block.settings.traits_text_color_1 }};">
+              {{ block.settings.traits_text_1 }}
+            </div>
+          {%- endif -%}
+        </div>
+        <div class="main_product_trait-wrapper">
+          {%- if block.settings.traits_image_2 -%}
+            {%- liquid
+              assign master_width = block.settings.traits_image_2.src.width | append: 'x' | append: block.settings.traits_image_2.src.height
+              assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+              assign class = nil
+            -%}
+            {%- render 'responsive-image', image: block.settings.traits_image_2, sizes: width, class: class -%}
+          {%- endif -%}
+          {%- if block.settings.traits_text_2 -%}
+            <div class="main_product_traits-text h11 f_regular" style="color: {{ block.settings.traits_text_color_2 }};">
+              {{ block.settings.traits_text_2 }}
+            </div>
+          {%- endif -%}
+        </div>
+        <div class="main_product_trait-wrapper">
+          {%- if block.settings.traits_image_3 -%}
+            {%- liquid
+              assign master_width = block.settings.traits_image_3.src.width | append: 'x' | append: block.settings.traits_image_3.src.height
+              assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+              assign class = nil
+            -%}
+            {%- render 'responsive-image', image: block.settings.traits_image_3, sizes: width, class: class -%}
+          {%- endif -%}
+          {%- if block.settings.traits_text_3 -%}
+            <div class="main_product_traits-text h11 f_regular" style="color: {{ block.settings.traits_text_color_3 }};">
+              {{ block.settings.traits_text_3 }}
+            </div>
+          {%- endif -%}
+        </div>
+        <div class="main_product_trait-wrapper">
+          {%- if block.settings.traits_image_4 -%}
+            {%- liquid
+              assign master_width = block.settings.traits_image_4.src.width | append: 'x' | append: block.settings.traits_image_4.src.height
+              assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+              assign class = nil
+            -%}
+            {%- render 'responsive-image', image: block.settings.traits_image_4, sizes: width, class: class -%}
+          {%- endif -%}
+          {%- if block.settings.traits_text_4 -%}
+            <div class="main_product_traits-text h11 f_regular" style="color: {{ block.settings.traits_text_color_4 }};">
+              {{ block.settings.traits_text_4 }}
+            </div>
+          {%- endif -%}
+        </div>
       </div>
     {%- when 'description' -%}
       <div class="product-short-description rte" {{ block.shopify_attributes }}>{{ product.description }}</div>

@@ -1383,6 +1383,24 @@
   margin-bottom: 18px;
 }
 
+.thb-product-detail .row .columns  {
+  padding: 0;
+}
+
+.main_product_trait-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main_product_traits-text {
+  width: calc(100% - 62px);
+}
+
+.main_product_traits-wrapper:not(:first-child) {
+  margin-top: 18px;
+}
+
 @media only screen and (min-width: 1025px) {
   .product_card-filling_quantity {
     margin-bottom: 38px;
