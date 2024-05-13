@@ -8,13 +8,6 @@
     "main-product": {
       "type": "main-product",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "uppercase": true,
-            "show_products_rating": true
-          }
-        },
         "traits_A4wRaE": {
           "type": "traits",
           "settings": {
@@ -45,6 +38,13 @@
             "sizing_guide_page": ""
           }
         },
+        "title": {
+          "type": "title",
+          "settings": {
+            "uppercase": true,
+            "show_products_rating": true
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -55,9 +55,9 @@
         }
       },
       "block_order": [
-        "title",
         "traits_A4wRaE",
         "variant_picker",
+        "title",
         "buy_buttons"
       ],
       "settings": {
