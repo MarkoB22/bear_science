@@ -10,6 +10,7 @@
 .you_may_also_like_wrapper {
     padding: 68px 14.21%;
     
+    position: relative;
 }
 
 .you_may_also_like_product {
@@ -24,12 +25,24 @@
     display: flex;
     background: transparent;
     box-shadow: none;
-
-    top: 164px;
   }
 
-.flickity-next {
+.flickity-nav.flickity-prev {
+    left: -50px;
 }
 
-.flickity-prev {
+.flickity-nav.flickity-next {
+    right: -50px;
+}
+
+.carousel__slide {
+    flex: 1; /* Allows slides to take equal width */
+}
+
+.flickity-nav {
+    position: absolute;
+    top: 35%; /* Centers the arrows vertically */
+    transform: translateY(-50%); /* Adjusts for the height of the arrows */
+    width: 100%;
+    display: flex;
 }
