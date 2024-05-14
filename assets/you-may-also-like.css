@@ -94,5 +94,7 @@
         margin-right: 4.1%;
     }
 
-    
+    .product-card .button_type1 {
+        padding: 15px 20px;
+    }
 }
