@@ -314,7 +314,7 @@ small {
 @font-face {
   font-family: "Montserrat 400";
   src: url('https://cdn.shopify.com/s/files/1/0691/2419/4548/files/Montserrat_Regular.woff2?v=1715680051');
-  font-family: "Montserrat 400";
+  font-weight: 400;
   font-style: normal
 }
 
