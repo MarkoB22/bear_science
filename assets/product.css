@@ -1397,8 +1397,12 @@
   width: calc(100% - 62px);
 }
 
-.main_product_traits-wrapper:not(:first-child) {
+.main_product_trait-wrapper:not(:first-child) {
   margin-top: 18px;
+}
+
+.main_product_traits-wrapper {
+  margin-top: 24px;
 }
 
 @media only screen and (min-width: 1025px) {
