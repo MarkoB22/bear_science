@@ -8,21 +8,6 @@
     "main-product": {
       "type": "main-product",
       "blocks": {
-        "traits_A4wRaE": {
-          "type": "traits",
-          "settings": {
-            "traits_image_1": "shopify:\/\/shop_images\/Leaf-Protect--Streamline-Plump.png",
-            "traits_text_1": "<p>Eco-conscious production: Sustainability is our top priority!<\/p>",
-            "traits_text_color_1": "#6d7e60",
-            "traits_image_2": "shopify:\/\/shop_images\/Ai-Network-Spark--Streamline-Core_8c342159-23cb-4115-8b18-d61e7b8ff75e.png",
-            "traits_text_2": "<p>World-class quality: Exclusively produced with Uthever® Resveratrol – a trademark of Effepharm Ltd.<\/p>",
-            "traits_text_color_2": "#040404",
-            "traits_text_3": "",
-            "traits_text_color_3": "#040404",
-            "traits_text_4": "",
-            "traits_text_color_4": "#040404"
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "disabled": true,
@@ -45,6 +30,21 @@
             "show_products_rating": true
           }
         },
+        "traits_A4wRaE": {
+          "type": "traits",
+          "settings": {
+            "traits_image_1": "shopify:\/\/shop_images\/Leaf-Protect--Streamline-Plump.png",
+            "traits_text_1": "<p>Eco-conscious production: Sustainability is our top priority!<\/p>",
+            "traits_text_color_1": "#6d7e60",
+            "traits_image_2": "shopify:\/\/shop_images\/Ai-Network-Spark--Streamline-Core_8c342159-23cb-4115-8b18-d61e7b8ff75e.png",
+            "traits_text_2": "<p>World-class quality: Exclusively produced with Uthever® Resveratrol – a trademark of Effepharm Ltd.<\/p>",
+            "traits_text_color_2": "#040404",
+            "traits_text_3": "",
+            "traits_text_color_3": "#040404",
+            "traits_text_4": "",
+            "traits_text_color_4": "#040404"
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -55,9 +55,9 @@
         }
       },
       "block_order": [
-        "traits_A4wRaE",
         "variant_picker",
         "title",
+        "traits_A4wRaE",
         "buy_buttons"
       ],
       "settings": {
@@ -67,7 +67,7 @@
         "show_taxes_included": true,
         "media_layout": "grid",
         "display_slider_pagination": true,
-        "media_aspect_ratio": "adapt",
+        "media_aspect_ratio": "portrait",
         "display_captions": true,
         "hide_variants": false,
         "lightbox": true,
