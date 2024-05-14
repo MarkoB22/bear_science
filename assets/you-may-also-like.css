@@ -1,3 +1,7 @@
+.you_may_also_like_desktop {
+    display: none;
+}
+
 .you_may_also_like_title {
     display: flex;
     justify-content: center;
@@ -35,14 +39,50 @@
     right: -50px;
 }
 
-.carousel__slide {
-    flex: 1; /* Allows slides to take equal width */
-}
-
 .flickity-nav {
     position: absolute;
     top: 35%; /* Centers the arrows vertically */
     transform: translateY(-50%); /* Adjusts for the height of the arrows */
     width: 100%;
     display: flex;
+}
+
+.featured_collection-view_all_button {
+    display: none;
+}
+
+
+@media only screen and (min-width: 1024px) {
+
+    .you_may_also_like_mobile {
+        display: block;
+    }
+    
+    .you_may_also_like_desktop {
+        display: flex !important;
+        align-items: center;
+    }
+
+    .you_may_also_like_wrapper {
+        padding: 24px 4.44%;
+    }
+
+    .you_may_also_like_product {
+        min-width: unset;
+        width: 100%;
+    }
+
+    .flickity-nav {
+        display: none !important;
+    }
+
+    .featured_collection-view_all_button {
+        display: block;
+    }
+
+    .you_may_also_like_product > .product-card {
+        width: 86%;
+    }
+
+    
 }
