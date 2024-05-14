@@ -41,7 +41,7 @@
 
 .flickity-nav {
     position: absolute;
-    top: 35%; /* Centers the arrows vertically */
+    top: 33%; /* Centers the arrows vertically */
     transform: translateY(-50%); /* Adjusts for the height of the arrows */
     width: 100%;
     display: flex;
@@ -49,6 +49,10 @@
 
 .featured_collection-view_all_button {
     display: none;
+}
+
+.you_may_also_like_product > .product-card {
+    padding: 15px;
 }
 
 
@@ -92,9 +96,10 @@
     .you_may_also_like_product > .product-card {
         width: 100%;
         margin-right: 4.1%;
+        padding: unset;
     }
 
     .product-card .button_type1 {
-        padding: 15px 20px;
+        padding: 15px 20px !important;
     }
 }
