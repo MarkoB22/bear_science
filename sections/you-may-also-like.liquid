@@ -5,20 +5,56 @@
 </div>
 
 <div class="you_may_also_like_wrapper">
-    <slide-show class="you_may_also_like_product carousel">
+    <div class="featured_collection-view_all_button">
+        <a class="title_text_button-button button_type4 h10 lh-sm f_regular" href="{{ section.settings.button_url }}">
+            {{ section.settings.button_text }}
+            {% render 'svg-icons' with 'button_arrow_2' %}
+        </a>
+    </div>
 
+    <div class="you_may_also_like_mobile">
+        <slide-show class="you_may_also_like_product">
+            {% for block in section.blocks %}
+                <div class="you_may_also_like_product carousel__slide">
+                    {% if block.settings.product != blank %}
+                        {%- render 'product-card', product_card_product: block.settings.product -%}
+                    {% endif %}
+                </div>
+            {% endfor %}
+            {%- render 'slideshow-arrows' -%}
+        </slide-show>
+    </div>
+
+    <div class="you_may_also_like_desktop">
         {% for block in section.blocks %}
-            <div class="you_may_also_like_product carousel__slide">
-                {% if block.settings.product != blank %}
-                    {%- render 'product-card', product_card_product: block.settings.product -%}
-                {% endif %}
+            <div class="you_may_also_like_product">
+                {%- render 'product-card', product_card_product: block.settings.product -%}
             </div>
-        {% endfor %}
-
-        {%- render 'slideshow-arrows' -%}
-
-    </slide-show>
+        {%- endfor -%}
+    </div>
 </div>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        function toggleYouMayAlsoLike() {
+            const mobileView = document.querySelector('.you_may_also_like_mobile');
+            const desktopView = document.querySelector('.you_may_also_like_desktop');
+            
+            if (window.innerWidth <= 1024) {
+                mobileView.style.display = 'block';
+                desktopView.style.display = 'none';
+            } else {
+                mobileView.style.display = 'none';
+                desktopView.style.display = 'block';
+            }
+        }
+
+        // Initial check
+        toggleYouMayAlsoLike();
+
+        // Check on resize
+        window.addEventListener('resize', toggleYouMayAlsoLike);
+    });
+</script>
 
 {% schema %}
 {
@@ -30,6 +66,12 @@
                     "id": "title",
                     "label": "Title",
                     "default": "Title"
+                },
+                {
+                    "type": "text",
+                    "id": "button_text",
+                    "label": "Button text",
+                    "default": "View all"
                 }
             ],
         "blocks": [
