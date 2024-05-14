@@ -8,25 +8,19 @@
     "main-product": {
       "type": "main-product",
       "blocks": {
-        "title": {
-          "type": "title",
-          "settings": {
-            "uppercase": true,
-            "show_products_rating": true
-          }
-        },
         "traits_A4wRaE": {
           "type": "traits",
           "settings": {
-            "traits_image": "shopify:\/\/shop_images\/Leaf-Protect--Streamline-Plump.png",
-            "traits_text": "<p>Eco-conscious production: Sustainability is our top priority!<\/p>"
-          }
-        },
-        "traits_RWkPkR": {
-          "type": "traits",
-          "settings": {
-            "traits_image": "shopify:\/\/shop_images\/Ai-Network-Spark--Streamline-Core_8c342159-23cb-4115-8b18-d61e7b8ff75e.png",
-            "traits_text": "<p>World-class quality: Exclusively produced with Uthever® Resveratrol – a trademark of Effepharm Ltd.<\/p>"
+            "traits_image_1": "shopify:\/\/shop_images\/Leaf-Protect--Streamline-Plump.png",
+            "traits_text_1": "<p>Eco-conscious production: Sustainability is our top priority!<\/p>",
+            "traits_text_color_1": "#6d7e60",
+            "traits_image_2": "shopify:\/\/shop_images\/Ai-Network-Spark--Streamline-Core_8c342159-23cb-4115-8b18-d61e7b8ff75e.png",
+            "traits_text_2": "<p>World-class quality: Exclusively produced with Uthever® Resveratrol – a trademark of Effepharm Ltd.<\/p>",
+            "traits_text_color_2": "#040404",
+            "traits_text_3": "",
+            "traits_text_color_3": "#040404",
+            "traits_text_4": "",
+            "traits_text_color_4": "#040404"
           }
         },
         "variant_picker": {
@@ -44,6 +38,13 @@
             "sizing_guide_page": ""
           }
         },
+        "title": {
+          "type": "title",
+          "settings": {
+            "uppercase": true,
+            "show_products_rating": true
+          }
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -54,10 +55,9 @@
         }
       },
       "block_order": [
-        "title",
         "traits_A4wRaE",
-        "traits_RWkPkR",
         "variant_picker",
+        "title",
         "buy_buttons"
       ],
       "settings": {
