@@ -3162,13 +3162,24 @@ select {
     margin: 0;
     padding: 0; }
 
+.price_and_buy_buttons-wrapper {
+  position: relative;
+}
 
 .quantity {
   display: inline-flex;
   position: relative;
-  border: 1px solid var(--color-form-border);
-  padding: 0 30px;
+  padding: 0 52px;
   border-radius: var(--button-border-radius, 0px); }
+
+.quantity button {
+  border-radius: 50%;
+  background: #6D7E60;
+}
+
+.quantity button.disabled {
+  opacity: 0.5;
+}
 
 .list-filling .quantity {
   display: block;
@@ -3183,7 +3194,7 @@ select {
     border: 0;
     justify-content: center;
     background: transparent;
-    font-size: 0.875rem;
+    font-size: 2rem;
     font-weight: var(--font-body-bold-weight, 600);
     margin: 0;
     outline: 0; }
@@ -3200,29 +3211,29 @@ select {
       -moz-appearance: none;
       appearance: none; }
   .quantity.small-qty {
-    padding: 0 25px; }
+    padding: 0 36px; }
     .quantity.small-qty .qty {
-      height: 34px;
+      height: 32px;
+      width: 32px;
       line-height: 1; }
     .quantity.small-qty .minus,
     .quantity.small-qty .plus {
-      width: 25px;
-      height: 34px; }
+      width: 32px;
+      height: 32px; }
   .quantity .minus,
   .quantity .plus {
     display: flex;
     padding: 0;
     margin: 0;
     border: 0;
-    height: 46px;
+    height: 42px;
+    width: 42px;
     position: absolute;
     justify-content: center;
     align-items: center;
     top: 0;
     left: 0;
-    width: 30px;
     cursor: pointer;
-    background: transparent;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -4164,7 +4175,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .f_regular {
-	font-weight: 400 !important;
+	font-family: 'Montserrat 400' !important;
 }
 
 .f_medium {
@@ -4541,37 +4552,6 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   font-weight: 600 !important;
 }
 
-/*
-.shopify-pc__prefs__dialog {
-  background: white !important;
-}
-
-.shopify-pc__prefs__header-close svg path {
-  fill: #040404 !important;
-}
-
-.shopify-pc__prefs__option label span svg,
-.shopify-pc__prefs__option label span {
-  background-color: white !important;
-}
-
-.shopify-pc__prefs__option label span svg {
-  fill: #6D7E60;
-}
-
-.shopify-pc__prefs__preferences-input svg:not(:first-child) path {
-  fill: #6D7E60 !important;
-}
-
-.shopify-pc__prefs__option label,
-.shopify-pc__prefs__option .shopify-pc__prefs__preferences-input,
-.shopify-pc__prefs__dialog header h2,
-.shopify-pc__prefs__intro h3,
-.shopify-pc__prefs__intro p,
-.shopify-pc__prefs__options p {
-  color: #040404 !important;
-}
-*/
 @media print, screen and (min-width: 1025px) {
   .shopify-pc__banner__dialog {
     max-width: 485px !important;
@@ -4628,6 +4608,8 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     display: none !important;
   }
 }
+
+
 
 @media print, screen and (max-width: 1024px) {
   .not_mobile {

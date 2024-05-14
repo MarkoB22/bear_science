@@ -12,34 +12,17 @@
       {{ block.settings.custom_liquid }}
     {%- when 'title' -%}
       {% if product.metafields.custom.product_type != blank %}
-        <div class="main_product-product_type h23 f_regular not_mobile">
+        <div class="main_product-short_title h23 f_regular not_mobile">
           {{ product.metafields.custom.product_type }}
-        </div>
-      {% endif %}
-      {% if product.metafields.custom.filling_quantity != blank %}
-        <div class="main_product-filling_quantity h8 f_medium not_mobile">
-          {{ product.metafields.custom.filling_quantity }}
         </div>
       {% endif %}
       <div class="product-title-container" {{ block.shopify_attributes }}>
         <h1 class="product-title uppercase--{{ block.settings.uppercase }} not_mobile">{{ product.title }}</h1>
-        <div class="product-price-container">
-          <div class="no-js-hidden" id="price-{{ section.id }}">
-            {% render 'product-price', product: product, use_variant: true, show_badges: true %}
+        {% if product.metafields.custom.filling_quantity != blank %}
+          <div class="main_product-filling_quantity h8 f_medium not_mobile">
+            {{ product.metafields.custom.filling_quantity }}
           </div>
-          {%- if section.settings.show_taxes_included != blank -%}
-            {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
-              <div class="product__tax caption">
-                {%- if cart.taxes_included -%}
-                  {{ 'products.product.include_taxes' | t }}
-                {%- endif -%}
-                {%- if shop.shipping_policy.body != blank -%}
-                  {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
-                {%- endif -%}
-              </div>
-            {%- endif -%}
-          {%- endif -%}
-        </div>
+        {% endif %}
         {%- if block.settings.show_products_rating and product.metafields.reviews.rating.value != blank -%}
           <a class="star-rating-container" href="#shopify-product-reviews">
             <div class="star-rating" style="--star-rating: {{ product.metafields.reviews.rating.value.rating }};"></div>
@@ -49,66 +32,74 @@
       </div>
     {%- when 'traits' -%}
       <div class="main_product_traits-wrapper">
-        <div class="main_product_trait-wrapper">
-          {%- if block.settings.traits_image_1 -%}
-            {%- liquid
-              assign master_width = block.settings.traits_image_1.src.width | append: 'x' | append: block.settings.traits_image_1.src.height
-              assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
-              assign class = nil
-            -%}
-            {%- render 'responsive-image', image: block.settings.traits_image_1, sizes: width, class: class -%}
-          {%- endif -%}
-          {%- if block.settings.traits_text_1 -%}
-            <div class="main_product_traits-text h11 f_regular" style="color: {{ block.settings.traits_text_color_1 }};">
-              {{ block.settings.traits_text_1 }}
-            </div>
-          {%- endif -%}
-        </div>
-        <div class="main_product_trait-wrapper">
-          {%- if block.settings.traits_image_2 -%}
-            {%- liquid
-              assign master_width = block.settings.traits_image_2.src.width | append: 'x' | append: block.settings.traits_image_2.src.height
-              assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
-              assign class = nil
-            -%}
-            {%- render 'responsive-image', image: block.settings.traits_image_2, sizes: width, class: class -%}
-          {%- endif -%}
-          {%- if block.settings.traits_text_2 -%}
-            <div class="main_product_traits-text h11 f_regular" style="color: {{ block.settings.traits_text_color_2 }};">
-              {{ block.settings.traits_text_2 }}
-            </div>
-          {%- endif -%}
-        </div>
-        <div class="main_product_trait-wrapper">
-          {%- if block.settings.traits_image_3 -%}
-            {%- liquid
-              assign master_width = block.settings.traits_image_3.src.width | append: 'x' | append: block.settings.traits_image_3.src.height
-              assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
-              assign class = nil
-            -%}
-            {%- render 'responsive-image', image: block.settings.traits_image_3, sizes: width, class: class -%}
-          {%- endif -%}
-          {%- if block.settings.traits_text_3 -%}
-            <div class="main_product_traits-text h11 f_regular" style="color: {{ block.settings.traits_text_color_3 }};">
-              {{ block.settings.traits_text_3 }}
-            </div>
-          {%- endif -%}
-        </div>
-        <div class="main_product_trait-wrapper">
-          {%- if block.settings.traits_image_4 -%}
-            {%- liquid
-              assign master_width = block.settings.traits_image_4.src.width | append: 'x' | append: block.settings.traits_image_4.src.height
-              assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
-              assign class = nil
-            -%}
-            {%- render 'responsive-image', image: block.settings.traits_image_4, sizes: width, class: class -%}
-          {%- endif -%}
-          {%- if block.settings.traits_text_4 -%}
-            <div class="main_product_traits-text h11 f_regular" style="color: {{ block.settings.traits_text_color_4 }};">
-              {{ block.settings.traits_text_4 }}
-            </div>
-          {%- endif -%}
-        </div>
+        {%- if block.settings.traits_text_1 or block.settings.traits_image_1 -%}
+          <div class="main_product_trait-wrapper">
+            {%- if block.settings.traits_image_1 -%}
+              {%- liquid
+                assign master_width = block.settings.traits_image_1.src.width | append: 'x' | append: block.settings.traits_image_1.src.height
+                assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+                assign class = nil
+              -%}
+              {%- render 'responsive-image', image: block.settings.traits_image_1, sizes: width, class: class -%}
+            {%- endif -%}
+            {%- if block.settings.traits_text_1 -%}
+              <div class="main_product_traits-text h11 f_regular" style="color: {{ block.settings.traits_text_color_1 }};">
+                {{ block.settings.traits_text_1 }}
+              </div>
+            {%- endif -%}
+          </div>
+        {%- endif -%}
+        {%- if block.settings.traits_text_2 or block.settings.traits_image_2 -%}
+          <div class="main_product_trait-wrapper">
+            {%- if block.settings.traits_image_2 -%}
+              {%- liquid
+                assign master_width = block.settings.traits_image_2.src.width | append: 'x' | append: block.settings.traits_image_2.src.height
+                assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+                assign class = nil
+              -%}
+              {%- render 'responsive-image', image: block.settings.traits_image_2, sizes: width, class: class -%}
+            {%- endif -%}
+            {%- if block.settings.traits_text_2 -%}
+              <div class="main_product_traits-text h11 f_regular" style="color: {{ block.settings.traits_text_color_2 }};">
+                {{ block.settings.traits_text_2 }}
+              </div>
+            {%- endif -%}
+          </div>
+        {% endif %}
+        {%- if block.settings.traits_text_3 != blank or block.settings.traits_image_3 != blank -%}
+          <div class="main_product_trait-wrapper">
+            {%- if block.settings.traits_image_3 -%}
+              {%- liquid
+                assign master_width = block.settings.traits_image_3.src.width | append: 'x' | append: block.settings.traits_image_3.src.height
+                assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+                assign class = nil
+              -%}
+              {%- render 'responsive-image', image: block.settings.traits_image_3, sizes: width, class: class -%}
+            {%- endif -%}
+            {%- if block.settings.traits_text_3 -%}
+              <div class="main_product_traits-text h11 f_regular" style="color: {{ block.settings.traits_text_color_3 }};">
+                {{ block.settings.traits_text_3 }}
+              </div>
+            {%- endif -%}
+          </div>
+        {% endif %}
+        {%- if block.settings.traits_text_4 != blank or block.settings.traits_image_4 != blank -%}
+          <div class="main_product_trait-wrapper">
+            {%- if block.settings.traits_image_4 -%}
+              {%- liquid
+                assign master_width = block.settings.traits_image_4.src.width | append: 'x' | append: block.settings.traits_image_4.src.height
+                assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+                assign class = nil
+              -%}
+              {%- render 'responsive-image', image: block.settings.traits_image_4, sizes: width, class: class -%}
+            {%- endif -%}
+            {%- if block.settings.traits_text_4 -%}
+              <div class="main_product_traits-text h11 f_regular" style="color: {{ block.settings.traits_text_color_4 }};">
+                {{ block.settings.traits_text_4 }}
+              </div>
+            {%- endif -%}
+          </div>
+        {% endif %}
       </div>
     {%- when 'description' -%}
       <div class="product-short-description rte" {{ block.shopify_attributes }}>{{ product.description }}</div>
@@ -222,7 +213,26 @@
         {%- endif -%}
       </side-panel-links>
     {%- when 'buy_buttons' -%}
+      <div class="price_and_buy_buttons-wrapper">
+        <div class="product-price-container">
+          <div class="no-js-hidden" id="price-{{ section.id }}">
+            {% render 'product-price', product: product, use_variant: true, show_badges: true %}
+          </div>
+          {%- if section.settings.show_taxes_included != blank -%}
+            {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
+              <div class="product__tax caption">
+                {%- if cart.taxes_included -%}
+                  {{ 'products.product.include_taxes' | t }}
+                {%- endif -%}
+                {%- if shop.shipping_policy.body != blank -%}
+                  {{ 'products.product.shipping_policy_html' | t: link: shop.shipping_policy.url }}
+                {%- endif -%}
+              </div>
+            {%- endif -%}
+          {%- endif -%}
+        </div>
         {% render 'product-add-to-cart', product: product, form: form, product_form_id: product_form_id, block: block, pickup: pickup %}
+      </div>
     {%- when 'share' -%}
         {% render 'social-share', share_label: false, share_title: product.title, share_permalink: product.url, share_image: product.featured_image %}
     {%- when 'collapsible_tab' -%}

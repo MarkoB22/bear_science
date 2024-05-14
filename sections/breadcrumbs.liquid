@@ -3,48 +3,48 @@
 	<nav class="breadcrumbs" aria-label="breadcrumbs">
 	  <a href="{{ routes.root_url }}" title="{{ 'sections.breadcrumbs.home' | t | escape }}">{{ 'sections.breadcrumbs.home' | t }}</a>
 	  {% if collection.url %}
-			<i>|</i>
+			<span>|</span>
 			<a href="{{ routes.all_products_collection_url }}" title="{{ 'sections.breadcrumbs.shop' | t | escape }}">{{ 'sections.breadcrumbs.shop' | t }}</a>
-	    <i>|</i>
+	    <span>|</span>
 	    <a href="{{ collection.url }}" title="{{ collection.title | escape }}">{{ collection.title }}</a>
 	  {% endif %}
 		{% if template contains 'cart' %}
-	    <i>|</i>
+	    <span>|</span>
 	    {{ 'sections.breadcrumbs.cart' | t }}
 	  {% endif %}
 	  {% if template contains 'product' %}
-		<i>|</i>
+		<span>|</span>
 		<a href="{{ routes.all_products_collection_url }}" title="{{ 'sections.breadcrumbs.shop' | t | escape }}">{{ 'sections.breadcrumbs.products' | t }}</a>
-	    <i>|</i>
-	    {{ product.title }}
+	    <span>|</span>
+	    <div class="breadcrumbs-product_short_title">{{ product.metafields.custom.product_type }}</div>
 	  {% endif %}
 	  {% if template contains 'blog' %}
 			{% if current_tags %}
-				<i>|</i>
+				<span>|</span>
 		    <a href="{{ blog.url }}" title="{{ blog.title | escape }}">{{ blog.title }}</a>
-				<i>|</i>
+				<span>|</span>
 				{{ current_tags }}
 			{% else %}
-				<i>|</i>
+				<span>|</span>
 				{{ blog.title }}
 			{% endif %}
 	  {% endif %}
 		{% if template contains 'article' %}
-	    <i>|</i>
+	    <span>|</span>
 	    <a href="{{ blog.url }}" title="{{ blog.title | escape }}">{{ blog.title }}</a>
-	    <i>|</i>
+	    <span>|</span>
 	    {{ article.title }}
 	  {% endif %}
 	  {% if template contains 'page' %}
-	    <i>|</i>
+	    <span>|</span>
 	    {{ page.title }}
 	  {% endif %}
 		{% if template contains 'search' %}
-	    <i>|</i>
+	    <span>|</span>
 	    {{ 'sections.breadcrumbs.search' | t }}
 	  {% endif %}
 		{% if template contains 'customers' %}
-	    <i>|</i>
+	    <span>|</span>
 	    {{ 'sections.breadcrumbs.my_account' | t }}
 	  {% endif %}
 	</nav>
