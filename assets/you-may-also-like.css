@@ -53,6 +53,10 @@
 
 
 @media only screen and (min-width: 1024px) {
+    
+    .you_may_also_like_title {
+        font-weight: 400 !important;
+    }
 
     .you_may_also_like_mobile {
         display: block;
@@ -60,16 +64,21 @@
     
     .you_may_also_like_desktop {
         display: flex !important;
-        align-items: center;
+        width: 86%;
     }
 
     .you_may_also_like_wrapper {
         padding: 24px 4.44%;
+
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
     }
 
     .you_may_also_like_product {
         min-width: unset;
         width: 100%;
+        justify-content: center;
     }
 
     .flickity-nav {
@@ -81,7 +90,8 @@
     }
 
     .you_may_also_like_product > .product-card {
-        width: 86%;
+        width: 100%;
+        margin-right: 4.1%;
     }
 
     
