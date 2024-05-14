@@ -148,6 +148,8 @@ textarea {
   display: none;
 }
 
+/* dean komentar */
+
 [type="checkbox"],
 [type="radio"] {
   box-sizing: border-box;
@@ -310,13 +312,6 @@ b {
 small {
   font-size: 80%;
   line-height: inherit; }
-
-@font-face {
-  font-family: "Montserrat 400";
-  src: url('https://cdn.shopify.com/s/files/1/0691/2419/4548/files/Montserrat_Regular.woff2?v=1715680051');
-  font-family: "Montserrat 400";
-  font-style: normal
-}
 
 h1, .h1, .h1-large, .h1-xlarge,
 h2, .h2,
@@ -1441,7 +1436,7 @@ table {
         text-transform: uppercase;
         letter-spacing: 0.1em;
         padding: 18px 0;
-        font-family: "Montserrat 400";
+        font-weight: 400;
         border-bottom: 1px solid var(--color-border); }
         table.no-borders thead th:last-child {
           text-align: right; }
@@ -2057,6 +2052,7 @@ h6,
   width: 100%; }
 
 .header {
+  border-bottom: 1px solid var(--color-header-border, var(--color-border));
   position: relative;
   background: var(--color-header-bg, #fff);
   z-index: 30;
@@ -2081,7 +2077,8 @@ h6,
     opacity: 1; }
   .header.transparent--true {
     position: absolute;
-    background: transparent; }
+    background: transparent;
+    border-bottom-color: rgba(0, 0, 0); }
     .header.transparent--true:before {
       content: "";
       position: absolute;
@@ -2611,7 +2608,7 @@ h6,
   height: 1.0625rem;
   line-height: 1.0625rem;
   margin-right: 15px;
-  font-family: "Montserrat 400";
+  font-weight: 400;
   letter-spacing: var(--button-letter-spacing, 0.02em);
   cursor: pointer;
   position: relative; }
@@ -2857,7 +2854,7 @@ select {
   margin-bottom: 10px;
   color: var(--color-body);
   font-size: 0.75rem;
-  font-family: "Montserrat 400";
+  font-weight: 400;
   background: transparent;
   max-width: 100%;
   border-radius: 0;
@@ -2972,7 +2969,7 @@ textarea {
 label {
   font-size: 0.8125rem;
   letter-spacing: 0.02em;
-  font-family: "Montserrat 400";
+  font-weight: 400;
   color: var(--color-body); }
 
 select {
@@ -3286,7 +3283,7 @@ select {
   .price del + ins {
     margin-left: 4px; }
   .price .from {
-    font-family: "Montserrat 400";
+    font-weight: 400;
     text-transform: uppercase;
     font-size: 0.6875rem; }
   .price > .amount,
@@ -4160,7 +4157,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .f_regular {
-	font-family: "Montserrat 400" !important;
+	font-weight: 400 !important;
 }
 
 .f_medium {
@@ -4321,7 +4318,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   text-decoration: none !important;
   height: 17px;
   display: flex;
-  font-family: "Montserrat 400";
+  font-weight: 400;
 }
 
 .amount.compare {
@@ -4494,6 +4491,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 .shopify-pc__banner__dialog button.shopify-pc__banner__btn-decline {
   display: none;
+}
+
+.shopify-pc__banner__dialog p {
+  font-family: 'MONTSERRAT 400';
 }
 
 .shopify-pc__banner__btn-accept {
