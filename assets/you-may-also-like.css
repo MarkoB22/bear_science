@@ -1,7 +1,3 @@
-.you_may_also_like_wrapper {
-    padding: 68px 14.21%;
-}
-
 .you_may_also_like_title {
     display: flex;
     justify-content: center;
@@ -9,4 +5,31 @@
     background-color: #6D7E60;
     color: #FFFFFF;
     text-transform: uppercase;
+}
+
+.you_may_also_like_wrapper {
+    padding: 68px 14.21%;
+    
+}
+
+.you_may_also_like_product {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: visible;
+    min-width: 100%;
+    padding: 0;
+}
+
+.flickity-nav {
+    display: flex;
+    background: transparent;
+    box-shadow: none;
+
+    top: 164px;
+  }
+
+.flickity-next {
+}
+
+.flickity-prev {
 }
