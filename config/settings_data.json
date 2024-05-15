@@ -32,6 +32,8 @@
     "show_size_options": false,
     "sale_badge_type": "save_percentage",
     "color_badge_sale": "#6d7e60",
+    "cart_drawer_notes": false,
+    "cart_recommendations": false,
     "sections": {
       "announcement-bar": {
         "type": "announcement-bar",
