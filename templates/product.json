@@ -74,15 +74,6 @@
         "enable_video_looping": false
       }
     },
-    "16623877721f33fb14": {
-      "type": "spacer",
-      "settings": {
-        "spacer_mobile": 35,
-        "spacer_desktop": 90,
-        "border_separator": false,
-        "border_separator_full": false
-      }
-    },
     "product_specification_FECYwa": {
       "type": "product-specification",
       "blocks": {
@@ -390,7 +381,6 @@
   "order": [
     "breadcrumbs",
     "main-product",
-    "16623877721f33fb14",
     "product_specification_FECYwa",
     "you_may_also_like_WQjfX3",
     "product_explanation_fb6QYm",
