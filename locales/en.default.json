@@ -4,7 +4,7 @@
     "close": "Close",
     "shop_the_look": "Shop the look",
     "cart_drawer": {
-      "title": "Cart",
+      "title": "Your cart",
       "view_cart": "View Cart",
       "checkout": "Checkout",
       "cart_empty": "Your cart is currently empty.",
@@ -220,6 +220,7 @@
       "taxes_included_but_shipping_at_checkout": "Tax included and shipping calculated at checkout",
       "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
+      "total": "Total",
       "headings": {
         "product": "Product",
         "price": "Price",
