@@ -1520,6 +1520,9 @@ table {
     left: 0; }
     .side-panel.facet-drawer.active {
       transform: translateX(0%); }
+  .side-panel.facet-drawer .side-panel-footer div {
+    display: none;
+  }
   .side-panel.search-drawer .side-panel-inner {
     height: 100%; }
   .side-panel.search-drawer .searchform {
@@ -1592,7 +1595,7 @@ table {
       line-height: 1.5;
       font-size: 24px;
       font-weight: 300;
-      color: var(--color-body);
+      color: #040404;
       text-transform: uppercase; }
       .side-panel-header h4 > span {
         display: block; }
@@ -2859,7 +2862,7 @@ select {
   padding: 12px 17px;
   height: 48px;
   margin-bottom: 10px;
-  color: var(--color-body);
+  color: #040404;
   font-size: 0.75rem;
   font-weight: 400;
   background: transparent;
