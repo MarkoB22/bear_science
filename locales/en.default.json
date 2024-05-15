@@ -221,6 +221,7 @@
       "taxes_included_and_shipping_policy_html": "Tax included. <a href=\"{{ link }}\">Shipping<\/a> calculated at checkout.",
       "taxes_and_shipping_at_checkout": "Taxes and shipping calculated at checkout",
       "total": "Total",
+      "keep_shopping": "Keep shopping",
       "headings": {
         "product": "Product",
         "price": "Price",
