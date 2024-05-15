@@ -316,54 +316,6 @@
         "opacity_down": 100
       }
     },
-    "1663667027ccd68a19": {
-      "type": "scrolling-text",
-      "blocks": {
-        "157f1bcc-632c-4bf7-bd60-4c71b734c135": {
-          "type": "text",
-          "settings": {
-            "text": "Add campaign text here.",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "9f8d76e3-abba-44dd-82bb-b2fbba77db59": {
-          "type": "text",
-          "settings": {
-            "text": "Add campaign text here.",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "7b936e53-853a-4481-9141-aa36b94e768a": {
-          "type": "text",
-          "settings": {
-            "text": "Add campaign text here.",
-            "link": "",
-            "outline_text": false
-          }
-        }
-      },
-      "block_order": [
-        "157f1bcc-632c-4bf7-bd60-4c71b734c135",
-        "9f8d76e3-abba-44dd-82bb-b2fbba77db59",
-        "7b936e53-853a-4481-9141-aa36b94e768a"
-      ],
-      "settings": {
-        "height": "height-auto",
-        "full_width": true,
-        "direction": "left",
-        "speed": "30s",
-        "text_uppercase": false,
-        "image_size": "large",
-        "color_bg": "#1b1c26",
-        "color_text": "#fcf0e6",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
-    },
     "product-recommendations": {
       "type": "product-recommendations",
       "disabled": true,
@@ -384,7 +336,6 @@
     "product_specification_FECYwa",
     "you_may_also_like_WQjfX3",
     "product_explanation_fb6QYm",
-    "1663667027ccd68a19",
     "product-recommendations"
   ]
 }
