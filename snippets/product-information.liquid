@@ -220,7 +220,7 @@
           </div>
           {%- if section.settings.show_taxes_included != blank -%}
             {%- if cart.taxes_included or shop.shipping_policy.body != blank -%}
-              <div class="product__tax caption">
+              <div class="product__tax caption not_mobile not_desktop">
                 {%- if cart.taxes_included -%}
                   {{ 'products.product.include_taxes' | t }}
                 {%- endif -%}
