@@ -81,6 +81,10 @@
   padding: 13px 17px;
 }
 
+.featured-collection svg path {
+  opacity: 0.6;
+}
+
 @media only screen and (max-width: 1024px) {
   .featured-collection .carousel__slide {
     max-width: 100%;
