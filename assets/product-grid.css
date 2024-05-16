@@ -499,4 +499,16 @@
   .product-card.text-center .product-card-info {
     width: 75.698%;
   }
+
+  .medium-up-2 > .column, .medium-up-2 > .columns {
+    flex: 0 0 44.2%;
+  }
+
+  .product-card-info > .price > ins > span {
+    font-size: 32px;
+  }
+
+  .product-card-info > .price > del > span {
+    font-size: 24px;
+  }
 }

@@ -89,6 +89,33 @@
   .facets--bar .active-facets__button-remove {
     margin-top: 6px; }
 
+.facets-desktop-container .facets {
+  border-right: 1px solid black;
+  padding-right: 68px;
+}
+
+@media only screen and (min-width: 1025px) {
+  .facets--bar {
+    margin-bottom: unset;
+  }
+
+  #product-grid {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .sidebar-container.facets--sidebar {
+    grid-template-columns: clamp(387px, 22%, 285px) 1fr !important;
+  }
+
+  .facets-desktop-container {
+    border-right: 1px solid black;
+    padding-right: 68px;
+  }
+
+}
+
 .facets-desktop-container {
   display: none;
   min-height: 65px; }
