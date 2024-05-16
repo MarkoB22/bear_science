@@ -2232,13 +2232,11 @@ h6,
           padding: 0 10px; } }
     .thb-secondary-area-item.thb-secondary-myaccount {
       display: none;
-      font-weight: var(--font-body-medium-weight, 500);
-      font-size: calc(var(--font-navigation-scale, 1) * 15px);
+      font-family: 'Montserrat 400';
+      font-size: calc(var(--font-navigation-scale, 1) * 22px);
       color: var(--color-header-links, --color-accent); }
       .thb-secondary-area-item.thb-secondary-myaccount:hover {
         color: var(--color-header-links-hover, --color-accent2); }
-      .navigation-uppercase-true .thb-secondary-area-item.thb-secondary-myaccount {
-        text-transform: uppercase; }
       @media only screen and (min-width: 768px) {
         .thb-secondary-area-item.thb-secondary-myaccount {
           display: inline-flex; } }
@@ -2286,7 +2284,7 @@ h6,
 
 .logolink {
   display: inline-flex;
-  margin: 20px 0; }
+  margin: 33px 0; }
   .logolink.text-logo {
     font-size: 1.125rem;
     font-weight: var(--font-body-bold-weight, 600);
@@ -2608,6 +2606,16 @@ h6,
       color: var(--color-header-text, --color-body); }
       .navigation-uppercase-true .thb-localization-forms.inside-header .select select {
         text-transform: uppercase; }
+.thb-localization-forms .select {
+  display: flex;
+  align-items: flex-end;
+}
+
+.thb-localization-forms .select .select-arrow {
+  position: relative;
+  top: auto;
+  right: auto;
+}
 
 .shopify-payment-button__more-options,
 .spr-summary-actions-newreview,
