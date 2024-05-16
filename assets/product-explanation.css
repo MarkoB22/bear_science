@@ -1,3 +1,12 @@
+.product_explanation_title {
+    display: flex;
+    justify-content: center;
+    padding: 25px 0 24px 0;
+    color: #040404;
+    text-transform: uppercase;
+    font-weight: 500 !important;
+}
+
 .product_explanation_wrapper {
     position: relative;
 }
@@ -37,6 +46,10 @@
 }
 
 @media print, screen and (min-width: 1025px) {
+
+    .product_explanation_title {
+        font-weight: 400 !important;
+    }
 
     .product_explanation_wrapper {
         position: relative;

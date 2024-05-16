@@ -3,6 +3,11 @@
     assign overlay_color = section.settings.overlay_color
     assign overlay_opacity = section.settings.overlay_opacity
 -%}
+
+<div class="product_explanation_title h9 lh-sm">
+    {{ section.settings.title }}
+</div>
+
 <div class="product_explanation_wrapper">
 
     <div class="product_explanation_colors">
@@ -32,6 +37,12 @@
     {
         "name": "Product Explanation",
         "settings": [
+            {
+                    "type": "text",
+                    "id": "title",
+                    "label": "Title",
+                    "default": "Title"
+            },
             {
                 "type": "image_picker",
                 "id": "image_mob",
