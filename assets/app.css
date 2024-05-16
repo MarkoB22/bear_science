@@ -4665,6 +4665,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   display: none;
 }
 
+.quick_view-price {
+  display: none;
+}
+
 .side-panel.product-drawer .product-price-container.quick_view-price {
   display: block;
 }
