@@ -112,8 +112,24 @@
   .facets-desktop-container {
     border-right: 1px solid black;
     padding-right: 68px;
+    color: #040404;
   }
 
+  .facets .thb-filter .thb-filter-title {
+    font-size: 24px !important;
+  }
+
+  .price_range .price_slider_amount input {
+    font-size: 24px !important;
+  }
+
+  .facets .thb-filter-content ul > li > label {
+    font-size: 22px;
+  }
+
+  .active-facets > .active-facets__button > span {
+
+  }
 }
 
 .facets-desktop-container {
@@ -483,7 +499,7 @@
       display: none; }
 
 .thb-filter ul label {
-  font-size: 18px;
+  font-size: 16px;
   line-height: 1.22; }
 
 .thb-filter ul.list-color {
