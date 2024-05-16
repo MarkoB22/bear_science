@@ -316,7 +316,7 @@ small {
 @font-face {
   font-family: "Montserrat 400";
   src: url('https://cdn.shopify.com/s/files/1/0691/2419/4548/files/Montserrat_Regular.woff2?v=1715680051');
-  font-weight: 400;
+  font-family: 'Montserrat 400';
   font-style: normal
 }
 
@@ -1292,7 +1292,7 @@ summary {
     padding: 0 4px; }
     @media only screen and (min-width: 768px) {
       .row .columns {
-        padding: 0 15px; } }
+        padding: 0 64px; } }
   .row.no-padding {
     padding: 0; }
   .row.full-width-row {
@@ -1443,7 +1443,7 @@ table {
         text-transform: uppercase;
         letter-spacing: 0.1em;
         padding: 18px 0;
-        font-weight: 400;
+        font-family: 'Montserrat 400';
         border-bottom: 1px solid var(--color-border); }
         table.no-borders thead th:last-child {
           text-align: right; }
@@ -2202,7 +2202,8 @@ h6,
   min-width: 70px;
   white-space: nowrap;
   justify-content: end;
-  display: inline-flex; }
+  display: inline-flex;
+  margin-right: 16px; }
   @media only screen and (min-width: 768px) {
     .thb-secondary-area {
       min-width: 135px; } }
@@ -2355,7 +2356,7 @@ h6,
   position: relative;
   width: 48px;
   height: 48px;
-  margin-left: -10px;
+  margin-left: 17px;;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -2397,9 +2398,7 @@ h6,
   .thb-full-menu a {
     color: var(--color-header-links, --color-accent);
     position: relative;
-    font-size: calc(var(--font-navigation-scale, 1) * 15px); }
-    .navigation-uppercase-true .thb-full-menu a {
-      text-transform: uppercase; }
+    font-size: calc(var(--font-navigation-scale, 1) * 22px); }
     .thb-full-menu a:after {
       content: "";
       display: block;
@@ -2420,11 +2419,11 @@ h6,
         stroke: var(--color-header-links-hover, --color-accent2); }
   .thb-full-menu > li {
     display: inline-flex;
-    padding: 0 15px;
+    padding: 0 11px;
     align-items: center; }
     .thb-full-menu > li > a {
       margin: 10px 0;
-      font-weight: var(--font-body-medium-weight, 500); }
+      font-family: 'Montserrat 400'; }
   .thb-full-menu li.menu-item-has-children {
     position: relative;
     z-index: 1; }
@@ -2604,8 +2603,8 @@ h6,
       .thb-localization-forms.inside-header .select-arrow svg path {
         stroke: var(--color-header-text, --color-body); }
     .thb-localization-forms.inside-header .select select {
-      font-weight: var(--font-body-medium-weight, 500);
-      font-size: calc(var(--font-navigation-scale, 1) * 15px);
+      font-family: 'Montserrat 400';
+      font-size: calc(var(--font-navigation-scale, 1) * 22px);
       color: var(--color-header-text, --color-body); }
       .navigation-uppercase-true .thb-localization-forms.inside-header .select select {
         text-transform: uppercase; }
@@ -2618,7 +2617,7 @@ h6,
   height: 1.0625rem;
   line-height: 1.0625rem;
   margin-right: 15px;
-  font-weight: 400;
+  font-family: 'Montserrat 400';
   letter-spacing: var(--button-letter-spacing, 0.02em);
   cursor: pointer;
   position: relative; }
@@ -2864,7 +2863,7 @@ select {
   margin-bottom: 10px;
   color: #040404;
   font-size: 0.75rem;
-  font-weight: 400;
+  font-family: 'Montserrat 400';
   background: transparent;
   max-width: 100%;
   border-radius: 0;
@@ -2979,7 +2978,7 @@ textarea {
 label {
   font-size: 0.8125rem;
   letter-spacing: 0.02em;
-  font-weight: 400;
+  font-family: 'Montserrat 400';
   color: var(--color-body); }
 
 select {
@@ -3304,7 +3303,7 @@ select {
   .price del + ins {
     margin-left: 4px; }
   .price .from {
-    font-weight: 400;
+    font-family: 'Montserrat 400';
     text-transform: uppercase;
     font-size: 0.6875rem; }
   .price > .amount,
@@ -4337,7 +4336,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   text-decoration: none !important;
   height: 17px;
   display: flex;
-  font-weight: 400;
+  font-family: 'Montserrat 400';
 }
 
 .amount.compare {
@@ -4579,7 +4578,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 }
 
 .cart_item-title_quantity_wrapper .quantity .qty {
-  font-weight: 400;
+  font-family: 'Montserrat 400';
   font-size: 1.5rem;
 }
 
@@ -4863,6 +4862,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   .side-panel.product-drawer .single-add-to-cart-button--text:after {
     width: 73px;
   } 
+
+  .side-panel.product-drawer .quick_view-traits {
+    padding: 0 0 38px 0;
+  }
 
   .add_to_cart_holder .single-add-to-cart-button--text {
     font-size: 24px;
