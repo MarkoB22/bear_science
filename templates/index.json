@@ -157,6 +157,26 @@
       "settings": {
       }
     },
+    "166366563622039b3e": {
+      "type": "featured-collection",
+      "settings": {
+        "heading": "OUR ASSORTMENT",
+        "heading_left": true,
+        "button_text": "View all",
+        "button_url": "",
+        "description": "",
+        "full_width": true,
+        "collection": "frontpage",
+        "display_type": "carousel",
+        "product_limit": 8,
+        "columns_desktop": 3,
+        "show_view_all": true,
+        "mobile_swipe": true,
+        "show_progress_bar": true,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "reviews_KeyhVG": {
       "type": "reviews",
       "blocks": {
@@ -209,26 +229,6 @@
         "button_text_arrow": "Send",
         "image": "shopify:\/\/shop_images\/Logo_-_Newsletter_section_1.png"
       }
-    },
-    "166366563622039b3e": {
-      "type": "featured-collection",
-      "settings": {
-        "heading": "FEATURED COLLECTION",
-        "heading_left": true,
-        "button_text": "View all",
-        "button_url": "",
-        "description": "",
-        "full_width": true,
-        "collection": "frontpage",
-        "display_type": "carousel",
-        "product_limit": 8,
-        "columns_desktop": 3,
-        "show_view_all": true,
-        "mobile_swipe": true,
-        "show_progress_bar": true,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
-      }
     }
   },
   "order": [
@@ -237,8 +237,8 @@
     "scrolling_text_eM6VzK",
     "product_presentation_9yUw6y",
     "traits_AFGyQX",
+    "166366563622039b3e",
     "reviews_KeyhVG",
-    "email_signup_LYibJU",
-    "166366563622039b3e"
+    "email_signup_LYibJU"
   ]
 }
