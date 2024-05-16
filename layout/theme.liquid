@@ -112,5 +112,17 @@
 	<script src="{{ 'product-recommendations.js' | asset_url }}" defer="defer"></script>
 	{%- endif -%}
 	{% render 'back-to-top' %}
+
+  <script>
+    document.addEventListener('click', function(event) {
+      var sidebar = document.getElementById('Product-Drawer');
+  
+      if (sidebar && !sidebar.contains(event.target)) {
+          sidebar.classList.remove('active');
+  
+          document.body.classList.remove('open-cc', 'open-quick-view');
+      }
+    });
+  </script>
   </body>
 </html>
