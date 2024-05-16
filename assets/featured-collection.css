@@ -73,6 +73,10 @@
   box-shadow: none;
 }
 
+.product-card-info > .product-card--add-to-cart-button-container > button {
+  padding: 13px 19.6px;
+}
+
 @media only screen and (max-width: 1024px) {
   .featured-collection .carousel__slide {
     max-width: 100%;
@@ -113,5 +117,9 @@
 
   .price > del > .amount {
     font-size: 24px;
+  }
+
+  .product-card-info > .product-card--add-to-cart-button-container > button {
+    padding: 15px 17.6px;
   }
 }
