@@ -2223,7 +2223,7 @@ h6,
       .thb-secondary-area-item {
         padding: 0 10px; } }
     .thb-secondary-area-item:last-child {
-      padding-right: 0; }
+      padding-right: 10px; }
     [dir="rtl"] .thb-secondary-area-item:last-child {
       padding: 0 7px; }
       @media only screen and (min-width: 1068px) {
@@ -2355,7 +2355,7 @@ h6,
   position: relative;
   width: 48px;
   height: 48px;
-  margin-left: -15px;
+  margin-left: -10px;
   display: flex;
   align-items: center;
   justify-content: center; }
@@ -4650,6 +4650,36 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   display: none;
 }
 
+.product_quick_view-image_wrapper {
+  display: none;
+}
+
+.quick_view-traits {
+  display: none;
+}
+
+.side-panel.product-drawer .side-panel-header {
+  display: none;
+}
+
+.side-panel.product-drawer .product-price-container {
+  display: none;
+}
+
+.side-panel.product-drawer .product-price-container.quick_view-price {
+  display: block;
+}
+
+.product_quick_view-view_more_details {
+  font-size: 24px;
+  margin-top: 38px;
+  display: none;
+}
+
+.add_to_cart_holder .single-add-to-cart-button--text {
+  font-size: 18px;
+}
+
 @media print, screen and (min-width: 1025px) {
   .shopify-pc__banner__dialog {
     max-width: 485px !important;
@@ -4764,11 +4794,9 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
   .side-panel.product-drawer .product-form form {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     width: 100%;
-  }
-
-  .side-panel.product-drawer .side-panel-header {
-    display: none;
   }
 
   .side-panel.product-drawer .product-quick-images--container {
@@ -4776,8 +4804,8 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     background: transparent;
   }
 
-  .product-add-to-cart-container {
-    width: 50%;
+  .side-panel.product-drawer .product-add-to-cart-container {
+    width: 58.6364%;
   }
 
   .side-panel.product-drawer .product-single__media {
@@ -4795,7 +4823,50 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   }
 
   .side-panel.product-drawer .product-price-container {
-    top: 29px;
+    top: auto;
+    bottom: auto;
+  }
+
+  .side-panel.product-drawer .quick_view_price {
+    display: block;
+  }
+
+  .side-panel.product-drawer .product_quick_view-image_wrapper {
+    display: block;
+    width: 35.1137%;
+  }
+
+  .product_quick_view-image_wrapper img {
+    width: 100%;
+  }
+
+  .side-panel.product-drawer .quick_view-traits {
+    display: block;
+    margin-bottom: 38px;
+    border-top: none;
+  }
+
+  .side-panel.product-drawer .product_quick_view-view_more_details  {
+    display: block;
+  }
+
+  .side-panel.product-drawer .single-add-to-cart-button--text {
+    justify-content: center;
+    gap: 24px;
+  }
+
+  .side-panel.product-drawer .price {
+    margin-right: 0 !important;
+  }
+
+  .side-panel.product-drawer .single-add-to-cart-button--text:after {
+    width: 73px;
+  } 
+
+  .add_to_cart_holder .single-add-to-cart-button--text {
+    font-size: 24px;
+    justify-content: center;
+    gap: 24px;
   }
     
   .not_desktop {

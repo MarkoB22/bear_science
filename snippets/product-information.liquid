@@ -248,9 +248,9 @@
             {{ block.settings.page.content }}
             {{ block.settings.custom_liquid }}
           </div>
-        </details>
+        </details> 
       </collapsible-row>
-      {%- endif -%}
+      {%- endif -%} 
     {%- when 'complementary' -%}
       <product-recommendations class="complementary-products no-js-hidden" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ block.settings.product_list_limit }}&intent=complementary">
         {%- if recommendations.performed and recommendations.products_count > 0 -%}
