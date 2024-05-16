@@ -510,7 +510,7 @@
   font-size: 2rem;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  align-items: flex-start;
   margin-right: 11px;}
   .thb-product-detail .product-price-container .price .unit-price {
     margin-left: 5px; }
@@ -1447,6 +1447,14 @@
 
 @media only screen and (min-width: 1025px) {
   .single-add-to-cart-button {
+    font-size: 24px;
+  }
+
+  .product-information .price > ins > .amount {
+    font-size: 36px;
+  }
+
+  .product-information .price > del > .amount {
     font-size: 24px;
   }
 
