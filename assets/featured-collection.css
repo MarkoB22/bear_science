@@ -77,6 +77,10 @@
   padding: 13px 19.6px;
 }
 
+.product-card-info > .product-card--add-to-cart-button-container > quick-view {
+  padding: 13px 17px;
+}
+
 @media only screen and (max-width: 1024px) {
   .featured-collection .carousel__slide {
     max-width: 100%;
