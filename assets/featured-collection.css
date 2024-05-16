@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+.featured_collection-title_button_wrapper h2 {
+  color: #040404;
+}
+
 .featured-collection h2 {
   padding-left: 8px;
   border-left: 1px solid #040404;
@@ -101,5 +105,13 @@
 
   .featured_collection-title_button_wrapper .featured_collection-view_all_button {
     margin: 0;
+  }
+
+  .price > ins > .amount {
+    font-size: 32px;
+  }
+
+  .price > del > .amount {
+    font-size: 24px;
   }
 }
