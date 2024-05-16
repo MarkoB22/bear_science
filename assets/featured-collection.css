@@ -126,4 +126,8 @@
   .product-card-info > .product-card--add-to-cart-button-container > button {
     padding: 15px 17.6px;
   }
+
+  .products.carousel.flickity-enabled .flickity-viewport {
+    overflow: hidden !important;
+  }
 }
