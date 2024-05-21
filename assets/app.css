@@ -2119,7 +2119,7 @@ h6,
       background-color: var(--color-header-transparent-text, #fff);
       color: var(--color-header-icons, --color-accent); }
     .header.transparent--true:not(:hover):not(.is-sticky) .thb-secondary-area-item.thb-secondary-myaccount {
-      color: var(--color-header-transparent-text, #fff); }
+      color: #040404; }
     .header.transparent--true:not(:hover):not(.is-sticky) svg path {
       stroke: var(--color-header-transparent-text, #000); }
     .header.transparent--true:not(:hover):not(.is-sticky) .mobile-toggle span {

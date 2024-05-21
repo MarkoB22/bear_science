@@ -993,7 +993,7 @@
   max-width: 420px;
   z-index: 31;
   background: var(--bg-body);
-  padding: 18px;
+  padding: 24px;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
   transform: translateX(calc(100% + 50px)); }
   .product-add-to-cart-sticky.sticky--visible {
@@ -1014,15 +1014,12 @@
     line-height: calc(var(--font-product-title-line-height-scale, 1) * 1.4);
     font-weight: var(--font-body-bold-weight, 600);
     display: block;
-    margin-bottom: 5px; }
-    .product-title-uppercase-true .product-add-to-cart-sticky--title {
-      text-transform: uppercase; }
+    margin-bottom: 28px; }
   .product-add-to-cart-sticky--inner {
     display: flex;
     align-items: center;
     position: relative;
     width: 100%;
-    padding-right: 50px;
     text-align: left;
     min-height: 48px; }
     [dir="rtl"] .product-add-to-cart-sticky--inner {
@@ -1445,7 +1442,105 @@
   margin-top: 0;
 }
 
+.product-add-to-cart-sticky .plus ,
+.product-add-to-cart-sticky--image {
+  display: none;
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+  .product-add-to-cart-sticky--content {
+    display: block !important;
+  }
+
+  .product-add-to-cart-sticky--content .single-add-to-cart-button--text {
+    font-size: 14px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    margin-top: 14px;
+  }
+
+  .product-add-to-cart-sticky--content .single-add-to-cart-button--text  svg {
+    margin-top: 8px;
+  }
+
+  .product-add-to-cart-sticky--info {
+    display: none;
+  }
+
+  .product-add-to-cart-sticky {
+    width: 108px;
+    height: 108px;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  .product-add-to-cart-sticky .single-add-to-cart-button {
+    border-radius: 50%;
+    width: 108px;
+    height: 108px;
+    margin-top: 0;
+    flex: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media only screen and (min-width: 1025px) {
+  .product_sticky-short_title {
+    font-size: 42px;
+    font-family: 'Montserrat 400';
+    line-height: 0.69;
+  }
+
+  .product-add-to-cart-sticky--content {
+    height: auto !important;
+    display: block;
+  }
+
+  .product-add-to-cart-sticky {
+    max-width: 352px;
+  }
+
+  .product-add-to-cart-sticky--title {
+    margin-top: 24px;
+  }
+
+  .product-add-to-cart-sticky del {
+    display: none;
+  }
+
+  .product-add-to-cart-sticky--info {
+    padding-bottom: 28px;
+    border-bottom: 1px solid rgba(4, 4, 4, 0.4);
+  }
+
+  .product_sticky-short_filling_quantity {
+    font-size: 24px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+
+  .product-add-to-cart-sticky .single-add-to-cart-button {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.22;
+  }
+
+  .product-add-to-cart-sticky .price {
+    justify-content: flex-start;
+  }
+
   .single-add-to-cart-button {
     font-size: 24px;
   }

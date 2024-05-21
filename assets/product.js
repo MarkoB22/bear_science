@@ -811,7 +811,7 @@ if (!customElements.get('product-add-to-cart-sticky')) {
             button.classList.add('sticky-open');
           },
           onReverseComplete: () => {
-            button.classList.remove('sticky-open');
+            // button.classList.remove('sticky-open');
           }
         });
 

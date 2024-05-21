@@ -111,8 +111,11 @@
 	{%- if settings.cart_recommendations -%}
 	<script src="{{ 'product-recommendations.js' | asset_url }}" defer="defer"></script>
 	{%- endif -%}
-	{% render 'back-to-top' %}
 
+	{% comment %}
+		{% render 'back-to-top' %}
+	{% endcomment %}
+	
   <script>
     // Hotfix for closing quick view product
     document.addEventListener('click', function(event) {
