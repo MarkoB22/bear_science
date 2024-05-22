@@ -99,14 +99,15 @@
 		  {%- endfor -%}
     </ul>
 		{%- endif -%}
-		{%- if header_settings.mobile_secondary_menu -%}
-		<ul class="mobile-secondary-menu">
+		{%- if header_settings.mobile_secondary_menu.links.size > 0 -%}
+			menu.links.size:{{ header_settings.mobile_secondary_menu.links.size }} 
+		<ul class="mobile-secondary-menu test">
 			{%- for link in header_settings.mobile_secondary_menu.links -%}
 			  <li class="{% if link.active %} active{% endif %}">
 			    <a href="{{ link.url }}" title="{{ link.title | escape }}">{{ link.title }}</a>
 			  </li>
-		  {%- endfor -%}
-    </ul>
+		    {%- endfor -%}
+    	</ul>
 		{%- endif -%}
 		{%- if header_settings.mobile_promo_image -%}
 			<div class="mega-menu-promotion">
