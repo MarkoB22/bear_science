@@ -4894,6 +4894,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     padding: 0 0 38px 0;
   }
 
+  .product-drawer .price > ins > .amount {
+    font-size: 36px;
+  }
+
   .add_to_cart_holder .single-add-to-cart-button--text {
     font-size: 24px;
     justify-content: center;

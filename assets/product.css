@@ -36,7 +36,9 @@
   .single-add-to-cart-button.sold-out {
     background: #c7c7c7;
     color: white;
-    border: 2px solid #c7c7c7;}
+    border: 2px solid #c7c7c7;
+    pointer-events: none;
+    cursor: not-allowed;}
     .single-add-to-cart-button.sold-out .single-add-to-cart-button--text {
       opacity: 1 !important;
     }
