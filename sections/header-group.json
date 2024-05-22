@@ -50,7 +50,7 @@
         "transparent_header": true,
         "show_language_switcher": true,
         "show_currency_switcher": true,
-        "mobile_secondary_menu": "main-menu",
+        "mobile_secondary_menu": "",
         "mobile_promo_heading": "Promotion heading",
         "mobile_promo_link_label": "Shop",
         "mobile_promo_link": ""
