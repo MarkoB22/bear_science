@@ -4342,7 +4342,6 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 .price del {
   text-decoration: none !important;
-  height: 17px;
   display: flex;
   font-family: 'Montserrat 400';
 }
@@ -4370,6 +4369,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
 .keep_shopping-button:after {
   width: 73px;
+}
+
+.cart-product-link {
+  font-size: 12px;
 }
 
 @media print, screen and (min-width: 1025px) {
@@ -4487,6 +4490,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     /* 42 */
     font-size: calc(var(--font-heading-scale) * 2.625rem);
     line-height: 0.69;
+  }
+
+  .cart-product-link {
+    font-size: 16px;
   }
 
   .main_product-product_title {
@@ -4763,8 +4770,17 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     padding: 86px 28px 32px 28px;
   }
 
+  .cart-drawer side-panel-close { 
+    width: 28px;
+    height: 28px;
+  }
+
   .cart-drawer .side-panel-content {
     padding: 48px 28px 86px 28px;
+  }
+
+  .cart-drawer .side-panel-header h4 {
+    font-size: 36px;
   }
 
   .cart_item-price_remove_button_wrapper {
