@@ -6,6 +6,7 @@
 
 .facets--bar {
   display: block;
+  position: relative;
   margin-bottom: 25px;
   font-size: 0.8125rem;
   z-index: 45; }
@@ -87,49 +88,12 @@
   .facets--bar .active-facets:not(:empty) {
     margin-top: 10px; }
   .facets--bar .active-facets__button-remove {
-    margin-top: 6px; }
+    margin-top: 6px; 
+    color: #040404;}
 
 .facets-desktop-container .facets {
   border-right: 1px solid black;
   padding-right: 68px;
-}
-
-@media only screen and (min-width: 1025px) {
-  .facets--bar {
-    margin-bottom: unset;
-  }
-
-  #product-grid {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-  }
-
-  .sidebar-container.facets--sidebar {
-    grid-template-columns: clamp(387px, 22%, 285px) 1fr !important;
-  }
-
-  .facets-desktop-container {
-    border-right: 1px solid black;
-    padding-right: 68px;
-    color: #040404;
-  }
-
-  .facets .thb-filter .thb-filter-title {
-    font-size: 24px !important;
-  }
-
-  .price_range .price_slider_amount input {
-    font-size: 24px !important;
-  }
-
-  .facets .thb-filter-content ul > li > label {
-    font-size: 22px;
-  }
-
-  .active-facets > .active-facets__button > span {
-
-  }
 }
 
 .facets-desktop-container {
@@ -398,10 +362,9 @@
 
 .facet-drawer .side-panel-footer {
   border-top: 1px solid var(--color-border);
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 7px;
-  padding: 20px; }
+  display: flex;
+  justify-content: center;
+  padding: 24px; }
   .facet-drawer .side-panel-footer > div {
     display: flex;
     align-items: center;
@@ -565,4 +528,74 @@
 
 .filter_title {
   text-transform: uppercase;
+}
+
+.side-panel.facet-drawer {
+  width: 67.7596%;
+}
+
+.mobile-filters-apply {
+  padding: 13px 26px;
+  width: 100%;
+  justify-content: center;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.active_filters {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 14px;
+  color: white;
+  background: #6d7e60;
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.active-facets {
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin-top: 4px !important;
+}
+
+@media only screen and (min-width: 1025px) {
+  .facets--bar {
+    margin-bottom: unset;
+  }
+
+  #product-grid {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .sidebar-container.facets--sidebar {
+    grid-template-columns: clamp(387px, 22%, 285px) 1fr !important;
+  }
+
+  .facets-desktop-container {
+    border-right: 1px solid black;
+    padding-right: 68px;
+    color: #040404;
+  }
+
+  .facets .thb-filter .thb-filter-title {
+    font-size: 24px;
+  }
+
+  .price_range .price_slider_amount input {
+    font-size: 24px;
+  }
+
+  .facets .thb-filter-content ul > li > label {
+    font-size: 22px;
+  }
+
+  .price_range .price_slider_amount > div .field-currency {
+    font-size: 24px;;
+  }
 }
