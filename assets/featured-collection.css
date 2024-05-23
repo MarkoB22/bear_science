@@ -95,6 +95,11 @@
     padding: 34px 64px 188px;
   }
 
+  .featured-collection .flickity-viewport {
+    padding-bottom: 40px;
+    box-sizing: content-box;
+  }
+
   .featured_collection-title_button_wrapper {
     display: flex;
     justify-content: space-between;

@@ -1012,7 +1012,7 @@
       margin-right: 0;
       margin-left: 18px; }
   .product-add-to-cart-sticky--title {
-    font-size: calc(var(--font-product-title-scale, 1) * 0.9375rem);
+    font-size: calc(var(--font-product-title-scale, 1) * 1.125rem);
     line-height: calc(var(--font-product-title-line-height-scale, 1) * 1.4);
     font-weight: var(--font-body-bold-weight, 600);
     display: block;
@@ -1498,6 +1498,40 @@
 }
 
 @media only screen and (min-width: 1025px) {
+  .product-add-to-cart-sticky.highlight {
+    width: 108px;
+    height: 108px;
+    padding: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  .product-add-to-cart-sticky.highlight .single-add-to-cart-button {
+    border-radius: 50%;
+    width: 108px;
+    height: 108px;
+    margin-top: 0;
+    flex: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .product-add-to-cart-sticky.highlight .single-add-to-cart-button--text {
+    flex-direction: column;
+    font-size: 14px;
+    gap: 0;
+  }
+
+  .product-add-to-cart-sticky.highlight .single-add-to-cart-button:hover {
+    background: white;
+  }
+
   .product_sticky-short_title {
     font-size: 42px;
     font-family: 'Montserrat 400';

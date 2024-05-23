@@ -1,5 +1,5 @@
 {%- assign product_form_id = 'product-form-' | append: section.id -%}
-<product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="{{ section.id }}">
+<product-add-to-cart-sticky class="product-add-to-cart-sticky no-js-hidden" data-section="{{ section.id }}" id="add_to_cart_sticky">
 	<button class="product-add-to-cart-sticky--inner sticky-open">
 		<div class="product-add-to-cart-sticky--image" id="product-image-{{ section.id }}--sticky">
 			{%- if media -%}
@@ -101,3 +101,32 @@
 	  {%- endif -%}
 	</div>
 </product-add-to-cart-sticky>
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+	const observedElement = document.getElementById('product_specifications');
+	const addToCartSticky = document.getElementById('add_to_cart_sticky');
+
+	const observerOptions = {
+		root: null,
+		rootMargin: '0px',
+		threshold: 0.5
+	};
+
+	function observerCallback(entries, observer) {
+		entries.forEach(entry => {
+			if (!entry.isIntersecting) {
+				addToCartSticky.classList.add('highlight');
+			} else {
+				addToCartSticky.classList.remove('highlight');
+			}
+		});
+	}
+
+	if ('IntersectionObserver' in window) {
+		const observer = new IntersectionObserver(observerCallback, observerOptions);
+		observer.observe(observedElement);
+	} else {
+	}
+
+});
+</script>
