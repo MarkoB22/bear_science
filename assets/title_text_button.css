@@ -105,6 +105,7 @@
         padding: 0 9.6% 0 35.83%;
         border-right: 1px solid;
         justify-content: flex-end;
+        max-width: 440px;
     }
 
     .title_text_button-title-wrapper.title_position-right > .title_text_button-title {
