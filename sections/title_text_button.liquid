@@ -4,12 +4,24 @@
     {% if section.settings.title_upper %}
     <div class="title_text_button-title-wrapper title_position-{{ section.settings.title_position }} {{ section.settings.title_size }} lh-l f_light">
         <div class="title_text_button-title">
-            <div class="title_text_button-upper">
-                {{ section.settings.title_upper }}
-            </div>
-            <div class="title_text_button-lower">
-                {{ section.settings.title_lower }}
-            </div>
+            
+            {% if section.settings.title_upper != blank %}
+                <div class="title_text_button-upper">
+                    {{ section.settings.title_upper }}
+                </div>
+            {% endif %}
+
+            {% if section.settings.title_middle != blank %}
+                <div class="title_text_button-middle">
+                    {{ section.settings.title_middle }}
+                </div>
+            {% endif %}
+
+            {% if section.settings.title_lower != blank %}
+                <div class="title_text_button-lower">
+                    {{ section.settings.title_lower }}
+                </div>
+            {% endif %}
         </div>
     </div>
     {% endif %}
@@ -52,6 +64,12 @@
             "id": "title_upper",
             "label": "Upper Title",
             "default": "Upper Title"
+        },
+        {
+            "type": "text",
+            "id": "title_middle",
+            "label": "Middle Title",
+            "default": "Middle Title"
         },
         {
             "type": "text",
