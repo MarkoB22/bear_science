@@ -12,7 +12,8 @@
     "title_text_button_bPVFhW": {
       "type": "title_text_button",
       "settings": {
-        "title_upper": "FREQUENTLY ASKED",
+        "title_upper": "FREQUENTLY",
+        "title_middle": "ASKED",
         "title_lower": "QUESTIONS",
         "title_position": "right",
         "title_size": "h1",
