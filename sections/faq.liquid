@@ -1,0 +1,48 @@
+{{- 'faq.css' | asset_url | stylesheet_tag -}}
+<div class="faq-section_wrapper">
+    <div class="faq-sidebar_wrapper">
+        <div class="faq-sidebar_title">
+            {{ section.settings.title }}
+
+        </div>
+        {% for block in section.blocks %}
+            <div class="faq-sidebar_navigation_title" id="navigation-{{ block.id }}">
+                {{ block.settings.title }}
+
+            </div>
+        {% endfor %}
+
+    </div>
+    <div class="faq-main_wrapper">
+        {% for block in section.blocks %}
+            <div class="faq-sidebar_main_block_wrapper" id="main-{{ block.id }}">
+                <div class="">
+                    {{ block.settings.title }}
+                </div>
+                {% if block.settings.question_1 != blank %}
+                <div class="">
+                    
+                </div>
+                {% endif %}
+
+                <div class="">
+                    
+                </div>
+
+                <div class="">
+                    
+                </div>
+
+                <div class="">
+                    
+                </div>
+
+            </div>
+        {% endfor %}
+
+    </div>
+
+</div>
+{%  schema  %}  
+
+{% endschema %}
