@@ -1,14 +1,14 @@
 {{- 'faq.css' | asset_url | stylesheet_tag -}}
 <div class="faq-section_wrapper">
     <div class="faq-sidebar_wrapper">
-        <div class="faq-sidebar_title">
-            {{ section.settings.title }}
 
+        <div class="faq-sidebar_title">
+            {{ section.settings.sidebar_title }}
         </div>
+
         {% for block in section.blocks %}
             <div class="faq-sidebar_navigation_title" id="navigation-{{ block.id }}">
-                {{ block.settings.title }}
-                blblabla
+                {{ block.settings.category_title }}
             </div>
         {% endfor %}
 
@@ -16,26 +16,54 @@
     <div class="faq-main_wrapper">
         {% for block in section.blocks %}
             <div class="faq-sidebar_main_block_wrapper" id="main-{{ block.id }}">
-                <div class="">
-                    {{ block.settings.title }}
+
+                <div class="faq_sidebar_title">
+                    {{ block.settings.category_title }}
                 </div>
+
                 {% if block.settings.question_1 != blank %}
-                <div class="">
-                    
-                </div>
+                    <div class="faq_sidebar_first_wrapper">
+                        <div class="faq_sidebar_title_first">
+                            {{ block.settings.question_1 }}
+                        </div>
+                        <div class="faq_sidebar_text_first">
+                            {{ block.settings.text_1 }}
+                        </div>
+                    </div>
                 {% endif %}
 
-                <div class="">
-                    
-                </div>
+                {% if block.settings.question_2 != blank %}
+                    <div class="faq_sidebar_second_wrapper">
+                        <div class="faq_sidebar_title_second">
+                            {{ block.settings.question_2 }}
+                        </div>
+                        <div class="faq_sidebar_text_second">
+                            {{ block.settings.text_2 }}
+                        </div>
+                    </div>
+                {% endif %}
 
-                <div class="">
-                    
-                </div>
+                {% if block.settings.question_3 != blank %}
+                    <div class="faq_sidebar_third_wrapper">
+                        <div class="faq_sidebar_title_third">
+                            {{ block.settings.question_3 }}
+                        </div>
+                        <div class="faq_sidebar_text_third">
+                            {{ block.settings.text_3 }}
+                        </div>
+                    </div>
+                {% endif %}
 
-                <div class="">
-                    
-                </div>
+                {% if block.settings.question_4 != blank %}
+                    <div class="faq_sidebar_fourth_wrapper">
+                        <div class="faq_sidebar_title_fourth">
+                            {{ block.settings.question_4 }}
+                        </div>
+                        <div class="faq_sidebar_text_fourth">
+                            {{ block.settings.text_4 }}
+                        </div>
+                    </div>
+                {% endif %}
 
             </div>
         {% endfor %}
@@ -44,5 +72,108 @@
 
 </div>
 {%  schema  %}  
+{
+    "name": "FAQ",
+        "settings": [
+                {
+                    "type": "text",
+                    "id": "sidebar_title",
+                    "label": "Title",
+                    "default": "Title"
+                }
+            ],
+        "blocks": [
+            {
+            "type": "text",
+            "name": "Text",
+            "settings": [
+                    {
+                        "type": "text",
+                        "id": "category_title",
+                        "label": "Category Title",
+                        "default": "Category Title"
+                    }
+                ]
+            },
+            {
+            "type": "text",
+            "name": "Text",
+            "settings": [
+                    {
+                        "type": "text",
+                        "id": "question_1",
+                        "label": "Question Title",
+                        "default": "Question Title"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text_1",
+                        "label": "Text",
+                        "default": "<p>Text text text.</p>"
+                    }
+                ]
+            },
+            {
+            "type": "text",
+            "name": "Text",
+            "settings": [
+                    {
+                        "type": "text",
+                        "id": "question_2",
+                        "label": "Question Title",
+                        "default": "Question Title"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text_2",
+                        "label": "Text",
+                        "default": "<p>Text text text.</p>"
+                    }
+                ]
+            },
+            {
+            "type": "text",
+            "name": "Text",
+            "settings": [
+                    {
+                        "type": "text",
+                        "id": "question_3",
+                        "label": "Question Title",
+                        "default": "Question Title"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text_3",
+                        "label": "Text",
+                        "default": "<p>Text text text.</p>"
+                    }
+                ]
+            },
+            {
+            "type": "text",
+            "name": "Text",
+            "settings": [
+                    {
+                        "type": "text",
+                        "id": "question_4",
+                        "label": "Question Title",
+                        "default": "Question Title"
+                    },
+                    {
+                        "type": "richtext",
+                        "id": "text_4",
+                        "label": "Text",
+                        "default": "<p>Text text text.</p>"
+                    }
+                ]
+            }
+        ],
+        "presets": [
+          {
+            "name": "FAQ"
+          }
+        ]
+}
+
 
 {% endschema %}
