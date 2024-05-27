@@ -3427,9 +3427,9 @@ select {
 
   .product-cart-item .cart-product-link {
     display: block;
-    font-size: calc(var(--font-product-title-scale, 1) * 0.9375rem);
-    line-height: calc(var(--font-product-title-line-height-scale, 1) * 1.5);
-    font-weight: var(--font-body-medium-weight, 500);
+    font-size: 12px;
+    line-height: calc(var(--font-product-title-line-height-scale, 1) * 1.22);
+    font-weight: 300;
     display: block; 
     color: #040404;}
   .product-cart-item.thb-loading {
@@ -4789,6 +4789,10 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
 
   .cart-drawer-footer {
     padding: 38px 28px 86px;
+  }
+
+  .product-cart-item .cart-product-link {
+    font-size: 16px;
   }
 
   .cart_item-title_quantity_wrapper .quantity.small-qty button {
