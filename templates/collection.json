@@ -4,6 +4,7 @@
       "type": "title_text_button",
       "settings": {
         "title_upper": "OUR",
+        "title_middle": "",
         "title_lower": "PRODUCTS",
         "title_position": "right",
         "title_size": "h1",
