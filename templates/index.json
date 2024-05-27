@@ -110,6 +110,7 @@
       "type": "title_text_button",
       "settings": {
         "title_upper": "ABOUT",
+        "title_middle": "",
         "title_lower": "US",
         "title_position": "left",
         "title_size": "h1",
