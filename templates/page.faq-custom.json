@@ -24,10 +24,81 @@
         "button_link": "",
         "button_text_arrow": "Button text"
       }
+    },
+    "faq_brekb7": {
+      "type": "faq",
+      "blocks": {
+        "text_YMp3XY": {
+          "type": "text",
+          "settings": {
+            "category_title": "About Our Products",
+            "question_1": "Which material are product packages made of?",
+            "text_1": "<p>Text text text.<\/p>",
+            "question_2": "Does material are product made of meat?",
+            "text_2": "<p>Text text text.<\/p>",
+            "question_3": "Where are the product made?",
+            "text_3": "<p>Text text text.<\/p>",
+            "question_4": "",
+            "text_4": ""
+          }
+        },
+        "text_pGjt9H": {
+          "type": "text",
+          "settings": {
+            "category_title": "About Our Products 2",
+            "question_1": "What's your favorite color?",
+            "text_1": "<p>Text text text.<\/p>",
+            "question_2": "Where do you live?",
+            "text_2": "<p>Text text text.<\/p>",
+            "question_3": "Do you like coding?",
+            "text_3": "<p>Text text text.<\/p>",
+            "question_4": "",
+            "text_4": ""
+          }
+        },
+        "text_qFTAix": {
+          "type": "text",
+          "settings": {
+            "category_title": "About Our Products 3",
+            "question_1": "Favorite book or movie?",
+            "text_1": "<p>Text text text.<\/p>",
+            "question_2": "What's your dream job?",
+            "text_2": "<p>Text text text.<\/p>",
+            "question_3": "How old are you?",
+            "text_3": "<p>Text text text.<\/p>",
+            "question_4": "",
+            "text_4": ""
+          }
+        },
+        "text_QAXfth": {
+          "type": "text",
+          "settings": {
+            "category_title": "About Our Products 4",
+            "question_1": "Any pets at home?",
+            "text_1": "<p>Text text text.<\/p>",
+            "question_2": "Coffee or tea?",
+            "text_2": "<p>Text text text.<\/p>",
+            "question_3": "Morning or night person?",
+            "text_3": "<p>Text text text.<\/p>",
+            "question_4": "",
+            "text_4": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_YMp3XY",
+        "text_pGjt9H",
+        "text_qFTAix",
+        "text_QAXfth"
+      ],
+      "settings": {
+        "sidebar_title": "CATEGORIES"
+      }
     }
   },
   "order": [
     "main",
-    "title_text_button_bPVFhW"
+    "title_text_button_bPVFhW",
+    "faq_brekb7"
   ]
 }
