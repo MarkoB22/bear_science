@@ -2,64 +2,91 @@
 <div class="faq-section_wrapper">
     <div class="faq-sidebar_wrapper">
 
-        <div class="faq-sidebar_title">
+        <div class="faq-sidebar_title h24 lh-l f_light">
             {{ section.settings.sidebar_title }}
         </div>
 
         {% for block in section.blocks %}
-            <div class="faq-sidebar_navigation_title" id="navigation-{{ block.id }}">
-                {{ block.settings.category_title }}
+            <div class="faq-sidebar_title_arrow">
+                <div class="faq-sidebar_navigation_title h10 lh-sm f_medium" id="navigation-{{ block.id }}">
+                    {{ block.settings.category_title }}
+                </div>
+                <div class="faq-sidebar-arrow">
+                    <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M23.586 15H5C4.73478 15 4.48043 15.1054 4.29289 15.2929C4.10536 15.4804 4 15.7348 4 16C4 16.2652 4.10536 16.5196 4.29289 16.7071C4.48043 16.8946 4.73478 17 5 17H23.586L16.292 24.292C16.1042 24.4798 15.9987 24.7344 15.9987 25C15.9987 25.2656 16.1042 25.5202 16.292 25.708C16.4798 25.8958 16.7344 26.0013 17 26.0013C17.2656 26.0013 17.5202 25.8958 17.708 25.708L26.708 16.708C26.8011 16.6151 26.875 16.5048 26.9254 16.3833C26.9758 16.2618 27.0018 16.1315 27.0018 16C27.0018 15.8685 26.9758 15.7382 26.9254 15.6167C26.875 15.4952 26.8011 15.3849 26.708 15.292L17.708 6.292C17.5202 6.10423 17.2656 5.99874 17 5.99874C16.7344 5.99874 16.4798 6.10423 16.292 6.292C16.1042 6.47977 15.9987 6.73445 15.9987 7C15.9987 7.26555 16.1042 7.52023 16.292 7.708L23.586 15Z" fill="#6D7E60" fill-opacity="0.8"/>
+                    </svg>                    
+                </div>
             </div>
         {% endfor %}
 
     </div>
     <div class="faq-main_wrapper">
         {% for block in section.blocks %}
-            <div class="faq-sidebar_main_block_wrapper" id="main-{{ block.id }}">
+            <div class="faq-main_block_wrapper" id="main-{{ block.id }}">
 
-                <div class="faq_sidebar_title">
+                <div class="faq_main_title h5 lh-sm f_regular">
                     {{ block.settings.category_title }}
                 </div>
 
                 {% if block.settings.question_1 != blank %}
-                    <div class="faq_sidebar_first_wrapper">
-                        <div class="faq_sidebar_title_first">
-                            {{ block.settings.question_1 }}
+                    <div class="faq_main_first_wrapper">
+                        <div class="faq_main_title_arrow">
+                            <div class="faq_main_title_first h6 lh-sm f_light">
+                                {{ block.settings.question_1 }}
+                            </div>
+                            <div class="faq_main_arrow">
+                                {% render 'svg-icons' with 'thb-back-to-top' %}
+                            </div>
                         </div>
-                        <div class="faq_sidebar_text_first">
+                        <div class="faq_main_text_first hidden">
                             {{ block.settings.text_1 }}
                         </div>
                     </div>
                 {% endif %}
 
                 {% if block.settings.question_2 != blank %}
-                    <div class="faq_sidebar_second_wrapper">
-                        <div class="faq_sidebar_title_second">
-                            {{ block.settings.question_2 }}
+                    <div class="faq_main_second_wrapper">
+                        <div class="faq_main_title_arrow">
+                            <div class="faq_main_title_second h6 lh-sm f_light">
+                                {{ block.settings.question_2 }}
+                            </div>
+                            <div class="faq_main_arrow">
+                                {% render 'svg-icons' with 'thb-back-to-top' %}
+                            </div>
                         </div>
-                        <div class="faq_sidebar_text_second">
+                        <div class="faq_main_text_second hidden">
                             {{ block.settings.text_2 }}
                         </div>
                     </div>
                 {% endif %}
 
                 {% if block.settings.question_3 != blank %}
-                    <div class="faq_sidebar_third_wrapper">
-                        <div class="faq_sidebar_title_third">
-                            {{ block.settings.question_3 }}
+                    <div class="faq_main_third_wrapper">
+                        <div class="faq_main_title_arrow">
+                            <div class="faq_main_title_third h6 lh-sm f_light">
+                                {{ block.settings.question_3 }}
+                            </div>
+                            <div class="faq_main_arrow">
+                                {% render 'svg-icons' with 'thb-back-to-top' %}
+                            </div>
                         </div>
-                        <div class="faq_sidebar_text_third">
+                        <div class="faq_main_text_third hidden">
                             {{ block.settings.text_3 }}
                         </div>
                     </div>
                 {% endif %}
 
                 {% if block.settings.question_4 != blank %}
-                    <div class="faq_sidebar_fourth_wrapper">
-                        <div class="faq_sidebar_title_fourth">
-                            {{ block.settings.question_4 }}
+                    <div class="faq_main_fourth_wrapper">
+                        <div class="faq_main_title_arrow">
+                            <div class="faq_main_title_fourth h6 lh-sm f_light">
+                                {{ block.settings.question_4 }}
+                            </div>
+                            <div class="faq_main_arrow">
+                                {% render 'svg-icons' with 'thb-back-to-top' %}
+                            </div>
                         </div>
-                        <div class="faq_sidebar_text_fourth">
+                        <div class="faq_main_text_fourth hidden">
                             {{ block.settings.text_4 }}
                         </div>
                     </div>
@@ -71,6 +98,27 @@
     </div>
 
 </div>
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".faq_main_title_arrow").forEach(function (arrowWrapper) {
+            arrowWrapper.addEventListener("click", function () {
+                const textElement = arrowWrapper.nextElementSibling;
+                const arrowElement = arrowWrapper.querySelector(".faq_main_arrow");
+
+                if (textElement.classList.contains("hidden")) {
+                    textElement.classList.remove("hidden");
+                    arrowElement.classList.remove("down");
+                    arrowElement.classList.add("up");
+                } else {
+                    textElement.classList.add("hidden");
+                    arrowElement.classList.remove("up");
+                    arrowElement.classList.add("down");
+                }
+            });
+        });
+    });
+</script>
+
 {%  schema  %}  
 {
     "name": "FAQ",
