@@ -50,13 +50,7 @@ p {
 
 .product_specification_text_wrapper:not(.hidden) {
     max-height: 3000px;
-    transition: max-height 0.3s ease-in-out;
 }
-
-/* .hidden {
-    display: none;
-} */
-
 
 .product_specification_text_wrapper:nth-child(2) > .product_specification_first,
 .product_specification_text_wrapper:nth-child(2) > .product_specification_second {
