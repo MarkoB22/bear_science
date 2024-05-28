@@ -1,5 +1,5 @@
 .faq-sidebar_wrapper {
-    padding: 68px 28px;
+    padding: 68px 19px 68px 28px ;
 }
 
 .faq-main_wrapper {
@@ -19,6 +19,10 @@
     border-bottom: 1px solid #04040466;
     padding: 10.3px 0;
     margin-bottom: 38px;
+}
+
+.faq-sidebar_title_arrow:last-child {
+    margin-bottom: 0;
 }
 
 .faq-sidebar-arrow {
