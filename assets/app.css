@@ -4325,6 +4325,11 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   line-height: 1.22;
 }
 
+.h24 {
+  /* 36 */
+  font-size: calc(var(--font-heading-scale) * 2.25rem);
+}
+
 .main_product-product_title {
   font-size: calc(var(--font-heading-scale) * 1.375rem);
   font-weight: 600;
@@ -4490,6 +4495,11 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     /* 42 */
     font-size: calc(var(--font-heading-scale) * 2.625rem);
     line-height: 0.69;
+  }
+
+  .h24 {
+    /* 48 */
+    font-size: calc(var(--font-heading-scale) * 3rem);
   }
 
   .cart-product-link {
