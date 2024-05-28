@@ -39,6 +39,8 @@
 
 .faq_main_title {
     margin-bottom: 68px;
+    text-transform: uppercase;
+    font-weight: 400;
 }
 
 .faq_main_first_wrapper,
@@ -55,6 +57,7 @@
 .faq_main_title_fourth {
     padding-right: 20px;
     margin-bottom: unset;
+    font-weight: 300;
 } 
 
 .faq-main_block_wrapper > *:not(:first-child):not(:last-child) {
@@ -98,6 +101,45 @@
 
 
 @media print, screen and (min-width: 1025px) {
+
+    .faq-section_wrapper {
+        padding: 124px 68px;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .faq-sidebar_wrapper {
+        padding: unset;
+        padding-right: 68px;
+    }
+    
+    .faq-main_wrapper {
+        padding: 0;
+        padding-left: 68px;
+        border-left: 1px solid #040404;
+    }
+
+    .faq-sidebar_title {
+        line-height: 1;
+    }
+
+    .faq-sidebar_title_arrow {
+        padding: 14px 0;
+    }
+
+    .faq_main_title {
+        margin-bottom: 80px;
+        font-weight: 500;
+    }
+
+    .faq_main_title_first,
+    .faq_main_title_second,
+    .faq_main_title_third,
+    .faq_main_title_fourth {
+        font-weight: 400;
+    }
+
 
     .faq_sidebar_title {
         font-weight: 500 !important;
