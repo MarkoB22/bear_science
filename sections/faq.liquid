@@ -23,18 +23,18 @@
     <div class="faq-main_wrapper">
         {% for block in section.blocks %}
             <div class="faq-main_block_wrapper" id="main-{{ block.id }}">
-
+    
                 <div class="faq_main_title h5 lh-sm f_regular">
                     {{ block.settings.category_title }}
                 </div>
-
+    
                 {% if block.settings.question_1 != blank %}
                     <div class="faq_main_first_wrapper">
                         <div class="faq_main_title_arrow">
                             <div class="faq_main_title_first h6 lh-sm f_light">
                                 {{ block.settings.question_1 }}
                             </div>
-                            <div class="faq_main_arrow">
+                            <div class="faq_main_arrow down">
                                 {% render 'svg-icons' with 'thb-back-to-top' %}
                             </div>
                         </div>
@@ -43,14 +43,14 @@
                         </div>
                     </div>
                 {% endif %}
-
+    
                 {% if block.settings.question_2 != blank %}
                     <div class="faq_main_second_wrapper">
                         <div class="faq_main_title_arrow">
                             <div class="faq_main_title_second h6 lh-sm f_light">
                                 {{ block.settings.question_2 }}
                             </div>
-                            <div class="faq_main_arrow">
+                            <div class="faq_main_arrow down">
                                 {% render 'svg-icons' with 'thb-back-to-top' %}
                             </div>
                         </div>
@@ -59,14 +59,14 @@
                         </div>
                     </div>
                 {% endif %}
-
+    
                 {% if block.settings.question_3 != blank %}
                     <div class="faq_main_third_wrapper">
                         <div class="faq_main_title_arrow">
                             <div class="faq_main_title_third h6 lh-sm f_light">
                                 {{ block.settings.question_3 }}
                             </div>
-                            <div class="faq_main_arrow">
+                            <div class="faq_main_arrow down">
                                 {% render 'svg-icons' with 'thb-back-to-top' %}
                             </div>
                         </div>
@@ -75,14 +75,14 @@
                         </div>
                     </div>
                 {% endif %}
-
+    
                 {% if block.settings.question_4 != blank %}
                     <div class="faq_main_fourth_wrapper">
                         <div class="faq_main_title_arrow">
                             <div class="faq_main_title_fourth h6 lh-sm f_light">
                                 {{ block.settings.question_4 }}
                             </div>
-                            <div class="faq_main_arrow">
+                            <div class="faq_main_arrow down">
                                 {% render 'svg-icons' with 'thb-back-to-top' %}
                             </div>
                         </div>
@@ -91,12 +91,10 @@
                         </div>
                     </div>
                 {% endif %}
-
             </div>
         {% endfor %}
-
     </div>
-
+    
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
@@ -107,9 +105,11 @@
 
                 if (textElement.classList.contains("hidden")) {
                     textElement.classList.remove("hidden");
+                    textElement.classList.add("visible");
                     arrowElement.classList.remove("down");
                     arrowElement.classList.add("up");
                 } else {
+                    textElement.classList.remove("visible");
                     textElement.classList.add("hidden");
                     arrowElement.classList.remove("up");
                     arrowElement.classList.add("down");
