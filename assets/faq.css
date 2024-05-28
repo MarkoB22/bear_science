@@ -112,12 +112,14 @@
     .faq-sidebar_wrapper {
         padding: unset;
         padding-right: 68px;
+        width: 30%;
     }
     
     .faq-main_wrapper {
         padding: 0;
         padding-left: 68px;
         border-left: 1px solid #040404;
+        width: 70%;
     }
 
     .faq-sidebar_title {
@@ -139,7 +141,6 @@
     .faq_main_title_fourth {
         font-weight: 400;
     }
-
 
     .faq_sidebar_title {
         font-weight: 500 !important;
