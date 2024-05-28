@@ -18,6 +18,7 @@
     color: #6D7E60CC;
     border-bottom: 1px solid #04040466;
     padding: 10.3px 0;
+    margin-bottom: 38px;
 }
 
 .faq-sidebar-arrow {
@@ -71,10 +72,10 @@
     overflow: hidden;
 }
 
-.faq_main_text_first:not(.hidden),
-.faq_main_text_second:not(.hidden),
-.faq_main_text_third:not(.hidden),
-.faq_main_text_fourth:not(.hidden) {
+.faq_main_text_first,
+.faq_main_text_second,
+.faq_main_text_third,
+.faq_main_text_fourth {
     max-height: 2000px;
     transition: max-height 0.5s ease;
 }
