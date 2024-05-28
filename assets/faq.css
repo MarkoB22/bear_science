@@ -28,6 +28,10 @@
     margin-bottom: 124px;
 }
 
+.faq-main_block_wrapper:last-child {
+    margin-bottom: 0;
+}
+
 .faq_main_title {
     margin-bottom: 68px;
 }
@@ -59,12 +63,18 @@
     padding: 24px 0;
 }
 
-.hidden {
+.faq_main_text_first.hidden,
+.faq_main_text_second.hidden,
+.faq_main_text_third.hidden,
+.faq_main_text_fourth.hidden {
     max-height: 0;
     overflow: hidden;
 }
 
-.visible {
+.faq_main_text_first:not(.hidden),
+.faq_main_text_second:not(.hidden),
+.faq_main_text_third:not(.hidden),
+.faq_main_text_fourth:not(.hidden) {
     max-height: 2000px;
     transition: max-height 0.5s ease;
 }
