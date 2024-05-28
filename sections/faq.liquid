@@ -98,6 +98,17 @@
 </div>
 <script>
     document.addEventListener("DOMContentLoaded", function () {
+        document.querySelectorAll(".faq-sidebar_title_arrow").forEach(function (arrowWrapper) {
+            arrowWrapper.addEventListener("click", function () {
+                const blockId = arrowWrapper.id.replace('navigation-', 'main-');
+                const targetElement = document.getElementById(blockId);
+
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+
         document.querySelectorAll(".faq_main_title_arrow").forEach(function (arrowWrapper) {
             arrowWrapper.addEventListener("click", function () {
                 const textElement = arrowWrapper.nextElementSibling;
@@ -116,7 +127,6 @@
         });
     });
 </script>
-
 {%  schema  %}  
 {
     "name": "FAQ",
