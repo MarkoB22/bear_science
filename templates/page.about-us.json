@@ -15,9 +15,19 @@
         "button_link": "",
         "button_text_arrow": ""
       }
+    },
+    "page_c3Jran": {
+      "type": "page",
+      "settings": {
+        "page": "",
+        "show_page_title": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
     }
   },
   "order": [
-    "title_text_button_rUXXjj"
+    "title_text_button_rUXXjj",
+    "page_c3Jran"
   ]
 }
