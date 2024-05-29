@@ -16,18 +16,14 @@
         "button_text_arrow": ""
       }
     },
-    "page_c3Jran": {
-      "type": "page",
+    "about_us_J6LWfm": {
+      "type": "about-us",
       "settings": {
-        "page": "",
-        "show_page_title": true,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
       }
     }
   },
   "order": [
     "title_text_button_rUXXjj",
-    "page_c3Jran"
+    "about_us_J6LWfm"
   ]
 }
