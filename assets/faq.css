@@ -19,6 +19,7 @@
     border-bottom: 1px solid #04040466;
     padding: 10.3px 0;
     margin-bottom: 38px;
+    cursor: pointer;
 }
 
 .faq-sidebar_title_arrow:last-child {
@@ -69,6 +70,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 24px 0;
+    cursor: pointer;
 }
 
 .faq_main_text_first.hidden,
