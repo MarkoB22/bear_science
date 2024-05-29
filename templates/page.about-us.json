@@ -1,12 +1,23 @@
 {
   "sections": {
-    "main": {
-      "type": "main-page",
+    "title_text_button_rUXXjj": {
+      "type": "title_text_button",
       "settings": {
+        "title_upper": "ABOUT",
+        "title_middle": "",
+        "title_lower": "US",
+        "title_position": "left",
+        "title_size": "h1",
+        "text_size": "h11",
+        "text_line_height": "lh-sm",
+        "text_weight": "f_light",
+        "r_text": "<p><strong>Welcome to Bear-Science!<\/strong> Your trusted partner on the path to a healthier, more fulfilling and, above all, longer life <\/p>",
+        "button_link": "",
+        "button_text_arrow": ""
       }
     }
   },
   "order": [
-    "main"
+    "title_text_button_rUXXjj"
   ]
 }
