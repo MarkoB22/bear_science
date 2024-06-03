@@ -74,10 +74,10 @@
 		{%- for value in filter.active_values -%}
 			{% assign active_filters = active_filters | plus: 1 %}
 		{% endfor %}
+		{%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
+			{% assign active_filters = active_filters | plus: 1 %}
+		{% endif %}
 	{% endfor %}
-	{%- if filter.min_value.value != nil or filter.max_value.value != nil -%}
-		{% assign active_filters = active_filters | plus: 1 %}
-	{% endif %}
 	<div class="active_filters not_desktop">{{ active_filters }}</div>
 	<a href="{{ results_url }}" class="active-facets__button-remove text-button not_desktop">{{ 'products.facets.clear_all' | t }}</a>
 </facet-remove>
