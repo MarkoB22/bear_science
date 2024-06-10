@@ -1,45 +1,45 @@
 {
   "sections": {
-    "1652268757b7c53383": {
-      "type": "contact-form",
+    "contact_page_form_NYHFa4": {
+      "type": "contact-page-form",
       "blocks": {
-        "text_FxKF9h": {
+        "text_MUTfQP": {
           "type": "text",
           "settings": {
             "heading": "Heading",
             "text": "<p>Add your store address or<br\/>your store hours<\/p>"
           }
         },
-        "text_byHCT3": {
+        "text_aUBkQz": {
           "type": "text",
           "settings": {
             "heading": "Heading",
             "text": "<p>Add your store address or<br\/>your store hours<\/p>"
           }
         },
-        "text_9wyfP4": {
+        "text_ELwyMW": {
           "type": "text",
           "settings": {
-            "heading": "HeadingTest",
+            "heading": "Heading",
             "text": "<p>Add your store address or<br\/>your store hours<\/p>"
           }
         }
       },
       "block_order": [
-        "text_FxKF9h",
-        "text_byHCT3",
-        "text_9wyfP4"
+        "text_MUTfQP",
+        "text_aUBkQz",
+        "text_ELwyMW"
       ],
       "settings": {
-        "heading": "CONTACT DETAILS",
-        "description": "",
-        "show_phone_number": false,
-        "disable_top_spacing": true,
+        "heading": "Contact form",
+        "description": "<p>Add a short description for this section<\/p>",
+        "show_phone_number": true,
+        "disable_top_spacing": false,
         "disable_bottom_spacing": false
       }
     }
   },
   "order": [
-    "1652268757b7c53383"
+    "contact_page_form_NYHFa4"
   ]
 }
