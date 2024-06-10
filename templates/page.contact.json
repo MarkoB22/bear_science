@@ -34,8 +34,8 @@
         "heading": "Contact form",
         "description": "<p>Add a short description for this section<\/p>",
         "show_phone_number": false,
-        "disable_top_spacing": false,
-        "disable_bottom_spacing": false
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
       }
     }
   },
