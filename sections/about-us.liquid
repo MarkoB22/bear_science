@@ -1,13 +1,21 @@
 {{- 'about-us.css' | asset_url | stylesheet_tag -}}
+<div class="about_us_header">
+    {{ section.settings.header_title }}
+</div>
 <div class="about_us_wrapper">
-
+    
 </div>
 {% schema %}
 {
     "name": "About Us",
     "settings": [
-        
-    ],
+            {
+                "type": "text",
+                "id": "header_title",
+                "label": "Header Title",
+                "default": "Header Title"
+            }
+        ],
     "presets": [
       {
         "name": "About Us"

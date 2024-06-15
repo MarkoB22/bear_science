@@ -18,6 +18,8 @@
 
 .title_text_button-title {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     flex-wrap: wrap;
     gap: 18px 5px;
     color: #FFFFFF;
@@ -39,10 +41,12 @@
 
 .title_text_button-text > p:nth-child(1) {
     margin-bottom: 32px;
+    padding-right: 88px;
 }
 
 .title_text_button-text > p:nth-child(2) {
     margin-bottom: 0px;
+    padding-right: 30px;
 }
 
 .title_text_button-button {
