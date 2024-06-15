@@ -118,7 +118,8 @@
         max-width: 500px;
     }
 
-    .title_text_button-button_text_wrapper-left {
+    /* TODO: TO JE PADDING KOJI TREBA BITI 3% I NEKI VECI POSTOTAK ZA DRUGE KOMPONENTE */
+    .title_text_button-button_text_wrapper-left { 
         padding-left: 3%;
     }
     
@@ -126,5 +127,14 @@
         padding: 0 21.59% 0 10.76%;
     }
 
+    .title_text_button-text > p:nth-child(1) {
+        margin-bottom: -6px;
+        padding-right: 0px;
+    }
+
+    .title_text_button-text > p:nth-child(2) {
+        margin-bottom: 0px;
+        padding-right: 0px;
+    }
 
 }
