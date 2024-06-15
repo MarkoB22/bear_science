@@ -28,7 +28,12 @@
 
 
     {% if section.settings.r_text or section.settings.button_text %}
-        <div class="title_text_button-button_text_wrapper-{{ section.settings.title_position }}" style="padding-left: {{ section.settings.text_padding }}%;">
+        <style>
+            .desktop-padding {
+              --desktop-padding: {{ section.settings.text_padding }}%;
+            }
+        </style>  
+        <div class="title_text_button-button_text_wrapper-{{ section.settings.title_position }} desktop-padding">
 
             {% if section.settings.r_text %}
             <div class="title_text_button-text {{ section.settings.text_size }} {{ section.settings.text_line_height }} {{ section.settings.text_weight }}">
