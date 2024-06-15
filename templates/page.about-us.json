@@ -9,6 +9,7 @@
         "title_position": "left",
         "title_size": "h1",
         "text_size": "h19",
+        "text_padding": 19,
         "text_line_height": "lh-sm",
         "text_weight": "f_light",
         "r_text": "<p><strong>Welcome to Bear-Science!<\/strong> <\/p><p>Your trusted partner on the path to a healthier, more fulfilling and, above all, longer life <\/p>",
@@ -19,6 +20,7 @@
     "about_us_J6LWfm": {
       "type": "about-us",
       "settings": {
+        "header_title": "Header Title"
       }
     }
   },
