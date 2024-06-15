@@ -17,6 +17,54 @@
         "button_text_arrow": ""
       }
     },
+    "scrolling_text_bzxxih": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_L4Jrea": {
+          "type": "text",
+          "settings": {
+            "text": "OUR MISSION FOR YOUR HEALTH AND LONGEVITY",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "text_NCQGbV": {
+          "type": "text",
+          "settings": {
+            "text": "OUR MISSION FOR YOUR HEALTH AND LONGEVITY",
+            "link": "",
+            "outline_text": false
+          }
+        },
+        "text_LzpkWD": {
+          "type": "text",
+          "settings": {
+            "text": "OUR MISSION FOR YOUR HEALTH AND LONGEVITY",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_L4Jrea",
+        "text_NCQGbV",
+        "text_LzpkWD"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "full_width": true,
+        "direction": "left",
+        "speed": "30s",
+        "text_uppercase": false,
+        "image_size": "large",
+        "color_bg": "#f5f3ef",
+        "color_text": "#151515",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
     "about_us_J6LWfm": {
       "type": "about-us",
       "settings": {
@@ -26,6 +74,7 @@
   },
   "order": [
     "title_text_button_rUXXjj",
+    "scrolling_text_bzxxih",
     "about_us_J6LWfm"
   ]
 }
