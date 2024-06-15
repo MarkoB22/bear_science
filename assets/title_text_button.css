@@ -59,6 +59,10 @@
     margin-right: 8px;
 }
 
+.title_text_button-button_text_wrapper-left { 
+    padding-left: 0% !important;
+}
+
 @media print, screen and (min-width: 1025px) {
     .title_text_button-wrapper.title_position-left  {
         padding: 94px 8.889%;
