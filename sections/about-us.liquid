@@ -1,19 +1,39 @@
 {{- 'about-us.css' | asset_url | stylesheet_tag -}}
-<div class="about_us_header">
-    {{ section.settings.header_title }}
-</div>
 <div class="about_us_wrapper">
-    
+
+  <div class="about_us_side_lines">
+    {%- if section.settings.left_side_image != blank -%}
+      <div class="about_us_left_line">
+        {% assign image = section.settings.left_side_image %}
+        {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+        {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
+      </div>
+    {%- endif -%}
+
+    {%- if section.settings.right_side_image != blank -%}
+      <div class="about_us_right_line">
+        {% assign image = section.settings.right_side_image %}
+        {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
+        {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
+      </div>
+    {%- endif -%}
+
+  </div>
+
 </div>
 {% schema %}
 {
     "name": "About Us",
     "settings": [
             {
-                "type": "text",
-                "id": "header_title",
-                "label": "Header Title",
-                "default": "Header Title"
+              "type": "image_picker",
+              "id": "left_side_image",
+              "label": "Left Side Line"
+            },
+            {
+              "type": "image_picker",
+              "id": "right_side_image",
+              "label": "Right Side Line"
             }
         ],
     "presets": [
