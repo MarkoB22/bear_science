@@ -28,6 +28,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    color: #040404;
 }
 
 .about_us_title_first  > p,
@@ -47,7 +48,7 @@
 .about_us_title_second {
     padding-bottom: 32px;
     margin-bottom: 32px;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid #6D7E60;
     font-weight: 600 !important;
 }
 
@@ -68,7 +69,22 @@
 }
 
 
+@media print, screen and (min-width: 1025px) {
 
+    .about_us_wrapper {
+        padding: 124px 8.88%;
+    }
+
+    .about_us_left_line,
+    .about_us_right_line {
+        width: 15.2%;
+    }
+
+    .about_us_text_wrapper {
+        padding: 0 10.56%;
+    }
+    
+}
 
 
 
