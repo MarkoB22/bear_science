@@ -1,22 +1,29 @@
 {{- 'about-us.css' | asset_url | stylesheet_tag -}}
 <div class="about_us_wrapper">
-
-  <div class="about_us_side_lines">
-    {%- if section.settings.left_side_image != blank -%}
-      <div class="about_us_left_line">
-        {% assign image = section.settings.left_side_image %}
-        {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
-        {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
-      </div>
-    {%- endif -%}
-
-    {%- if section.settings.right_side_image != blank -%}
-      <div class="about_us_right_line">
-        {% assign image = section.settings.right_side_image %}
-        {% assign master_width = image.src.width | append: 'x' | append: image.src.height %}
-        {%- render 'responsive-image', image: image, sizes: master_width, retina: 1 -%}
-      </div>
-    {%- endif -%}
+  
+  <div class="about_us_rectangle"></div>
+  <div class="about_us_text_wrapper">
+    <div class="faq_main_title_first h11 lh-l f_light">
+      {{ block.settings.text_1 }}
+    </div>
+    <div class="faq_main_title_second h11 lh-l f_light">
+      {{ block.settings.text_2 }}
+    </div>
+    <div class="faq_main_title_third h11 lh-l f_light">
+      {{ block.settings.text_3 }}
+    </div>
+    <div class="faq_main_title_fourth h11 lh-l f_light">
+      {{ block.settings.text_4 }}
+    </div>
+    <div class="faq_main_title_fifth h11 lh-l f_light">
+      {{ block.settings.text_5 }}
+    </div>
+    <div class="faq_main_title_sixth h11 lh-l f_light">
+      {{ block.settings.text_6 }}
+    </div>
+    <div class="faq_main_title_seventh h11 lh-l f_light">
+      {{ block.settings.text_7 }}
+    </div>
 
   </div>
 
@@ -25,16 +32,48 @@
 {
     "name": "About Us",
     "settings": [
-            {
-              "type": "image_picker",
-              "id": "left_side_image",
-              "label": "Left Side Line"
-            },
-            {
-              "type": "image_picker",
-              "id": "right_side_image",
-              "label": "Right Side Line"
-            }
+      {
+          "type": "richtext",
+          "id": "text_1",
+          "label": "Text",
+          "default": "<p>Text text text.</p>"
+      },
+      {
+          "type": "richtext",
+          "id": "text_2",
+          "label": "Text",
+          "default": "<p>Text text text.</p>"
+      },
+      {
+          "type": "richtext",
+          "id": "text_3",
+          "label": "Text",
+          "default": "<p>Text text text.</p>"
+      },
+      {
+          "type": "richtext",
+          "id": "text_4",
+          "label": "Text",
+          "default": "<p>Text text text.</p>"
+      },
+      {
+          "type": "richtext",
+          "id": "text_5",
+          "label": "Text",
+          "default": "<p>Text text text.</p>"
+      },
+      {
+          "type": "richtext",
+          "id": "text_6",
+          "label": "Text",
+          "default": "<p>Text text text.</p>"
+      },
+      {
+          "type": "richtext",
+          "id": "text_7",
+          "label": "Text",
+          "default": "<p>Text text text.</p>"
+      }
         ],
     "presets": [
       {

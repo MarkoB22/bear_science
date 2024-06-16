@@ -1,3 +1,17 @@
 .about_us_wrapper {
     padding: 68px 28px;
 }
+
+.about_us_rectangle {
+    height: 19.52%;
+    border: 2px solid #6D7E60;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all ease-in-out .6s;
+}
+
+.about_us_text_wrapper {
+    z-index: 100;
+}
