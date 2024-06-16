@@ -1,31 +1,47 @@
 {{- 'about-us.css' | asset_url | stylesheet_tag -}}
 <div class="about_us_wrapper">
   
-  <div class="about_us_rectangle"></div>
-  <div class="about_us_text_wrapper">
-    <div class="faq_main_title_first h11 lh-l f_light">
-      {{ block.settings.text_1 }}
-    </div>
-    <div class="faq_main_title_second h11 lh-l f_light">
-      {{ block.settings.text_2 }}
-    </div>
-    <div class="faq_main_title_third h11 lh-l f_light">
-      {{ block.settings.text_3 }}
-    </div>
-    <div class="faq_main_title_fourth h11 lh-l f_light">
-      {{ block.settings.text_4 }}
-    </div>
-    <div class="faq_main_title_fifth h11 lh-l f_light">
-      {{ block.settings.text_5 }}
-    </div>
-    <div class="faq_main_title_sixth h11 lh-l f_light">
-      {{ block.settings.text_6 }}
-    </div>
-    <div class="faq_main_title_seventh h11 lh-l f_light">
-      {{ block.settings.text_7 }}
-    </div>
+  <div class="about_us_left_line"></div>
 
+  <div class="about_us_text_wrapper">
+    {% if section.settings.text_1 != blank %}
+      <div class="faq_main_title_first h11 lh-l f_light">
+        {{ section.settings.text_1 }}
+      </div>
+    {% endif %} 
+    {% if section.settings.text_2 != blank %}
+      <div class="faq_main_title_second h11 lh-l f_light">
+        {{ section.settings.text_2 }}
+      </div>
+    {% endif %}
+    {% if section.settings.text_3 != blank %}
+      <div class="faq_main_title_third h11 lh-l f_light">
+        {{ section.settings.text_3 }}
+      </div>
+    {% endif %}
+    {% if section.settings.text_4 != blank %}
+      <div class="faq_main_title_fourth h11 lh-l f_light">
+        {{ section.settings.text_4 }}
+      </div>
+    {% endif %}
+    {% if section.settings.text_5 != blank %}
+      <div class="faq_main_title_fifth h11 lh-l f_light">
+        {{ section.settings.text_5 }}
+      </div>
+    {% endif %}
+    {% if section.settings.text_6 != blank %}
+      <div class="faq_main_title_sixth h11 lh-l f_light">
+        {{ section.settings.text_6 }}
+      </div>
+    {% endif %}
+    {% if section.settings.text_7 != blank %}
+      <div class="faq_main_title_seventh h11 lh-l f_light">
+        {{ section.settings.text_7 }}
+      </div>
+    {% endif %}
   </div>
+
+  <div class="about_us_right_line"></div>
 
 </div>
 {% schema %}
@@ -35,43 +51,43 @@
       {
           "type": "richtext",
           "id": "text_1",
-          "label": "Text",
+          "label": "Text 1",
           "default": "<p>Text text text.</p>"
       },
       {
           "type": "richtext",
           "id": "text_2",
-          "label": "Text",
+          "label": "Text 2",
           "default": "<p>Text text text.</p>"
       },
       {
           "type": "richtext",
           "id": "text_3",
-          "label": "Text",
+          "label": "Text 3",
           "default": "<p>Text text text.</p>"
       },
       {
           "type": "richtext",
           "id": "text_4",
-          "label": "Text",
+          "label": "Text 4",
           "default": "<p>Text text text.</p>"
       },
       {
           "type": "richtext",
           "id": "text_5",
-          "label": "Text",
+          "label": "Text 5",
           "default": "<p>Text text text.</p>"
       },
       {
           "type": "richtext",
           "id": "text_6",
-          "label": "Text",
+          "label": "Text 6",
           "default": "<p>Text text text.</p>"
       },
       {
           "type": "richtext",
           "id": "text_7",
-          "label": "Text",
+          "label": "Text 7",
           "default": "<p>Text text text.</p>"
       }
         ],

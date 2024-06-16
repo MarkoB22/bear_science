@@ -1,16 +1,26 @@
 .about_us_wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     padding: 68px 28px;
 }
 
-.about_us_rectangle {
-    height: 19.52%;
-    border: 2px solid #6D7E60;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all ease-in-out .6s;
+.about_us_left_line {
+    width: 10.46px;
+    height: 2456px;
+    border-left: 2px solid #6D7E60;
+    border-top: 2px solid #6D7E60;
+    border-bottom: 2px solid #6D7E60;
 }
+
+.about_us_right_line {
+    width: 10.46px;
+    height: 2456px;
+    border-right: 2px solid #6D7E60;
+    border-top: 2px solid #6D7E60;
+    border-bottom: 2px solid #6D7E60;
+}
+
 
 .about_us_text_wrapper {
     z-index: 100;
