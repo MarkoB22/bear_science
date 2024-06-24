@@ -16,8 +16,8 @@
           "type": "text",
           "settings": {
             "icon": "shopify:\/\/shop_images\/Frame_328.png",
-            "heading": "Heading",
-            "text": "<p>Add your store address or<br\/>your store hours<\/p>"
+            "heading": "E-mail address",
+            "text": "<p><a href=\"mailto:info@vestur.de\" target=\"_blank\" title=\"mailto:info@vestur.de\">info@vestur.de<\/a><\/p>"
           }
         },
         "text_aUBkQz": {
