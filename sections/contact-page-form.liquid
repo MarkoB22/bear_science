@@ -19,7 +19,7 @@
 			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: false %}
 		</div>
 	</div>
-	<div class="row {% if text_first %}text-first{% endif %} align-center">
+	<div class="row {% if section.settings.text_first %}text-first{% endif %} testđ align-center">
 		<div class="small-12 medium-8 columns contact-form--form-column ">
 			{% form 'contact', class: form_class %}
 				{% if form.posted_successfully? %}
@@ -167,7 +167,7 @@
 				"type": "checkbox",
 				"id": "text_first",
 				"default": true,
-				"label": "Place text blocks first"
+				"label": "Place text blocks left"
 			},
 			{
         "type": "header",
