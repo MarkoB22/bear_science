@@ -23,15 +23,17 @@
         "text_aUBkQz": {
           "type": "text",
           "settings": {
-            "heading": "Heading",
-            "text": "<p>Add your store address or<br\/>your store hours<\/p>"
+            "icon": "shopify:\/\/shop_images\/Phone--Streamline-Plump.png",
+            "heading": "Telephone number",
+            "text": "<p>+49 (0)7152 9065 9928 <\/p>"
           }
         },
         "text_ELwyMW": {
           "type": "text",
           "settings": {
-            "heading": "Heading",
-            "text": "<p>Add your store address or<br\/>your store hours<\/p>"
+            "icon": "shopify:\/\/shop_images\/Building-Office--Streamline-Plump.png",
+            "heading": "Head Office",
+            "text": "<p>Eltinger Str. 5671229 Leonberg<\/p>"
           }
         }
       },
