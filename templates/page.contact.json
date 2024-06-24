@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "contact_page_form_NYHFa4": {
@@ -6,6 +15,7 @@
         "text_MUTfQP": {
           "type": "text",
           "settings": {
+            "icon": "shopify:\/\/shop_images\/Frame_328.png",
             "heading": "Heading",
             "text": "<p>Add your store address or<br\/>your store hours<\/p>"
           }
@@ -34,6 +44,9 @@
         "heading": "CONTACT DETAILS",
         "description": "",
         "show_phone_number": false,
+        "background_color": "#6D7E60",
+        "text_color": "#FFFFFF",
+        "text_first": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
