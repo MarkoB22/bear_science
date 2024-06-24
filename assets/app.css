@@ -329,7 +329,6 @@ h6, .h6 {
   font-family: -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, helvetica, Ubuntu, roboto, noto, arial, sans-serif;
   font-style: normal;
   font-weight: 700;
-  color: var(--color-body);
   text-rendering: optimizeLegibility; }
   h1 small, .h1 small, .h1-large small, .h1-xlarge small,
   h2 small, .h2 small,
@@ -338,48 +337,42 @@ h6, .h6 {
   h5 small, .h5 small,
   h6 small, .h6 small {
     line-height: 0;
-    color: #cacaca; }
+ }
 
 h1, .h1, .h1-large, .h1-xlarge {
   font-size: 2.875rem;
   line-height: 1.45;
   margin-top: 0;
-  margin-bottom: 1.25rem; 
 }
 
 h2, .h2 {
   font-size: 2.5rem;
   line-height: 1.45;
   margin-top: 0;
-  margin-bottom: 1.25rem; 
 }
 
 h3, .h3 {
   font-size: 2.125rem;
   line-height: 1.45;
   margin-top: 0;
-  margin-bottom: 1.25rem; 
 }
 
 h4, .h4 {
   font-size: 1.75rem;
   line-height: 1.45;
   margin-top: 0;
-  margin-bottom: 1.25rem; 
 }
 
 h5, .h5 {
   font-size: 1.5rem;
   line-height: 1.45;
   margin-top: 0;
-  margin-bottom: 1.25rem; 
 }
 
 h6, .h6 {
   font-size: 1.125rem;
   line-height: 1.45;
   margin-top: 0;
-  margin-bottom: 1.25rem; 
 }
 
 a {

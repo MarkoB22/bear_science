@@ -14,8 +14,9 @@
 <style>
 .contact-page-form .section-header--content h2,
 .contact-page-form .contact-form-block,
-.contact-page-form label {
-	color: {{ section.settings.text_color }};
+.contact-page-form label,
+.contact-page-form .contact-form-block a {
+	color: {{ section.settings.text_color }} !important;
 }
 </style>
 
@@ -131,20 +132,20 @@
 				{% for block in section.blocks %}
 					{%- if block.type == 'text' -%}
 					<div class="contact-form-block-wrapper">
-						{%- if block.settings.image -%}
+						{%- if block.settings.icon -%}
 							<div class="contact-form-block-icon">
 								{%- liquid
-									assign master_width = block.settings.image.src.width | append: 'x' | append: block.settings.image.src.height
+									assign master_width = block.settings.icon.src.width | append: 'x' | append: block.settings.icon.src.height
 									assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
 									assign class = nil
 
 									-%}
-								{%- render 'responsive-image', image: image, sizes: width, class: class -%}
+								{%- render 'responsive-image', image: block.settings.icon, sizes: width, class: class -%}
 							</div>
 						{% endif %}
 						<div class="contact-form-block h11" {{ block.shopify_attributes }}>
 							<strong>{{ block.settings.heading }}</strong>
-							<div class="rte">
+							<div class="rte h6 f_regular lh-l block-text">
 								{{ block.settings.text }}
 							</div>
 						</div>
