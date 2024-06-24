@@ -10,6 +10,15 @@
 		assign form_class = 'contact-form--has-no-blocks'
 	endif
 -%}
+
+<style>
+.contact-page-form .section-header--content h2,
+.contact-page-form .contact-form-block,
+.contact-page-form label {
+	color: {{ section.settings.text_color }};
+}
+</style>
+
 {{- 'contact-form.css' | asset_url | stylesheet_tag -}}
 {{- 'contact-page-form.css' | asset_url | stylesheet_tag -}}
 <div class="contact-form contact-page-form section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}"
@@ -19,7 +28,7 @@
 			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: false %}
 		</div>
 	</div>
-	<div class="row {% if section.settings.text_first %}text-first{% endif %} testđ align-center">
+	<div class="row {% if section.settings.text_first %}text-first{% endif %} align-center"> 
 		<div class="small-12 medium-8 columns contact-form--form-column ">
 			{% form 'contact', class: form_class %}
 				{% if form.posted_successfully? %}
@@ -35,7 +44,7 @@
 					<div class="small-12 medium-6 columns">
 						<div class="field">
 							<input type="text" id="ContactFormName" name="contact[name]" class="full" placeholder="{{ 'sections.contact.form.name' | t | escape }}">
-							<label for="ContactFormName">{{ 'sections.contact.form.name' | t }}</label>
+							<label class="h11 lh-l" for="ContactFormName">{{ 'sections.contact.form.name' | t }}</label>
 						</div>
 					</div>
 					<div class="small-12 medium-6 columns">
@@ -49,14 +58,14 @@
 								pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,10})(\]?)$"
 								required
 							>
-							<label for="ContactFormEmail">{{ 'sections.contact.form.email' | t }}</label>
+							<label class="h11 lh-l" for="ContactFormEmail">{{ 'sections.contact.form.email' | t }}</label>
 						</div>
 					</div>
 					{%- if show_phone_number -%}
 					<div class="small-12 medium-12 columns">
 						<div class="field">
 							<input type="tel" id="ContactFormPhone" name="contact[phone]" class="full" placeholder="{{ 'sections.contact.form.phone' | t | escape }}">
-								<label for="ContactFormPhone">{{ 'sections.contact.form.phone' | t }}</label>
+								<label class="h11 lh-l" for="ContactFormPhone">{{ 'sections.contact.form.phone' | t }}</label>
 						</div>
 					</div>
 					{%- endif -%}
@@ -74,11 +83,11 @@
 							<div class="small-12 columns">
 								<div class="field">
 								{%- if block.settings.use_long_text -%}
-									<textarea id="{{ block.id }}" name="contact[{{ field_title | escape }}]" cols="30" rows="10" class="full" aria-label="{{ block.settings.title | escape }}" placeholder="{{ block.settings.title | escape }}" {% if block.settings.is_required %}required{% endif %}></textarea>
-									<label for="{{ block.id }}">{{ block.settings.title | escape }}</label>
+									<textarea id="{{ block.id }}" name="contact[{{ field_title | escape }}]" cols="30" rows="1" class="full" aria-label="{{ block.settings.title | escape }}" placeholder="{{ block.settings.title | escape }}" {% if block.settings.is_required %}required{% endif %}></textarea>
+									<label class="h11 lh-l" for="{{ block.id }}">{{ block.settings.title | escape }}</label>
 								{%- else -%}
 									<input id="{{ block.id }}" type="text" class="full" name="contact[{{ field_title | escape }}]" aria-label="{{ block.settings.title | escape }}" placeholder="{{ block.settings.title | escape }}" {% if block.settings.is_required %}required{% endif %}>
-									<label for="{{ block.id }}">{{ block.settings.title | escape }}</label>
+									<label class="h11 lh-l" for="{{ block.id }}">{{ block.settings.title | escape }}</label>
 								{%- endif -%}
 								</div>
 							</div>
@@ -99,7 +108,7 @@
 											<option value="{{ trim_value | escape }}">{{ trim_value | escape }}</option>
 										{%- endfor -%}
 									</select>
-									<label for="{{ block.id }}">{{ block.settings.title | escape }}</label>
+									<label class="h11 lh-l" for="{{ block.id }}">{{ block.settings.title | escape }}</label>
 								</div>
 							</div>
 							{%- assign field_index = field_index | plus: 1 -%}
@@ -107,12 +116,12 @@
 					{%- endfor -%}
 					<div class="small-12 medium-12 columns">
 						<div class="field">
-							<textarea rows="10" id="ContactFormMessage" name="contact[body]" class="full" placeholder="{{ 'sections.contact.form.comment' | t | escape }}"></textarea>
-							<label for="ContactFormMessage">{{ 'sections.contact.form.comment' | t }}</label>
+							<textarea rows="1" id="ContactFormMessage" name="contact[body]" class="full" placeholder="{{ 'sections.contact.form.comment' | t | escape }}"></textarea>
+							<label class="h11 lh-l" for="ContactFormMessage">{{ 'sections.contact.form.comment' | t }}</label>
 						</div>
 					</div>
 						<div class="small-12 medium-12 columns">
-						<button type="submit" class="button full"><span>{{ 'sections.contact.form.send' | t }}</span></button>
+						<button type="submit" class="button full button_type5"><span>{{ 'sections.contact.form.send' | t }}{% render 'svg-icons' with 'button_arrow_2' %}</span></button>
 					</div>
 				</div>
 			{% endform %}
@@ -121,10 +130,23 @@
 			<div class="small-12 medium-4 columns contact-form--text-column">
 				{% for block in section.blocks %}
 					{%- if block.type == 'text' -%}
-					<div class="contact-form-block" {{ block.shopify_attributes }}>
-						<strong>{{ block.settings.heading }}</strong>
-						<div class="rte">
-							{{ block.settings.text }}
+					<div class="contact-form-block-wrapper">
+						{%- if block.settings.image -%}
+							<div class="contact-form-block-icon">
+								{%- liquid
+									assign master_width = block.settings.image.src.width | append: 'x' | append: block.settings.image.src.height
+									assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+									assign class = nil
+
+									-%}
+								{%- render 'responsive-image', image: image, sizes: width, class: class -%}
+							</div>
+						{% endif %}
+						<div class="contact-form-block h11" {{ block.shopify_attributes }}>
+							<strong>{{ block.settings.heading }}</strong>
+							<div class="rte">
+								{{ block.settings.text }}
+							</div>
 						</div>
 					</div>
 					{%- endif -%}
@@ -164,15 +186,21 @@
 				"default": "#6D7E60"
 			},
 			{
+				"type": "color",
+				"id": "text_color",
+				"label": "Text color",
+				"default": "#FFFFFF"
+			},
+			{
 				"type": "checkbox",
 				"id": "text_first",
 				"default": true,
 				"label": "Place text blocks left"
 			},
 			{
-        "type": "header",
-        "content": "Spacing"
-      },
+				"type": "header",
+				"content": "Spacing"
+			},
 			{
 				"type": "checkbox",
 				"id": "disable_top_spacing",
@@ -192,6 +220,11 @@
         "name": "Text",
         "settings": [
 					{
+						"type": "image_picker",
+						"id": "icon",
+						"label": "Icon"
+					},
+					{
 						"type": "text",
 						"id": "heading",
 						"label": "Heading",
@@ -205,7 +238,7 @@
 					}
         ]
       },
-			{
+		{
 	      "type": "text_field",
 	      "name": "Text field",
 	      "settings": [

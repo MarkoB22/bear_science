@@ -37,4 +37,37 @@
         display: inline-block;
         white-space: nowrap;
     }
+
+    #contact_form input,
+    #contact_form textarea {
+        border: none;
+        border-bottom: 1px solid white;
+        padding: 13px 10px;
+        margin-bottom: 32px;
+        display: block;
+    }
+    
+
+    #contact_form textarea {
+        min-height: 51px;
+    }
+
+    #contact_form .button {
+        display: flex;
+        align-items: center;
+    }
+
+    #contact_form .button svg {
+        width: 24px;
+        height: 24px;
+    }
+
+    .contact-form--form-column,
+    .contact-form--text-column {
+        padding: 19px;
+    }
+
+    .contact-page-form .label {
+        padding: 10px 12px;
+    }
 }
