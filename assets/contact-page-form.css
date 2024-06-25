@@ -5,6 +5,10 @@
         flex-direction: column-reverse;
     }
 
+    .contact-page-form-header-wrapper {
+        padding: 0;
+    }
+
     .section-header--content {
         width: calc(100% - 134px)
     }
