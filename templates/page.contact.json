@@ -9,6 +9,18 @@
 */
 {
   "sections": {
+    "about_us_3xn9qn": {
+      "type": "about-us",
+      "settings": {
+        "text_1": "",
+        "text_2": "<p>Welcome to our help and contact page! <\/p>",
+        "text_3": "<p>We are here to help you with any questions, concerns or suggestions in the area of health and longevity. Our dedicated team is committed to providing you with high quality support and providing comprehensive answers to your concerns.<\/p>",
+        "text_4": "<p>Text text text.<\/p>",
+        "text_5": "<p>Text text text.<\/p>",
+        "text_6": "<p>Text text text.<\/p>",
+        "text_7": "<p>Text text text.<\/p>"
+      }
+    },
     "contact_page_form_NYHFa4": {
       "type": "contact-page-form",
       "blocks": {
@@ -45,9 +57,10 @@
       "settings": {
         "heading": "CONTACT DETAILS",
         "description": "",
+        "cta": "Send us a message",
         "show_phone_number": false,
-        "background_color": "#6D7E60",
-        "text_color": "#FFFFFF",
+        "background_color": "#6d7e60",
+        "text_color": "#ffffff",
         "text_first": true,
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
@@ -55,6 +68,7 @@
     }
   },
   "order": [
+    "about_us_3xn9qn",
     "contact_page_form_NYHFa4"
   ]
 }
