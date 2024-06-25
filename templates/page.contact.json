@@ -9,16 +9,16 @@
 */
 {
   "sections": {
-    "about_us_3xn9qn": {
-      "type": "about-us",
+    "contact_us_text_QTPwJE": {
+      "type": "contact-us-text",
       "settings": {
-        "text_1": "<p>We are here to help you with any questions, concerns or suggestions in the area of health and longevity. Our dedicated team is committed to providing you with high quality support and providing comprehensive answers to your concerns.<\/p>",
         "text_2": "<p>Welcome to our help and contact page! <\/p>",
-        "text_3": "<p>We are here to help you with any questions, concerns or suggestions in the area of health and longevity. Our dedicated team is committed to providing you with high quality support and providing comprehensive answers to your concerns.<\/p>",
-        "text_4": "<p>Text text text.<\/p>",
-        "text_5": "<p>Text text text.<\/p>",
-        "text_6": "<p>Text text text.<\/p>",
-        "text_7": "<p>Text text text.<\/p>"
+        "text_1": "<p>We are here to help you with any questions, concerns or suggestions in the area of health and longevity. Our dedicated team is committed to providing you with high quality support and providing comprehensive answers to your concerns.<\/p>",
+        "text_3": "<p>At Bear-Science it is particularly important to us that you feel well looked after and have positive experiences. We are therefore happy to assist you in all matters. Whether you need information about our products, services, research projects, or simply want to provide feedback, we are just a message or call away.<\/p>",
+        "text_4": "<p>Our support options include different communication channels so you can choose the one that is most convenient for you. You can reach us using the contact form on our website, or contact us by email or telephone. Our team will process your request as quickly as possible and provide you with professional and friendly help.<\/p>",
+        "text_5": "<p>We are aware that everyone has individual needs and questions. We are therefore committed to offering tailored solutions and addressing your specific concerns. Our experienced staff is knowledgeable and available to help you address your longevity challenges.<\/p>",
+        "text_6": "<p>Your opinion is very important to us! If you have any suggestions, ideas or feedback, please do not hesitate to let us know. We value your commitment and are always striving to improve and optimize our service.<\/p>",
+        "text_7": "<p>It is important to us that your experience with Bear Science is positive and that you have the confidence that we will support you with your concerns. You can rely on our team to carefully answer your questions and support you in your goals for a healthy, longer life.<br\/><br\/>Please feel free to contact us. We look forward to assisting you and answering your questions. Your well-being is our priority.<\/p>"
       }
     },
     "contact_page_form_NYHFa4": {
@@ -68,7 +68,7 @@
     }
   },
   "order": [
-    "about_us_3xn9qn",
+    "contact_us_text_QTPwJE",
     "contact_page_form_NYHFa4"
   ]
 }
