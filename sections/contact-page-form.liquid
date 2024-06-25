@@ -12,6 +12,7 @@
 -%}
 
 <style>
+.contact-page-form,
 .contact-page-form .section-header--content h2,
 .contact-page-form .contact-form-block,
 .contact-page-form label,
@@ -34,10 +35,10 @@
 		</div>
 	</div>
 	<div class="row contact_form_text-wrapper {% if section.settings.text_first %}text-first{% endif %} align-center"> 
-		<div class="call_to_action">
-			{{ section.settings.cta }}
-		</div>
 		<div class="small-12 medium-8 columns contact-form--form-column">
+			<div class="call_to_action">
+				{{ section.settings.cta }}
+			</div>
 			{% form 'contact', class: form_class %}
 				{% if form.posted_successfully? %}
 				<div class="form-notification success">

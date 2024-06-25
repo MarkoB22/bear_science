@@ -38,12 +38,17 @@
         white-space: nowrap;
     }
 
+    .contact-form--text-column strong {
+        line-height: 1.5;
+        margin-bottom: 18px;
+    }
+
     #contact_form input,
     #contact_form textarea {
         border: none;
         border-bottom: 1px solid white;
         padding: 13px 10px;
-        margin-bottom: 32px;
+        margin-bottom: 48px;
         display: block;
     }
     
@@ -52,17 +57,19 @@
         min-height: 51px;
     }
 
-    #contact_form .button {
+    #contact_form .button_type5 {
         display: flex;
         align-items: center;
+        justify-content: center;
+        width: 100%;
     }
 
-    #contact_form .button svg {
+    #contact_form .button_type5 svg {
         width: 24px;
         height: 24px;
     }
 
-    #contact_form .button span {
+    #contact_form .button_type5 span {
         display: flex;
         align-items: center;
     }
@@ -79,7 +86,7 @@
 
     .contact-form-block-wrapper {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         gap: 24px;
     }
 
@@ -115,6 +122,13 @@
 
     .divider {
         display: none;
+    }
+
+    .call_to_action {
+        font-size: 32px;
+        font-family: 'Montserrat 400' !important;
+        line-height: 1.5;
+        margin-bottom: 48px;
     }
 
     @media print, screen and (min-width: 1025px) {
@@ -161,10 +175,38 @@
 
         .contact_form-wrapper {
             flex-direction: column;
+            margin: 0;
         }
 
         .contact_form-wrapper .columns {
             max-width: 100%;
+            padding: 0;
+            margin-left: auto;
+            min-width: 515px;
+            width: calc(100% - 107px);
+        }
+
+        .contact-form--text-column,
+        .contact-form--form-column {
+            padding: 0;
+        }
+
+        .call_to_action {
+            font-size: 48px;
+            margin-bottom: 90px;
+            max-width: 100%;
+            padding: 0;
+            margin-left: auto;
+            min-width: 515px;
+            width: calc(100% - 107px);
+        }
+
+        #contact_form textarea {
+            margin-bottom: 90px;
+        }
+
+        #contact_form input {
+            min-height: 60px;
         }
     }
 }
