@@ -1,4 +1,9 @@
 .contact_us-variation {
+    display: flex;
+    width: calc(100% - 56px);
+    margin: 0 auto;
+    padding: 68px 0;
+
     .about_us_wrapper {
         display: flex;
         flex-direction: row;
@@ -44,12 +49,12 @@
 
     .about_us_title_first {
         margin-bottom: 32px;
+        padding-bottom: 32px;
+        border-bottom: 1px solid #6D7E60;
     }
 
     .about_us_title_second {
-        padding-bottom: 32px;
-        margin-bottom: 32px;
-        border-bottom: 1px solid #6D7E60;
+        margin-bottom: 48px;
         font-weight: 600 !important;
     }
 
@@ -68,17 +73,24 @@
     .about_us_title_sixth {
         margin-bottom: 32px;
     }  
+
+    .about_us_title_seventh {
+        margin-bottom: 32px;
+    }  
 }
 
 @media print, screen and (min-width: 1025px) {
     .contact_us-variation {
+        width: calc(100% - 256px);
+        padding: 124px 0;
+
         .about_us_wrapper {
             padding: 124px 8.88%;
         }
 
         .about_us_left_line,
         .about_us_right_line {
-            width: 15.2%;
+            width: 17.85%;
         }
 
         .about_us_text_wrapper {

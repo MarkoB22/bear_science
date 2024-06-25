@@ -39,6 +39,11 @@
         {{ section.settings.text_7 }}
       </div>
     {% endif %}
+    {% if section.settings.text_8 != blank %}
+        <div class="about_us_title_eight h11 lh-l f_light">
+          {{ section.settings.text_8 }}
+        </div>
+    {% endif %}
   </div>
 
   <div class="about_us_right_line"></div>
@@ -88,6 +93,12 @@
           "type": "richtext",
           "id": "text_7",
           "label": "Text 6",
+          "default": "<p>Text text text.</p>"
+      },
+      {
+          "type": "richtext",
+          "id": "text_8",
+          "label": "Text 7",
           "default": "<p>Text text text.</p>"
       }
         ],
