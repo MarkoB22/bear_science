@@ -59,6 +59,28 @@
     margin-right: 8px;
 }
 
+.contact_us_page-variation {
+    .title_text_button-title-wrapper  {
+        margin-bottom: 38px;
+    }
+
+    .title_text_button-title {
+        padding-left: 2.396%;
+    }
+
+    .title_text_button-text {
+        margin-bottom: 0;
+    }
+
+    .title_text_button-text p {
+        padding-right: 0;
+        line-height: 1.5;
+        margin-bottom: 0;
+    }
+}
+
+
+
 @media print, screen and (min-width: 1025px) {
     .title_text_button-wrapper.title_position-left  {
         padding: 94px 8.889%;
@@ -139,6 +161,14 @@
 
     .desktop-padding {
         padding-left: var(--desktop-padding, 0%); /* Default value */
-      }
+    }
+
+    .contact_us_page-variation {
+        align-items: center;
+
+        .title_text_button-title-wrapper {
+            margin-bottom: 0;
+        }
+    }
 
 }

@@ -1,6 +1,5 @@
 {{- 'title_text_button.css' | asset_url | stylesheet_tag -}}
-<div class="title_text_button-wrapper title_position-{{ section.settings.title_position }}">
-
+<div class="title_text_button-wrapper title_position-{{ section.settings.title_position }} {% if template == 'page.contact' %}contact_us_page-variation{% endif %}">
     {% if section.settings.title_upper %}
     <div class="title_text_button-title-wrapper title_position-{{ section.settings.title_position }} {{ section.settings.title_size }} lh-l f_light">
         <div class="title_text_button-title">
