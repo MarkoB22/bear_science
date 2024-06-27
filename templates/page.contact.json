@@ -83,11 +83,21 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
+    },
+    "newsletter_signup_EeyxQQ": {
+      "type": "newsletter-signup",
+      "settings": {
+        "text": "<p>Text text text. Text text text text.<\/p>",
+        "email_text": "Email Address",
+        "button_link": "",
+        "button_text_arrow": "Button text"
+      }
     }
   },
   "order": [
     "title_text_button_Ka3t8k",
     "contact_us_text_QTPwJE",
-    "contact_page_form_NYHFa4"
+    "contact_page_form_NYHFa4",
+    "newsletter_signup_EeyxQQ"
   ]
 }
