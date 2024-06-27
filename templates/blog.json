@@ -9,8 +9,26 @@
 */
 {
   "sections": {
+    "title_text_button_LCXMNP": {
+      "type": "title_text_button",
+      "settings": {
+        "title_upper": "BLOG",
+        "title_middle": "",
+        "title_lower": "",
+        "title_position": "left",
+        "title_size": "h20",
+        "text_size": "h19",
+        "text_padding": 9,
+        "text_line_height": "lh-sm",
+        "text_weight": "f_regular",
+        "r_text": "<p>Horem ipsum dolor sit amet, consectetur adipiscing elit<\/p>",
+        "button_link": "",
+        "button_text_arrow": ""
+      }
+    },
     "main-blog-header": {
       "type": "main-blog-header",
+      "disabled": true,
       "settings": {
         "heading": "Blog posts",
         "description": "<p>Add a short description for your blog.<\/p>",
@@ -27,6 +45,7 @@
     }
   },
   "order": [
+    "title_text_button_LCXMNP",
     "main-blog-header",
     "main-blog"
   ]
