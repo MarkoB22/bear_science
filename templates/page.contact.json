@@ -12,16 +12,16 @@
     "title_text_button_Ka3t8k": {
       "type": "title_text_button",
       "settings": {
-        "title_upper": "ABOUT",
+        "title_upper": "CONTACT",
         "title_middle": "US",
         "title_lower": "",
         "title_position": "left",
         "title_size": "h1",
-        "text_size": "h11",
+        "text_size": "h2",
         "text_padding": 28,
         "text_line_height": "lh-sm",
-        "text_weight": "f_light",
-        "r_text": "<p><strong>Welcome to Bear-Science! <\/strong><br\/><br\/>Your trusted partner on the path to a healthier, more fulfilling and, above all, longer life <\/p>",
+        "text_weight": "f_bold",
+        "r_text": "<p>We are here for you! <\/p>",
         "button_link": "",
         "button_text_arrow": ""
       }
