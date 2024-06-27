@@ -54,6 +54,8 @@
         padding: 13px 10px;
         margin-bottom: 48px;
         display: block;
+        font-size: 24px;
+        color: white;
     }
     
 
@@ -132,7 +134,23 @@
         font-size: 32px;
         font-family: 'Montserrat 400' !important;
         line-height: 1.5;
-        margin-bottom: 48px;
+        margin-bottom: 40px;
+        padding-top: 8px;
+    }
+
+    label {
+        background: #6d7e60 !important;
+        margin-top: -1px;
+        line-height: 1.5;
+        font-size: 18px;
+    }
+
+    .message-label {
+        border-bottom: none;
+    }
+
+    .contact_form-wrapper {
+        padding-top: 8px !important;
     }
 
     @media print, screen and (min-width: 1025px) {
@@ -208,6 +226,20 @@
         }
 
         #contact_form input {
+            min-height: 60px;
+        }
+
+        #contact_form input,
+        #contact_form textarea {
+            font-size: 32px;
+        }
+
+        label {
+            border-bottom: none;
+            font-size: 24px;
+        }
+
+        #contact_form textarea {
             min-height: 60px;
         }
     }

@@ -126,11 +126,11 @@
 					<div class="small-12 medium-12 columns">
 						<div class="field">
 							<textarea rows="1" id="ContactFormMessage" name="contact[body]" class="full" placeholder="{{ 'sections.contact.form.comment' | t | escape }}"></textarea>
-							<label class="h11 lh-l" for="ContactFormMessage">{{ 'sections.contact.form.comment' | t }}</label>
+							<label class="h11 lh-l message-label" for="ContactFormMessage">{{ 'sections.contact.form.comment' | t }}</label>
 						</div>
 					</div>
 						<div class="small-12 medium-12 columns">
-						<button type="submit" class="button full button_type5"><span>{{ 'sections.contact.form.send' | t }}{% render 'svg-icons' with 'button_arrow_2' %}</span></button>
+						<button type="submit" class="full button_type5 h11"><span>{{ 'sections.contact.form.send' | t }}{% render 'svg-icons' with 'button_arrow_2' %}</span></button>
 					</div>
 				</div>
 			{% endform %}

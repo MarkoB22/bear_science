@@ -40,6 +40,10 @@
         padding-top: 0;
     }
 
+    .title_icons-title {
+        font-size: 32px;
+    }
+
     .title_icons-icon {
         margin-bottom: 0;
     }
