@@ -84,13 +84,14 @@
         "disable_bottom_spacing": true
       }
     },
-    "newsletter_signup_EeyxQQ": {
-      "type": "newsletter-signup",
+    "email_signup_h7hwmC": {
+      "type": "email-signup",
       "settings": {
-        "text": "<p>Text text text. Text text text text.<\/p>",
-        "email_text": "Email Address",
+        "text": "<p>Sign up for the newsletter and receive a <strong>10€<\/strong> voucher as a thank you!<\/p>",
+        "email_text": "E-mail Address",
         "button_link": "",
-        "button_text_arrow": "Button text"
+        "button_text_arrow": "Send",
+        "image": "shopify:\/\/shop_images\/Logo_-_Header.png"
       }
     }
   },
@@ -98,6 +99,6 @@
     "title_text_button_Ka3t8k",
     "contact_us_text_QTPwJE",
     "contact_page_form_NYHFa4",
-    "newsletter_signup_EeyxQQ"
+    "email_signup_h7hwmC"
   ]
 }
