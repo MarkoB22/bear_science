@@ -26,6 +26,36 @@
         "button_text_arrow": ""
       }
     },
+    "scrolling_text_CcNyVa": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_LwHRHP": {
+          "type": "text",
+          "settings": {
+            "text": "OUR MISSION FOR YOUR HEALTH AND LONGEVITY",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_LwHRHP"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "full_width": true,
+        "direction": "left",
+        "speed": "20s",
+        "text_uppercase": false,
+        "image_size": "large",
+        "color_bg": "#f5f3ef",
+        "color_text": "#151515",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "main-blog-header": {
       "type": "main-blog-header",
       "disabled": true,
@@ -46,6 +76,7 @@
   },
   "order": [
     "title_text_button_LCXMNP",
+    "scrolling_text_CcNyVa",
     "main-blog-header",
     "main-blog"
   ]
