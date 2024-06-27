@@ -9,6 +9,23 @@
 */
 {
   "sections": {
+    "title_text_button_Ka3t8k": {
+      "type": "title_text_button",
+      "settings": {
+        "title_upper": "ABOUT",
+        "title_middle": "US",
+        "title_lower": "",
+        "title_position": "left",
+        "title_size": "h1",
+        "text_size": "h11",
+        "text_padding": 28,
+        "text_line_height": "lh-sm",
+        "text_weight": "f_light",
+        "r_text": "<p><strong>Welcome to Bear-Science! <\/strong><br\/><br\/>Your trusted partner on the path to a healthier, more fulfilling and, above all, longer life <\/p>",
+        "button_link": "",
+        "button_text_arrow": ""
+      }
+    },
     "contact_us_text_QTPwJE": {
       "type": "contact-us-text",
       "settings": {
@@ -18,7 +35,8 @@
         "text_4": "<p>Our support options include different communication channels so you can choose the one that is most convenient for you. You can reach us using the contact form on our website, or contact us by email or telephone. Our team will process your request as quickly as possible and provide you with professional and friendly help.<\/p>",
         "text_5": "<p>We are aware that everyone has individual needs and questions. We are therefore committed to offering tailored solutions and addressing your specific concerns. Our experienced staff is knowledgeable and available to help you address your longevity challenges.<\/p>",
         "text_6": "<p>Your opinion is very important to us! If you have any suggestions, ideas or feedback, please do not hesitate to let us know. We value your commitment and are always striving to improve and optimize our service.<\/p>",
-        "text_7": "<p>It is important to us that your experience with Bear Science is positive and that you have the confidence that we will support you with your concerns. You can rely on our team to carefully answer your questions and support you in your goals for a healthy, longer life.<br\/><br\/>Please feel free to contact us. We look forward to assisting you and answering your questions. Your well-being is our priority.<\/p>"
+        "text_7": "<p>It is important to us that your experience with Bear Science is positive and that you have the confidence that we will support you with your concerns. You can rely on our team to carefully answer your questions and support you in your goals for a healthy, longer life.<br\/><br\/>Please feel free to contact us. We look forward to assisting you and answering your questions. Your well-being is our priority.<\/p>",
+        "text_8": "<p>Text text text.<\/p>"
       }
     },
     "contact_page_form_NYHFa4": {
@@ -68,6 +86,7 @@
     }
   },
   "order": [
+    "title_text_button_Ka3t8k",
     "contact_us_text_QTPwJE",
     "contact_page_form_NYHFa4"
   ]
