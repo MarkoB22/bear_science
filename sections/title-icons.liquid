@@ -1,0 +1,49 @@
+{{- 'title-icons.css' | asset_url | stylesheet_tag -}}
+<div class="title_icons-section_wrapper">
+{% for block in section.blocks %}
+    <div class="title_icons-block_wrapper">
+        <div class="title_icons-title">
+            {{ block.settings.title }}
+        </div>
+        <div class="title_icons-icon">
+            {%- liquid
+                assign master_width = block.settings.icon.src.width | append: 'x' | append: block.settings.icon.src.height
+                assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
+                assign class = nil
+
+                -%}
+            {%- render 'responsive-image', image: block.settings.icon, sizes: width, class: class -%}
+        </div>
+    </div>
+{% endfor %}
+</div>
+{% schema %}
+{
+    "name": "Titles and icons",
+    "blocks": [
+    {
+        "type": "title_icon",
+        "name": "Title and icon",
+        "limit": 3,
+        "settings": [
+        {
+            "type": "text",
+            "id": "Title",
+            "label": "Title",
+            "default": "Title"
+        },
+        {
+            "type": "image_picker",
+            "id": "icon",
+            "label": "Icon"
+        }
+        ]
+    }
+    ],
+    "presets": [
+    {
+        "name": "Title and icons"
+    }
+    ]
+}
+  {% endschema %}
