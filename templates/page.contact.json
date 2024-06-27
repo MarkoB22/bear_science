@@ -26,6 +26,36 @@
         "button_text_arrow": ""
       }
     },
+    "scrolling_text_VMnhKb": {
+      "type": "scrolling-text",
+      "blocks": {
+        "text_BGLfCt": {
+          "type": "text",
+          "settings": {
+            "text": "OUR MISSION FOR YOUR HEALTH AND LONGEVITY",
+            "link": "",
+            "outline_text": false
+          }
+        }
+      },
+      "block_order": [
+        "text_BGLfCt"
+      ],
+      "settings": {
+        "height": "height-auto",
+        "full_width": true,
+        "direction": "left",
+        "speed": "20s",
+        "text_uppercase": false,
+        "image_size": "large",
+        "color_bg": "#f5f3ef",
+        "color_text": "#151515",
+        "overlay_color": "#000000",
+        "overlay_opacity": 0,
+        "disable_top_spacing": true,
+        "disable_bottom_spacing": true
+      }
+    },
     "contact_us_text_QTPwJE": {
       "type": "contact-us-text",
       "settings": {
@@ -87,6 +117,7 @@
   },
   "order": [
     "title_text_button_Ka3t8k",
+    "scrolling_text_VMnhKb",
     "contact_us_text_QTPwJE",
     "contact_page_form_NYHFa4"
   ]
