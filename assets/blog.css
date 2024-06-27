@@ -89,3 +89,9 @@
     .blog-posts.swipe-on-mobile .row .columns {
       scroll-snap-stop: always;
       padding: 0; } }
+
+
+/* new blog */
+.blog_post_large_new-snippet_wrapper {
+  padding: 36px 20px 36px 24px;
+}

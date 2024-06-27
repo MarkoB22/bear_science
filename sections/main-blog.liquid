@@ -10,7 +10,7 @@
 		{%- for article in blog.articles -%}
 			{%- if forloop.index == 1 or forloop.index == 5 -%}
 			<div class="small-12 columns">
-				{% render 'blog-post-large', article: article, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
+				{% render 'blog-post-large-new', article: article, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
 			</div>
 			{%- else -%}
 			<div class="small-12 medium-4 columns">

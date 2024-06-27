@@ -1,0 +1,62 @@
+{%- liquid
+	assign ratio = 1
+	case image_ratio
+		when 'adapt'
+			assign image_sizes = '880x0'
+			if article.image
+				assign ratio = article.image.aspect_ratio
+			endif
+			if full_width
+				assign image_sizes = '1760x0'
+			endif
+		when 'square'
+			assign image_sizes = '880x880,1320x1320'
+			assign ratio = 1
+			if full_width
+				assign image_sizes = '880x880,1320x1320,1760x1760'
+			endif
+		when 'landscape'
+			assign image_sizes = '880x550,1320x825'
+			assign ratio = 1.6
+			if full_width
+				assign image_sizes = '880x550,1320x825,1760x1100'
+			endif
+		when 'portrait'
+			assign image_sizes = '880x1100,880x1650'
+			assign ratio = 0.8
+			if full_width
+				assign image_sizes = '880x1100,880x1650,1760x2200'
+			endif
+	endcase
+-%}
+<div class="blog_post_large_new-snippet_wrapper">
+
+    <a href="{{ article.url }}" title="{{ article.title | escape }}">
+        {%- if article.image -%}
+            {%- render 'responsive-image', image: article.image, sizes: image_sizes -%}
+        {%- endif -%}
+    </a>
+
+    <div class="blog_post_large_new-content_wrapper">
+        <h5>
+            <a href="{{ article.url }}" title="{{ article.title | escape }}">
+                {{ article.title }}
+            </a>
+        </h5>
+
+        {% if show_date %}
+            <aside class="blog_post_large_new-date">
+                {{ article.published_at | date: "%B %d %Y" }}
+            </aside>
+		{% endif %}
+
+        {% if show_excerpt %}
+            <div class="post-excerpt">
+                <p>{{ article.excerpt_or_content | strip_html | truncatewords: 30 }}</p>
+            </div>
+        {% endif %}
+
+        <a href="{{ article.url }}" title="{{ article.title | escape }}" class="text-button read-more button_type1 ">{{ 'blogs.article.read_more' | t }}{% render 'svg-icons' with 'button_arrow_2' %}</a>
+    </div>
+    
+</div>

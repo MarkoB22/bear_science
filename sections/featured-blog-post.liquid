@@ -16,9 +16,9 @@
 		<div class="blog-posts section-spacing{% if disable_top_spacing %} section-spacing--disable-top{% endif %}{% if disable_bottom_spacing %} section-spacing--disable-bottom{% endif %}">
 			{% render 'section-header', section_heading: section_heading, section_description: section_description, section_heading_left: section_heading_left %}
 				{% if section_article != blank %}
-		      {% render 'blog-post-large', article: section_article, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio, full_width: full_width %}
+		      {% render 'blog-post-large-new', article: section_article, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio, full_width: full_width %}
 				{% else %}
-					{% render 'blog-post-large', article: false, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio, full_width: full_width %}
+					{% render 'blog-post-large-new', article: false, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio, full_width: full_width %}
 		    {% endif %}
 		</div>
 	</div>
