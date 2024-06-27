@@ -18,42 +18,12 @@
         "title_position": "left",
         "title_size": "h1",
         "text_size": "h2",
-        "text_padding": 28,
+        "text_padding": 19,
         "text_line_height": "lh-sm",
         "text_weight": "f_bold",
         "r_text": "<p>We are here for you! <\/p>",
         "button_link": "",
         "button_text_arrow": ""
-      }
-    },
-    "scrolling_text_VMnhKb": {
-      "type": "scrolling-text",
-      "blocks": {
-        "text_BGLfCt": {
-          "type": "text",
-          "settings": {
-            "text": "OUR MISSION FOR YOUR HEALTH AND LONGEVITY",
-            "link": "",
-            "outline_text": false
-          }
-        }
-      },
-      "block_order": [
-        "text_BGLfCt"
-      ],
-      "settings": {
-        "height": "height-auto",
-        "full_width": true,
-        "direction": "left",
-        "speed": "20s",
-        "text_uppercase": false,
-        "image_size": "large",
-        "color_bg": "#f5f3ef",
-        "color_text": "#151515",
-        "overlay_color": "#000000",
-        "overlay_opacity": 0,
-        "disable_top_spacing": true,
-        "disable_bottom_spacing": true
       }
     },
     "contact_us_text_QTPwJE": {
@@ -113,12 +83,22 @@
         "disable_top_spacing": true,
         "disable_bottom_spacing": true
       }
+    },
+    "email_signup_h7hwmC": {
+      "type": "email-signup",
+      "settings": {
+        "text": "<p>Sign up for the newsletter and receive a <strong>10€<\/strong> voucher as a thank you!<\/p>",
+        "email_text": "E-mail Address",
+        "button_link": "",
+        "button_text_arrow": "Send",
+        "image": "shopify:\/\/shop_images\/Logo_-_Header.png"
+      }
     }
   },
   "order": [
     "title_text_button_Ka3t8k",
-    "scrolling_text_VMnhKb",
     "contact_us_text_QTPwJE",
-    "contact_page_form_NYHFa4"
+    "contact_page_form_NYHFa4",
+    "email_signup_h7hwmC"
   ]
 }
