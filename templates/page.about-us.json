@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "title_text_button_rUXXjj": {
@@ -76,11 +85,45 @@
         "text_6": "<p>Our journey began with groundbreaking discoveries about the positive effects of NMN on cellular energy and repair. These discoveries led to a fruitful collaboration of experts from leading research institutions in Europe and the US who pooled their knowledge and resources. The mission back then is just as relevant today: To transform advances in cellular research into effective solutions that sustain your health, energy and well-being.<\/p>",
         "text_7": "<p>At Bear-Science, however, we're not just about living longer, we're about living healthier. Your health and well-being are at the heart of everything we do. We encourage you to better understand your own body and your individual needs. In addition to our high-quality products, we offer you regular information, tailored diagnostic options and comprehensive support in changing unhealthy habits.<\/p>"
       }
+    },
+    "title_icons_ieEBkf": {
+      "type": "title-icons",
+      "blocks": {
+        "title_icon_dfpxQE": {
+          "type": "title_icon",
+          "settings": {
+            "Title": "KNOWLEDGE",
+            "icon": "shopify:\/\/shop_images\/Artificial-Intelligence-Spark--Streamline-Core.png"
+          }
+        },
+        "title_icon_MyqRJV": {
+          "type": "title_icon",
+          "settings": {
+            "Title": "PASSION",
+            "icon": "shopify:\/\/shop_images\/Collaborations-Idea--Streamline-Core.png"
+          }
+        },
+        "title_icon_VV4dFb": {
+          "type": "title_icon",
+          "settings": {
+            "Title": "EXPERIENCE",
+            "icon": "shopify:\/\/shop_images\/Decent-Work-And-Economic-Growth--Streamline-Core.png"
+          }
+        }
+      },
+      "block_order": [
+        "title_icon_dfpxQE",
+        "title_icon_MyqRJV",
+        "title_icon_VV4dFb"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "title_text_button_rUXXjj",
     "scrolling_text_bzxxih",
-    "about_us_J6LWfm"
+    "about_us_J6LWfm",
+    "title_icons_ieEBkf"
   ]
 }
