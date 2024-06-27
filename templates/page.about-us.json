@@ -92,21 +92,21 @@
         "title_icon_dfpxQE": {
           "type": "title_icon",
           "settings": {
-            "Title": "KNOWLEDGE",
+            "title": "KNOWLEDGE",
             "icon": "shopify:\/\/shop_images\/Artificial-Intelligence-Spark--Streamline-Core.png"
           }
         },
         "title_icon_MyqRJV": {
           "type": "title_icon",
           "settings": {
-            "Title": "PASSION",
+            "title": "PASSION",
             "icon": "shopify:\/\/shop_images\/Collaborations-Idea--Streamline-Core.png"
           }
         },
         "title_icon_VV4dFb": {
           "type": "title_icon",
           "settings": {
-            "Title": "EXPERIENCE",
+            "title": "EXPERIENCE",
             "icon": "shopify:\/\/shop_images\/Decent-Work-And-Economic-Growth--Streamline-Core.png"
           }
         }
