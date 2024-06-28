@@ -31,7 +31,9 @@
 -%}
 <div class="blog_post_large_new-snippet_wrapper">
 
-    <a href="{{ article.url }}" title="{{ article.title | escape }}">
+    <a class="blog_post_large_new-image" href="{{ article.url }}" title="{{ article.title | escape }}">
+		<div class="top_right_corner"></div>
+		<div class="bottom_left_corner"></div>
         {%- if article.image -%}
             {%- render 'responsive-image', image: article.image, sizes: image_sizes -%}
         {%- endif -%}
@@ -39,24 +41,37 @@
 
     <div class="blog_post_large_new-content_wrapper">
         <h5>
-            <a href="{{ article.url }}" title="{{ article.title | escape }}">
+            <a class="blog_post_large_new-title f_bold lh-sm" href="{{ article.url }}" title="{{ article.title | escape }}">
                 {{ article.title }}
             </a>
         </h5>
 
         {% if show_date %}
-            <aside class="blog_post_large_new-date">
-                {{ article.published_at | date: "%B %d %Y" }}
+            <aside class="blog_post_large_new-date h11 f_light lh-sm">
+                {% assign day = article.published_at | date: "%-d" %}
+				{% assign day_suffix = "" %}
+
+				{% if day == 1 or day == 21 or day == 31 %}
+				{% assign day_suffix = "st" %}
+				{% elsif day == 2 or day == 22 %}
+				{% assign day_suffix = "nd" %}
+				{% elsif day == 3 or day == 23 %}
+				{% assign day_suffix = "rd" %}
+				{% else %}
+				{% assign day_suffix = "th" %}
+				{% endif %}
+
+				{{ article.published_at | date: "%b" }} {{ day }}{{ day_suffix }}, {{ article.published_at | date: "%Y" }}
             </aside>
 		{% endif %}
 
         {% if show_excerpt %}
-            <div class="post-excerpt">
-                <p>{{ article.excerpt_or_content | strip_html | truncatewords: 30 }}</p>
+            <div class="post-excerpt h11 f_regular lh-sm">
+                <p>{{ article.excerpt_or_content | strip_html | truncatewords: 40 }}</p>
             </div>
         {% endif %}
 
-        <a href="{{ article.url }}" title="{{ article.title | escape }}" class="text-button read-more button_type1 ">{{ 'blogs.article.read_more' | t }}{% render 'svg-icons' with 'button_arrow_2' %}</a>
+        <a href="{{ article.url }}" title="{{ article.title | escape }}" class="read-more button_type1 h11 f_regular lh-sm">{{ 'blogs.article.read_more' | t }}{% render 'svg-icons' with 'button_arrow_2' %}</a>
     </div>
     
 </div>

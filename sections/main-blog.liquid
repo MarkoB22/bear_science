@@ -6,19 +6,28 @@
 %}
 {%- paginate blog.articles by 8 -%}
 <div class="section-spacing-bottom">
-	<div class="row">
+
 		{%- for article in blog.articles -%}
-			{%- if forloop.index == 1 or forloop.index == 5 -%}
-			<div class="small-12 columns">
-				{% render 'blog-post-large-new', article: article, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
-			</div>
-			{%- else -%}
-			<div class="small-12 medium-4 columns">
-				{% render 'blog-post', article: article, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
-			</div>
-			{%- endif -%}
-		{%- endfor -%}
-	</div>
+			{%- if forloop.index == 1 -%}
+				<div class="small-12 columns">
+					{% render 'blog-post-large-new', article: article, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
+				</div>
+			{% endif %}
+			{%- if forloop.index == 2 -%}
+				{% assign moreThanOne = true %}
+			{% endif %}
+		{% endfor %}
+
+		<div class="small_blog_posts-wrapper">
+			{%- for article in blog.articles -%}
+				{%- if forloop.index != 1 -%}
+					<div class="small-12 medium-4 columns">
+						{% render 'blog-post', article: article, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
+					</div>
+				{%- endif -%}
+			{%- endfor -%}
+		</div>
+
 	{% render 'pagination', paginate: paginate, pagination_type: 'paginated' %}
 </div>
 {%- endpaginate -%}
