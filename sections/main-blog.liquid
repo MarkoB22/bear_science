@@ -21,7 +21,7 @@
 		<div class="small_blog_posts-wrapper">
 			{%- for article in blog.articles -%}
 				{%- if forloop.index != 1 -%}
-					<div class="small-12 medium-4 columns">
+					<div class="small-12 medium-4 columns blog_post_small-wrapper">
 						{% render 'blog-post', article: article, show_date: show_date, show_excerpt: show_excerpt, image_ratio: image_ratio %}
 					</div>
 				{%- endif -%}
