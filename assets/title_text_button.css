@@ -131,13 +131,13 @@
         padding: 0 9.6% 0 35.83%;
         border-right: 1px solid;
         justify-content: flex-end;
-        max-width: 500px;
+        /* max-width: 500px; */
     }
 
     .title_text_button-title-wrapper.title_position-right > .title_text_button-title {
         text-align: left;
         border-left: 1px solid;
-        max-width: 500px;
+        /* max-width: 500px; */
     }
 
     /* TODO: TO JE PADDING KOJI TREBA BITI 3% I NEKI VECI POSTOTAK ZA DRUGE KOMPONENTE */
