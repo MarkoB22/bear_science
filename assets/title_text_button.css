@@ -160,7 +160,7 @@
         padding-right: 0px;
     }
 
-    .desktop-padding {
+    .desktop-padding_left {
         padding-left: var(--desktop-padding, 0%); /* Default value */
     }
 

@@ -28,11 +28,11 @@
 
     {% if section.settings.r_text or section.settings.button_text %}
         <style>
-            .desktop-padding {
+            .desktop-padding_left {
               --desktop-padding: {{ section.settings.text_padding }}%;
             }
         </style>  
-        <div class="title_text_button-button_text_wrapper-{{ section.settings.title_position }} desktop-padding">
+        <div class="title_text_button-button_text_wrapper-{{ section.settings.title_position }} desktop-padding_left">
 
             {% if section.settings.r_text %}
             <div class="title_text_button-text {{ section.settings.text_size }} {{ section.settings.text_line_height }} {{ section.settings.text_weight }}">
@@ -61,7 +61,6 @@
 </div>
 {% schema %}
 {
-    // TODO: DODATI U SETTINGS PADDING ZA ABOUT US SEKCIJE , JEDAN VECI PADDING I JEDAN MANJI
     "name": "Title, text and button",   
     "settings": [
         {
@@ -141,7 +140,7 @@
 			"max": 100,
 			"step": 1,
 			"unit": "%",
-			"label": "Desktop right padding",
+			"label": "Desktop left padding",
 			"default": 0
         },
         {
