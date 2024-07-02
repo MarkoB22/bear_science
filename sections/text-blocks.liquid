@@ -1,0 +1,104 @@
+{{- 'text-blocks.css' | asset_url | stylesheet_tag -}}
+<div class="text_block-section_wrapper">
+    <div class="text_block-side_lines">
+        <div class="text_block-inner_wrapper">
+        {% for block in section.blocks %}
+            {%- case block.type -%}
+                {% when 'title' %}
+                <div class="text_block-title">
+                    {{ block.settings.title }}
+                </div>
+                {% when 'text' %}
+                <div class="text_block-text text_block-mobile_size_{{ block.settings.text_size_mobile }} text_block-desktop_size_{{ block.settings.text_size_desktop }}">
+                    {{ block.settings.text }}
+                </div>
+                {% when 'divider' %}
+                <div class="text_block-divider"></div>
+            {% endcase %}
+        {% endfor %}
+        </div>
+    </div>
+</div>
+{% schema %}
+{
+    "name": "Text blocks",
+    "class": "section-collapsible-content",
+    "settings": [],
+                "blocks": [
+                    {
+                        "type": "title",
+                        "name": "Title",
+                        "settings": [
+                        {
+                            "type": "text",
+                            "id": "title",
+                            "default": "Title",
+                            "label": "Title"
+                        }
+                        ]
+                    },
+                    {
+                        "type": "title",
+                        "name": "Title",
+                        "settings": [
+                        {
+                            "type": "text",
+                            "id": "text",
+                            "default": "Text",
+                            "label": "Text"
+                        },
+                        {
+                            "type": "select",
+                            "id": "text_size_mobile",
+                            "options": [
+                                {
+                                    "value": "16px",
+                                    "label": "16px"
+                                },
+                                {
+                                    "value": "18px",
+                                    "label": "18px"
+                                }
+                            ],
+                            "default": "16px",
+                            "label": "Text size mobile"
+                        },
+                        {
+                            "type": "select",
+                            "id": "text_size_desktop",
+                            "options": [
+                                {
+                                    "value": "16px",
+                                    "label": "16px"
+                                },
+                                {
+                                    "value": "20px",
+                                    "label": "20px"
+                                },
+                                {
+                                    "value": "24px",
+                                    "label": "24px"
+                                }
+                            ],
+                            "default": "16px",
+                            "label": "Text size desktop"
+                        }
+                        ]
+                    }
+                    
+      ],
+      "presets": [
+        {
+          "name": "Text blocks",
+                  "blocks": [
+              {
+                "type": "title"
+              },
+              {
+                "type": "title"
+              }
+            ]
+        }
+      ]
+    }
+  {% endschema %}
