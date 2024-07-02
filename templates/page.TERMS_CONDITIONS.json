@@ -11,11 +11,263 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "title_text_button_EFRjQh": {
+      "type": "title_text_button",
+      "settings": {
+        "title_upper": "TERMS",
+        "title_middle": "&",
+        "title_lower": "CONDITIONS",
+        "title_position": "left",
+        "title_size": "h1",
+        "text_size": "h19",
+        "text_padding": 26,
+        "text_line_height": "lh-sm",
+        "text_weight": "f_regular",
+        "r_text": "<p>Legal framework <br\/>for Bear-Science<\/p>",
+        "button_link": "",
+        "button_text_arrow": ""
+      }
+    },
+    "text_blocks_ndzFBF": {
+      "type": "text-blocks",
+      "blocks": {
+        "title_dfiwdg": {
+          "type": "title",
+          "settings": {
+            "title": "Legal framework for Bear-Science"
+          }
+        },
+        "divider_pkrPpd": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "text_wxba7L": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Table of contents<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "24px"
+          }
+        },
+        "text_fqGhwn": {
+          "type": "text",
+          "settings": {
+            "text": "<p>1. Scope of application<br\/>2. Conclusion of contract<br\/>3. Right of withdrawal<br\/>4. Prices and terms of payment<br\/>5. Delivery and shipping conditions<br\/>6. Duration and termination of subscription contracts<br\/>7. Retention of title<br\/>8. Liability for defects (warranty)<br\/>9. Redemption of promotional vouchers<br\/>10. Applicable law<br\/>11. Place of jurisdiction<br\/>12. Code of Conduct<br\/>13. Alternative Dispute Resolution<br\/>14. Scope<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "24px"
+          }
+        },
+        "text_XmgTP7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>1.1 These General Terms and Conditions (hereinafter referred to as \"GTC\") apply to all contracts for the delivery of goods concluded between BEAR SCIENCE, represented by VESTUR UG (haftungsbeschränkt) (hereinafter referred to as \"Seller\"), and consumers or entrepreneurs (hereinafter referred to as \"Customer\"). The GTC are authoritative for goods offered in the Seller's online shop. The Customer's own terms and conditions shall not apply unless expressly agreed otherwise.<br\/>1.2 For the purposes of these GTC, a \"consumer\" is any natural person who enters into the contract for purposes which can predominantly be attributed neither to his commercial nor to his independent professional activity.<br\/>1.3 An \"entrepreneur\" within the meaning of these GTC is a natural or legal person or a partnership with legal capacity who, when concluding the contract, acts in the exercise of his commercial or independent professional activity.<br\/>1.4 The subject matter of the contract may, depending on the Seller's product description, be both the one-off delivery of goods and the regular delivery of goods under a subscription contract. In the case of a subscription contract, the Seller undertakes to deliver the contractually owed goods to the Customer at the contractually agreed intervals during the agreed term of the contract.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_NbMDd6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Conclusion of the contract<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_4L8yQD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>2.1 The product descriptions in the Seller's online shop do not constitute binding offers, but merely serve to enable the customer to submit a binding offer.<br\/>2.2 The customer can submit his offer via the online order form integrated in the Seller's online shop. In doing so, after placing the selected goods in the virtual shopping basket and going through the electronic ordering process, the customer submits a legally binding contractual offer by clicking on the button concluding the ordering process, which refers to the goods contained in the shopping basket. Alternatively, the customer can also submit the offer to the seller by telephone, e-mail or via the online contact form.<br\/>2.3 The Seller may accept the Customer's offer within five days by sending the Customer a written order confirmation or an order confirmation in text form (fax or e-mail). In this case, the time of receipt of the order confirmation by the customer is decisive. Alternatively, the seller may accept the offer by delivering the ordered goods or by requesting payment from the customer. If more than one of the aforementioned alternatives exists, the contract shall be concluded at the point in time at which one of these alternatives occurs first. The period for accepting the offer begins on the day after the customer sends the offer and ends on the fifth day thereafter. If the Seller does not accept the Customer's offer within this period, this shall be deemed to be a rejection of the offer, whereby the Customer shall no longer be bound by its declaration of intent.<br\/>2.4 If a payment method offered by PayPal is selected, the payment will be processed via the payment service provider PayPal (Europe) S.à r.l. et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxembourg, using the PayPal terms of use, available at <a href=\"https:\/\/www.paypal.com\/de\/webapps\/mpp\/ua\/useragreement-full\">https:\/\/www.paypal.com\/de\/webapps\/mpp\/ua\/useragreement-full<\/a>, or, if the customer does not have a PayPal account, using the terms for payments without a PayPal account, available at <a href=\"https:\/\/www.paypal.com\/de\/webapps\/mpp\/ua\/privacywax-full\">https:\/\/www.paypal.com\/de\/webapps\/mpp\/ua\/privacywax-full<\/a>. The Seller accepts the Customer's offer as soon as the Customer clicks the button that completes the ordering process.<br\/>2.5 When an offer is made via the Seller's online order form, the text of the contract is stored by the Seller and transmitted to the Customer in text form (e.g. by e-mail, fax or letter) after the order has been sent. The Seller shall not make the text of the contract available beyond this. If the customer has set up a user account in the Seller's online shop before sending the order, the order data will be archived on the Seller's website and can be accessed by the customer free of charge via his password-protected user account.<br\/>2.6 Before the customer submits his binding order, he can identify possible input errors by carefully checking the information displayed on the screen. For better recognition of input errors, the enlargement function of the browser can be used. The customer can correct his entries during the electronic ordering process using the usual keyboard and mouse functions until he clicks the button that completes the ordering process.<br\/>2.7 Contract execution and communication are usually carried out by e-mail and automated order processing. The customer must ensure that the e-mail address he\/she has provided for contract processing is correct so that e-mails sent by the seller can be received at this address. In particular, when using SPAM filters, the customer must ensure that all e-mails sent by the seller or by third parties commissioned by the seller to process the contract can be delivered.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_Aza4wd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Right of withdrawal<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_nTfLpz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>3.1 Consumers are generally entitled to a right of withdrawal. Further information on the right of withdrawal can be found in the Seller's instructions on withdrawal.<br\/>3.2 The right of withdrawal does not apply to consumers who do not belong to a Member State of the European Union at the time of conclusion of the contract and whose sole place of residence and delivery address are outside the European Union at the time of conclusion of the contract.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_zQybrw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Prices and terms of payment<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_bVn9L8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>4.1 The Seller's stated prices are final prices and include the statutory value added tax. Any additional delivery and shipping costs will be indicated separately in the respective product description.<br\/>4.2 For deliveries to countries outside the European Union, additional costs may be incurred for which the Seller is not responsible and which are to be borne by the Customer. These include, for example, costs for the transfer of money by credit institutions (e.g. transfer fees, exchange rate fees) or import duties or taxes (e.g. customs duties). Such costs may also be incurred in relation to the transfer of funds if the delivery is not made to a country outside the European Union, but the customer makes the payment from a country outside the European Union.<br\/>4.3 The payment options will be communicated to the Customer in the Seller's online shop. The Seller reserves the right to change the available payment options and, if necessary, to limit them to those that do not incur any costs for the Customer.<br\/>4.4 If advance payment by bank transfer is agreed, payment is due immediately after conclusion of the contract, unless the parties have agreed otherwise.<br\/>4.5 If the payment method \"PayPal\" is selected, the payment shall be processed via the payment service provider PayPal (Europe) S.à r.l. et Cie, S.C.A., 22-24 Boulevard Royal, L-2449 Luxembourg, using the PayPal terms of use, which can be viewed at <a href=\"https:\/\/www.paypal.com\/de\/webapps\/mpp\/ua\/useragreement-full\">https:\/\/www.paypal.com\/de\/webapps\/mpp\/ua\/useragreement-full<\/a>.<br\/>4.6 If the payment method \"credit card\" is selected, the payment will be processed via the payment service provider Stripe Payments Europe, Ltd, 1 Grand Canal Street Lower, Grand Canal Dock, Dublin, Ireland, in accordance with the Stripe terms of use, which can be viewed at <a href=\"https:\/\/stripe.com\/de\/checkout\/legal\">https:\/\/stripe.com\/de\/checkout\/legal<\/a>.<br\/>4.7 If the payment method \"Klarna Invoice\" is selected, the purchase price is due after the goods have been delivered and invoiced. In this case, the customer can only pay the purchase price to Klarna. Further information on the \"Klarna Invoice\" payment option can be found at <a href=\"https:\/\/www.klarna.com\/de\/kaufabbruch\/#Rechnung\">https:\/\/www.klarna.com\/de\/kaufabbruch\/#Rechnung<\/a>.<br\/>4.8 If the payment option \"Klarna instalment purchase\" is selected, the payment will be processed via Klarna. The customer must pay the invoice amount to Klarna on a monthly basis. Further information on the payment option \"Klarna Instalment Purchase\" including the General Terms and Conditions and the European standard information for consumer credit for instalment purchases can be found at <a href=\"https:\/\/cdn.klarna.com\/1.0\/shared\/content\/legal\/terms\/EID\/de_de\/account\">https:\/\/cdn.klarna.com\/1.0\/shared\/content\/legal\/terms\/EID\/de_de\/account<\/a>.<br\/>4.9 If the payment method \"SOFORT\" is selected, the payment will be processed via the payment service provider SOFORT GmbH, Theresienhöhe 12, 80339 Munich, Germany (hereinafter \"SOFORT\"). In order to be able to pay the invoice amount via SOFORT, the customer must have an online banking account with PIN\/TAN procedure activated for participation in SOFORT, must legitimise himself accordingly during the payment transaction and confirm the payment instruction to SOFORT. The payment transaction will be carried out immediately afterwards by SOFORT and the customer's bank account will be debited. The customer will receive further instructions during the order process. The payment transaction is automatically executed by SOFORT and your bank account is debited.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_4jwpqq": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Delivery and shipping conditions<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_b89Mtz": {
+          "type": "text",
+          "settings": {
+            "text": "<p>5.1 The delivery of goods is carried out by shipping to the delivery address provided by the customer, unless otherwise agreed. When processing the transaction, the delivery address specified in the Seller's order processing shall be decisive.<br\/>5.2 If the transport company returns the dispatched goods to the Seller because delivery to the customer was not possible, the customer shall bear the costs for the unsuccessful dispatch. This does not apply if the customer effectively exercises his right of withdrawal, if he is not responsible for the circumstance that led to the impossibility of delivery, or if he was temporarily prevented from accepting the service offered, unless the seller had given him reasonable advance notice of the service.<br\/>5.3 In principle, the risk of accidental loss and accidental deterioration of the goods sold shall pass to the customer or a person authorised to receive the goods upon handover. If the customer is an entrepreneur, the transfer shall in any case take place when the goods are handed over to the company carrying out the transport.<br\/>5.4 The Seller reserves the right to withdraw from the contract in the event of incorrect or improper self-delivery. This shall only apply in the event that the Seller is not responsible for the non-delivery and the Seller has, with due diligence, concluded a specific covering transaction with the supplier. The Seller shall make all reasonable efforts to procure the goods. In the event of non-availability or only partial availability of the goods, the customer will be informed immediately and the consideration will be refunded without delay.<br\/>5.5 Self-collection is not possible for logistical reasons.<br\/>5.6 Vouchers are provided to the customer as follows:<br\/>by e-mail<br\/>as a download<br\/>Retention of title If the seller makes advance payment, he retains ownership of the delivered goods until the purchase price owed has been paid in full. <\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_beCNk3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Liability for defects (warranty)<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_dFi9dy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>7.1 If the purchased item is defective, the provisions of the statutory liability for defects shall apply.<br\/>7.2 The customer is requested to complain about delivered goods with obvious transport damage to the deliverer and to inform the seller of this. If the customer fails to do so, this shall have no effect on his statutory or contractual claims for defects.<br\/>7.3 If the customer is an entrepreneur, the limitation period for claims for defects shall be one year from the transfer of risk; the statutory limitation periods for recourse pursuant to § 478 BGB shall remain unaffected.<br\/>7.4 If the customer is a consumer, the limitation period for claims for defects shall be two years from delivery of the goods to the customer.<br\/>7.5 If the customer is an entrepreneur, only the manufacturer's product description shall be deemed agreed as an agreement on the quality of the goods. Public statements, recommendations or advertising by the manufacturer do not constitute a contractual description of the quality of the goods.<br\/>7.6 In the case of used goods, the limitation period for claims for defects shall be one year from delivery of the goods to the customer. However, the reduction of the limitation period to one year shall not apply to claims for damages and reimbursement of expenses of the customer which are based on intent or gross negligence of the seller, its legal representatives or vicarious agents, as well as in case of culpable breach of material contractual obligations and fraudulent concealment of a defect. Material contractual obligations are those whose fulfilment is necessary to achieve the objective of the contract.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_xL73Wy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Redemption of promotional vouchers<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_7iC9Rd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>8.1 Vouchers which are issued free of charge by the Seller as part of promotions with a specific period of validity and which cannot be purchased by the Customer (hereinafter \"Promotion Vouchers\") can only be redeemed in the Seller's online shop and only during the specified period.<br\/>8.2 Individual products may be excluded from the voucher promotion if a corresponding restriction results from the content of the promotion voucher.<br\/>8.3 Promotion vouchers can only be redeemed before the order process is completed. Subsequent offsetting is not possible.<br\/>8.4 Only one promotional voucher can be redeemed per order.<br\/>8.5 The value of the goods must be at least equal to the amount of the promotional voucher. Any remaining credit will not be refunded by the Seller.<br\/>8.6 If the value of the promotional voucher is not sufficient to cover the order, one of the other payment methods offered by the Seller may be chosen to settle the difference.<br\/>8.7 The credit balance of a promotional voucher is neither paid out in cash nor does it earn interest.<br\/>8.8 The promotional voucher will not be refunded if the customer returns the goods paid for in full or in part with the promotional voucher within the scope of his statutory right of withdrawal.<br\/>8.9 The promotional voucher is transferable. The Seller may make payment with discharging effect to the respective holder redeeming the promotional voucher in the Seller's online shop. This shall not apply if the Seller has knowledge or grossly negligent ignorance of the ineligibility, legal incapacity or lack of representative authority of the respective holder.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_9VVrC8": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Redemption of gift vouchers<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_Q8qRhJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>9.1 Gift vouchers that can be purchased via the Seller's online shop (hereinafter \"Gift Vouchers\") can only be redeemed in the Seller's online shop, unless otherwise stated in the Gift Voucher.<br\/>9.2 Gift Vouchers and remaining balances of Gift Vouchers are redeemable until the end of the third year following the year of purchase of the Gift Voucher. Remaining balances will be credited to the customer until the expiry date.<br\/>9.3 Gift Vouchers can only be redeemed before the order process is completed. Subsequent offsetting is not possible.<br\/>9.4 Several gift vouchers can be redeemed for one order.<br\/>9.5 Gift Vouchers can only be used to purchase Goods and cannot be used to purchase additional Gift Vouchers.<br\/>9.6 If the value of the Gift Voucher is insufficient to cover the order, one of the other payment methods offered by the Seller may be chosen to settle the difference.<br\/>9.7 The balance of a Gift Voucher will not be paid out in cash or earn interest.<br\/>9.8 The Gift Voucher is transferable. The Seller may make payment with discharging effect to the respective holder redeeming the Gift Voucher in the Seller's online shop. This shall not apply if the Seller has knowledge or grossly negligent ignorance of the ineligibility, legal incapacity or lack of representative authority of the respective holder.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_7Gkhcj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Applicable law<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_gmLdjG": {
+          "type": "text",
+          "settings": {
+            "text": "<p>10.1 All legal relations between the parties shall be governed by the laws of the Federal Republic of Germany to the exclusion of the laws on the international sale of movable goods. In the case of consumers, this choice of law shall only apply to the extent that the protection granted is not withdrawn by mandatory provisions of the law of the state in which the consumer has his habitual residence.<br\/>10.2 Furthermore, this choice of law with regard to the statutory right of withdrawal does not apply to consumers who do not belong to a Member State of the European Union at the time of conclusion of the contract and whose sole place of residence and delivery address are outside the European Union at the time of conclusion of the contract.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_aznbqD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Place of jurisdiction<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_wPFpWj": {
+          "type": "text",
+          "settings": {
+            "text": "<p>11.1 If the customer is a merchant, a legal entity under public law or a special fund under public law, the exclusive place of jurisdiction for all disputes arising from this contract shall be the Seller's place of business. The same shall apply if the customer does not have a general place of jurisdiction in Germany or the EU or if the customer's place of residence or habitual abode is unknown at the time the action is brought. The right to bring an action before the court at another statutory place of jurisdiction shall remain unaffected.<br\/>11.2 The provisions of the UN Convention on Contracts for the International Sale of Goods shall expressly not apply.Code of conduct The seller has submitted to the \"Trusted Shops\" seal of approval criteria, which can be viewed on the Internet at <a href=\"https:\/\/www.trustedshops.de\/guetesiegel\/sicherheit\" target=\"_blank\" title=\"https:\/\/www.trustedshops.de\/guetesiegel\/sicherheit\">https:\/\/www.trustedshops.de\/guetesiegel\/sicherheit<\/a>.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_eJkmQK": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Alternative dispute resolution<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_kr3TLd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>13.1 The EU Commission provides a platform for online dispute resolution on the Internet at the following link: <a href=\"https:\/\/ec.europa.eu\/consumers\/odr\" target=\"_blank\" title=\"https:\/\/ec.europa.eu\/consumers\/odr\">https:\/\/ec.europa.eu\/consumers\/odr<\/a>.<br\/>13.2 The Seller is not obliged to participate in a dispute resolution procedure before a consumer arbitration board, but is generally prepared to do so.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        }
+      },
+      "block_order": [
+        "title_dfiwdg",
+        "divider_pkrPpd",
+        "text_wxba7L",
+        "text_fqGhwn",
+        "text_XmgTP7",
+        "text_NbMDd6",
+        "text_4L8yQD",
+        "text_Aza4wd",
+        "text_nTfLpz",
+        "text_zQybrw",
+        "text_bVn9L8",
+        "text_4jwpqq",
+        "text_b89Mtz",
+        "text_beCNk3",
+        "text_dFi9dy",
+        "text_xL73Wy",
+        "text_7iC9Rd",
+        "text_9VVrC8",
+        "text_Q8qRhJ",
+        "text_7Gkhcj",
+        "text_gmLdjG",
+        "text_aznbqD",
+        "text_wPFpWj",
+        "text_eJkmQK",
+        "text_kr3TLd"
+      ],
       "settings": {
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "title_text_button_EFRjQh",
+    "text_blocks_ndzFBF"
   ]
 }
