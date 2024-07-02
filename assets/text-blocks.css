@@ -49,6 +49,20 @@
 }
 
 @media only screen and (min-width: 1025px) {
+    .text_block-section_wrapper {
+        padding: 124px 128px;
+    }
+
+    .text_block-side_lines {
+        height: calc(100% - 248px);
+        width: calc(100% - 256px);
+    }
+
+    .text_block-inner_wrapper {
+        padding: 26px 0;
+        width: calc(100% - 96px)
+    }
+
     .text_block-title {
         font-weight: 500;
         font-size: 36px;
