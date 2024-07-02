@@ -34,10 +34,27 @@
         "button_link": "",
         "button_text_arrow": ""
       }
+    },
+    "text_blocks_rqbLTx": {
+      "type": "text-blocks",
+      "blocks": {
+        "title_R7XcDA": {
+          "type": "title",
+          "settings": {
+            "title": "Bear-Science"
+          }
+        }
+      },
+      "block_order": [
+        "title_R7XcDA"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "title_text_button_PUKky6"
+    "title_text_button_PUKky6",
+    "text_blocks_rqbLTx"
   ]
 }
