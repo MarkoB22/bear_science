@@ -43,10 +43,25 @@
           "settings": {
             "title": "Bear-Science"
           }
+        },
+        "divider_QpYYGf": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "text_9wxx4d": {
+          "type": "text",
+          "settings": {
+            "text": "Text",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
         }
       },
       "block_order": [
-        "title_R7XcDA"
+        "title_R7XcDA",
+        "divider_QpYYGf",
+        "text_9wxx4d"
       ],
       "settings": {
       }
