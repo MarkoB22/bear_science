@@ -1,22 +1,22 @@
 {{- 'text-blocks.css' | asset_url | stylesheet_tag -}}
 <div class="text_block-section_wrapper">
     <div class="text_block-side_lines">
-        <div class="text_block-inner_wrapper">
-        {% for block in section.blocks %}
-            {%- case block.type -%}
-                {% when 'title' %}
-                <div class="text_block-title">
-                    {{ block.settings.title }}
-                </div>
-                {% when 'text' %}
-                <div class="text_block-text text_block-mobile_size_{{ block.settings.text_size_mobile }} text_block-desktop_size_{{ block.settings.text_size_desktop }}">
-                    {{ block.settings.text }}
-                </div>
-                {% when 'divider' %}
-                <div class="text_block-divider"></div>
-            {% endcase %}
-        {% endfor %}
-        </div>
+    </div>
+    <div class="text_block-inner_wrapper">
+    {% for block in section.blocks %}
+        {%- case block.type -%}
+            {% when 'title' %}
+            <div class="text_block-title lh-l">
+                {{ block.settings.title }}
+            </div>
+            {% when 'text' %}
+            <div class="text_block-text f_regular lh-l text_block-mobile_size_{{ block.settings.text_size_mobile }} text_block-desktop_size_{{ block.settings.text_size_desktop }}">
+                {{ block.settings.text }}
+            </div>
+            {% when 'divider' %}
+            <div class="text_block-divider"></div>
+        {% endcase %}
+    {% endfor %}
     </div>
 </div>
 {% schema %}
@@ -42,10 +42,10 @@
                         "name": "Text",
                         "settings": [
                         {
-                            "type": "text",
+                            "type": "textarea",
                             "id": "text",
                             "default": "Text",
-                            "label": "Text"
+                            "label": "<p>Text</p>"
                         },
                         {
                             "type": "select",
@@ -58,6 +58,10 @@
                                 {
                                     "value": "18px",
                                     "label": "18px"
+                                },
+                                {
+                                    "value": "20px",
+                                    "label": "20px"
                                 }
                             ],
                             "default": "16px",
@@ -98,6 +102,9 @@
                   "blocks": [
               {
                 "type": "title"
+              },
+              {
+                "type": "divider"
               },
               {
                 "type": "text"
