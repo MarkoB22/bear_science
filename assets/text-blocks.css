@@ -48,6 +48,10 @@
     margin-bottom: 32px;
 }
 
+.text_block-inner_wrapper div p {
+    margin-bottom: 0;
+}
+
 @media only screen and (min-width: 1025px) {
     .text_block-section_wrapper {
         padding: 124px 128px;
