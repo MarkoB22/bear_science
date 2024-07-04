@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "16479477632637c9a7": {
@@ -57,28 +66,10 @@
             "link": "",
             "outline_text": false
           }
-        },
-        "text_GXm3xQ": {
-          "type": "text",
-          "settings": {
-            "text": "LONGEVITY & HEALTHY AGING",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "text_bLqzQV": {
-          "type": "text",
-          "settings": {
-            "text": "LONGEVITY & HEALTHY AGING",
-            "link": "",
-            "outline_text": false
-          }
         }
       },
       "block_order": [
-        "text_fnxMCw",
-        "text_GXm3xQ",
-        "text_bLqzQV"
+        "text_fnxMCw"
       ],
       "settings": {
         "height": "height-18",
@@ -118,7 +109,7 @@
         "text_padding": 4,
         "text_line_height": "lh-l",
         "text_weight": "f_medium",
-        "r_text": "<p>At <strong>Bear-Science<\/strong>, we are passionate about helping people live fuller, healthier and longer-lasting lives. As a German brand of smart supplements, our focus is on promoting lifelong health and energy.<\/p><p>Our products are based on scientific evidence and carefully selected to give you the best possible results. We believe that a balanced diet and regular supplementation are crucial for your health and well-being.<\/p>",
+        "r_text": "<p>At <strong>Bear-Science<\/strong>, we are passionate about helping people live fuller, healthier and longer-lasting lives. As a German brand of smart supplements, our focus is on promoting lifelong health and energy.<br\/> <br\/><\/p><p>Our products are based on scientific evidence and carefully selected to give you the best possible results. We believe that a balanced diet and regular supplementation are crucial for your health and well-being.<\/p>",
         "button_link": "#",
         "button_text_arrow": "Learn more"
       }
