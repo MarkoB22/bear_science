@@ -58,15 +58,17 @@
         "certificate_9BtTLy": {
           "type": "certificate",
           "settings": {
-            "title": "Title",
-            "subtitle": "Subitle"
+            "title": "Resveratrol",
+            "subtitle": "Laboratory test report",
+            "image_1": "shopify:\/\/shop_images\/Frame_384.png"
           }
         },
         "certificate_YWazwV": {
           "type": "certificate",
           "settings": {
-            "title": "Title",
-            "subtitle": "Subitle"
+            "title": "Spermidin",
+            "subtitle": "Laboratory test report",
+            "image_1": "shopify:\/\/shop_images\/Frame_384.png"
           }
         }
       },
