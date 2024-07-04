@@ -68,7 +68,7 @@
     "main-blog": {
       "type": "main-blog",
       "settings": {
-        "image_ratio": "landscape",
+        "image_ratio": "adapt",
         "show_date": true,
         "show_excerpt": true
       }
