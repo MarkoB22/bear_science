@@ -175,4 +175,8 @@
     .more_padding_desktop {
         padding: 152px 192px !important;
     }
+
+    .no_win_width {
+        min-width: auto !important;
+    }
 }
