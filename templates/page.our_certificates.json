@@ -80,11 +80,20 @@
       ],
       "settings": {
       }
+    },
+    "email_signup_geiFBK": {
+      "type": "email-signup",
+      "settings": {
+        "text": "<p>Sign up for the newsletter and receive a <strong>10€<\/strong> voucher as a thank you!<\/p>",
+        "email_text": "E-mail Address",
+        "button_text_arrow": "Send"
+      }
     }
   },
   "order": [
     "main",
     "title_text_button_mLaUWq",
-    "certificates_ikV3gY"
+    "certificates_ikV3gY",
+    "email_signup_geiFBK"
   ]
 }
