@@ -11,11 +11,110 @@
   "sections": {
     "main": {
       "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "show_page_title": true,
+        "disable_top_spacing": false,
+        "disable_bottom_spacing": false
+      }
+    },
+    "title_text_button_qFnVt8": {
+      "type": "title_text_button",
+      "settings": {
+        "title_upper": "SHIPPING",
+        "title_middle": "",
+        "title_lower": "INFORMATION",
+        "title_position": "left",
+        "title_size": "h1",
+        "text_size": "h2",
+        "text_padding": 17,
+        "text_line_height": "lh-l",
+        "text_weight": "f_medium",
+        "r_text": "<p>Fast and reliable shipping at Bear-Science<\/p>",
+        "button_link": "",
+        "button_text_arrow": ""
+      }
+    },
+    "text_blocks_LW7KKL": {
+      "type": "text-blocks",
+      "blocks": {
+        "title_aMkKkg": {
+          "type": "title",
+          "settings": {
+            "title": "Right of withdrawal for consumers"
+          }
+        },
+        "divider_pztbGG": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "text_yFeqtJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The goods are delivered exclusively within Europe. Unless a different delivery period is stated in the offer, the delivery time for domestic deliveries (Germany) is 1 to 5 days and for international deliveries (Europe) 3 to 10 days after conclusion of the contract (in case of prepayment after payment instruction).<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_gbfQRd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Please note that deliveries are not made on Sundays and public holidays. If you have ordered items with different delivery times, we will send the goods in one shipment, unless otherwise agreed with you. In this case, the delivery time will be based on the item with the longest delivery time that you have ordered.<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_HCxqyQ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shipping costs <\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_m7cQUE": {
+          "type": "text",
+          "settings": {
+            "text": "<p>All information on shipping costs includes the statutory value added tax.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_hYNCeg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shipping partners <\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_4yMTQ9": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Shipping is carried out in cooperation with our shipping partners DHL and Deutsche Post.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        }
+      },
+      "block_order": [
+        "title_aMkKkg",
+        "divider_pztbGG",
+        "text_yFeqtJ",
+        "text_gbfQRd",
+        "text_HCxqyQ",
+        "text_m7cQUE",
+        "text_hYNCeg",
+        "text_4yMTQ9"
+      ],
       "settings": {
       }
     }
   },
   "order": [
-    "main"
+    "main",
+    "title_text_button_qFnVt8",
+    "text_blocks_LW7KKL"
   ]
 }
