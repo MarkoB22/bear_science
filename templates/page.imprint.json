@@ -66,10 +66,10 @@
       "settings": {
       }
     },
-    "newsletter_signup_gT7fiF": {
-      "type": "newsletter-signup",
+    "email_signup_xM7Qh3": {
+      "type": "email-signup",
       "settings": {
-        "text": "<p>Sign up for the newsletter and receive a<strong> 10€<\/strong> voucher as a thank you!<\/p>",
+        "text": "<p>Sign up for the newsletter and receive a <strong>10€<\/strong> voucher as a thank you!<\/p>",
         "email_text": "E-mail Address",
         "button_text_arrow": "Send"
       }
@@ -79,6 +79,6 @@
     "main",
     "title_text_button_PUKky6",
     "text_blocks_rqbLTx",
-    "newsletter_signup_gT7fiF"
+    "email_signup_xM7Qh3"
   ]
 }
