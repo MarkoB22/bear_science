@@ -60,7 +60,7 @@ ul {
 .thb-widget-menu {
   display: grid;
   grid-auto-flow: column;
-  grid-template-rows: repeat(3, 1fr);
+  grid-template-rows: repeat(5, 1fr);
   margin-bottom: 23px;
   align-items: end;
 }
@@ -115,9 +115,10 @@ ul {
 @media print, screen and (min-width: 1025px) {
 
   .footer {
+    padding: 86px 0;
     display: flex;
     flex-direction: row;
-    padding: 86px 0;
+    align-items: center;
   }
 
   .footer_logo {
@@ -139,18 +140,18 @@ ul {
     margin: 0;
     border-right: 1px solid black;
     padding-right: 2.63%;
-    min-width: 25.07%;
+    min-width: 40.07%;
   }
 
   .widget--text {
     border-right: 1px solid black;
-    padding: 0 2.63%;
-    min-width: 23.06%;
+    padding: 0 2%;
+    min-width: 21.06%;
   }
 
   .widget--social {
     margin-top: unset;
-    padding-left: 2.63%;
+    padding-left: 2%;
     padding-right: 4.44%;
     min-width: 19.65%;
   }
@@ -196,6 +197,7 @@ ul {
   }
 
   .thb-widget-menu {
+    grid-template-rows: repeat(3, 1fr);
     margin: 0;
     -webkit-column-count: 2; /* Chrome, Safari, Opera */
     -moz-column-count: 2;    /* Firefox */
@@ -215,6 +217,12 @@ ul {
   .thb-widget-menu li:nth-child(2),
   .thb-widget-menu li:nth-child(3) {
     padding-right: 35px;
+  }
+
+  .thb-widget-menu li:nth-child(4),
+  .thb-widget-menu li:nth-child(5),
+  .thb-widget-menu li:nth-child(6) {
+    padding-right: 12px;
   }
 
 }
