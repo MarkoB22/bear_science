@@ -34,10 +34,168 @@
         "button_link": "",
         "button_text_arrow": ""
       }
+    },
+    "text_blocks_GBhKRk": {
+      "type": "text-blocks",
+      "blocks": {
+        "title_CMVPpr": {
+          "type": "title",
+          "settings": {
+            "title": "Right of withdrawal for consumers"
+          }
+        },
+        "divider_BUh739": {
+          "type": "divider",
+          "settings": {
+          }
+        },
+        "text_mBHVCi": {
+          "type": "text",
+          "settings": {
+            "text": "<p>I. Withdrawal period<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_8xFnRb": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Consumers have the right to withdraw from this contract within fourteen days without giving any reason. The revocation period is fourteen days and begins on the day on which you or a third party named by you who is not the carrier has or has taken possession of the last goods. In the case of contracts for the regular delivery of goods over a fixed period of time, the cancellation period is also fourteen days and begins on the day on which you or a third party named by you, who is not the carrier, have taken or has taken possession of the first goods.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_tEk8gy": {
+          "type": "text",
+          "settings": {
+            "text": "<p>II. Exercising your right of withdrawal<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_pbwWcC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>In order to exercise your right of withdrawal, inform us (VESTUR UG (haftungsbeschränkt), Römerstraße 75, 71229 Leonberg, Germany, Tel.: (0)7152 906 599 28, E-Mail: info@vestur.de) by means of a clear declaration, for example by post or e-mail, of your decision to withdraw from this contract. You can use the attached model cancellation form for this purpose, although this is not mandatory. In order to comply with the withdrawal period, it is sufficient if you send the notification of the exercise of the right of withdrawal before the expiry of the withdrawal period.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_kWNDiA": {
+          "type": "text",
+          "settings": {
+            "text": "<p>III. Consequences of the revocation<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_y9N3We": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you revoke this contract, we will refund all payments we have received from you, including delivery costs (with the exception of additional costs resulting from the fact that you have chosen a type of delivery other than the cheapest standard delivery offered by us), without delay and at the latest within fourteen days from the day on which we received the notification of your revocation. We will use the same means of payment for the repayment that you used for the original transaction, unless expressly agreed otherwise. In no case will you be charged any fees because of the repayment. We may refuse repayment until we have received the goods back or until you have provided proof that you have returned the goods, whichever is the earlier. You must return or hand over the goods to us or to VESTUR UG (haftungsbeschränkt), Römerstraße 75, 71229 Leonberg, without undue delay and in any case no later than fourteen days from the day on which you notify us of the cancellation of this contract. The deadline is met if you send the goods before the expiry of the fourteen days. You shall bear the direct costs of the return shipment. You only have to pay for any loss in value of the goods if this loss in value is due to handling of the goods that is not necessary for checking the condition, properties and functioning of the goods.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_mRBxLJ": {
+          "type": "text",
+          "settings": {
+            "text": "<p>IV. Exclusion of the right of withdrawal<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_gcn4Bd": {
+          "type": "text",
+          "settings": {
+            "text": "<p>The right of revocation expires prematurely in the case of contracts for the delivery of sealed goods which are not suitable for return for reasons of health protection or hygiene if their seal has been removed after delivery.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_r7jrUT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Liability for defects (warranty)<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_cPbUD3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>7.1 If the purchased item is defective, the provisions of the statutory liability for defects shall apply.<br\/>7.2 The customer is requested to complain about delivered goods with obvious transport damage to the deliverer and to inform the seller of this. If the customer fails to do so, this shall have no effect on his statutory or contractual claims for defects.<br\/>7.3 If the customer is an entrepreneur, the limitation period for claims for defects shall be one year from the transfer of risk; the statutory limitation periods for recourse pursuant to § 478 BGB shall remain unaffected.<br\/>7.4 If the customer is a consumer, the limitation period for claims for defects shall be two years from delivery of the goods to the customer.<br\/>7.5 If the customer is an entrepreneur, only the manufacturer's product description shall be deemed agreed as an agreement on the quality of the goods. Public statements, recommendations or advertising by the manufacturer do not constitute a contractual description of the quality of the goods.<br\/>7.6 In the case of used goods, the limitation period for claims for defects shall be one year from delivery of the goods to the customer. However, the reduction of the limitation period to one year shall not apply to claims for damages and reimbursement of expenses of the customer which are based on intent or gross negligence of the seller, its legal representatives or vicarious agents, as well as in case of culpable breach of material contractual obligations and fraudulent concealment of a defect. Material contractual obligations are those whose fulfilment is necessary to achieve the objective of the contract.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_deTnFh": {
+          "type": "text",
+          "settings": {
+            "text": "<p>General advice<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_Vq6W6P": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Avoid damage to and contamination of the goods. Return the goods in the original packaging with all accessories and packaging components. If necessary, use protective outer packaging. If you no longer have the original packaging, please use suitable packaging to ensure adequate protection against transport damage.<br\/><br\/>Please do not return the goods to us freight collect.Please note that the aforementioned points 1 and 2 are not a prerequisite for the effective exercise of the right of withdrawal.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
+        },
+        "text_EDKthC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Cancellation Form<\/p>",
+            "text_size_mobile": "18px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_XTRXCN": {
+          "type": "text",
+          "settings": {
+            "text": "<p>I\/we () hereby revoke the contract concluded by me\/us () for the purchase of the following goods ()\/the provision of the following service ()Ordered on () ____________ \/ received on () ____________________________<br\/>Name of the consumer(s)<br\/>Address of the consumer(s)<br\/>Signature of consumer(s) (only in case of paper communication)<br\/>Date<br\/>(*) Delete where inapplicable<\/p>",
+            "text_size_mobile": "20px",
+            "text_size_desktop": "20px"
+          }
+        },
+        "text_caEePP": {
+          "type": "text",
+          "settings": {
+            "text": "<p>To<br\/>VESTUR UG (limited liability),<br\/>Römerstrasse 75,<br\/>71229 Leonberg<br\/>Germany<br\/>E-mail: info@vestur.d<\/p>",
+            "text_size_mobile": "20px",
+            "text_size_desktop": "20px"
+          }
+        }
+      },
+      "block_order": [
+        "title_CMVPpr",
+        "divider_BUh739",
+        "text_mBHVCi",
+        "text_8xFnRb",
+        "text_tEk8gy",
+        "text_pbwWcC",
+        "text_kWNDiA",
+        "text_y9N3We",
+        "text_mRBxLJ",
+        "text_gcn4Bd",
+        "text_r7jrUT",
+        "text_cPbUD3",
+        "text_deTnFh",
+        "text_Vq6W6P",
+        "text_EDKthC",
+        "text_XTRXCN",
+        "text_caEePP"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "title_text_button_qYaLEM"
+    "title_text_button_qYaLEM",
+    "text_blocks_GBhKRk"
   ]
 }
