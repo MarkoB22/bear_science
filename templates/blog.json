@@ -82,6 +82,16 @@
         "button_text_arrow": "Send",
         "image": "shopify:\/\/shop_images\/Logo_-_Header.png"
       }
+    },
+    "newsletter_signup_TFc4x3": {
+      "type": "newsletter-signup",
+      "settings": {
+        "text": "<p>Sign up for the newsletter and receive a<strong> 10€<\/strong> voucher as a thank you!<\/p>",
+        "email_text": "E-mail Address",
+        "button_link": "",
+        "button_text_arrow": "Send",
+        "image": "shopify:\/\/shop_images\/Logo_-_Header.png"
+      }
     }
   },
   "order": [
@@ -89,6 +99,7 @@
     "scrolling_text_CcNyVa",
     "main-blog-header",
     "main-blog",
-    "email_signup_43p7Wt"
+    "email_signup_43p7Wt",
+    "newsletter_signup_TFc4x3"
   ]
 }
