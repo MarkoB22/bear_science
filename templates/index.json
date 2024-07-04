@@ -66,28 +66,10 @@
             "link": "",
             "outline_text": false
           }
-        },
-        "text_GXm3xQ": {
-          "type": "text",
-          "settings": {
-            "text": "LONGEVITY & HEALTHY AGING",
-            "link": "",
-            "outline_text": false
-          }
-        },
-        "text_bLqzQV": {
-          "type": "text",
-          "settings": {
-            "text": "LONGEVITY & HEALTHY AGING",
-            "link": "",
-            "outline_text": false
-          }
         }
       },
       "block_order": [
-        "text_fnxMCw",
-        "text_GXm3xQ",
-        "text_bLqzQV"
+        "text_fnxMCw"
       ],
       "settings": {
         "height": "height-18",
