@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "type": "header",
   "name": "Footer group",
@@ -16,7 +25,6 @@
         "text_YH9rDj": {
           "type": "text",
           "settings": {
-            "column_size": "medium",
             "title": "Contact Us",
             "text": "<p>Tel: +49 (0)7152 9065 9928<br\/>info@vestur.de<br\/>Eltinger Str. 56<br\/>71229 Leonberg<\/p>",
             "text_size": "small",
@@ -40,7 +48,7 @@
       ],
       "settings": {
         "full_width": true,
-        "logo_image": "shopify:\/\/shop_images\/Logo_-_Footer.png",
+        "logo_image": "shopify:\/\/shop_images\/Logo_-_Footer_3998fd10-b912-4b4a-8320-03f0068810f7.png",
         "copyright_text": "All rights reserved.",
         "show_language_switcher": false,
         "show_currency_switcher": false,
