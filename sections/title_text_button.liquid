@@ -1,9 +1,9 @@
 {{- 'title_text_button.css' | asset_url | stylesheet_tag -}}
 <div class="title_text_button-wrapper title_position-{{ section.settings.title_position }} {% if template == 'page.contact' %}contact_us_page-variation{% endif %}
-            {% if template == 'page.imprint' or template == 'page.privacy_policy' or template == 'page.cancellation_policy' %} more_padding_desktop{% endif %} {{ template }}">
+            {% if template == 'page.imprint' or template == 'page.privacy_policy' or template == 'page.cancellation_policy' %} more_padding_desktop{% endif %}">
     {% if section.settings.title_upper %}
     <div class="title_text_button-title-wrapper title_position-{{ section.settings.title_position }} {{ section.settings.title_size }} lh-l f_light
-                {% if template == 'page.cancellation_policy' or template == 'page.SHIPPING INFORMATION'%} no_win_width{% endif %}">
+                {% if template == 'page.cancellation_policy' or template == 'page.SHIPPING INFORMATION' or template == 'page.our_certificates' %} no_win_width{% endif %}">
         <div class="title_text_button-title">
             
             {% if section.settings.title_upper != blank %}
