@@ -43,7 +43,7 @@
 			{%- if article.image -%}
 				{%- render 'responsive-image', image: article.image, sizes: image_sizes -%}
 			{%- endif -%}
-			<div class="blog_post_small-title_date_secondary">
+			<div class="blog_post_small-title_date_secondary not_mobile">
 				<h5><a class="blog_post_small-title h8 f_bold lh-sm" href="{{ article.url }}" title="{{ article.title | escape }}">{{ article.title }}</a></h5>
 				{% if show_date %}
 					<aside class="blog_post_small-date h11 f_light lh-sm">
