@@ -1,0 +1,136 @@
+.certificates-section_wrapper {
+    padding: 68px 28px;
+}
+
+.certificates-title {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.5;
+    margin-bottom: 48px;
+}
+
+.certificates-subtitle {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-bottom: 24px;
+}
+
+.certificates-side_lines {
+    border: 2px solid #6D7E60;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+.certificates-side_lines_inner {
+    background: white;
+    position: absolute;
+    height: calc(100% + 6px);
+    width: calc(100% - 94px);
+    top: -3px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.certificates-single_image {
+    z-index: 1;
+    position: relative;
+    padding: 2px;
+}
+
+.certificates-images {
+    position: relative;
+    background: white;
+}
+
+.certificates-block_wrapper:not(:last-child) {
+    margin-bottom: 48px;
+}
+
+.certificates-multi_images {
+    width: calc(100% - 4px);
+    display: block;
+    top: 2px;
+    left: 2px;
+}
+
+.certificates-multi_image_image {
+    padding: 3px;
+}
+
+.certificates-section_wrapper .flickity-button {
+    width: 20px;
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+
+.certificates-section_wrapper .flickity-button svg path {
+    fill: #04040499;
+
+}
+
+.certificates-section_wrapper .previous {
+    left: 22px;
+}
+
+.certificates-section_wrapper .next {
+    right: 22px;
+}
+
+.carousel-status {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 14px;
+    letter-spacing: 4.745px;
+}
+
+@media print, screen and (min-width: 1025px) {
+    .certificates-section_wrapper {
+        padding: 124px 128px;
+        display: flex;
+        align-items: flex-end;
+        gap: 50px;
+        flex-wrap: wrap;
+    }
+
+    .certificates-block_wrapper {
+        flex-basis: calc(50% - 25px);
+        position: relative;
+    }
+
+    .certificates-images img {
+        display: block;
+        margin: 0 auto;
+        margin-top: -1px;
+    }
+
+    .certificates-multi_image_image {
+        width: 100%;
+    }
+
+    .carousel-status {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .certificates-title {
+        font-size: 64px;
+        margin-bottom: 38px;
+    }
+
+    .certificates-subtitle {
+        font-size: 42px;
+        margin-bottom: 48px;
+    }
+
+    .certificates-block_wrapper:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .certificates-section_wrapper > .certificates-block_wrapper:not(:nth-last-of-type(-n+2)) {
+        margin-bottom: 119px;
+    }
+}

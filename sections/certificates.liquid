@@ -9,6 +9,10 @@
                 {{ block.settings.subtitle }}
             </div>
             <div class="certificates-images">
+                <div class="certificates-side_lines">
+                    <div class="certificates-side_lines_inner">
+                    </div>
+                </div>
                 {% if block.settings.image_2 == blank %}
                 <div class="certificates-single_image">
                     {%- liquid
@@ -19,9 +23,9 @@
                     {%- render 'responsive-image', image: block.settings.image_1, sizes: width, class: class -%}
                 </div>
                 {% else %}
-                <div class="certificates-multi_image carousel">
-                    {% if block.settings.image_1 == blank %}
-                    <div class="certificates-multi_image carousel__slide"> 
+                <slide-show class="certificates-multi_images">
+                    {% if block.settings.image_1 != blank %}
+                    <div class="certificates-multi_image_image carousel__slide"> 
                         {%- liquid
                         assign master_width = block.settings.image_1.src.width | append: 'x' | append: block.settings.image_1.src.height
                         assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
@@ -30,8 +34,8 @@
                         {%- render 'responsive-image', image: block.settings.image_1, sizes: width, class: class -%}
                     </div>
                     {% endif %}
-                    {% if block.settings.image_2 == blank %}
-                    <div class="certificates-multi_image carousel__slide"> 
+                    {% if block.settings.image_2 != blank %}
+                    <div class="certificates-multi_image_image carousel__slide"> 
                         {%- liquid
                         assign master_width = block.settings.image_2.src.width | append: 'x' | append: block.settings.image_2.src.height
                         assign width = '375x' | append: mobile_image_height | append: ',' | append: master_width
@@ -40,13 +44,35 @@
                         {%- render 'responsive-image', image: block.settings.image_2, sizes: width, class: class -%}
                     </div>
                     {% endif %}
-
-                </div>
+                </slide-show>
                 {% endif %}
             </div>
+            {% unless block.settings.image_2 == blank %}
+                <div class="carousel-status f_regular lh-sm"></div>
+            {% endunless %}
         </div>
     {% endfor %}
 </div>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var imageCarousel = document.querySelector('.certificates-multi_images');
+    var flktyMain = new Flickity(imageCarousel, {
+        prevNextButtons: true,
+        wrapAround: true,
+        pageDots: true
+    });
+
+    var carouselStatus = document.querySelector('.carousel-status');
+
+    function updateStatus() {
+        var cellNumber = flktyMain.selectedIndex + 1;
+        carouselStatus.textContent = cellNumber + '/' + flktyMain.slides.length;
+    }
+    updateStatus();
+
+    flktyMain.on('change', updateStatus);
+});
+</script>
 {% schema %}
 {
     "name": "Certificates",
