@@ -126,6 +126,10 @@
         margin-bottom: 48px;
     }
 
+    .carousel-status {
+        font-size: 24px;
+    }
+
     .certificates-block_wrapper:not(:last-child) {
         margin-bottom: 0;
     }
