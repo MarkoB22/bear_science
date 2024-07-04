@@ -34,10 +34,53 @@
         "button_link": "",
         "button_text_arrow": ""
       }
+    },
+    "certificates_ikV3gY": {
+      "type": "certificates",
+      "blocks": {
+        "certificate_CTnHVB": {
+          "type": "certificate",
+          "settings": {
+            "title": "NMN",
+            "subtitle": "Laboratory test report",
+            "image_1": "shopify:\/\/shop_images\/Frame_384.png"
+          }
+        },
+        "certificate_Xjhbcd": {
+          "type": "certificate",
+          "settings": {
+            "title": "",
+            "subtitle": "Safety data sheet"
+          }
+        },
+        "certificate_9BtTLy": {
+          "type": "certificate",
+          "settings": {
+            "title": "Title",
+            "subtitle": "Subitle"
+          }
+        },
+        "certificate_YWazwV": {
+          "type": "certificate",
+          "settings": {
+            "title": "Title",
+            "subtitle": "Subitle"
+          }
+        }
+      },
+      "block_order": [
+        "certificate_CTnHVB",
+        "certificate_Xjhbcd",
+        "certificate_9BtTLy",
+        "certificate_YWazwV"
+      ],
+      "settings": {
+      }
     }
   },
   "order": [
     "main",
-    "title_text_button_mLaUWq"
+    "title_text_button_mLaUWq",
+    "certificates_ikV3gY"
   ]
 }
