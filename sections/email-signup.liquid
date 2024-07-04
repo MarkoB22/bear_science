@@ -1,5 +1,5 @@
-{{  'email-signup.css' | asset_url | stylesheet_tag }}
-<div class="signup_wrapper">
+{{ 'email-signup.css' | asset_url | stylesheet_tag }}
+<div class="signup_wrapper{% if section.settings.image == blank %} no_logo{% endif %}">
 
     <div class="signup_only_text">
         {% if section.settings.text %}
@@ -43,8 +43,26 @@ document.querySelectorAll('.signup_logo img').forEach(img => {
         }
     };
 });
-
 </script>
+
+{% comment %} WHEN IMAGE DOESN'T EXIST {% endcomment %}
+<style>
+
+.signup_wrapper.no_logo {
+    padding: 46px 9%;
+}
+
+.signup_wrapper.no_logo .signup_text {
+    margin-bottom: unset;
+    padding-right: 4%;
+} 
+
+.signup_wrapper.no_logo .signup_only_text {
+    display: flex;
+    align-items: center;
+}
+
+</style>
 {% schema %}
     {
         "name": "Newsletter",
@@ -61,11 +79,6 @@ document.querySelectorAll('.signup_logo img').forEach(img => {
                         "label": "Email",
                         "default": "Email Address"
                     },
-                    // {
-                    //     "type": "url",
-                    //     "id": "button_link",
-                    //     "label": "Button link"
-                    // },
                     {
                         "type": "text",
                         "id": "button_text_arrow",
