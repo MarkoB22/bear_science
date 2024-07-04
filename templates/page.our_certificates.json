@@ -50,7 +50,9 @@
           "type": "certificate",
           "settings": {
             "title": "",
-            "subtitle": "Safety data sheet"
+            "subtitle": "Safety data sheet",
+            "image_1": "shopify:\/\/shop_images\/Frame_384.png",
+            "image_2": "shopify:\/\/shop_images\/Frame_384.png"
           }
         },
         "certificate_9BtTLy": {
