@@ -101,11 +101,20 @@
       ],
       "settings": {
       }
+    },
+    "email_signup_NmrcQX": {
+      "type": "email-signup",
+      "settings": {
+        "text": "<p>Sign up for the newsletter and receive a <strong>10€<\/strong> voucher as a thank you!<\/p>",
+        "email_text": "E-mail Address",
+        "button_text_arrow": "Send"
+      }
     }
   },
   "order": [
     "main",
     "title_text_button_Fakcga",
-    "text_blocks_p6zBCq"
+    "text_blocks_p6zBCq",
+    "email_signup_NmrcQX"
   ]
 }
