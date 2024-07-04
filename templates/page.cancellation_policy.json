@@ -191,11 +191,20 @@
       ],
       "settings": {
       }
+    },
+    "email_signup_4rKDgf": {
+      "type": "email-signup",
+      "settings": {
+        "text": "<p>Sign up for the newsletter and receive a <strong>10€<\/strong> voucher as a thank you!<\/p>",
+        "email_text": "E-mail Address",
+        "button_text_arrow": "Send"
+      }
     }
   },
   "order": [
     "main",
     "title_text_button_qYaLEM",
-    "text_blocks_GBhKRk"
+    "text_blocks_GBhKRk",
+    "email_signup_4rKDgf"
   ]
 }
