@@ -73,10 +73,10 @@
         "show_excerpt": true
       }
     },
-    "newsletter_signup_TFc4x3": {
-      "type": "newsletter-signup",
+    "email_signup_jkTntg": {
+      "type": "email-signup",
       "settings": {
-        "text": "<p>Sign up for the newsletter and receive a<strong> 10€<\/strong> voucher as a thank you!<\/p>",
+        "text": "<p>Sign up for the newsletter and receive a <strong>10€<\/strong> voucher as a thank you!<\/p>",
         "email_text": "E-mail Address",
         "button_link": "",
         "button_text_arrow": "Send",
@@ -89,6 +89,6 @@
     "scrolling_text_CcNyVa",
     "main-blog-header",
     "main-blog",
-    "newsletter_signup_TFc4x3"
+    "email_signup_jkTntg"
   ]
 }
