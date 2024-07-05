@@ -1,17 +1,22 @@
 {{- 'blog-suggestions.css' | asset_url | stylesheet_tag -}}
+{{ 'blog.css' | asset_url | stylesheet_tag }}
 {% liquid
 	assign show_date = section.settings.show_date
 	assign show_excerpt = section.settings.show_excerpt
+    assign section_blog = section.settings.blog
+    assign image_ratio = 'adapt'
 %}
-<div class="blog_suggestions-section_wrapper">
-    <div class="blog_suggestions-title">
+<div class="blog_suggestions-title">
         {{ section.settings.heading }}
-    </div>
+</div>
+<div class="blog_suggestions-section_wrapper">
     {% for article in blogs[section_blog].articles limit: 2 %}
         <div class="small-12 medium-4 columns blog_post_small-wrapper">
-            {% render 'blog-post', article: article, show_date: show_date, show_excerpt: show_excerpt %}
+            {% render 'blog-post', article: article, show_date: show_date, image_ratio: image_ratio %}
         </div>
     {% endfor %}
+
+    <a class="button_type3 blog_view_all-button f_regular lh-sm">{{ 'sections.featured_blog.view_all' | t }}{% render 'svg-icons' with 'button_arrow_2' %}</a>
 </div>
 {% schema %}
     {
@@ -27,6 +32,12 @@
            "type": "blog",
            "id": "blog",
            "label": "Blog"
+        },
+        {
+            "type": "checkbox",
+            "id": "show_date",
+            "default": true,
+            "label": "Show date"
         }
       ],
       "presets": [

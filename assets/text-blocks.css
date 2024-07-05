@@ -52,6 +52,10 @@
     margin-bottom: 0;
 }
 
+.cancelation_padding {
+    padding: 0 16px;
+}
+
 @media only screen and (min-width: 1025px) {
     .text_block-section_wrapper {
         padding: 124px 128px;
@@ -82,5 +86,9 @@
 
     .text_block-desktop_size_24px {
         font-size: 24px;
+    }
+
+    .cancelation_padding {
+        padding: 0 125px;
     }
 }

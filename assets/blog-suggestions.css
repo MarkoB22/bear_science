@@ -1,0 +1,99 @@
+.blog_suggestions-title {
+    padding: 17px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.22;
+    font-weight: 500;
+    color: #04040499;
+    letter-spacing: 0.14em;
+    border-top: 1px solid #040404;
+}
+
+.blog_suggestions-section_wrapper {
+    padding: 48px 54px;
+    background: #6D7E60;
+}
+
+.blog_suggestions-section_wrapper .columns {
+    padding: 0;
+}
+
+.blog_suggestions-section_wrapper .blog-post .blog_post_small-image img {
+    width: 80.9% !important;
+}
+
+.blog_suggestions-section_wrapper .featured-image {
+    margin-bottom: 0 !important;
+}
+
+.blog_suggestions-section_wrapper .blog_post_small-wrapper:first-child {
+    margin-bottom: 68px;
+}
+
+.blog_view_all-button {
+    font-size: 24px;
+    color: white !important;
+    margin: 68px auto 0;
+}
+
+@media only screen and (min-width: 1025px) {
+    .blog_suggestions-title {
+        font-size: 32px;
+        color: #040404;
+    }
+
+    .blog_suggestions-section_wrapper {
+        padding: 68px 126px;
+    }
+
+    .blog_suggestions-section_wrapper {
+        display: flex;
+        align-items: center;
+        gap: 96px;
+    }
+
+    .blog_view_all-button {
+        height: fit-content;
+    }
+
+    .blog_suggestions-section_wrapper .blog_post_small-wrapper:first-child {
+        margin-bottom: 0;
+    }
+
+    .blog_suggestions-section_wrapper .blog-post {
+        margin-bottom: 0;
+    }
+
+    .blog_view_all-button {
+        margin: 0;
+    }
+
+    .blog_suggestions-section_wrapper .blog_post_small-wrapper {
+        min-width: 36.617%;
+        max-width: none;
+    }
+
+    .blog_suggestions-section_wrapper .blog-post .featured-image > a img {
+        height: 88.184%;
+    }
+
+    .blog_suggestions-section_wrapper .blog_post_small-image:after {
+        width: 81.1% !important;
+        height: 88% !important;
+    }
+
+    .blog_suggestions-section_wrapper .blog_post_small-title_date_secondary {
+        bottom: 43px;
+    }
+
+    .blog_suggestions-section_wrapper .blog_post_small-title_date_primary {
+        margin-bottom: 42px;
+    }
+
+    .blog_suggestions-section_wrapper .blog-post:hover .blog_post_small-button {
+        margin-bottom: 0 !important;
+    }
+
+    
+}

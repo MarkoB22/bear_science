@@ -260,7 +260,7 @@
       "shop_collection": "Shop {{ collection }}"
     },
     "featured_blog": {
-      "view_all": "View all posts",
+      "view_all": "View all",
       "onboarding_title": "Blog post",
       "onboarding_content": "Give your customers a summary of your blog post"
     },

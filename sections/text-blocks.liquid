@@ -2,7 +2,7 @@
 <div class="text_block-section_wrapper">
     <div class="text_block-side_lines">
     </div>
-    <div class="text_block-inner_wrapper">
+    <div class="text_block-inner_wrapper {% if template == 'page.cancellation_policy' %} cancelation_padding{% endif %}">
     {% for block in section.blocks %}
         {%- case block.type -%}
             {% when 'title' %}

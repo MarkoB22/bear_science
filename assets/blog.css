@@ -7,6 +7,7 @@
 .blog-post {
   margin-bottom: 50px; }
   .blog-post .featured-image {
+    transition: all ease-in-out .3s;
     margin-bottom: 24px;
     overflow: hidden;
     position: relative;
@@ -384,10 +385,12 @@
 
   .blog_post_small-image {
     --ratio-percent: 58.137% !important;
+    transform: all ease-in-out .3s;
   }
 
   .blog_post_small-button {
     align-items: flex-end;
+    transition: all ease-in-out .3s;
   }
 
   .blog_post_small-button svg {
