@@ -4363,6 +4363,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
   display: block;
   margin: 24px auto 0 auto;
   height: auto;
+  width: fit-content !important;
 }
 
 .keep_shopping-button:after {

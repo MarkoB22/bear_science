@@ -1,16 +1,68 @@
-
-
-
 .not-found {
-  max-width: 470px;
   margin: 0 auto;
   text-align: center;
-  padding: 40px 0; }
-  @media only screen and (min-width: 768px) {
-    .not-found {
-      padding: 70px 0; } }
-  @media only screen and (min-width: 1068px) {
-    .not-found {
-      padding: 100px 0; } }
-  .not-found .button {
-    margin-top: 20px; }
+}
+
+.page_404 .columns {
+  padding: 68px 24px 124px;
+}
+
+.page_404 h1 {
+  font-size: 128px;
+  color: #6D7E60;
+  margin-bottom: 46px;
+  line-height: 1.5;
+  font-weight: 300;
+}
+
+.oops_404 {
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+.not-found p {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 38px;
+}
+
+.take_back_button_404 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.22;
+  padding: 16px;
+  text-transform: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 1025px) {
+  .page_404 .columns {
+    padding: 114px 23.8889% 170px;
+  }
+
+  .page_404 h1 {
+    font-size: 224px;
+  }
+
+  .oops_404 {
+    font-size: 48px;
+    margin-bottom: 8px;
+  }
+
+  .not-found p {
+    font-size: 32px;
+    margin-bottom: 84px;
+  }
+
+  .take_back_button_404 {
+    font-size: 24px;
+    padding: 18px 37px;
+    width: fit-content;
+    margin: 0 auto;
+  }
+}

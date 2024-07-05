@@ -211,9 +211,10 @@
       "cart": "Cart"
     },
     "404": {
-      "not_found": "Page not found",
-      "not_found_description": "The page you were looking for doesnt exist. You may have mistyped the address or the page may have moved.",
-      "continue_shopping": "Continue shopping"
+      "not_found": "404",
+      "oops": "Oops, something went wrong!",
+      "not_found_description": "But fear not! Our quest for health and longevity continues.",
+      "take_me_back": "Take me back to the homepage"
     },
     "cart": {
       "title": "Your cart",

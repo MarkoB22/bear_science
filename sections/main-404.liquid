@@ -1,9 +1,10 @@
-<div class="row">
+<div class="row page_404">
 	<div class="small-12 columns">
 		<div class="not-found">
 			<h1>{{ 'sections.404.not_found' | t }}</h1>
+			<div class="oops_404">{{ 'sections.404.oops' | t }}</div>
 			<p>{{ 'sections.404.not_found_description' | t }}</p>
-			<a href="{{ routes.root_url }}" class="button accent2"><span>{{ 'general.continue_shopping' | t }}</span></a>
+			<a href="{{ routes.root_url }}" class="accent2 button_type2 take_back_button_404"><span>{{ 'sections.404.take_me_back' | t }}</span> {% render 'svg-icons' with 'button_arrow' %}</a>
 		</div>
 	</div>
 </div>
