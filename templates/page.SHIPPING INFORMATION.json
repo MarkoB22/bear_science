@@ -38,17 +38,6 @@
     "text_blocks_LW7KKL": {
       "type": "text-blocks",
       "blocks": {
-        "title_aMkKkg": {
-          "type": "title",
-          "settings": {
-            "title": "Right of withdrawal for consumers"
-          }
-        },
-        "divider_pztbGG": {
-          "type": "divider",
-          "settings": {
-          }
-        },
         "text_yFeqtJ": {
           "type": "text",
           "settings": {
@@ -99,8 +88,6 @@
         }
       },
       "block_order": [
-        "title_aMkKkg",
-        "divider_pztbGG",
         "text_yFeqtJ",
         "text_gbfQRd",
         "text_HCxqyQ",
