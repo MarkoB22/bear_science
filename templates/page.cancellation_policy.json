@@ -164,7 +164,7 @@
         "text_XTRXCN": {
           "type": "text",
           "settings": {
-            "text": "<p>I\/we () hereby revoke the contract concluded by me\/us () for the purchase of the following goods ()\/the provision of the following service ()<br\/>Ordered on () ____________ \/ received on () ____________________________<br\/>Name of the consumer(s)<br\/>Address of the consumer(s)<br\/>Signature of consumer(s) (only in case of paper communication)<br\/>Date<br\/>(*) Delete where inapplicable<\/p>",
+            "text": "<p>I\/we () hereby revoke the contract concluded by me\/us () for the purchase of the following goods ()\/the provision of the following service ()<br\/><br\/>Ordered on () ____________ \/ received on () ____________________________<br\/>Name of the consumer(s)<br\/>Address of the consumer(s)<br\/>Signature of consumer(s) (only in case of paper communication)<br\/>Date<br\/>(*) Delete where inapplicable<\/p>",
             "text_size_mobile": "20px",
             "text_size_desktop": "20px"
           }
