@@ -168,6 +168,14 @@
             "text_size_mobile": "20px",
             "text_size_desktop": "20px"
           }
+        },
+        "text_LcUNrk": {
+          "type": "text",
+          "settings": {
+            "text": "<p>If you wish to cancel the contract, please complete and return this form.<\/p>",
+            "text_size_mobile": "16px",
+            "text_size_desktop": "16px"
+          }
         }
       },
       "block_order": [
@@ -187,7 +195,8 @@
         "text_Vq6W6P",
         "text_EDKthC",
         "text_XTRXCN",
-        "text_caEePP"
+        "text_caEePP",
+        "text_LcUNrk"
       ],
       "settings": {
       }
