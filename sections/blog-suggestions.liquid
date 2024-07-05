@@ -1,10 +1,16 @@
 {{- 'blog-suggestions.css' | asset_url | stylesheet_tag -}}
+{% liquid
+	assign show_date = section.settings.show_date
+	assign show_excerpt = section.settings.show_excerpt
+%}
 <div class="blog_suggestions-section_wrapper">
     <div class="blog_suggestions-title">
         {{ section.settings.heading }}
     </div>
     {% for article in blogs[section_blog].articles limit: 2 %}
-     
+        <div class="small-12 medium-4 columns blog_post_small-wrapper">
+            {% render 'blog-post', article: article, show_date: show_date, show_excerpt: show_excerpt %}
+        </div>
     {% endfor %}
 </div>
 {% schema %}
@@ -21,40 +27,6 @@
            "type": "blog",
            "id": "blog",
            "label": "Blog"
-        },
-        {
-            "type": "checkbox",
-            "id": "show_date",
-            "default": true,
-            "label": "Show date"
-        },
-        {
-            "type": "checkbox",
-            "id": "show_excerpt",
-            "default": true,
-            "label": "Show excerpt"
-        },
-        {
-            "type": "checkbox",
-            "id": "show_view_all",
-            "default": true,
-            "label": "Enable \"View all\" button if blog includes more blog posts than shown"
-        },
-        {
-            "type": "header",
-            "content": "Spacing"
-        },
-        {
-            "type": "checkbox",
-            "id": "disable_top_spacing",
-            "default": false,
-            "label": "Remove top spacing"
-        },
-        {
-            "type": "checkbox",
-            "id": "disable_bottom_spacing",
-            "default": false,
-            "label": "Remove bottom spacing"
         }
       ],
       "presets": [
