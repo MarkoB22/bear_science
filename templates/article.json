@@ -1,1 +1,69 @@
-{"sections":{"breadcrumbs":{"type":"breadcrumbs","settings":{}},"main-article":{"type":"main-article","blocks":{"title":{"type":"title","settings":{}},"featured_image":{"type":"featured_image","settings":{}},"content":{"type":"content","settings":{}},"tags":{"type":"tags","settings":{}}},"block_order":["title","featured_image","content","tags"],"settings":{"article_show_date":true,"article_show_author":true}}},"order":["breadcrumbs","main-article"]}
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "breadcrumbs": {
+      "type": "breadcrumbs",
+      "settings": {
+      }
+    },
+    "main-article": {
+      "type": "main-article",
+      "blocks": {
+        "title": {
+          "type": "title",
+          "settings": {
+            "article_show_excerpt": true,
+            "excerpt_length": 30,
+            "article_show_sharing": true
+          }
+        },
+        "featured_image": {
+          "type": "featured_image",
+          "settings": {
+            "image_ratio": "medium"
+          }
+        },
+        "content": {
+          "type": "content",
+          "settings": {
+          }
+        },
+        "tags": {
+          "type": "tags",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "title",
+        "featured_image",
+        "content",
+        "tags"
+      ],
+      "settings": {
+        "article_show_date": true,
+        "article_show_author": true
+      }
+    },
+    "blog_suggestions_PjA4RB": {
+      "type": "blog-suggestions",
+      "settings": {
+        "heading": "YOU MAY ALSO LIKE",
+        "blog": "news"
+      }
+    }
+  },
+  "order": [
+    "breadcrumbs",
+    "main-article",
+    "blog_suggestions_PjA4RB"
+  ]
+}
