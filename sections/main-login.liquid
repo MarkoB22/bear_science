@@ -44,7 +44,7 @@
 				{{ 'customer.login_page.email' | t }}
 			</label>
 			</div>
-			<button type="submit" class="button full"><span>{{ 'customer.login_page.submit' | t | escape }}</span></button>
+			<button type="submit" class="button full button_type2"><span>{{ 'customer.login_page.submit' | t | escape }}</span></button>
 				<div class="switch-login-section">
 				<a href="#login" class="text-button">
 				{{ 'customer.login_page.cancel' | t }}
@@ -78,15 +78,15 @@
 									autocapitalize="off"
 									placeholder="{{ 'customer.login_page.email' | t }}"
 								/>
-								{% render 'svg-icons' with 'email' %}
 								<label for="customer_email">{{ 'customer.login_page.email' | t }}</label>
+								{% render 'svg-icons' with 'email' %}
 				</div>
 
 				<div class="pass_recover_field-wrapper">
 					<div class="field">
-						<input type="password" name="customer[password]" class="full {% if form.errors contains 'form' %}invalid{% endif %}" value="" placeholder="{{ 'customer.login_page.password' | t }}" />
+						<input id="password1" type="password" name="customer[password]" class="full {% if form.errors contains 'form' %}invalid{% endif %}" value="" placeholder="{{ 'customer.login_page.password' | t }}" />
 						<label class="label_password" for="customer_password">{{ 'customer.login_page.password' | t }}</label>
-						{% render 'svg-icons' with 'password' %}
+						<div class="password_icon_1-wrapper" id="toggleButton1">{% render 'svg-icons' with 'password' %}</div>
 					</div>
 				<a href="#recover" class="text-button">{{ 'customer.login_page.forgot_password' | t }}</a>
 				</div>
@@ -122,9 +122,9 @@
 				{% render 'svg-icons' with 'email' %}
 			</div>
 			<div class="field">
-				<input type="password" name="customer[password]" class="full" value="" placeholder="{{ 'customer.login_page.password' | t }}" />
+				<input id="password2" type="password" name="customer[password]" class="full" value="" placeholder="{{ 'customer.login_page.password' | t }}" />
 				<label class="label_password" for="password">{{ 'customer.login_page.password' | t }}</label>
-				{% render 'svg-icons' with 'password' %}
+				<div class="password_icon_2-wrapper" id="toggleButton2">{% render 'svg-icons' with 'password' %}</div>
 			</div>
 			<button type="submit" class="button_type2 full"><span>{{ 'customer.login_page.submit_register' | t }}</span>{% render 'svg-icons' with 'button_arrow_2' %}</button>
 			{% endform %}
@@ -162,8 +162,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
     loginButton.addEventListener('click', toggleActive);
     registerButton.addEventListener('click', toggleActive);
+	
 });
 </script>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+	function togglePasswordVisibility(passwordFieldId, buttonId) {
+		var passwordInput = document.getElementById(passwordFieldId);
+		var toggleButton = document.getElementById(buttonId);
+
+		if (passwordInput.type === 'password') {
+			passwordInput.type = 'text';
+		} else {
+			passwordInput.type = 'password';
+		}
+	}
+
+	document.getElementById('toggleButton1').addEventListener('click', function () {
+		togglePasswordVisibility('password1', 'toggleButton1');
+	});
+
+	document.getElementById('toggleButton2').addEventListener('click', function () {
+		togglePasswordVisibility('password2', 'toggleButton2');
+	});
+});
+</script>
+
 {% schema %}
 {
   "name": "Login",

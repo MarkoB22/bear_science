@@ -68,7 +68,28 @@
   border-bottom: 1px solid black;
 }
 
+.signup_wrapper.no_logo {
+  padding: 46px 9%;
+}
+
+.signup_wrapper.no_logo .signup_text {
+  margin-bottom: unset;
+  padding-right: 4%;
+} 
+
+.signup_wrapper.no_logo .signup_only_text {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 @media print, screen and (min-width: 1025px) {
+
+.signup_wrapper.no_logo .signup_only_text {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
 
 /* -------------------- PLANT IMAGE ------------------------ */
 

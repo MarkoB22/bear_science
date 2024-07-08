@@ -67,7 +67,8 @@
     text-align: center;
     font-size: 0.875rem;
     line-height: 1.75;
-    margin-top: 15px; }
+    margin-top: 15px;
+    margin-bottom: 15px; }
     .thb-form-container .switch-login-section .text-button {
       display: inline;
       font-size: inherit;
@@ -109,6 +110,13 @@
   margin: 0 !important;
   overflow: hidden;
   transition: all ease-in-out .3s;
+  padding: 0 14.5px;
+}
+
+.thb-login-form#recover {
+  opacity: 1;
+  max-height: none;
+  overflow: auto;
   padding: 0 14.5px;
 }
 
@@ -192,7 +200,7 @@
 .section-customer-login label {
   font-weight: 500;
   font-family: 'Montserrat';
-  color: #040404 !important;
+  color: #040404CC !important;
   padding: 25px 14px 13px;
   font-size: 14px;
   height: auto;
@@ -216,9 +224,11 @@ textarea:focus, input:focus{
 
 .section-customer-login .text-button {
   display: block;
-  margin: 0 0 0 auto;
+  margin: -10px 0 0 auto;
   width: fit-content;
   color: #6D7E60;
+  font-size: 14px;
+  font-weight: 500;
 }
 
 .section-customer-login .text-button::before,
@@ -227,7 +237,6 @@ textarea:focus, input:focus{
 }
 
 .pass_recover_field-wrapper {
-  border: 0.5px solid #04040466;
   margin-bottom: 48px;
 }
 
@@ -238,6 +247,8 @@ textarea:focus, input:focus{
 .section-customer-login button {
   margin-top: 22px;
   width: 100%;
+  font-weight: 600;
+  font-size: 18px;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -250,13 +261,14 @@ textarea:focus, input:focus{
   bottom: 39px;
 }
 
-.thb-register-form input[type="password"] {
-  border: 0.5px solid #04040466;
-}
-
 @media only screen and (min-width: 1025px) {
   .section-customer-login {
     padding: 68px 64px;
+  }
+
+  .section-customer-login {
+    height: auto;
+    min-height: calc(100vh - var(--header-height));
   }
 
   .login_register-forms_wrapper {
@@ -277,6 +289,14 @@ textarea:focus, input:focus{
     font-size: 36px;
   }
 
+  .section-customer-login button {
+    font-size: 24px;
+  }
+
+  .section-customer-login .text-button {
+    font-size: 16px;
+  }
+
   .fields {
     display: block;
     width: 420px;
@@ -284,5 +304,18 @@ textarea:focus, input:focus{
 
   .section-customer-login label {
     font-size: 18px;
+  }
+
+  .section-customer-login label {
+    color: #040404 !important;
+  }
+
+  .password_icon {
+    cursor: pointer;
+  }
+
+  .section-customer-login {
+    display: flex;
+    align-items: center;
   }
 }
