@@ -12,6 +12,8 @@
 						{% endif %}
 						{% if block.type == 'featured_image' %}
 							<div class="featured-image" {{ block.shopify_attributes }}>
+								<div class="bottom_left_border"></div>
+								<div class="top_right_border"></div>
 								{%- liquid
 									case block.settings.image_ratio
 										when 'adapt'
@@ -31,16 +33,16 @@
 						{% if block.type == 'title' %}
 							<div class="post-title page-content-width" {{ block.shopify_attributes }}>
 								<div class="post-meta-wrapper">
-									{% if section.settings.article_show_date %}
-									<aside class="post-meta">
-										{{ article.published_at | time_tag: '%b %d, %Y' }}
-									</aside>
-									{% endif %}
 									{% if section.settings.article_show_author %}
 									<aside class="post-author">{{ article.author }}</aside>
 									{% endif %}
 								</div>
 								<h1 class="entry-title">{{ article.title }}</h1>
+								{% if section.settings.article_show_date %}
+									<aside class="post-meta">
+										{{ article.published_at | time_tag: '%b %d, %Y' }}
+									</aside>
+								{% endif %}
 								<div class="post-excerpt-container">
 									{%- if block.settings.article_show_excerpt -%}
 									<div class="post-excerpt">
