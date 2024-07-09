@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "current": {
     "heading_font": "montserrat_n2",
@@ -13,7 +22,7 @@
     "color_header_bg": "#ffffff",
     "color_header_text": "#040404",
     "color_header_links": "#040404",
-    "color_header_links_hover": "#040404",
+    "color_header_links_hover": "#6d7e60",
     "color_header_icons": "#606060",
     "solid_button_background": "#040404",
     "outline_button_label": "#040404",
