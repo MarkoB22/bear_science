@@ -44,7 +44,7 @@
       ],
       "settings": {
         "article_show_date": true,
-        "article_show_author": true
+        "article_show_author": false
       }
     },
     "blog_suggestions_PjA4RB": {
