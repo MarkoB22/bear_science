@@ -78,7 +78,8 @@
       "settings": {
         "text": "<p>Sign up for the newsletter and receive a <strong>10€<\/strong> voucher as a thank you!<\/p>",
         "email_text": "E-mail Address",
-        "button_text_arrow": "Send"
+        "button_text_arrow": "Send",
+        "image": "shopify:\/\/shop_images\/Logo_-_Newsletter_section_2.png"
       }
     }
   },
