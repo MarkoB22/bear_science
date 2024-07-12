@@ -4937,3 +4937,7 @@ input[type="radio"], .field label, .custom-checkbox[type="checkbox"], .custom-ch
     display: none !important;
   }
 }
+
+.hidden {
+  display: none !important;
+}

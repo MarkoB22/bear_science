@@ -9,17 +9,17 @@
       "checkout": "Auschecken",
       "cart_empty": "Dein Warenkorb ist leer",
       "start_shopping": "Beginn mit dem Einkauf",
-      "you_may_also_like": "Sie können auch mögen",
+      "you_may_also_like": "Das könnte dir auch gefallen",
       "add_order_note": "Spezielle Bestellanweisungen",
       "save": "Sparen",
       "free_shipping": {
-        "spend_more_for_free_shipping_html": "Geben Sie <span>{{ amount }}<\/span> mehr für KOSTENLOSEN Versand aus.",
-        "free_shipping_applied_at_checkout": "KOSTENLOSER Versand wird beim Checkout angewendet"
+        "spend_more_for_free_shipping_html": "Geben <span>{{ amount }}<\/span> mehr für KOSTENLOSEN Versand aus.",
+        "free_shipping_applied_at_checkout": "KOSTENLOSER Versand wird beim Zahlvorgang angewendet"
       }
     },
     "meta": {
       "page": "Seite",
-      "tags": "Schild"
+      "tags": "Stichworte"
     }
   },
   "newsletter": {
@@ -43,8 +43,8 @@
     "heading": "Suchergebnisse",
     "no_results": "Keine Ergebnisse gefunden für \"{{ terms }}\". Überprüfe die Schreibweise oder versuche es mit einer anderen Suchanfrage.",
     "results_found": {
-      "one": "{{ count }} ergebnis gefunden für “{{ key }}”",
-      "other": "{{ count }} ergebnisse gefunden für “{{ key }}”"
+      "one": "{{ count }} Ergebnis gefunden für “{{ key }}”",
+      "other": "{{ count }} Ergebnisse gefunden für “{{ key }}”"
     },
     "results_with_count": {
       "one": "{{ count }} Ergebnis",
@@ -131,7 +131,7 @@
         "in_stock": "Auf Lager"
       },
       "pickup_availability": {
-        "heading": "Pickup Availability",
+        "heading": "Abholmöglichkeiten",
         "view_store_info": "Shop-Informationen anzeigen",
         "check_other_stores": "Verfügbarkeit in anderen Shops überprüfen",
         "pick_up_available": "Abholung verfügbar",
@@ -174,7 +174,7 @@
       "reset": "Zurücksetzen",
       "sort_button": "Sortieren",
       "sort_by_label": "Sortieren nach:",
-      "to": "Bis",
+      "to": "bis",
       "clear_filter": "Filter entfernen"
     }
   },
@@ -192,8 +192,8 @@
       "view_all_results": "Alle Ergebnisse anzeigen"
     },
     "breadcrumbs": {
-      "home": "Heimat",
-      "shop": "Geschäft",
+      "home": "Startseite",
+      "shop": "Shop",
       "cart": "Warenkorb",
       "search": "Suche",
       "my_account": "Mein Konto"
@@ -209,9 +209,9 @@
       "add_notes": "Notizen hinzufügen",
       "subtotal": "Zwischensumme",
       "note": "Spezielle Bestellanweisungen",
-      "checkout": "Auschecken",
-      "empty": "Ihr Warenkorb ist leer",
-      "ready": "Sind Sie bereit, Ihre neuen Lieblingsprodukte zu finden?",
+      "checkout": "Bestellung abschließen",
+      "empty": "Dein Warenkorb ist leer",
+      "ready": "Bist du bereit, deine neuen Lieblingsprodukte zu finden?",
       "cart_error": "Beim Aktualisieren deines Warenkorbs ist ein Fehler aufgetreten. Bitte versuche es erneut.",
       "cart_quantity_error_html": "Du kannst deinem Warenkorb nur {{ quantity }} Stück dieses Artikels hinzufügen.",
       "taxes_and_shipping_policy_at_checkout_html": "Steuern und <a href=\"{{ link }}\">Versand<\/a> werden beim Checkout berechnet",
@@ -247,9 +247,9 @@
       "login_using": "Mit Passwort betreten",
       "opening_soon": "Öffnet bald",
       "enter_using": "Shop mit Passwort betreten:",
-      "are_you_the_store_owner": "Sind Sie der Ladenbesitzer?",
+      "are_you_the_store_owner": "Sind Sie der Geschäftsinhaber?",
       "login_here": "Hier anmelden",
-      "cancel": "Absagen"
+      "cancel": "Abbrechen"
     },
     "featured_collection": {
       "shop_collection": "Kaufen {{ collection }}"
@@ -270,7 +270,7 @@
         "comment": "Kommentar",
         "send": "Senden",
         "post_success": "Danke, dass du uns kontaktiert hast. Wir werden uns so schnell wie möglich bei dir melden.",
-        "error_heading": "Bitte passe Folgendes an:"
+        "error_heading": "Bitte passe folgendes an:"
       },
       "map": {
         "location": "Standort {{ index }}"
@@ -330,7 +330,7 @@
       "billing_address": "Rechnungsadresse",
       "payment_status": "Zahlungsstatus",
       "shipping_address": "Lieferadresse",
-      "fulfillment_status": "Fulfillmentstatus",
+      "fulfillment_status": "Bestellstatus",
       "discount": "Rabatt",
       "shipping": "Versand",
       "tax": "Steuer",
@@ -352,7 +352,7 @@
       "order_number_link": "Bestellnummer {{ number }}",
       "date": "Datum",
       "payment_status": "Zahlungsstatus",
-      "fulfillment_status": "Fulfillmentstatus",
+      "fulfillment_status": "Bestellstatus",
       "total": "Gesamtsumme",
       "none": "Du hast noch keine Bestellungen aufgegeben."
     },

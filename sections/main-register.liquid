@@ -86,7 +86,7 @@
 					<div class="field">
 						<input type="password" name="customer[password]" class="full {% if form.errors contains 'form' %}invalid{% endif %}" value="" placeholder="{{ 'customer.login_page.password' | t }}" />
 						<label class="label_password" for="customer_password">{{ 'customer.login_page.password' | t }}</label>
-						{% render 'svg-icons' with 'password' %}
+						{% render 'svg-icons' with 'password_show' %}{% render 'svg-icons' with 'password_hide' %}
 					</div>
 				<a href="#recover" class="text-button">{{ 'customer.login_page.forgot_password' | t }}</a>
 				</div>
@@ -124,7 +124,7 @@
 			<div class="field">
 				<input type="password" name="customer[password]" class="full" value="" placeholder="{{ 'customer.login_page.password' | t }}" />
 				<label class="label_password" for="password">{{ 'customer.login_page.password' | t }}</label>
-				{% render 'svg-icons' with 'password' %}
+				{% render 'svg-icons' with 'password_show' %}{% render 'svg-icons' with 'password_hide' %}
 			</div>
 			<button type="submit" class="button_type2 full"><span>{{ 'customer.login_page.submit_register' | t }}</span>{% render 'svg-icons' with 'button_arrow_2' %}</button>
 			{% endform %}

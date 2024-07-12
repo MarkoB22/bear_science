@@ -86,7 +86,7 @@
 					<div class="field">
 						<input id="password1" type="password" name="customer[password]" class="full {% if form.errors contains 'form' %}invalid{% endif %}" value="" placeholder="{{ 'customer.login_page.password' | t }}" />
 						<label class="label_password" for="customer_password">{{ 'customer.login_page.password' | t }}</label>
-						<div class="password_icon_1-wrapper" id="toggleButton1">{% render 'svg-icons' with 'password' %}</div>
+						<div class="password_icon_1-wrapper password_show" id="toggleButton1">{% render 'svg-icons' with 'password_show' %}{% render 'svg-icons' with 'password_hide' %}</div>
 					</div>
 				<a href="#recover" class="text-button">{{ 'customer.login_page.forgot_password' | t }}</a>
 				</div>
@@ -124,7 +124,7 @@
 			<div class="field">
 				<input id="password2" type="password" name="customer[password]" class="full" value="" placeholder="{{ 'customer.login_page.password' | t }}" />
 				<label class="label_password" for="password">{{ 'customer.login_page.password' | t }}</label>
-				<div class="password_icon_2-wrapper" id="toggleButton2">{% render 'svg-icons' with 'password' %}</div>
+				<div class="password_icon_2-wrapper password_show" id="toggleButton2">{% render 'svg-icons' with 'password_show' %}{% render 'svg-icons' with 'password_hide' %}</div>
 			</div>
 			<button type="submit" class="button_type2 full"><span>{{ 'customer.login_page.submit_register' | t }}</span>{% render 'svg-icons' with 'button_arrow_2' %}</button>
 			{% endform %}
@@ -143,8 +143,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const registerButton = document.querySelector('.register_tab-button');
     const loginForm = document.querySelector('#login');
     const registerForm = document.querySelector('.thb-register-form');
-
-	console.log('loginForm:', loginForm);
 
     function toggleActive(event) {
         if (event.target === loginButton) {
@@ -170,11 +168,20 @@ document.addEventListener('DOMContentLoaded', function() {
 	function togglePasswordVisibility(passwordFieldId, buttonId) {
 		var passwordInput = document.getElementById(passwordFieldId);
 		var toggleButton = document.getElementById(buttonId);
+		var iconShow = toggleButton.querySelector('.password_icon_show');
+		var iconHide = toggleButton.querySelector('.password_icon_hide');
+
+		console.log('iconShow: ', iconShow);
+		console.log('iconHide: ', iconHide);
 
 		if (passwordInput.type === 'password') {
 			passwordInput.type = 'text';
+			iconShow.classList.add("hidden");
+			iconHide.classList.remove("hidden");
 		} else {
 			passwordInput.type = 'password';
+			iconShow.classList.remove("hidden");
+			iconHide.classList.add("hidden");
 		}
 	}
 
