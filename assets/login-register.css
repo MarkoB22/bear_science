@@ -317,4 +317,9 @@ textarea:focus, input:focus{
   .section-customer-login input[type="password"] {
     width: 420px;
   }
+
+  #customer_login,
+  #create_customer {
+    max-width: 420px;
+  }
 }
