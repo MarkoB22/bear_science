@@ -19,7 +19,7 @@
 				endfor
 			-%}
 		  <li role="menuitem"class="{% if has_sub_menu or has_mega_menu %}menu-item-has-children{% endif %}{% if has_mega_menu %} menu-item-has-megamenu{% endif %}{% if link.active %} active{% endif %}" {% if has_sub_menu %}data-item-title="{{ link.title | escape }}"{% endif %}>
-		    <a href="{{ link.url }}"{%- if link.active %} aria-current="page"{% endif -%} {% if link.url == page.url %}class="underline-header_link"{% endif %}>
+		    <a href="{{ link.url }}"{%- if link.active %} aria-current="page"{% endif -%} {% if link.url == page.url or link.url contains collection.handle %}class="underline-header_link"{% endif %}>
 					{{- link.title -}}
 					{%- if has_sub_menu or has_mega_menu -%}{%- render 'svg-icons' with 'thb-dropdown-bottom' -%}{%- endif -%}
 				</a>

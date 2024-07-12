@@ -2132,6 +2132,10 @@ h6,
         background: #6D7E60;
         bottom: -2px;
       }
+
+      .underline-header_link {
+        font-weight: 600;
+      }
       .header > .row > .columns {
         min-height: 80px; } }
   .header .logolink {
