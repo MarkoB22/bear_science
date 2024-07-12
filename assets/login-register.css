@@ -318,4 +318,11 @@ textarea:focus, input:focus{
     display: flex;
     align-items: center;
   }
+
+  .section-customer-login input[type="text"],
+  .section-customer-login input[type="email"],
+  .section-customer-login input[type="password"],
+  .section-customer-login .label_password {
+    width: 420px;
+  }
 }
