@@ -36,14 +36,6 @@
     width: 100%;
     max-width: 640px;
     margin: 0 auto; }
-    @media only screen and (min-width: 768px) {
-      .thb-form-container .thb-login-form,
-      .thb-form-container .thb-register-form {
-        padding: 0 30px; } }
-    @media only screen and (min-width: 1068px) {
-      .thb-form-container .thb-login-form,
-      .thb-form-container .thb-register-form {
-        padding: 0 60px; } }
     .thb-form-container .thb-login-form .form-notification,
     .thb-form-container .thb-register-form .form-notification {
       margin-bottom: 15px; }
@@ -111,6 +103,7 @@
   overflow: hidden;
   transition: all ease-in-out .3s;
   padding: 0 14.5px;
+  max-width: 420px;
 }
 
 .thb-login-form#recover {
@@ -321,8 +314,7 @@ textarea:focus, input:focus{
 
   .section-customer-login input[type="text"],
   .section-customer-login input[type="email"],
-  .section-customer-login input[type="password"],
-  .section-customer-login .label_password {
+  .section-customer-login input[type="password"] {
     width: 420px;
   }
 }
