@@ -69,12 +69,11 @@
 }
 
 .signup_wrapper.no_logo {
-  padding: 46px 9%;
+  padding: 68px 7.65%;
 }
 
 .signup_wrapper.no_logo .signup_text {
   margin-bottom: unset;
-  padding-right: 4%;
 } 
 
 .signup_wrapper.no_logo .signup_only_text {
@@ -90,6 +89,12 @@
   align-items: center;
   flex-direction: row;
 }
+
+.signup_wrapper.no_logo .signup_text {
+  margin-bottom: unset;
+  padding-right: 4%;
+} 
+
 
 /* -------------------- PLANT IMAGE ------------------------ */
 
