@@ -70,6 +70,7 @@
 
 .signup_wrapper.no_logo {
   padding: 68px 7.65%;
+  border-top: 1px solid #040404;
 }
 
 .signup_wrapper.no_logo .signup_text {
