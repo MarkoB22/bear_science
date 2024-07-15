@@ -302,7 +302,7 @@
     "login_page": {
       "login": "Login",
       "login_description": "If you have an account with us, please log in.",
-      "create_account": "Sign up",
+      "sign_up": "Sign up",
       "create_account_description": "Enter your information below to proceed. If you already have an account, please log in instead.",
       "email": "E-mail address",
       "forgot_password": "Forgot your password?",
@@ -315,7 +315,8 @@
       "submit_register": "Create an account",
       "already_have_an_account": "Already have an account?",
       "submit": "Submit",
-      "cancel": "Cancel"
+      "cancel": "Cancel",
+      "create_account": "Create an account"
     },
     "recover_password": {
       "title": "Reset your password",

@@ -254,6 +254,13 @@ textarea:focus, input:focus{
   bottom: 39px;
 }
 
+.register-subtitle {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 1.22;
+  margin-bottom: 16px;
+}
+
 @media only screen and (min-width: 1025px) {
   .section-customer-login {
     padding: 68px 64px;

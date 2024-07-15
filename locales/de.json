@@ -287,7 +287,7 @@
     "login_page": {
       "login": "Login",
       "login_description": "Wenn Sie ein Konto bei uns haben, melden Sie sich bitte an.",
-      "create_account": "Konto anlegen",
+      "sign_up": "Konto anlegen",
       "create_account_description": "Geben Sie unten Ihre Informationen ein, um fortzufahren. Wenn Sie bereits ein Konto haben, melden Sie sich bitte stattdessen an.",
       "email": "E-Mail-Addresse",
       "forgot_password": "Haben Sie Ihr Passwort vergessen?",
@@ -300,7 +300,8 @@
       "submit_register": "Ein Konto erstellen",
       "already_have_an_account": "Sie haben bereits ein Konto?",
       "submit": "Einreichen",
-      "cancel": "Absagen"
+      "cancel": "Absagen",
+      "create_account": "Ein Konto erstellen"
     },
     "recover_password": {
       "title": "Setze dein Passwort zurück",

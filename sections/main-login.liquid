@@ -55,7 +55,7 @@
 
 		<div class="login_register-buttons">
 			<h4 class="login_tab-button active">{{ 'customer.login_page.login' | t }}</h4>
-			<h4 class="register_tab-button">{{ 'customer.login_page.create_account' | t }}</h4>
+			<h4 class="register_tab-button">{{ 'customer.login_page.sign_up' | t }}</h4>
 		</div>
 		<div class="login_register-forms_wrapper">
 			<div class="thb-login-form active" id="login">
@@ -98,6 +98,7 @@
 			</div>
 
 			<div class="thb-register-form">
+			<div class="register-subtitle not_mobile">{{ 'customer.login_page.create_account' | t }}</div>
 			{% form 'create_customer', novalidate: 'novalidate' %}
 						{% if form.errors %}
 						<div class="form-notification error">
